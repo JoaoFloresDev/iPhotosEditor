@@ -169,6 +169,12 @@
 		8A22EDF71F9A9F40003A7F21 = {
 			isa = PBXGroup;
 			children = (
+				8A22EE031F9A9F40003A7F21 /* AppDelegate.swift */,
+				8A22EE071F9A9F40003A7F21 /* Main.storyboard */,
+				8A22EE0C1F9A9F40003A7F21 /* LaunchScreen.storyboard */,
+				8A22EE0A1F9A9F40003A7F21 /* Assets.xcassets */,
+				C49D2C55247D164A0007D174 /* StoredImage.xcdatamodeld */,
+				C4351DFC249027F0009FBDEF /* PhotoEditor */,
 				8A22EE021F9A9F40003A7F21 /* WAStickersThirdParty */,
 				8A22EE011F9A9F40003A7F21 /* Products */,
 				8A40BE481FB100C3003AD704 /* Frameworks */,
@@ -188,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				C48716D7247E34AD002F025B /* ProfileDataMenagerClass.swift */,
-				8A22EE031F9A9F40003A7F21 /* AppDelegate.swift */,
 				8ACB6A971FE9CB7700A564BB /* Limits.swift */,
 				8A40BE641FB122B3003AD704 /* StickerPack.swift */,
 				8AB5951A20C1FC440076625E /* ImageData.swift */,
@@ -196,18 +201,12 @@
 				8A8D4A791FB291290078C4AF /* Interoperability.swift */,
 				8A18E3341FBA5CA90082201D /* StickerPackManager.swift */,
 				8A18E33E1FBA7DC50082201D /* WebPManager.swift */,
-				8A22EE071F9A9F40003A7F21 /* Main.storyboard */,
-				C4351DF8248FF976009FBDEF /* StyleClass.swift */,
-				C4351DF9248FF976009FBDEF /* ViewController.swift */,
 				8A18E33C1FBA793F0082201D /* sticker_packs.wasticker */,
 				8A26A6A71FEB2E2400256DE8 /* SampleStickers */,
 				8ADA60721FD71C8D006C9BBA /* UI */,
 				8A18E2F31FB3B4840082201D /* WebP */,
-				8A22EE0A1F9A9F40003A7F21 /* Assets.xcassets */,
-				8A22EE0C1F9A9F40003A7F21 /* LaunchScreen.storyboard */,
-				8A22EE0F1F9A9F40003A7F21 /* Info.plist */,
 				8A18E2E31FB3B47A0082201D /* WAStickersThirdParty-Bridging-Header.h */,
-				C49D2C55247D164A0007D174 /* StoredImage.xcdatamodeld */,
+				8A22EE0F1F9A9F40003A7F21 /* Info.plist */,
 			);
 			path = WAStickersThirdParty;
 			sourceTree = "<group>";
@@ -260,6 +259,15 @@
 				8A6001CB20298225001EC448 /* GradientView.swift */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		C4351DFC249027F0009FBDEF /* PhotoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				C4351DF8248FF976009FBDEF /* StyleClass.swift */,
+				C4351DF9248FF976009FBDEF /* ViewController.swift */,
+			);
+			path = PhotoEditor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

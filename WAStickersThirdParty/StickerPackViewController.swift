@@ -36,13 +36,6 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     
     var stickerPack: StickerPack!
     
-    func getSavedImage(named: String) -> UIImage? {
-        if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
-            return UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent(named).path)
-        }
-        return nil
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -73,21 +66,12 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         topDivider.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(topDivider)
         
-        let shareImage: UIImage = UIImage(named: "ShareIcon")!.withRenderingMode(.alwaysTemplate)
-        
         let addButton: AquaButton = AquaButton(frame: .zero)
         addButton.setTitle("Add to WhatsApp", for: .normal)
         addButton.addTarget(self, action: #selector(addButtonPressed(button:)), for: .touchUpInside)
         addButton.translatesAutoresizingMaskIntoConstraints = false
         addButton.isEnabled = Interoperability.canSend()
         view.addSubview(addButton)
-        
-//        let shareButton: GrayRoundedButton = GrayRoundedButton(frame: .zero)
-//        shareButton.setTitle("Share", for: .normal)
-//        shareButton.setImage(shareImage, for: .normal)
-//        shareButton.alpha = 0
-//        shareButton.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(shareButton)
         
         stickerPackPublisherLabel.text = "\(stickerPack.publisher) • \(stickerPack.formattedSize)"
         
@@ -118,27 +102,6 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         portraitConstraints.append(widthPortraitShareConstraint)
         landscapeConstraints.append(widthLandscapeShareConstraint)
         addButton.addConstraint(NSLayoutConstraint(item: addButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: buttonSize.height))
-        
-        // Add button constraints
-//        let bottomPortraitAddConstraint = NSLayoutConstraint(item: shareButton, attribute: .top, relatedBy: .equal, toItem: addButton, attribute: .bottom, multiplier: 1.0, constant: 7.0)
-//        let bottomLandscapeAddConstraint = NSLayoutConstraint(item: view, attribute: .bottomMargin, relatedBy: .equal, toItem: addButton, attribute: .bottom, multiplier: 1.0, constant: buttonBottomMargin)
-//        portraitConstraints.append(bottomPortraitAddConstraint)
-//        landscapeConstraints.append(bottomLandscapeAddConstraint)
-//        view.addConstraint(bottomPortraitAddConstraint)
-//        view.addConstraint(bottomLandscapeAddConstraint)
-//        let centerPortraitAddConstraint = NSLayoutConstraint(item: view, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: addButton, attribute: .centerXWithinMargins, multiplier: 1.0, constant: 0.0)
-//        let centerLandscapeAddConstraint = NSLayoutConstraint(item: view, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: addButton, attribute: .centerXWithinMargins, multiplier: 1.0, constant: buttonSize.width / 2.0 + 5.0)
-//        portraitConstraints.append(centerPortraitAddConstraint)
-//        landscapeConstraints.append(centerLandscapeAddConstraint)
-//        view.addConstraint(centerPortraitAddConstraint)
-//        view.addConstraint(centerLandscapeAddConstraint)
-//        let widthPortraitAddConstraint = NSLayoutConstraint(item: addButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1.0, constant: buttonSize.width)
-//        let widthLandscapeAddConstraint = NSLayoutConstraint(item: addButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1.0, constant: buttonLandscapeSize.width)
-//        addButton.addConstraint(widthPortraitAddConstraint)
-//        addButton.addConstraint(widthLandscapeAddConstraint)
-//        portraitConstraints.append(widthPortraitAddConstraint)
-//        landscapeConstraints.append(widthLandscapeAddConstraint)
-//        addButton.addConstraint(NSLayoutConstraint(item: addButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: buttonSize.height))
         
         // Tap guide label constraints
         view.addConstraint(NSLayoutConstraint(item: addButton, attribute: .top, relatedBy: .equal, toItem: tapGuideLabel, attribute: .bottom, multiplier: 1.0, constant: 14.0))
@@ -179,8 +142,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         changeConstraints()
     }
     
-    // MARK: Scrollview
-    
+    // MARK: - Scrollview
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y > topMarginInset {
             topDivider.alpha = 1.0
@@ -197,8 +159,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         }
     }
     
-    // MARK: Collectionview
-    
+    // MARK: - Collectionview
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return interimMargin
     }
@@ -228,8 +189,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         showActionSheet(withSticker: sticker, overCell: cell!)
     }
     
-    // MARK: Targets
-    
+    // MARK: - Targets
     func showActionSheet(withSticker sticker: Sticker, overCell cell: UICollectionViewCell) {
         var emojisString: String?
         
@@ -269,12 +229,12 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         present(shareViewController, animated: true)
     }
     
+//    MARK: - Gallery Manage
     @objc func infoPressed(button: UIButton) {
         openGalery()
     }
     
     func openGalery() {
-        
         imagePicker =  UIImagePickerController()
         imagePicker.allowsEditing = true
         imagePicker.delegate = self
@@ -289,6 +249,8 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         
         if let img = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
         {
+            image = img
+            
             var auxImg = img
             if(img.size.width > img.size.height) {
                 auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.width), height: Double(img.size.width))
@@ -300,26 +262,38 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
             image = resizeImage(image: auxImg, targetSize: CGSize(width: 512, height: 512))
         }
         else if let img = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
-        {   image = img    }
+        {
+            image = img
+            
+            var auxImg = img
+            if(img.size.width > img.size.height) {
+                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.width), height: Double(img.size.width))
+            }
+            else {
+                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.height), height: Double(img.size.height))
+            }
+            
+            image = resizeImage(image: auxImg, targetSize: CGSize(width: 512, height: 512))
+        }
+        image = UIImage()
+        print("--------------")
+        print(image.size)
+        print("--------------")
         
         picker.dismiss(animated: true,completion: nil)
-        
         print(ProfileDataMenager().saveImage(image: image))
-        
         aaaRefresh()
     }
     
     func aaaRefresh() {
         do {
-            var image = UIImage(named: "oiaa.png")!
-            if let image2 = getSavedImage(named: "ProfileImg") {
-                image = image2
-            }
+            let sticker: Sticker = try Sticker(contentsOfFile: "placeholderGreen.png", emojis: nil)
             
-            var sticker: Sticker = try Sticker(contentsOfFile: "placeholderGreen.png", emojis: nil)
-            let aux = image.resizeToApprox(sizeInMB: 0.01)
-            let imageData = ImageData(data: aux, type: ImageDataExtension.png)
-            sticker.imageData = imageData
+            if let image = getSavedImage(named: "ProfileImg") {
+                let aux = image.resizeToApprox(sizeInMB: 0.5)
+                let imageData = ImageData(data: aux, type: ImageDataExtension.png)
+                sticker.imageData = imageData
+            }
             stickerPack!.stickers.append(sticker)
         } catch {
             print(error)
@@ -328,13 +302,13 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         stickersCollectionView.reloadData()
     }
 
+    //    MARK: - Image Manipulator
     func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
         let size = image.size
 
         let widthRatio  = targetSize.width  / size.width
         let heightRatio = targetSize.height / size.height
 
-        // Figure out what our orientation is, and use that to form the rectangle
         var newSize: CGSize
         if(widthRatio > heightRatio) {
             newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
@@ -342,10 +316,8 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
             newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
         }
 
-        // This is the rect that we've calculated out and this is what is actually used below
         let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
 
-        // Actually do the resizing to the rect using the ImageContext stuff
         UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
         image.draw(in: rect)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
@@ -353,7 +325,8 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
 
         return newImage!
     }
-    //    MARK: - Profile Image
+    
+    //    MARK: - Data Manager
     //    Load
     func setupImgProfile(profileImg: UIImageView) {
         if let image = getSavedImage(named: "ProfileImg") {
@@ -378,6 +351,14 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         }
     }
     
+    func getSavedImage(named: String) -> UIImage? {
+        if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
+            return UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent(named).path)
+        }
+        return nil
+    }
+    
+// MARK: - Share Button
     @objc func addButtonPressed(button: AquaButton) {
         let loadingAlert: UIAlertController = UIAlertController(title: "Sending to WhatsApp", message: "\n\n", preferredStyle: .alert)
         loadingAlert.addSpinner()
@@ -388,25 +369,9 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
             loadingAlert.dismiss(animated: true)
         }
     }
-    
-    @objc func shareButtonPressed(button: GrayRoundedButton) {
-        var stickerImages: [UIImage] = []
-        
-        for sticker in stickerPack.stickers {
-            if let image = sticker.imageData.image {
-                stickerImages.append(image)
-            }
-        }
-        
-        let activityViewController: UIActivityViewController = UIActivityViewController(activityItems: stickerImages, applicationActivities: nil)
-        let parentView = button as UIView
-        activityViewController.popoverPresentationController?.sourceView = parentView
-        activityViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
-        activityViewController.popoverPresentationController?.sourceRect = CGRect(x: parentView.bounds.midX, y: parentView.bounds.midY, width: 0, height: 0)
-        present(activityViewController, animated: true)
-    }
 }
 
+// MARK: - Extension
 extension UIImage {
     func resizeToApprox(sizeInMB: Double, deltaInMB: Double = 0.2) -> Data {
         let allowedSizeInBytes = Int(sizeInMB * 1024 * 1024)
@@ -425,7 +390,7 @@ extension UIImage {
         while (true) {
             i += 1
             if (i > 13) {
-                print("Compression ran too many times ") // ideally max should be 7 times as  log(base 2) 100 = 6.6
+                print("Compression ran too many times ")
                 break
             }
 

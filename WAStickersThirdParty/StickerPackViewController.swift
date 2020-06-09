@@ -82,17 +82,17 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         addButton.isEnabled = Interoperability.canSend()
         view.addSubview(addButton)
         
-        let shareButton: GrayRoundedButton = GrayRoundedButton(frame: .zero)
-        shareButton.setTitle("Share", for: .normal)
-        shareButton.setImage(shareImage, for: .normal)
-        shareButton.addTarget(self, action: #selector(shareButtonPressed(button:)), for: .touchUpInside)
-        shareButton.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(shareButton)
+//        let shareButton: GrayRoundedButton = GrayRoundedButton(frame: .zero)
+//        shareButton.setTitle("Share", for: .normal)
+//        shareButton.setImage(shareImage, for: .normal)
+//        shareButton.alpha = 0
+//        shareButton.translatesAutoresizingMaskIntoConstraints = false
+//        view.addSubview(shareButton)
         
         stickerPackPublisherLabel.text = "\(stickerPack.publisher) • \(stickerPack.formattedSize)"
         
         let tapGuideLabel: UILabel = UILabel()
-        tapGuideLabel.text = "Tap itens to delete"
+        tapGuideLabel.text = "Tap itens to see more"
         tapGuideLabel.font = UIFont.systemFont(ofSize: 15)
         tapGuideLabel.textColor = UIColor(red: 0.6, green: 0.6, blue: 0.6, alpha: 1.0)
         tapGuideLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -104,41 +104,41 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         
         guard let view = view else { return }
         
-        view.addConstraint(NSLayoutConstraint(item: view, attribute: .bottomMargin, relatedBy: .equal, toItem: shareButton, attribute: .bottom, multiplier: 1.0, constant: buttonBottomMargin))
-        let centerPortraitShareConstraint = NSLayoutConstraint(item: view, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: shareButton, attribute: .centerXWithinMargins, multiplier: 1.0, constant: 0.0)
-        let centerLandscapeShareConstraint = NSLayoutConstraint(item: view, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: shareButton, attribute: .centerXWithinMargins, multiplier: 1.0, constant: -buttonSize.width / 2.0 - 5.0)
+        view.addConstraint(NSLayoutConstraint(item: view, attribute: .bottomMargin, relatedBy: .equal, toItem: addButton, attribute: .bottom, multiplier: 1.0, constant: buttonBottomMargin))
+        let centerPortraitShareConstraint = NSLayoutConstraint(item: view, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: addButton, attribute: .centerXWithinMargins, multiplier: 1.0, constant: 0.0)
+        let centerLandscapeShareConstraint = NSLayoutConstraint(item: view, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: addButton, attribute: .centerXWithinMargins, multiplier: 1.0, constant: -buttonSize.width / 2.0 - 5.0)
         portraitConstraints.append(centerPortraitShareConstraint)
         landscapeConstraints.append(centerLandscapeShareConstraint)
         view.addConstraint(centerPortraitShareConstraint)
         view.addConstraint(centerLandscapeShareConstraint)
-        let widthPortraitShareConstraint = NSLayoutConstraint(item: shareButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1.0, constant: buttonSize.width)
-        let widthLandscapeShareConstraint = NSLayoutConstraint(item: shareButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1.0, constant: buttonLandscapeSize.width)
-        shareButton.addConstraint(widthPortraitShareConstraint)
-        shareButton.addConstraint(widthLandscapeShareConstraint)
+        let widthPortraitShareConstraint = NSLayoutConstraint(item: addButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1.0, constant: buttonSize.width)
+        let widthLandscapeShareConstraint = NSLayoutConstraint(item: addButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1.0, constant: buttonLandscapeSize.width)
+        addButton.addConstraint(widthPortraitShareConstraint)
+        addButton.addConstraint(widthLandscapeShareConstraint)
         portraitConstraints.append(widthPortraitShareConstraint)
         landscapeConstraints.append(widthLandscapeShareConstraint)
-        shareButton.addConstraint(NSLayoutConstraint(item: shareButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: buttonSize.height))
+        addButton.addConstraint(NSLayoutConstraint(item: addButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: buttonSize.height))
         
         // Add button constraints
-        let bottomPortraitAddConstraint = NSLayoutConstraint(item: shareButton, attribute: .top, relatedBy: .equal, toItem: addButton, attribute: .bottom, multiplier: 1.0, constant: 7.0)
-        let bottomLandscapeAddConstraint = NSLayoutConstraint(item: view, attribute: .bottomMargin, relatedBy: .equal, toItem: addButton, attribute: .bottom, multiplier: 1.0, constant: buttonBottomMargin)
-        portraitConstraints.append(bottomPortraitAddConstraint)
-        landscapeConstraints.append(bottomLandscapeAddConstraint)
-        view.addConstraint(bottomPortraitAddConstraint)
-        view.addConstraint(bottomLandscapeAddConstraint)
-        let centerPortraitAddConstraint = NSLayoutConstraint(item: view, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: addButton, attribute: .centerXWithinMargins, multiplier: 1.0, constant: 0.0)
-        let centerLandscapeAddConstraint = NSLayoutConstraint(item: view, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: addButton, attribute: .centerXWithinMargins, multiplier: 1.0, constant: buttonSize.width / 2.0 + 5.0)
-        portraitConstraints.append(centerPortraitAddConstraint)
-        landscapeConstraints.append(centerLandscapeAddConstraint)
-        view.addConstraint(centerPortraitAddConstraint)
-        view.addConstraint(centerLandscapeAddConstraint)
-        let widthPortraitAddConstraint = NSLayoutConstraint(item: addButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1.0, constant: buttonSize.width)
-        let widthLandscapeAddConstraint = NSLayoutConstraint(item: addButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1.0, constant: buttonLandscapeSize.width)
-        addButton.addConstraint(widthPortraitAddConstraint)
-        addButton.addConstraint(widthLandscapeAddConstraint)
-        portraitConstraints.append(widthPortraitAddConstraint)
-        landscapeConstraints.append(widthLandscapeAddConstraint)
-        addButton.addConstraint(NSLayoutConstraint(item: addButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: buttonSize.height))
+//        let bottomPortraitAddConstraint = NSLayoutConstraint(item: shareButton, attribute: .top, relatedBy: .equal, toItem: addButton, attribute: .bottom, multiplier: 1.0, constant: 7.0)
+//        let bottomLandscapeAddConstraint = NSLayoutConstraint(item: view, attribute: .bottomMargin, relatedBy: .equal, toItem: addButton, attribute: .bottom, multiplier: 1.0, constant: buttonBottomMargin)
+//        portraitConstraints.append(bottomPortraitAddConstraint)
+//        landscapeConstraints.append(bottomLandscapeAddConstraint)
+//        view.addConstraint(bottomPortraitAddConstraint)
+//        view.addConstraint(bottomLandscapeAddConstraint)
+//        let centerPortraitAddConstraint = NSLayoutConstraint(item: view, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: addButton, attribute: .centerXWithinMargins, multiplier: 1.0, constant: 0.0)
+//        let centerLandscapeAddConstraint = NSLayoutConstraint(item: view, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: addButton, attribute: .centerXWithinMargins, multiplier: 1.0, constant: buttonSize.width / 2.0 + 5.0)
+//        portraitConstraints.append(centerPortraitAddConstraint)
+//        landscapeConstraints.append(centerLandscapeAddConstraint)
+//        view.addConstraint(centerPortraitAddConstraint)
+//        view.addConstraint(centerLandscapeAddConstraint)
+//        let widthPortraitAddConstraint = NSLayoutConstraint(item: addButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1.0, constant: buttonSize.width)
+//        let widthLandscapeAddConstraint = NSLayoutConstraint(item: addButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1.0, constant: buttonLandscapeSize.width)
+//        addButton.addConstraint(widthPortraitAddConstraint)
+//        addButton.addConstraint(widthLandscapeAddConstraint)
+//        portraitConstraints.append(widthPortraitAddConstraint)
+//        landscapeConstraints.append(widthLandscapeAddConstraint)
+//        addButton.addConstraint(NSLayoutConstraint(item: addButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: buttonSize.height))
         
         // Tap guide label constraints
         view.addConstraint(NSLayoutConstraint(item: addButton, attribute: .top, relatedBy: .equal, toItem: tapGuideLabel, attribute: .bottom, multiplier: 1.0, constant: 14.0))

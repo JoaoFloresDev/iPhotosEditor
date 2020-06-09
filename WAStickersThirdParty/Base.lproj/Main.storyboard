@@ -10,7 +10,7 @@
         <!--Sticker Packs-->
         <scene sceneID="B1S-hN-MFe">
             <objects>
-                <viewController title="Sticker Packs" id="M67-ew-auO" customClass="AllStickerPacksViewController" customModule="WAStickersThirdParty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Sticker Packs" id="M67-ew-auO" customClass="AllStickerPacksViewController" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="83V-gx-xE9"/>
                         <viewControllerLayoutGuide type="bottom" id="ajP-Ty-Icd"/>
@@ -50,7 +50,7 @@
         <!--Sticker Pack View Controller-->
         <scene sceneID="edg-Pz-Hza">
             <objects>
-                <viewController storyboardIdentifier="stickerPackVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ngp-pe-fiT" customClass="StickerPackViewController" customModule="WAStickersThirdParty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="stickerPackVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ngp-pe-fiT" customClass="StickerPackViewController" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xVg-Eq-uuA"/>
                         <viewControllerLayoutGuide type="bottom" id="40j-fZ-Ld1"/>
@@ -145,7 +145,7 @@
         <!--Editor-->
         <scene sceneID="Jq9-6v-DYm">
             <objects>
-                <viewController id="02q-UZ-z6k" customClass="ViewController" customModule="WAStickersThirdParty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="02q-UZ-z6k" customClass="ViewController" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wls-2O-hVe"/>
                         <viewControllerLayoutGuide type="bottom" id="ObK-ZI-rHr"/>
@@ -155,7 +155,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MGE-8e-2k2">
-                                <rect key="frame" x="10" y="569" width="355" height="44"/>
+                                <rect key="frame" x="10" y="564" width="355" height="44"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HzH-S9-lTR">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="44"/>
@@ -198,14 +198,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56P-8b-Ajb">
-                                <rect key="frame" x="9.5" y="0.0" width="356" height="559"/>
+                                <rect key="frame" x="9.5" y="0.0" width="356" height="554"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Md5-Tb-s8z">
-                                        <rect key="frame" x="0.0" y="0.0" width="356" height="559"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="356" height="554"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mr7-jq-ZpV">
-                                        <rect key="frame" x="0.0" y="0.0" width="356" height="559"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="356" height="554"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -228,7 +228,7 @@
                             <constraint firstItem="MGE-8e-2k2" firstAttribute="top" secondItem="56P-8b-Ajb" secondAttribute="bottom" constant="10" id="isA-bz-tf9"/>
                             <constraint firstAttribute="trailing" secondItem="MGE-8e-2k2" secondAttribute="trailing" constant="10" id="j78-65-fsg"/>
                             <constraint firstItem="56P-8b-Ajb" firstAttribute="width" secondItem="qGb-Yy-GAV" secondAttribute="width" multiplier="0.95" id="xRR-0l-4ze"/>
-                            <constraint firstItem="ObK-ZI-rHr" firstAttribute="top" secondItem="MGE-8e-2k2" secondAttribute="bottom" constant="5" id="y6D-pM-VMG"/>
+                            <constraint firstItem="ObK-ZI-rHr" firstAttribute="top" secondItem="MGE-8e-2k2" secondAttribute="bottom" constant="10" id="y6D-pM-VMG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Editor" image="photo" catalog="system" selectedImage="photo.fill" id="p9V-dX-KQJ"/>

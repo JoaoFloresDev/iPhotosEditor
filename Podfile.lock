@@ -1,0 +1,18 @@
+PODS:
+  - CLImageEditor (0.2.4):
+    - CLImageEditor/Core (= 0.2.4)
+  - CLImageEditor/Core (0.2.4)
+
+DEPENDENCIES:
+  - CLImageEditor (~> 0.2)
+
+SPEC REPOS:
+  trunk:
+    - CLImageEditor
+
+SPEC CHECKSUMS:
+  CLImageEditor: dc3e5358f641368da3a76fc1c744a4c2ceb270ad
+
+PODFILE CHECKSUM: 6dcd3d26caf8a3b2a3cbed80df7cefa69bcb0c3f
+
+COCOAPODS: 1.9.1

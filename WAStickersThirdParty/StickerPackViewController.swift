@@ -251,13 +251,21 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         {
             image = img
             
+            print("------------")
+            print(image.size)
+            print("------------")
+            
             var auxImg = img
-            if(img.size.width > img.size.height) {
-                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.width), height: Double(img.size.width))
+            if(img.size.width < img.size.height) {
+                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.width - 1), height: Double(img.size.width - 1))
             }
-            else {
-                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.height), height: Double(img.size.height))
+            else if (img.size.width > img.size.height){
+                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.height - 1), height: Double(img.size.height - 1))
             }
+            
+            print("------------")
+            print(auxImg.size)
+            print("------------")
             
             image = resizeImage(image: auxImg, targetSize: CGSize(width: 512, height: 512))
         }
@@ -265,20 +273,28 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         {
             image = img
             
+            print("------------")
+            print(image.size)
+            print("------------")
+            
             var auxImg = img
-            if(img.size.width > img.size.height) {
-                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.width), height: Double(img.size.width))
+            if(img.size.width < img.size.height) {
+                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.width - 1), height: Double(img.size.width - 1))
             }
-            else {
-                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.height), height: Double(img.size.height))
+            else if (img.size.width > img.size.height){
+                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.height - 1), height: Double(img.size.height))
             }
+            
+            print("------------")
+            print(auxImg.size)
+            print("------------")
             
             image = resizeImage(image: auxImg, targetSize: CGSize(width: 512, height: 512))
         }
-        image = UIImage()
-        print("--------------")
+        
+        print("------------")
         print(image.size)
-        print("--------------")
+        print("------------")
         
         picker.dismiss(animated: true,completion: nil)
         print(ProfileDataMenager().saveImage(image: image))
@@ -393,7 +409,6 @@ extension UIImage {
                 print("Compression ran too many times ")
                 break
             }
-
 
             print("mid = \(mid)")
 

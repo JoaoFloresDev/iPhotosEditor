@@ -244,10 +244,10 @@
 			isa = PBXGroup;
 			children = (
 				8ADA60751FD71F69006C9BBA /* AllStickerPacksViewController.swift */,
-				C41B55AD248DE76B002CBCFD /* ImageFunctions.swift */,
 				8A27F11F1FD7444B001B2BBD /* StickerPackViewController.swift */,
 				8A27F12A1FD9E025001B2BBD /* StickerPackInfoViewController.swift */,
 				8A27F1211FD76937001B2BBD /* AquaButton.swift */,
+				C41B55AD248DE76B002CBCFD /* ImageFunctions.swift */,
 				0E6359A3203E148200805DEB /* StickerCell.swift */,
 				8A27F11B1FD73DD0001B2BBD /* StickerPackTableViewCell.xib */,
 				8A27F11D1FD73DE2001B2BBD /* StickerPackTableViewCell.swift */,
@@ -580,7 +580,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WAStickersThirdParty/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
 				PRODUCT_NAME = "iPhotos Editor";
@@ -605,7 +605,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WAStickersThirdParty/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
 				PRODUCT_NAME = "iPhotos Editor";

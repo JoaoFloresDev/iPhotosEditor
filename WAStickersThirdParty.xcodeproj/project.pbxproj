@@ -41,6 +41,8 @@
 		C4351DFA248FF976009FBDEF /* StyleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DF8248FF976009FBDEF /* StyleClass.swift */; };
 		C4351DFB248FF976009FBDEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DF9248FF976009FBDEF /* ViewController.swift */; };
 		C4351DFF249086B2009FBDEF /* stickersDataSaved.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DFE249086B2009FBDEF /* stickersDataSaved.swift */; };
+		C4351E0124908D08009FBDEF /* BdCoreDataImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351E0024908D08009FBDEF /* BdCoreDataImg.swift */; };
+		C4351E0324908D46009FBDEF /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351E0224908D46009FBDEF /* ModelController.swift */; };
 		C48716E2247E4BAB002F025B /* oiaa.png in Resources */ = {isa = PBXBuildFile; fileRef = C48716E1247E4BAB002F025B /* oiaa.png */; };
 		C49D2C4E247D0B7A0007D174 /* tray_Cuppy.png in Resources */ = {isa = PBXBuildFile; fileRef = C49D2C4D247D0B7A0007D174 /* tray_Cuppy.png */; };
 		C49D2C51247D0C550007D174 /* placeholderBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = C49D2C4F247D0C550007D174 /* placeholderBlack.png */; };
@@ -115,6 +117,8 @@
 		C4351DF8248FF976009FBDEF /* StyleClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleClass.swift; sourceTree = "<group>"; };
 		C4351DF9248FF976009FBDEF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4351DFE249086B2009FBDEF /* stickersDataSaved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stickersDataSaved.swift; sourceTree = "<group>"; };
+		C4351E0024908D08009FBDEF /* BdCoreDataImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BdCoreDataImg.swift; sourceTree = "<group>"; };
+		C4351E0224908D46009FBDEF /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		C48716E1247E4BAB002F025B /* oiaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oiaa.png; sourceTree = "<group>"; };
 		C49D2C4D247D0B7A0007D174 /* tray_Cuppy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tray_Cuppy.png; sourceTree = "<group>"; };
 		C49D2C4F247D0C550007D174 /* placeholderBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderBlack.png; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 			children = (
 				8A27F11F1FD7444B001B2BBD /* StickerPackViewController.swift */,
 				C4351DFE249086B2009FBDEF /* stickersDataSaved.swift */,
+				C4351E0024908D08009FBDEF /* BdCoreDataImg.swift */,
+				C4351E0224908D46009FBDEF /* ModelController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -410,6 +416,7 @@
 				8A18E3351FBA5CA90082201D /* StickerPackManager.swift in Sources */,
 				8A27F1331FD9EA08001B2BBD /* LinkTableViewCell.swift in Sources */,
 				8A18E2F01FB3B47D0082201D /* YYFrameImage.m in Sources */,
+				C4351E0324908D46009FBDEF /* ModelController.swift in Sources */,
 				8A18E33F1FBA7DC50082201D /* WebPManager.swift in Sources */,
 				8ADA60761FD71F69006C9BBA /* AllStickerPacksViewController.swift in Sources */,
 				8ACB6A981FE9CB7700A564BB /* Limits.swift in Sources */,
@@ -426,6 +433,7 @@
 				8AB5951920C1FC130076625E /* Sticker.swift in Sources */,
 				8A27F12D1FD9E718001B2BBD /* SecondaryTextTableViewCell.swift in Sources */,
 				C4351DFA248FF976009FBDEF /* StyleClass.swift in Sources */,
+				C4351E0124908D08009FBDEF /* BdCoreDataImg.swift in Sources */,
 				8A22EE041F9A9F40003A7F21 /* AppDelegate.swift in Sources */,
 				8A18E2EE1FB3B47D0082201D /* YYImage.m in Sources */,
 				8A18E2F21FB3B47D0082201D /* YYImageCoder.m in Sources */,

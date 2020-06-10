@@ -128,6 +128,9 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         topDivider.addConstraint(NSLayoutConstraint(item: topDivider, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: 1.0))
         
         changeConstraints()
+        
+        populateStickersInit()
+        stickersCollectionView.reloadData()
     }
     
     private func changeConstraints() {
@@ -229,7 +232,15 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         present(shareViewController, animated: true)
     }
     
-//    MARK: - Gallery Manage
+    
+    // --------------------------------------------------------------------------------
+    //    Functions Add Stickers
+    // --------------------------------------------------------------------------------
+    
+    var modelData = ModelController().fetchImageObjectsInit()
+    var modelController = ModelController()
+    
+    //    MARK: - Gallery Manage
     @objc func addPhotoPressed(button: UIButton) {
         imagePicker =  UIImagePickerController()
         imagePicker.allowsEditing = true
@@ -245,7 +256,6 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         
         if let img = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
         {   image = img.cropToSquare()  }
-            
         else if let img = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         {   image = img.cropToSquare()  }
         
@@ -257,21 +267,40 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
             alertZoom()
         }
         else {
-            print("Saved img:", stickersDataSaved().saveImage(image: image))
-            showNewSticker()
+            insertNewSticker(image: image)
         }
     }
     
-    func showNewSticker() {
-        do {
-            let sticker: Sticker = try Sticker(contentsOfFile: "placeholderGreen.png", emojis: nil)
-            
-            if let image = stickersDataSaved().getSavedImage(named: "ProfileImg") {
+    // MARK: - Collection Update
+    func populateStickersInit() {
+        let images = modelData
+        for image in images {
+            do {
+                let sticker: Sticker = try Sticker(contentsOfFile: "placeholderGreen.png", emojis: nil)
+                
                 let aux = image.resizeToApprox(sizeInMB: 1)
                 let imageData = ImageData(data: aux, type: ImageDataExtension.png)
                 sticker.imageData = imageData
+                
+                stickerPack!.stickers.append(sticker)
+            } catch {
+                print(error)
             }
+        }
+    }
+    
+    func insertNewSticker(image: UIImage) {
+        modelController.saveImageObject(image: image)
+        
+        do {
+            let sticker: Sticker = try Sticker(contentsOfFile: "placeholderGreen.png", emojis: nil)
+            
+            let aux = image.resizeToApprox(sizeInMB: 1)
+            let imageData = ImageData(data: aux, type: ImageDataExtension.png)
+            sticker.imageData = imageData
+            
             stickerPack!.stickers.append(sticker)
+            
         } catch {
             print(error)
         }
@@ -279,7 +308,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         stickersCollectionView.reloadData()
     }
     
-// MARK: - Share Button
+    // MARK: - Share Button
     @objc func addButtonPressed(button: AquaButton) {
         let loadingAlert: UIAlertController = UIAlertController(title: "Sending to WhatsApp", message: "\n\n", preferredStyle: .alert)
         loadingAlert.addSpinner()
@@ -291,7 +320,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         }
     }
     
-//  MARK: - UIAlert
+    //  MARK: - UIAlert
     func alertZoom() {
         let alert = UIAlertController(title: "Size Image Error", message: "Increase zoom in the image", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in }))
@@ -308,22 +337,22 @@ extension UIImage {
         if (fullResImage?.count)! < Int(deltaInBytes + allowedSizeInBytes) {
             return fullResImage!
         }
-
+        
         var i = 0
-
+        
         var left:CGFloat = 0.0, right: CGFloat = 1.0
         var mid = (left + right) / 2.0
         var newResImage = self.jpegData(compressionQuality: mid)
-
+        
         while (true) {
             i += 1
             if (i > 13) {
                 print("Compression ran too many times ")
                 break
             }
-
+            
             print("mid = \(mid)")
-
+            
             if ((newResImage?.count)! < (allowedSizeInBytes - deltaInBytes)) {
                 left = mid
             } else if ((newResImage?.count)! > (allowedSizeInBytes + deltaInBytes)) {
@@ -332,19 +361,19 @@ extension UIImage {
                 print("loop ran \(i) times")
                 return newResImage!
             }
-             mid = (left + right) / 2.0
+            mid = (left + right) / 2.0
             newResImage = self.jpegData(compressionQuality: mid)
         }
-
+        
         return self.jpegData(compressionQuality: 0.5)!
     }
     
     func resizeImage(targetSize: CGSize) -> UIImage {
         let size = self.size
-
+        
         let widthRatio  = targetSize.width  / size.width
         let heightRatio = targetSize.height / size.height
-
+        
         // Figure out what our orientation is, and use that to form the rectangle
         var newSize: CGSize
         if(widthRatio > heightRatio) {
@@ -352,21 +381,21 @@ extension UIImage {
         } else {
             newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
         }
-
+        
         // This is the rect that we've calculated out and this is what is actually used below
         let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
-
+        
         // Actually do the resizing to the rect using the ImageContext stuff
         UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
         self.draw(in: rect)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-
+        
         return newImage!
     }
     
     func cropToBounds(image: UIImage, width: Double, height: Double) -> UIImage {
-
+        
         let cgimage = image.cgImage!
         let contextImage: UIImage = UIImage(cgImage: cgimage)
         let contextSize: CGSize = contextImage.size
@@ -374,7 +403,7 @@ extension UIImage {
         var posY: CGFloat = 0.0
         var cgwidth: CGFloat = CGFloat(width)
         var cgheight: CGFloat = CGFloat(height)
-
+        
         // See what size is longer and create the center off of that
         if contextSize.width > contextSize.height {
             posX = ((contextSize.width - contextSize.height) / 2)
@@ -387,13 +416,12 @@ extension UIImage {
             cgwidth = contextSize.width
             cgheight = contextSize.width
         }
-
+        
         let rect: CGRect = CGRect(x: posX, y: posY, width: cgwidth, height: cgheight)
-
+        
         // Create bitmap image from context using the rect
         let imageRef: CGImage = cgimage.cropping(to: rect)!
-
-        // Create a new image based on the imageRef and rotate back to the original orientation
+        
         let image: UIImage = UIImage(cgImage: imageRef, scale: image.scale, orientation: image.imageOrientation)
         
         return image

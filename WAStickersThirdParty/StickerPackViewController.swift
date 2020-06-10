@@ -233,8 +233,6 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     @objc func addPhotoPressed(button: UIButton) {
         imagePicker =  UIImagePickerController()
         imagePicker.allowsEditing = true
-        imagePicker.setEditing(true, animated: true)
-        imagePicker.isEditing = true
         imagePicker.delegate = self
         imagePicker.sourceType = .photoLibrary
         
@@ -243,26 +241,23 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        var image : UIImage!
+        var image = UIImage(named: "landscapeIcon")!
         
         if let img = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
-        {
-            image = img.cropToSquare()
-            image = image.resizeImage(targetSize: CGSize(width: 512, height: 512))
-        }
+        {   image = img.cropToSquare()  }
             
         else if let img = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
-        {
-            image = img.cropToSquare()
-            image = image.resizeImage(targetSize: CGSize(width: 512, height: 512))
-        }
+        {   image = img.cropToSquare()  }
+        
+        image = image.resizeImage(targetSize: CGSize(width: 512, height: 512))
         
         picker.dismiss(animated: true,completion: nil)
+        
         if(image.size.height != 512 || image.size.width != 512) {
             alertZoom()
         }
         else {
-            print(saveImage(image: image))
+            print("Saved img:", stickersDataSaved().saveImage(image: image))
             showNewSticker()
         }
     }
@@ -271,7 +266,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         do {
             let sticker: Sticker = try Sticker(contentsOfFile: "placeholderGreen.png", emojis: nil)
             
-            if let image = getSavedImage(named: "ProfileImg") {
+            if let image = stickersDataSaved().getSavedImage(named: "ProfileImg") {
                 let aux = image.resizeToApprox(sizeInMB: 1)
                 let imageData = ImageData(data: aux, type: ImageDataExtension.png)
                 sticker.imageData = imageData
@@ -282,31 +277,6 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         }
         
         stickersCollectionView.reloadData()
-    }
-    
-    //    MARK: - Data Manager
-    //    Save
-    func saveImage(image: UIImage) -> Bool {
-        guard let data = image.jpegData(compressionQuality: 1) ?? image.pngData() else {
-            return false
-        }
-        guard let directory = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) as NSURL else {
-            return false
-        }
-        do {
-            try data.write(to: directory.appendingPathComponent("ProfileImg.png")!)
-            return true
-        } catch {
-            print(error.localizedDescription)
-            return false
-        }
-    }
-    
-    func getSavedImage(named: String) -> UIImage? {
-        if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
-            return UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent(named).path)
-        }
-        return nil
     }
     
 // MARK: - Share Button
@@ -321,7 +291,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         }
     }
     
-//  MARK: - UIAlertr
+//  MARK: - UIAlert
     func alertZoom() {
         let alert = UIAlertController(title: "Size Image Error", message: "Increase zoom in the image", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in }))

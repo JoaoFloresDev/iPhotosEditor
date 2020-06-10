@@ -53,7 +53,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         itemsPerRow = portraitOrientation ? portraitItems : landscapeItems
         
         let infoButton: UIButton = UIButton(type: .contactAdd)
-        infoButton.addTarget(self, action: #selector(infoPressed(button:)), for: .touchUpInside)
+        infoButton.addTarget(self, action: #selector(addPhotoPressed(button:)), for: .touchUpInside)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
         
         bottomGradientView.isUserInteractionEnabled = false
@@ -230,13 +230,11 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     }
     
 //    MARK: - Gallery Manage
-    @objc func infoPressed(button: UIButton) {
-        openGalery()
-    }
-    
-    func openGalery() {
+    @objc func addPhotoPressed(button: UIButton) {
         imagePicker =  UIImagePickerController()
         imagePicker.allowsEditing = true
+        imagePicker.setEditing(true, animated: true)
+        imagePicker.isEditing = true
         imagePicker.delegate = self
         imagePicker.sourceType = .photoLibrary
         
@@ -251,57 +249,43 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         {
             image = img
             
-            print("------------")
-            print(image.size)
-            print("------------")
-            
             var auxImg = img
             if(img.size.width < img.size.height) {
-                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.width - 1), height: Double(img.size.width - 1))
+                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.width), height: Double(img.size.width))
             }
             else if (img.size.width > img.size.height){
-                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.height - 1), height: Double(img.size.height - 1))
+                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.height), height: Double(img.size.height))
             }
-            
-            print("------------")
-            print(auxImg.size)
-            print("------------")
             
             image = resizeImage(image: auxImg, targetSize: CGSize(width: 512, height: 512))
         }
+            
         else if let img = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         {
             image = img
             
-            print("------------")
-            print(image.size)
-            print("------------")
-            
             var auxImg = img
             if(img.size.width < img.size.height) {
-                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.width - 1), height: Double(img.size.width - 1))
+                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.width), height: Double(img.size.width))
             }
             else if (img.size.width > img.size.height){
-                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.height - 1), height: Double(img.size.height))
+                auxImg = ImageFunctions().cropToBounds(image: img, width: Double(img.size.height), height: Double(img.size.height))
             }
-            
-            print("------------")
-            print(auxImg.size)
-            print("------------")
             
             image = resizeImage(image: auxImg, targetSize: CGSize(width: 512, height: 512))
         }
         
-        print("------------")
-        print(image.size)
-        print("------------")
-        
         picker.dismiss(animated: true,completion: nil)
-        print(ProfileDataMenager().saveImage(image: image))
-        aaaRefresh()
+        if(image.size.height != 512 || image.size.width != 512) {
+            alertZoom()
+        }
+        else {
+            print(saveImage(image: image))
+            showNewSticker()
+        }
     }
     
-    func aaaRefresh() {
+    func showNewSticker() {
         do {
             let sticker: Sticker = try Sticker(contentsOfFile: "placeholderGreen.png", emojis: nil)
             
@@ -343,12 +327,6 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     //    MARK: - Data Manager
-    //    Load
-    func setupImgProfile(profileImg: UIImageView) {
-        if let image = getSavedImage(named: "ProfileImg") {
-            profileImg.image = image
-        }
-    }
     
     //    Save
     func saveImage(image: UIImage) -> Bool {
@@ -384,6 +362,13 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         stickerPack.sendToWhatsApp { completed in
             loadingAlert.dismiss(animated: true)
         }
+    }
+    
+//  MARK: - UIAlertr
+    func alertZoom() {
+        let alert = UIAlertController(title: "Size Image Error", message: "Increase zoom in the image", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in }))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

@@ -111,7 +111,7 @@ class Sticker {
         self.emojis = try StickerEmojis.canonicalizedEmojis(rawEmojis: emojis)
     }
 
-    func copyToPasteboardAsImage() {
+    func removeSticker() {
         if let image = imageData.image {
             Interoperability.copyImageToPasteboard(image: image)
         }

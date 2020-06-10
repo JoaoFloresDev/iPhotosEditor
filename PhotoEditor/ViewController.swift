@@ -68,7 +68,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        
         imageView.image = image
+        imageView.layer.cornerRadius = 10
         picker.dismiss(animated: true, completion: nil)
     }
     
@@ -136,13 +138,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     /// save current image
     func saveImage() {
-        
         if let image = imageView.image {
-            
-            let success = writeImageToStorage(image: image)
-            print("Salvou?", success)
+            showShareSheet(image: image)
         }
-        dismiss(animated: true, completion: nil)
+    }
+    
+    func showShareSheet(image: UIImage) {
+        
+        let shareViewController: UIActivityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        shareViewController.popoverPresentationController?.sourceView = self.view
+        shareViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
+        shareViewController.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+        present(shareViewController, animated: true)
     }
     
     //    MARK: - IMAGE MAGEMENT

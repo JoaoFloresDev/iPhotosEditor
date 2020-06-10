@@ -183,6 +183,9 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StickerCell", for: indexPath) as! StickerCell
         cell.sticker = stickerPack.stickers[indexPath.row]
+        
+        // Use tag to check index of cell
+        cell.tag  = indexPath[1] - 3
         return cell
     }
     
@@ -207,12 +210,12 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         actionSheet.popoverPresentationController?.sourceView = cell.contentView
         actionSheet.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
         actionSheet.popoverPresentationController?.sourceRect = CGRect(x: cell.contentView.bounds.midX, y: cell.contentView.bounds.midY, width: 0, height: 0)
-        
-        actionSheet.addAction(UIAlertAction(title: "Copy to Clipboard", style: .default, handler: { _ in
-            sticker.copyToPasteboardAsImage()
-        }))
-        actionSheet.addAction(UIAlertAction(title: "Share via", style: .default, handler: { _ in
+        actionSheet.addAction(UIAlertAction(title: "Share Image", style: .default, handler: { _ in
             self.showShareSheet(withSticker: sticker)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Remove Sticker", style: .destructive, handler: { _ in
+            //tag contain index of cell
+            self.removeSticker(index: cell.tag)
         }))
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         
@@ -260,7 +263,6 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         {   image = img.cropToSquare()  }
         
         image = image.resizeImage(targetSize: CGSize(width: 512, height: 512))
-        
         picker.dismiss(animated: true,completion: nil)
         
         if(image.size.height != 512 || image.size.width != 512) {
@@ -294,7 +296,6 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         
         do {
             let sticker: Sticker = try Sticker(contentsOfFile: "placeholderGreen.png", emojis: nil)
-            
             let aux = image.resizeToApprox(sizeInMB: 1)
             let imageData = ImageData(data: aux, type: ImageDataExtension.png)
             sticker.imageData = imageData
@@ -306,6 +307,15 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         }
         
         stickersCollectionView.reloadData()
+    }
+    
+    func removeSticker(index: Int) {
+        if(index >= 0) {
+            print("--- index:", index)
+            self.modelController.deleteImageObject(imageIndex: index)
+            stickerPack.stickers.remove(at: index + 3)
+            stickersCollectionView.reloadData()
+        }
     }
     
     // MARK: - Share Button
@@ -437,5 +447,13 @@ extension UIImage {
         }
         
         return auxImg
+    }
+    
+    public func rounded(radius: CGFloat) -> UIImage {
+        let rect = CGRect(origin: .zero, size: size)
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        UIBezierPath(roundedRect: rect, cornerRadius: radius).addClip()
+        draw(in: rect)
+        return UIGraphicsGetImageFromCurrentImageContext()!
     }
 }

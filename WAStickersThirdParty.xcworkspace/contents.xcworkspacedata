@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:WAStickersThirdParty.xcodeproj">
+      location = "group:/Users/joaoflores/Documents/GitHub/iPhotos-Editor/iPhotos.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

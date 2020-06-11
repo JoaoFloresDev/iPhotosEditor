@@ -9,6 +9,7 @@
 import UIKit
 import CLImageEditor
 import Agrume
+import StoreKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITabBarDelegate,  CLImageEditorDelegate {
     
@@ -31,6 +32,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func saveImgTest(_ sender: Any) {
         saveImage()
+        rateApp()
     }
     
     @IBAction func editeeeImgTest(_ sender: Any) {
@@ -150,12 +152,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func showShareSheet(image: UIImage) {
         
-        let shareViewController: UIActivityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-        shareViewController.popoverPresentationController?.sourceView = self.view
-        shareViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
-        shareViewController.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
-        present(shareViewController, animated: true)
-    }
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        showAlertWith(title: "Saved!", message: "Your image has been saved to your photos.")
+        }
+
     
     //    MARK: - IMAGE MAGEMENT
     func readImageFromStorage() -> UIImage? {
@@ -192,5 +192,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
+    }
+    
+    func rateApp() {
+        if #available(iOS 10.3, *) {
+            SKStoreReviewController.requestReview()
+        }
     }
 }

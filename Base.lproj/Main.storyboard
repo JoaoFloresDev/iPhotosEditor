@@ -208,25 +208,38 @@
                                         <rect key="frame" x="0.0" y="0.0" width="356" height="554"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04O-ar-U4g">
-                                        <rect key="frame" x="0.0" y="0.0" width="356" height="554"/>
+                                        <rect key="frame" x="0.0" y="43" width="356" height="511"/>
                                         <connections>
                                             <action selector="showImg:" destination="02q-UZ-z6k" eventType="touchUpInside" id="OcQ-Ky-wfd"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEg-mz-0JM">
+                                        <rect key="frame" x="313" y="3.5" width="40" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="4TD-s4-Wln"/>
+                                            <constraint firstAttribute="height" constant="40" id="btP-Qc-g28"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="info.circle" catalog="system"/>
+                                        <connections>
+                                            <segue destination="d6r-ZS-hCp" kind="show" id="fLL-wL-Uff"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="04O-ar-U4g" firstAttribute="centerX" secondItem="56P-8b-Ajb" secondAttribute="centerX" id="16r-0Y-MgD"/>
                                     <constraint firstItem="mr7-jq-ZpV" firstAttribute="top" secondItem="56P-8b-Ajb" secondAttribute="top" id="D1X-7u-k3m"/>
                                     <constraint firstAttribute="trailing" secondItem="mr7-jq-ZpV" secondAttribute="trailing" id="D6P-QL-TdG"/>
-                                    <constraint firstItem="04O-ar-U4g" firstAttribute="width" secondItem="56P-8b-Ajb" secondAttribute="width" id="NmZ-f1-fHT"/>
+                                    <constraint firstItem="04O-ar-U4g" firstAttribute="top" secondItem="DEg-mz-0JM" secondAttribute="bottom" id="Plg-b8-uV1"/>
                                     <constraint firstAttribute="trailing" secondItem="Md5-Tb-s8z" secondAttribute="trailing" id="QrN-AE-DOi"/>
                                     <constraint firstItem="Md5-Tb-s8z" firstAttribute="leading" secondItem="56P-8b-Ajb" secondAttribute="leading" id="Ujh-jR-LzL"/>
+                                    <constraint firstAttribute="trailing" secondItem="04O-ar-U4g" secondAttribute="trailing" id="cBP-zD-Dw6"/>
+                                    <constraint firstItem="04O-ar-U4g" firstAttribute="leading" secondItem="56P-8b-Ajb" secondAttribute="leading" id="cde-RQ-Lcf"/>
                                     <constraint firstAttribute="bottom" secondItem="Md5-Tb-s8z" secondAttribute="bottom" id="eEj-FO-eK8"/>
+                                    <constraint firstAttribute="bottom" secondItem="04O-ar-U4g" secondAttribute="bottom" id="eUf-Ts-fnp"/>
                                     <constraint firstItem="Md5-Tb-s8z" firstAttribute="top" secondItem="56P-8b-Ajb" secondAttribute="top" id="m36-Ay-7zk"/>
                                     <constraint firstItem="mr7-jq-ZpV" firstAttribute="leading" secondItem="56P-8b-Ajb" secondAttribute="leading" id="wV4-lN-cfd"/>
-                                    <constraint firstItem="04O-ar-U4g" firstAttribute="centerY" secondItem="56P-8b-Ajb" secondAttribute="centerY" id="xcT-ds-omU"/>
-                                    <constraint firstItem="04O-ar-U4g" firstAttribute="height" secondItem="56P-8b-Ajb" secondAttribute="height" id="xcY-Sr-RjL"/>
+                                    <constraint firstItem="DEg-mz-0JM" firstAttribute="top" secondItem="56P-8b-Ajb" secondAttribute="top" constant="3" id="wz4-we-wY3"/>
                                     <constraint firstAttribute="bottom" secondItem="mr7-jq-ZpV" secondAttribute="bottom" id="yZT-yH-jKu"/>
+                                    <constraint firstAttribute="trailing" secondItem="DEg-mz-0JM" secondAttribute="trailing" constant="3" id="z4D-tL-jbg"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -254,6 +267,40 @@
             </objects>
             <point key="canvasLocation" x="465" y="181"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="s2j-yY-Kvw">
+            <objects>
+                <viewController id="d6r-ZS-hCp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dn6-kN-QPA"/>
+                        <viewControllerLayoutGuide type="bottom" id="8xz-w9-Si5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hsA-Ti-gRZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O15-x5-lIr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                <items>
+                                    <navigationItem title="Credits" id="wLW-dl-ssr">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="owN-0a-5bW"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="O15-x5-lIr" firstAttribute="leading" secondItem="hsA-Ti-gRZ" secondAttribute="leading" id="DEn-Yg-RLP"/>
+                            <constraint firstAttribute="trailing" secondItem="O15-x5-lIr" secondAttribute="trailing" id="j1z-s5-ESi"/>
+                            <constraint firstItem="O15-x5-lIr" firstAttribute="top" secondItem="dn6-kN-QPA" secondAttribute="bottom" id="mWg-4O-wYH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pT0-eK-tkf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="74c-My-ueM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1420" y="180"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jSb-40-r5k">
             <objects>
@@ -277,6 +324,7 @@
         <segue reference="ejY-ay-Qg6"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="photo.fill" catalog="system" width="128" height="93"/>
         <image name="tag" catalog="system" width="128" height="116"/>

@@ -208,16 +208,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="356" height="554"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04O-ar-U4g">
-                                        <rect key="frame" x="0.0" y="43" width="356" height="511"/>
+                                        <rect key="frame" x="0.0" y="33" width="356" height="521"/>
                                         <connections>
                                             <action selector="showImg:" destination="02q-UZ-z6k" eventType="touchUpInside" id="OcQ-Ky-wfd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEg-mz-0JM">
-                                        <rect key="frame" x="313" y="3.5" width="40" height="39"/>
+                                        <rect key="frame" x="323" y="3.5" width="30" height="29"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="4TD-s4-Wln"/>
-                                            <constraint firstAttribute="height" constant="40" id="btP-Qc-g28"/>
+                                            <constraint firstAttribute="width" constant="30" id="4TD-s4-Wln"/>
+                                            <constraint firstAttribute="height" constant="30" id="btP-Qc-g28"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="info.circle" catalog="system"/>
                                         <connections>
@@ -267,10 +267,10 @@
             </objects>
             <point key="canvasLocation" x="465" y="181"/>
         </scene>
-        <!--View Controller-->
+        <!--Credits View Controller-->
         <scene sceneID="s2j-yY-Kvw">
             <objects>
-                <viewController id="d6r-ZS-hCp" sceneMemberID="viewController">
+                <viewController id="d6r-ZS-hCp" customClass="CreditsViewController" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dn6-kN-QPA"/>
                         <viewControllerLayoutGuide type="bottom" id="8xz-w9-Si5"/>
@@ -283,16 +283,29 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <items>
                                     <navigationItem title="Credits" id="wLW-dl-ssr">
-                                        <barButtonItem key="leftBarButtonItem" title="Close" id="owN-0a-5bW"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="owN-0a-5bW">
+                                            <connections>
+                                                <action selector="closeView:" destination="d6r-ZS-hCp" id="AZV-Je-AtL"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Icons from Freepik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FN-gh-lxd">
+                                <rect key="frame" x="16" y="76" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="O15-x5-lIr" firstAttribute="leading" secondItem="hsA-Ti-gRZ" secondAttribute="leading" id="DEn-Yg-RLP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2FN-gh-lxd" secondAttribute="trailing" id="aDR-Ft-1bf"/>
                             <constraint firstAttribute="trailing" secondItem="O15-x5-lIr" secondAttribute="trailing" id="j1z-s5-ESi"/>
+                            <constraint firstItem="2FN-gh-lxd" firstAttribute="top" secondItem="O15-x5-lIr" secondAttribute="bottom" constant="20" id="jG6-Z6-rHE"/>
                             <constraint firstItem="O15-x5-lIr" firstAttribute="top" secondItem="dn6-kN-QPA" secondAttribute="bottom" id="mWg-4O-wYH"/>
+                            <constraint firstItem="2FN-gh-lxd" firstAttribute="leading" secondItem="hsA-Ti-gRZ" secondAttribute="leadingMargin" id="rSN-gb-ZOp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pT0-eK-tkf"/>

@@ -43,6 +43,7 @@
 		C4351DFF249086B2009FBDEF /* stickersDataSaved.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DFE249086B2009FBDEF /* stickersDataSaved.swift */; };
 		C4351E0124908D08009FBDEF /* BdCoreDataImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351E0024908D08009FBDEF /* BdCoreDataImg.swift */; };
 		C4351E0324908D46009FBDEF /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351E0224908D46009FBDEF /* ModelController.swift */; };
+		C474A7D92492FA810043D953 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A7D82492FA810043D953 /* CreditsViewController.swift */; };
 		C48716E2247E4BAB002F025B /* oiaa.png in Resources */ = {isa = PBXBuildFile; fileRef = C48716E1247E4BAB002F025B /* oiaa.png */; };
 		C49D2C4E247D0B7A0007D174 /* tray_Cuppy.png in Resources */ = {isa = PBXBuildFile; fileRef = C49D2C4D247D0B7A0007D174 /* tray_Cuppy.png */; };
 		C49D2C51247D0C550007D174 /* placeholderBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = C49D2C4F247D0C550007D174 /* placeholderBlack.png */; };
@@ -119,6 +120,7 @@
 		C4351DFE249086B2009FBDEF /* stickersDataSaved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stickersDataSaved.swift; sourceTree = "<group>"; };
 		C4351E0024908D08009FBDEF /* BdCoreDataImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BdCoreDataImg.swift; sourceTree = "<group>"; };
 		C4351E0224908D46009FBDEF /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		C474A7D82492FA810043D953 /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		C48716E1247E4BAB002F025B /* oiaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oiaa.png; sourceTree = "<group>"; };
 		C49D2C4D247D0B7A0007D174 /* tray_Cuppy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tray_Cuppy.png; sourceTree = "<group>"; };
 		C49D2C4F247D0C550007D174 /* placeholderBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderBlack.png; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				C4351DFE249086B2009FBDEF /* stickersDataSaved.swift */,
 				C4351E0024908D08009FBDEF /* BdCoreDataImg.swift */,
 				C4351E0224908D46009FBDEF /* ModelController.swift */,
+				C474A7D82492FA810043D953 /* CreditsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				C4351DFF249086B2009FBDEF /* stickersDataSaved.swift in Sources */,
 				8A6001CC20298225001EC448 /* GradientView.swift in Sources */,
 				8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */,
+				C474A7D92492FA810043D953 /* CreditsViewController.swift in Sources */,
 				C49D2C57247D164A0007D174 /* StoredImage.xcdatamodeld in Sources */,
 				8A18E2F11FB3B47D0082201D /* YYSpriteSheetImage.m in Sources */,
 				8A18E2EF1FB3B47D0082201D /* YYAnimatedImageView.m in Sources */,

@@ -4,7 +4,7 @@
     "sticker_packs" : [
     {
         "identifier": "cuppyID",
-        "name": "iPhotos Stickers",
+        "name": "iPhotos Pack",
         "publisher": "Created in iPhone",
         "tray_image_file" : "tray_Cuppy.png",
         "publisher_website" : "",
@@ -15,10 +15,10 @@
             "image_file": "placeholderMulticolor.png"
         },
         {
-            "image_file": "man.png"
+            "image_file": "placeholderMulticolor.png"
         },
         {
-            "image_file": "woman.png"
+            "image_file": "placeholderBlack.png"
         }
         ]
     }]

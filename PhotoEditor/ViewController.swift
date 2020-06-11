@@ -8,6 +8,7 @@
 
 import UIKit
 import CLImageEditor
+import Agrume
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITabBarDelegate,  CLImageEditorDelegate {
     
@@ -20,6 +21,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var backgroundOptions: UIImageView!
     
     //    MARK: - IBAction
+    @IBAction func showImg(_ sender: Any) {
+        let agrume = Agrume(image: imageView.image!)
+        agrume.show(from: self)
+    }
+    
+    
     @IBAction func editImgTest(_ sender: Any) {
         newImage()
     }

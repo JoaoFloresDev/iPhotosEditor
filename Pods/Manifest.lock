@@ -1,18 +1,26 @@
 PODS:
+  - Agrume (5.6.8):
+    - SwiftyGif
   - CLImageEditor (0.2.4):
     - CLImageEditor/Core (= 0.2.4)
   - CLImageEditor/Core (0.2.4)
+  - SwiftyGif (5.3.0)
 
 DEPENDENCIES:
+  - Agrume
   - CLImageEditor (~> 0.2)
 
 SPEC REPOS:
   trunk:
+    - Agrume
     - CLImageEditor
+    - SwiftyGif
 
 SPEC CHECKSUMS:
+  Agrume: 53c2be9b06caef4b4996a2886a56b9e901bcc6c0
   CLImageEditor: dc3e5358f641368da3a76fc1c744a4c2ceb270ad
+  SwiftyGif: e466e86c660d343357ab944a819a101c4127cb40
 
-PODFILE CHECKSUM: 6dcd3d26caf8a3b2a3cbed80df7cefa69bcb0c3f
+PODFILE CHECKSUM: 10568df9839cbd790b4b8ddcf56d0b77d3ab59e0
 
 COCOAPODS: 1.9.1

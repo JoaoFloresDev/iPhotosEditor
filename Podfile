@@ -7,4 +7,5 @@ target 'WAStickersThirdParty' do
 
   # Pods for WAStickersThirdParty
   pod 'CLImageEditor', '~> 0.2'
+  pod "Agrume" 
 end

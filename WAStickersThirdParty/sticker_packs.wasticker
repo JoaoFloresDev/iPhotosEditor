@@ -4,8 +4,8 @@
     "sticker_packs" : [
     {
         "identifier": "cuppyID",
-        "name": "iPhotos Pack",
-        "publisher": "Crated in iPhone",
+        "name": "iPhotos Editor",
+        "publisher": "Created in iPhone",
         "tray_image_file" : "tray_Cuppy.png",
         "publisher_website" : "",
         "privacy_policy_website" : "",
@@ -22,4 +22,4 @@
         }
         ]
     }]
-}
+}1

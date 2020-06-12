@@ -9,6 +9,7 @@
 import UIKit
 import CLImageEditor
 import Agrume
+import StoreKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITabBarDelegate,  CLImageEditorDelegate {
     
@@ -146,6 +147,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let image = imageView.image {
             UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
             showAlertWith(title: "Saved!", message: "Your image has been saved to your photos.")
+            
+            if #available(iOS 10.3, *) {
+                SKStoreReviewController.requestReview()
+            }
         }
         else {
             showAlertWith(title: "Error", message: "Try again.")

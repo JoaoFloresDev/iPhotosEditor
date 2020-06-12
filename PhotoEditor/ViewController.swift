@@ -144,17 +144,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     /// save current image
     func saveImage() {
         if let image = imageView.image {
-            showShareSheet(image: image)
+            UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+            showAlertWith(title: "Saved!", message: "Your image has been saved to your photos.")
         }
-    }
-    
-    func showShareSheet(image: UIImage) {
-        
-        let shareViewController: UIActivityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-        shareViewController.popoverPresentationController?.sourceView = self.view
-        shareViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
-        shareViewController.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
-        present(shareViewController, animated: true)
+        else {
+            showAlertWith(title: "Error", message: "Try again.")
+        }
     }
     
     //    MARK: - IMAGE MAGEMENT

@@ -176,8 +176,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPh-eO-pf5">
-                                        <rect key="frame" x="261.5" y="7" width="45" height="30"/>
-                                        <state key="normal" title="Export"/>
+                                        <rect key="frame" x="267" y="7" width="34" height="30"/>
+                                        <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="saveImgTest:" destination="02q-UZ-z6k" eventType="touchUpInside" id="ZSW-G4-qMw"/>
                                         </connections>

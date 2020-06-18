@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E6359A4203E148200805DEB /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6359A3203E148200805DEB /* StickerCell.swift */; };
-		63A3DD653704AFC21D155C2D /* Pods_WAStickersThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C102B208C60E42AF27C1FDA /* Pods_WAStickersThirdParty.framework */; };
+		41E285342A9490C9093E5F56 /* Pods_iPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06147FEBFC542CA8D9B57C73 /* Pods_iPhotos.framework */; };
 		8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0A6DCC1FE9F1CE00110AF2 /* UIAlertController+Additions.swift */; };
 		8A18E2EE1FB3B47D0082201D /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A18E2E51FB3B47B0082201D /* YYImage.m */; };
 		8A18E2EF1FB3B47D0082201D /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A18E2E81FB3B47C0082201D /* YYAnimatedImageView.m */; };
@@ -43,6 +43,14 @@
 		C4351DFF249086B2009FBDEF /* stickersDataSaved.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DFE249086B2009FBDEF /* stickersDataSaved.swift */; };
 		C4351E0124908D08009FBDEF /* BdCoreDataImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351E0024908D08009FBDEF /* BdCoreDataImg.swift */; };
 		C4351E0324908D46009FBDEF /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351E0224908D46009FBDEF /* ModelController.swift */; };
+		C44C7088249C119600EC1E85 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C7083249C119500EC1E85 /* Calculator.swift */; };
+		C44C7089249C119600EC1E85 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C7084249C119500EC1E85 /* IAPHelper.swift */; };
+		C44C708A249C119600EC1E85 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C7085249C119500EC1E85 /* DetailViewController.swift */; };
+		C44C708B249C119600EC1E85 /* RazeFaceProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C7086249C119600EC1E85 /* RazeFaceProducts.swift */; };
+		C44C708C249C119600EC1E85 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C7087249C119600EC1E85 /* ProductCell.swift */; };
+		C44C708E249C12A500EC1E85 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C708D249C12A500EC1E85 /* MasterViewController.swift */; };
+		C44C7090249C132F00EC1E85 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44C708F249C132F00EC1E85 /* StoreKit.framework */; };
+		C44C7092249C219100EC1E85 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C7091249C219100EC1E85 /* WelcomeViewController.swift */; };
 		C474A7D92492FA810043D953 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A7D82492FA810043D953 /* CreditsViewController.swift */; };
 		C474A84624930DF70043D953 /* dog5.png in Resources */ = {isa = PBXBuildFile; fileRef = C474A84224930DF70043D953 /* dog5.png */; };
 		C474A84824930DF70043D953 /* dog1.png in Resources */ = {isa = PBXBuildFile; fileRef = C474A84424930DF70043D953 /* dog1.png */; };
@@ -68,10 +76,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		01238CEF6F5BD5772B53594A /* Pods-iPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhotos.release.xcconfig"; path = "Target Support Files/Pods-iPhotos/Pods-iPhotos.release.xcconfig"; sourceTree = "<group>"; };
+		06147FEBFC542CA8D9B57C73 /* Pods_iPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6359A3203E148200805DEB /* StickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
-		1F7352132D728B5F66FDF27C /* Pods-WAStickersThirdParty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WAStickersThirdParty.release.xcconfig"; path = "Target Support Files/Pods-WAStickersThirdParty/Pods-WAStickersThirdParty.release.xcconfig"; sourceTree = "<group>"; };
-		57509B6179305094295298C6 /* Pods-WAStickersThirdParty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WAStickersThirdParty.debug.xcconfig"; path = "Target Support Files/Pods-WAStickersThirdParty/Pods-WAStickersThirdParty.debug.xcconfig"; sourceTree = "<group>"; };
-		7C102B208C60E42AF27C1FDA /* Pods_WAStickersThirdParty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WAStickersThirdParty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B095A342B686B5EB14CE0B3 /* Pods-iPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhotos.debug.xcconfig"; path = "Target Support Files/Pods-iPhotos/Pods-iPhotos.debug.xcconfig"; sourceTree = "<group>"; };
 		8A0A6DCC1FE9F1CE00110AF2 /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
 		8A18E2E31FB3B47A0082201D /* WAStickersThirdParty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WAStickersThirdParty-Bridging-Header.h"; sourceTree = "<group>"; };
 		8A18E2E41FB3B47B0082201D /* YYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImage.h; sourceTree = "<group>"; };
@@ -122,6 +130,14 @@
 		C4351DFE249086B2009FBDEF /* stickersDataSaved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stickersDataSaved.swift; sourceTree = "<group>"; };
 		C4351E0024908D08009FBDEF /* BdCoreDataImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BdCoreDataImg.swift; sourceTree = "<group>"; };
 		C4351E0224908D46009FBDEF /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		C44C7083249C119500EC1E85 /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		C44C7084249C119500EC1E85 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		C44C7085249C119500EC1E85 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C44C7086249C119600EC1E85 /* RazeFaceProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RazeFaceProducts.swift; sourceTree = "<group>"; };
+		C44C7087249C119600EC1E85 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		C44C708D249C12A500EC1E85 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		C44C708F249C132F00EC1E85 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C44C7091249C219100EC1E85 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		C474A7D82492FA810043D953 /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		C474A84224930DF70043D953 /* dog5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog5.png; sourceTree = "<group>"; };
 		C474A84424930DF70043D953 /* dog1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog1.png; sourceTree = "<group>"; };
@@ -138,8 +154,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44C7090249C132F00EC1E85 /* StoreKit.framework in Frameworks */,
 				8ABEBD8421029767005F348C /* WebP.framework in Frameworks */,
-				63A3DD653704AFC21D155C2D /* Pods_WAStickersThirdParty.framework in Frameworks */,
+				41E285342A9490C9093E5F56 /* Pods_iPhotos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +166,8 @@
 		15F06C2D3D30D960CFE5E24E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				57509B6179305094295298C6 /* Pods-WAStickersThirdParty.debug.xcconfig */,
-				1F7352132D728B5F66FDF27C /* Pods-WAStickersThirdParty.release.xcconfig */,
+				3B095A342B686B5EB14CE0B3 /* Pods-iPhotos.debug.xcconfig */,
+				01238CEF6F5BD5772B53594A /* Pods-iPhotos.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -180,6 +197,7 @@
 				8A22EE0C1F9A9F40003A7F21 /* LaunchScreen.storyboard */,
 				8A22EE0A1F9A9F40003A7F21 /* Assets.xcassets */,
 				C49D2C55247D164A0007D174 /* StoredImage.xcdatamodeld */,
+				C44C7082249C118200EC1E85 /* Purchase */,
 				C4351DFC249027F0009FBDEF /* PhotoEditor */,
 				8A22EE021F9A9F40003A7F21 /* WAStickersThirdParty */,
 				8A22EE011F9A9F40003A7F21 /* Products */,
@@ -234,6 +252,7 @@
 		8A40BE481FB100C3003AD704 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C44C708F249C132F00EC1E85 /* StoreKit.framework */,
 				8A18E2F91FB3B5D00082201D /* libz.tbd */,
 				8ABEBD8321029766005F348C /* WebP.framework */,
 				8A18E2F81FB3B5CC0082201D /* MobileCoreServices.framework */,
@@ -243,7 +262,7 @@
 				8A18E2F41FB3B5B80082201D /* QuartzCore.framework */,
 				8A40BE4A1FB100CB003AD704 /* CoreFoundation.framework */,
 				8A40BE491FB100C4003AD704 /* UIKit.framework */,
-				7C102B208C60E42AF27C1FDA /* Pods_WAStickersThirdParty.framework */,
+				06147FEBFC542CA8D9B57C73 /* Pods_iPhotos.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -287,6 +306,20 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		C44C7082249C118200EC1E85 /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				C44C7091249C219100EC1E85 /* WelcomeViewController.swift */,
+				C44C708D249C12A500EC1E85 /* MasterViewController.swift */,
+				C44C7083249C119500EC1E85 /* Calculator.swift */,
+				C44C7085249C119500EC1E85 /* DetailViewController.swift */,
+				C44C7084249C119500EC1E85 /* IAPHelper.swift */,
+				C44C7087249C119600EC1E85 /* ProductCell.swift */,
+				C44C7086249C119600EC1E85 /* RazeFaceProducts.swift */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,12 +327,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A22EE121F9A9F40003A7F21 /* Build configuration list for PBXNativeTarget "iPhotos" */;
 			buildPhases = (
-				2BA73AC96972C7D2E4E5B8AF /* [CP] Check Pods Manifest.lock */,
+				F3252A5212404E17216FA028 /* [CP] Check Pods Manifest.lock */,
 				8A22EDFC1F9A9F40003A7F21 /* Sources */,
 				8A22EDFD1F9A9F40003A7F21 /* Frameworks */,
 				8A22EDFE1F9A9F40003A7F21 /* Resources */,
 				8A18E32F1FBA3CC80082201D /* Embed Frameworks */,
-				6BA8C9FCAAD8724CE57A5531 /* [CP] Embed Pods Frameworks */,
+				EEF186E07CF81D85330E99D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -375,7 +408,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2BA73AC96972C7D2E4E5B8AF /* [CP] Check Pods Manifest.lock */ = {
+		EEF186E07CF81D85330E99D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iPhotos/Pods-iPhotos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Agrume/Agrume.framework",
+				"${BUILT_PRODUCTS_DIR}/CLImageEditor/CLImageEditor.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Agrume.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLImageEditor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iPhotos/Pods-iPhotos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3252A5212404E17216FA028 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -390,33 +451,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WAStickersThirdParty-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-iPhotos-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6BA8C9FCAAD8724CE57A5531 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WAStickersThirdParty/Pods-WAStickersThirdParty-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Agrume/Agrume.framework",
-				"${BUILT_PRODUCTS_DIR}/CLImageEditor/CLImageEditor.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Agrume.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLImageEditor.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WAStickersThirdParty/Pods-WAStickersThirdParty-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -431,8 +470,11 @@
 				8A18E3351FBA5CA90082201D /* StickerPackManager.swift in Sources */,
 				8A27F1331FD9EA08001B2BBD /* LinkTableViewCell.swift in Sources */,
 				8A18E2F01FB3B47D0082201D /* YYFrameImage.m in Sources */,
+				C44C708E249C12A500EC1E85 /* MasterViewController.swift in Sources */,
 				C4351E0324908D46009FBDEF /* ModelController.swift in Sources */,
 				8A18E33F1FBA7DC50082201D /* WebPManager.swift in Sources */,
+				C44C708A249C119600EC1E85 /* DetailViewController.swift in Sources */,
+				C44C7092249C219100EC1E85 /* WelcomeViewController.swift in Sources */,
 				8ADA60761FD71F69006C9BBA /* AllStickerPacksViewController.swift in Sources */,
 				8ACB6A981FE9CB7700A564BB /* Limits.swift in Sources */,
 				8A40BE651FB122B3003AD704 /* StickerPack.swift in Sources */,
@@ -441,7 +483,9 @@
 				8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */,
 				C474A7D92492FA810043D953 /* CreditsViewController.swift in Sources */,
 				C49D2C57247D164A0007D174 /* StoredImage.xcdatamodeld in Sources */,
+				C44C708B249C119600EC1E85 /* RazeFaceProducts.swift in Sources */,
 				8A18E2F11FB3B47D0082201D /* YYSpriteSheetImage.m in Sources */,
+				C44C7089249C119600EC1E85 /* IAPHelper.swift in Sources */,
 				8A18E2EF1FB3B47D0082201D /* YYAnimatedImageView.m in Sources */,
 				8A27F1221FD76937001B2BBD /* AquaButton.swift in Sources */,
 				C4351DFB248FF976009FBDEF /* ViewController.swift in Sources */,
@@ -449,8 +493,10 @@
 				8AB5951920C1FC130076625E /* Sticker.swift in Sources */,
 				8A27F12D1FD9E718001B2BBD /* SecondaryTextTableViewCell.swift in Sources */,
 				C4351DFA248FF976009FBDEF /* StyleClass.swift in Sources */,
+				C44C7088249C119600EC1E85 /* Calculator.swift in Sources */,
 				C4351E0124908D08009FBDEF /* BdCoreDataImg.swift in Sources */,
 				8A22EE041F9A9F40003A7F21 /* AppDelegate.swift in Sources */,
+				C44C708C249C119600EC1E85 /* ProductCell.swift in Sources */,
 				8A18E2EE1FB3B47D0082201D /* YYImage.m in Sources */,
 				8A18E2F21FB3B47D0082201D /* YYImageCoder.m in Sources */,
 				0E6359A4203E148200805DEB /* StickerCell.swift in Sources */,
@@ -592,7 +638,7 @@
 		};
 		8A22EE131F9A9F40003A7F21 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57509B6179305094295298C6 /* Pods-WAStickersThirdParty.debug.xcconfig */;
+			baseConfigurationReference = 3B095A342B686B5EB14CE0B3 /* Pods-iPhotos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -619,7 +665,7 @@
 		};
 		8A22EE141F9A9F40003A7F21 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F7352132D728B5F66FDF27C /* Pods-WAStickersThirdParty.release.xcconfig */;
+			baseConfigurationReference = 01238CEF6F5BD5772B53594A /* Pods-iPhotos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

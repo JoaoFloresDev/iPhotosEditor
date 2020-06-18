@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class StickerPackViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout,UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class StickerPackViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout,UINavigationControllerDelegate, UIImagePickerControllerDelegate, GADInterstitialDelegate {
     
     var imagePicker: UIImagePickerController!
+    var interstitial: GADInterstitial!
     
     @IBOutlet private weak var stickerPackPublisherLabel: UILabel!
     @IBOutlet private weak var stickersCollectionView: UICollectionView!
@@ -38,6 +40,8 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupAds()
         
         if #available(iOS 11.0, *) {
             navigationItem.largeTitleDisplayMode = .always
@@ -319,14 +323,24 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     // MARK: - Share Button
-    @objc func addButtonPressed(button: AquaButton) {
+    func shareWaths() {
         let loadingAlert: UIAlertController = UIAlertController(title: "Sending to WhatsApp", message: "\n\n", preferredStyle: .alert)
         loadingAlert.addSpinner()
         present(loadingAlert, animated: true)
-        print("------------")
-        print("enviando para o whats")
         stickerPack.sendToWhatsApp { completed in
             loadingAlert.dismiss(animated: true)
+        }
+    }
+    
+    @objc func addButtonPressed(button: AquaButton) {
+        if(RazeFaceProducts.store.isProductPurchased("NoAds.iPhotos") || (UserDefaults.standard.object(forKey: "NoAds.iPhotos") != nil)) {
+            shareWaths()
+        }
+        else if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+        }
+        else {
+            shareWaths()
         }
     }
     
@@ -335,6 +349,27 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         let alert = UIAlertController(title: "Size Image Error", message: "Increase zoom in the image", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in }))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    //    ADS
+    func createAndLoadInterstitial() -> GADInterstitial {
+        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-8858389345934911/6846096563")
+      interstitial.delegate = self
+      interstitial.load(GADRequest())
+      return interstitial
+    }
+
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+      interstitial = createAndLoadInterstitial()
+      shareWaths()
+    }
+    
+    fileprivate func setupAds() {
+        //        ADS
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8858389345934911/6846096563")
+        let request = GADRequest()
+        interstitial.load(request)
+        interstitial = createAndLoadInterstitial()
     }
 }
 

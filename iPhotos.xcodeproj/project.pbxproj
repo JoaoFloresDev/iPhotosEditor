@@ -38,6 +38,7 @@
 		8ABEBD8421029767005F348C /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABEBD8321029766005F348C /* WebP.framework */; };
 		8ACB6A981FE9CB7700A564BB /* Limits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB6A971FE9CB7700A564BB /* Limits.swift */; };
 		8ADA60761FD71F69006C9BBA /* AllStickerPacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA60751FD71F69006C9BBA /* AllStickerPacksViewController.swift */; };
+		C4320F9324C804B800E798EA /* CollageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4320F9224C804B800E798EA /* CollageViewController.swift */; };
 		C4351DFA248FF976009FBDEF /* StyleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DF8248FF976009FBDEF /* StyleClass.swift */; };
 		C4351DFB248FF976009FBDEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DF9248FF976009FBDEF /* ViewController.swift */; };
 		C4351DFF249086B2009FBDEF /* stickersDataSaved.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DFE249086B2009FBDEF /* stickersDataSaved.swift */; };
@@ -125,6 +126,7 @@
 		8ABEBD8321029766005F348C /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		8ACB6A971FE9CB7700A564BB /* Limits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Limits.swift; sourceTree = "<group>"; };
 		8ADA60751FD71F69006C9BBA /* AllStickerPacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStickerPacksViewController.swift; sourceTree = "<group>"; };
+		C4320F9224C804B800E798EA /* CollageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageViewController.swift; sourceTree = "<group>"; };
 		C4351DF8248FF976009FBDEF /* StyleClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleClass.swift; sourceTree = "<group>"; };
 		C4351DF9248FF976009FBDEF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4351DFE249086B2009FBDEF /* stickersDataSaved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stickersDataSaved.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 			children = (
 				C4351DF8248FF976009FBDEF /* StyleClass.swift */,
 				C4351DF9248FF976009FBDEF /* ViewController.swift */,
+				C4320F9224C804B800E798EA /* CollageViewController.swift */,
 			);
 			path = PhotoEditor;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */,
 				C474A7D92492FA810043D953 /* CreditsViewController.swift in Sources */,
 				C49D2C57247D164A0007D174 /* StoredImage.xcdatamodeld in Sources */,
+				C4320F9324C804B800E798EA /* CollageViewController.swift in Sources */,
 				C44C708B249C119600EC1E85 /* RazeFaceProducts.swift in Sources */,
 				8A18E2F11FB3B47D0082201D /* YYSpriteSheetImage.m in Sources */,
 				C44C7089249C119600EC1E85 /* IAPHelper.swift in Sources */,

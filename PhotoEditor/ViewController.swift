@@ -9,8 +9,10 @@
 import UIKit
 import CLImageEditor
 import Agrume
+import StoreKit
+import GoogleMobileAds
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITabBarDelegate,  CLImageEditorDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITabBarDelegate,  CLImageEditorDelegate, GADInterstitialDelegate {
     
     //    MARK: - IBOutlet
     @IBOutlet weak var imageView: UIImageView!
@@ -26,13 +28,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         agrume.show(from: self)
     }
     
-    
     @IBAction func editImgTest(_ sender: Any) {
         newImage()
     }
     
     @IBAction func saveImgTest(_ sender: Any) {
-        saveImage()
+        if(RazeFaceProducts.store.isProductPurchased("NoAds.iPhotos") || (UserDefaults.standard.object(forKey: "NoAds.iPhotos") != nil)) {
+            saveImage()
+        }
+        else if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+        }
+        else {
+            saveImage()
+        }
     }
     
     @IBAction func editeeeImgTest(_ sender: Any) {
@@ -42,10 +51,36 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     //    MARK: - VARIABLES
     let STORED_IMAGE_NAME = "/stored_image_name.png"
     
+    var interstitial: GADInterstitial!
+    
     //    MARK: - LIFE CYCLE
     /// load any stored image
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-8858389345934911/6846096563")
+        interstitial.delegate = self
+        interstitial.load(GADRequest())
+        return interstitial
+    }
+    
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        interstitial = createAndLoadInterstitial()
+        print("-------------")
+        print("interstitialDidDismissScreen")
+        self.saveImage()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+                UserDefaults.standard.set(true, forKey:"FirtsUse")
+        
+        //        ADS
+        interstitial = createAndLoadInterstitial()
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8858389345934911/6846096563")
+        interstitial.delegate = self
+        let request = GADRequest()
+        interstitial.load(request)
         
         var image = readImageFromStorage()
         if image == nil {
@@ -71,6 +106,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     /// called when an image has been chosen
     /// here we start the editor with the new image
     
+    
     //    MARK: - imagePicker
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
@@ -86,6 +122,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         imageView.image = image
         editor.dismiss(animated: true, completion: nil)
+        
+        if #available(iOS 10.3, *) {
+            SKStoreReviewController.requestReview()
+        }
     }
     
     //    MARK: - tabBar
@@ -146,17 +186,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     /// save current image
     func saveImage() {
         if let image = imageView.image {
-            showShareSheet(image: image)
+            UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+            showAlertWith(title: "Saved!", message: "Your image has been saved to your photos.")
         }
-    }
-    
-    func showShareSheet(image: UIImage) {
-        
-        let shareViewController: UIActivityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-        shareViewController.popoverPresentationController?.sourceView = self.view
-        shareViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
-        shareViewController.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
-        present(shareViewController, animated: true)
+        else {
+            showAlertWith(title: "Error", message: "Try again.")
+        }
     }
     
     //    MARK: - IMAGE MAGEMENT
@@ -194,5 +229,37 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
+    }
+    
+    //    ADS LIFECYCLE
+    /// Tells the delegate an ad request succeeded.
+    func interstitialDidReceiveAd(_ ad: GADInterstitial) {
+        print("-------------")
+        print("interstitialDidReceiveAd")
+    }
+    
+    /// Tells the delegate an ad request failed.
+    func interstitial(_ ad: GADInterstitial, didFailToReceiveAdWithError error: GADRequestError) {
+        print("-------------")
+        print("interstitial:didFailToReceiveAdWithError: \(error.localizedDescription)")
+    }
+    
+    /// Tells the delegate that an interstitial will be presented.
+    func interstitialWillPresentScreen(_ ad: GADInterstitial) {
+        print("-------------")
+        print("interstitialWillPresentScreen")
+    }
+    
+    /// Tells the delegate the interstitial is to be animated off the screen.
+    func interstitialWillDismissScreen(_ ad: GADInterstitial) {
+        print("-------------")
+        print("interstitialWillDismissScreen")
+    }
+    
+    /// Tells the delegate that a user click will open another app
+    /// (such as the App Store), backgrounding the current app.
+    func interstitialWillLeaveApplication(_ ad: GADInterstitial) {
+        print("-------------")
+        print("interstitialWillLeaveApplication")
     }
 }

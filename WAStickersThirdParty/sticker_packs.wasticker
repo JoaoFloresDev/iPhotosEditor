@@ -4,7 +4,7 @@
     "sticker_packs" : [
     {
         "identifier": "cuppyID",
-        "name": "iPhotos Editor",
+        "name": "iPhotos Stickers",
         "publisher": "Created in iPhone",
         "tray_image_file" : "tray_Cuppy.png",
         "publisher_website" : "",
@@ -15,11 +15,11 @@
             "image_file": "placeholderMulticolor.png"
         },
         {
-            "image_file": "placeholderMulticolor.png"
+            "image_file": "dog1.png"
         },
         {
-            "image_file": "placeholderBlack.png"
-        }
+            "image_file": "dog5.png"
+        },
         ]
     }]
-}1
+}

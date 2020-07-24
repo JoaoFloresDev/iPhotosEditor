@@ -228,6 +228,11 @@
                                             <segue destination="rkr-IN-Ftn" kind="show" id="H8A-ub-Xb5"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gps-24-LRm">
+                                        <rect key="frame" x="332" y="648" width="37" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Texts"/>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="mr7-jq-ZpV" firstAttribute="top" secondItem="56P-8b-Ajb" secondAttribute="top" id="D1X-7u-k3m"/>
@@ -566,6 +571,7 @@
         <!--Editor-->
         <scene sceneID="mZ7-zr-kQA">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PM0-Xd-us1" sceneMemberID="firstResponder"/>
                 <viewController id="wgQ-Bz-bGM" customClass="CollageViewController" customModule="iPhotos_Editor" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DfU-nt-bdf"/>
@@ -673,7 +679,6 @@
                         <outlet property="imageView" destination="hgN-VX-P1D" id="TU5-2m-k6c"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PM0-Xd-us1" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="464" y="1613"/>
         </scene>

@@ -9,4 +9,5 @@ target 'iPhotos' do
   pod 'CLImageEditor', '~> 0.2'
   pod "Agrume" 
   pod 'Google-Mobile-Ads-SDK'
+  pod 'AlamofireImage', '~> 4.1'
 end

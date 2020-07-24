@@ -1,6 +1,9 @@
 PODS:
   - Agrume (5.6.8):
     - SwiftyGif
+  - Alamofire (5.2.1)
+  - AlamofireImage (4.1.0):
+    - Alamofire (~> 5.1)
   - CLImageEditor (0.2.4):
     - CLImageEditor/Core (= 0.2.4)
   - CLImageEditor/Core (0.2.4)
@@ -39,12 +42,15 @@ PODS:
 
 DEPENDENCIES:
   - Agrume
+  - AlamofireImage (~> 4.1)
   - CLImageEditor (~> 0.2)
   - Google-Mobile-Ads-SDK
 
 SPEC REPOS:
   trunk:
     - Agrume
+    - Alamofire
+    - AlamofireImage
     - CLImageEditor
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
@@ -55,6 +61,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Agrume: 53c2be9b06caef4b4996a2886a56b9e901bcc6c0
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
   CLImageEditor: dc3e5358f641368da3a76fc1c744a4c2ceb270ad
   Google-Mobile-Ads-SDK: 7052557293c75c676db55feb707ace9b790f32c1
   GoogleAppMeasurement: 4c644d86835d827bab30ab6aabb9ecaf1f500735
@@ -63,6 +71,6 @@ SPEC CHECKSUMS:
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   SwiftyGif: e466e86c660d343357ab944a819a101c4127cb40
 
-PODFILE CHECKSUM: f1b1b154e46556e275e251d9b6a5928145e7e90c
+PODFILE CHECKSUM: 5dbbc79538f576c2039b0a5e3db79894f23cdd9f
 
 COCOAPODS: 1.9.1

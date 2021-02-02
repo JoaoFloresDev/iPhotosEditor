@@ -10,4 +10,10 @@ target 'iPhotos' do
   pod "Agrume" 
   pod 'Google-Mobile-Ads-SDK'
   pod 'AlamofireImage', '~> 4.1'
+  pod 'ImageScrollView'
+  pod 'IQKeyboardManagerSwift'
+  pod 'IGColorPicker'
+  pod 'SVProgressHUD'
+  pod 'OpalImagePicker'
+  pod 'ZoomImageView'
 end

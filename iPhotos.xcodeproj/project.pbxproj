@@ -56,6 +56,76 @@
 		C474A84624930DF70043D953 /* dog5.png in Resources */ = {isa = PBXBuildFile; fileRef = C474A84224930DF70043D953 /* dog5.png */; };
 		C474A84824930DF70043D953 /* dog1.png in Resources */ = {isa = PBXBuildFile; fileRef = C474A84424930DF70043D953 /* dog1.png */; };
 		C48716E2247E4BAB002F025B /* oiaa.png in Resources */ = {isa = PBXBuildFile; fileRef = C48716E1247E4BAB002F025B /* oiaa.png */; };
+		C48B1DFE25C9932700A51045 /* tblStyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DAB25C9932300A51045 /* tblStyleCell.swift */; };
+		C48B1DFF25C9932700A51045 /* tblStyleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DAC25C9932300A51045 /* tblStyleCell.xib */; };
+		C48B1E0025C9932700A51045 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DAF25C9932300A51045 /* StickerView.swift */; };
+		C48B1E0125C9932700A51045 /* JLStickerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DB125C9932300A51045 /* JLStickerImageView.swift */; };
+		C48B1E0225C9932700A51045 /* JLStickerLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DB225C9932300A51045 /* JLStickerLabelView.swift */; };
+		C48B1E0325C9932700A51045 /* JLAttributedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DB325C9932300A51045 /* JLAttributedTextView.swift */; };
+		C48B1E0425C9932700A51045 /* CalcuteFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DB425C9932300A51045 /* CalcuteFunctions.swift */; };
+		C48B1E0525C9932700A51045 /* adjustToFitFontOrWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DB525C9932300A51045 /* adjustToFitFontOrWidth.swift */; };
+		C48B1E0625C9932700A51045 /* PressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DB725C9932300A51045 /* PressButton.m */; };
+		C48B1E0725C9932700A51045 /* SelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DB825C9932300A51045 /* SelectionButton.m */; };
+		C48B1E0825C9932700A51045 /* FamButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DB925C9932300A51045 /* FamButton.m */; };
+		C48B1E0925C9932700A51045 /* MagnificationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DBD25C9932300A51045 /* MagnificationButton.m */; };
+		C48B1E0A25C9932700A51045 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DC025C9932400A51045 /* FilterCell.swift */; };
+		C48B1E0B25C9932700A51045 /* FramesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DC125C9932400A51045 /* FramesCell.swift */; };
+		C48B1E0C25C9932700A51045 /* MainStickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DC225C9932400A51045 /* MainStickerCell.swift */; };
+		C48B1E0D25C9932700A51045 /* allFramesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DC325C9932400A51045 /* allFramesCell.swift */; };
+		C48B1E0E25C9932700A51045 /* SelectItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DC425C9932400A51045 /* SelectItemCell.swift */; };
+		C48B1E0F25C9932700A51045 /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DC525C9932400A51045 /* StickerCell.swift */; };
+		C48B1E1025C9932700A51045 /* StickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DC625C9932400A51045 /* StickerCell.xib */; };
+		C48B1E1125C9932700A51045 /* FilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DC725C9932400A51045 /* FilterCell.xib */; };
+		C48B1E1225C9932700A51045 /* FramesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DC825C9932400A51045 /* FramesCell.xib */; };
+		C48B1E1325C9932700A51045 /* MainStickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DC925C9932400A51045 /* MainStickerCell.xib */; };
+		C48B1E1425C9932700A51045 /* allFramesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DCA25C9932400A51045 /* allFramesCell.xib */; };
+		C48B1E1525C9932700A51045 /* SelectItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DCB25C9932400A51045 /* SelectItemCell.xib */; };
+		C48B1E1625C9932700A51045 /* Adine Kirnberg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DCE25C9932500A51045 /* Adine Kirnberg.ttf */; };
+		C48B1E1725C9932700A51045 /* champignonaltswash.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DCF25C9932500A51045 /* champignonaltswash.ttf */; };
+		C48B1E1825C9932700A51045 /* Advertising Script Monoline Trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DD025C9932500A51045 /* Advertising Script Monoline Trial.ttf */; };
+		C48B1E1925C9932700A51045 /* AguafinaScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DD125C9932500A51045 /* AguafinaScript-Regular.ttf */; };
+		C48B1E1A25C9932700A51045 /* Allura-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DD225C9932500A51045 /* Allura-Regular.ttf */; };
+		C48B1E1B25C9932700A51045 /* Script Writing.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DD325C9932500A51045 /* Script Writing.ttf */; };
+		C48B1E1C25C9932700A51045 /* waltograph42.otf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DD425C9932500A51045 /* waltograph42.otf */; };
+		C48B1E1D25C9932700A51045 /* AlexBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DD525C9932500A51045 /* AlexBrush-Regular.ttf */; };
+		C48B1E1E25C9932700A51045 /* akaDora.otf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DD625C9932500A51045 /* akaDora.otf */; };
+		C48B1E1F25C9932700A51045 /* Bucanera-font-FFP.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DD725C9932500A51045 /* Bucanera-font-FFP.ttf */; };
+		C48B1E2025C9932700A51045 /* Serling Script Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DD825C9932500A51045 /* Serling Script Regular.otf */; };
+		C48B1E2125C9932700A51045 /* QUIGLEYW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DD925C9932500A51045 /* QUIGLEYW.ttf */; };
+		C48B1E2225C9932700A51045 /* VTC-BadTattooHandOne.otf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DDA25C9932500A51045 /* VTC-BadTattooHandOne.otf */; };
+		C48B1E2325C9932700A51045 /* Granada Blues Personal Use.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DDB25C9932500A51045 /* Granada Blues Personal Use.ttf */; };
+		C48B1E2425C9932700A51045 /* Ginga.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DDC25C9932500A51045 /* Ginga.ttf */; };
+		C48B1E2525C9932700A51045 /* LittleLordFontleroyNF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DDD25C9932500A51045 /* LittleLordFontleroyNF.ttf */; };
+		C48B1E2625C9932700A51045 /* The Heart of Everything Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DDE25C9932500A51045 /* The Heart of Everything Demo.ttf */; };
+		C48B1E2725C9932700A51045 /* Playball-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DDF25C9932500A51045 /* Playball-Regular.ttf */; };
+		C48B1E2825C9932700A51045 /* Mf Gradient Goddess.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DE025C9932500A51045 /* Mf Gradient Goddess.ttf */; };
+		C48B1E2925C9932700A51045 /* Dohearts.otf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DE125C9932500A51045 /* Dohearts.otf */; };
+		C48B1E2A25C9932700A51045 /* PlumScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DE225C9932500A51045 /* PlumScript.ttf */; };
+		C48B1E2B25C9932700A51045 /* Variane Script.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DE325C9932500A51045 /* Variane Script.ttf */; };
+		C48B1E2C25C9932700A51045 /* Alleana Script.otf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DE425C9932500A51045 /* Alleana Script.otf */; };
+		C48B1E2D25C9932700A51045 /* Arizonia-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DE525C9932500A51045 /* Arizonia-Regular.ttf */; };
+		C48B1E2E25C9932700A51045 /* Enjoy Personal Use.otf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DE625C9932500A51045 /* Enjoy Personal Use.otf */; };
+		C48B1E2F25C9932700A51045 /* VTKS SummerLAnd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DE725C9932500A51045 /* VTKS SummerLAnd.ttf */; };
+		C48B1E3025C9932700A51045 /* alsscrp.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DE825C9932500A51045 /* alsscrp.ttf */; };
+		C48B1E3125C9932700A51045 /* Montez-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DE925C9932500A51045 /* Montez-Regular.ttf */; };
+		C48B1E3225C9932700A51045 /* Advertising Script Bold Trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DEA25C9932500A51045 /* Advertising Script Bold Trial.ttf */; };
+		C48B1E3325C9932700A51045 /* Pretty Girls Script Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DEB25C9932500A51045 /* Pretty Girls Script Demo.ttf */; };
+		C48B1E3425C9932700A51045 /* a Theme for murder.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DEC25C9932500A51045 /* a Theme for murder.ttf */; };
+		C48B1E3525C9932700A51045 /* Miama.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C48B1DED25C9932500A51045 /* Miama.ttf */; };
+		C48B1E3625C9932700A51045 /* SwiftyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DEF25C9932600A51045 /* SwiftyTimer.swift */; };
+		C48B1E3725C9932700A51045 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DF025C9932600A51045 /* Global.swift */; };
+		C48B1E3825C9932700A51045 /* PentagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DF125C9932600A51045 /* PentagonView.swift */; };
+		C48B1E3925C9932700A51045 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DF225C9932600A51045 /* Helpers.swift */; };
+		C48B1E3A25C9932700A51045 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DF325C9932600A51045 /* Filters.swift */; };
+		C48B1E3B25C9932700A51045 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DF525C9932700A51045 /* ViewController2.swift */; };
+		C48B1E3C25C9932700A51045 /* MyAlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DF625C9932700A51045 /* MyAlbumVC.swift */; };
+		C48B1E3D25C9932700A51045 /* PresentTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DF725C9932700A51045 /* PresentTextVC.swift */; };
+		C48B1E3E25C9932700A51045 /* StickersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DF825C9932700A51045 /* StickersVC.swift */; };
+		C48B1E3F25C9932700A51045 /* EditImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DF925C9932700A51045 /* EditImageVC.swift */; };
+		C48B1E4025C9932700A51045 /* ShareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DFA25C9932700A51045 /* ShareVC.swift */; };
+		C48B1E4125C9932700A51045 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DFB25C9932700A51045 /* HomeVC.swift */; };
+		C48B1E4225C9932700A51045 /* PresentPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DFC25C9932700A51045 /* PresentPhotoVC.swift */; };
+		C48B1E4325C9932700A51045 /* LoadShapesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48B1DFD25C9932700A51045 /* LoadShapesVC.swift */; };
 		C49D2C4E247D0B7A0007D174 /* tray_Cuppy.png in Resources */ = {isa = PBXBuildFile; fileRef = C49D2C4D247D0B7A0007D174 /* tray_Cuppy.png */; };
 		C49D2C51247D0C550007D174 /* placeholderBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = C49D2C4F247D0C550007D174 /* placeholderBlack.png */; };
 		C49D2C52247D0C550007D174 /* placeholderMulticolor.png in Resources */ = {isa = PBXBuildFile; fileRef = C49D2C50247D0C550007D174 /* placeholderMulticolor.png */; };
@@ -144,6 +214,80 @@
 		C474A84224930DF70043D953 /* dog5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog5.png; sourceTree = "<group>"; };
 		C474A84424930DF70043D953 /* dog1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog1.png; sourceTree = "<group>"; };
 		C48716E1247E4BAB002F025B /* oiaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oiaa.png; sourceTree = "<group>"; };
+		C48B1DAB25C9932300A51045 /* tblStyleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tblStyleCell.swift; sourceTree = "<group>"; };
+		C48B1DAC25C9932300A51045 /* tblStyleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tblStyleCell.xib; sourceTree = "<group>"; };
+		C48B1DAF25C9932300A51045 /* StickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		C48B1DB125C9932300A51045 /* JLStickerImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLStickerImageView.swift; sourceTree = "<group>"; };
+		C48B1DB225C9932300A51045 /* JLStickerLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLStickerLabelView.swift; sourceTree = "<group>"; };
+		C48B1DB325C9932300A51045 /* JLAttributedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLAttributedTextView.swift; sourceTree = "<group>"; };
+		C48B1DB425C9932300A51045 /* CalcuteFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcuteFunctions.swift; sourceTree = "<group>"; };
+		C48B1DB525C9932300A51045 /* adjustToFitFontOrWidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = adjustToFitFontOrWidth.swift; sourceTree = "<group>"; };
+		C48B1DB725C9932300A51045 /* PressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PressButton.m; sourceTree = "<group>"; };
+		C48B1DB825C9932300A51045 /* SelectionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionButton.m; sourceTree = "<group>"; };
+		C48B1DB925C9932300A51045 /* FamButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamButton.m; sourceTree = "<group>"; };
+		C48B1DBA25C9932300A51045 /* MagnificationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnificationButton.h; sourceTree = "<group>"; };
+		C48B1DBB25C9932300A51045 /* SelectionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionButton.h; sourceTree = "<group>"; };
+		C48B1DBC25C9932300A51045 /* PressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PressButton.h; sourceTree = "<group>"; };
+		C48B1DBD25C9932300A51045 /* MagnificationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnificationButton.m; sourceTree = "<group>"; };
+		C48B1DBE25C9932300A51045 /* FamButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamButton.h; sourceTree = "<group>"; };
+		C48B1DC025C9932400A51045 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		C48B1DC125C9932400A51045 /* FramesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FramesCell.swift; sourceTree = "<group>"; };
+		C48B1DC225C9932400A51045 /* MainStickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStickerCell.swift; sourceTree = "<group>"; };
+		C48B1DC325C9932400A51045 /* allFramesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allFramesCell.swift; sourceTree = "<group>"; };
+		C48B1DC425C9932400A51045 /* SelectItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectItemCell.swift; sourceTree = "<group>"; };
+		C48B1DC525C9932400A51045 /* StickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
+		C48B1DC625C9932400A51045 /* StickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StickerCell.xib; sourceTree = "<group>"; };
+		C48B1DC725C9932400A51045 /* FilterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterCell.xib; sourceTree = "<group>"; };
+		C48B1DC825C9932400A51045 /* FramesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FramesCell.xib; sourceTree = "<group>"; };
+		C48B1DC925C9932400A51045 /* MainStickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainStickerCell.xib; sourceTree = "<group>"; };
+		C48B1DCA25C9932400A51045 /* allFramesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = allFramesCell.xib; sourceTree = "<group>"; };
+		C48B1DCB25C9932400A51045 /* SelectItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectItemCell.xib; sourceTree = "<group>"; };
+		C48B1DCE25C9932500A51045 /* Adine Kirnberg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adine Kirnberg.ttf"; sourceTree = "<group>"; };
+		C48B1DCF25C9932500A51045 /* champignonaltswash.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = champignonaltswash.ttf; sourceTree = "<group>"; };
+		C48B1DD025C9932500A51045 /* Advertising Script Monoline Trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Advertising Script Monoline Trial.ttf"; sourceTree = "<group>"; };
+		C48B1DD125C9932500A51045 /* AguafinaScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AguafinaScript-Regular.ttf"; sourceTree = "<group>"; };
+		C48B1DD225C9932500A51045 /* Allura-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Allura-Regular.ttf"; sourceTree = "<group>"; };
+		C48B1DD325C9932500A51045 /* Script Writing.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Script Writing.ttf"; sourceTree = "<group>"; };
+		C48B1DD425C9932500A51045 /* waltograph42.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = waltograph42.otf; sourceTree = "<group>"; };
+		C48B1DD525C9932500A51045 /* AlexBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlexBrush-Regular.ttf"; sourceTree = "<group>"; };
+		C48B1DD625C9932500A51045 /* akaDora.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = akaDora.otf; sourceTree = "<group>"; };
+		C48B1DD725C9932500A51045 /* Bucanera-font-FFP.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bucanera-font-FFP.ttf"; sourceTree = "<group>"; };
+		C48B1DD825C9932500A51045 /* Serling Script Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Serling Script Regular.otf"; sourceTree = "<group>"; };
+		C48B1DD925C9932500A51045 /* QUIGLEYW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = QUIGLEYW.ttf; sourceTree = "<group>"; };
+		C48B1DDA25C9932500A51045 /* VTC-BadTattooHandOne.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VTC-BadTattooHandOne.otf"; sourceTree = "<group>"; };
+		C48B1DDB25C9932500A51045 /* Granada Blues Personal Use.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Granada Blues Personal Use.ttf"; sourceTree = "<group>"; };
+		C48B1DDC25C9932500A51045 /* Ginga.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ginga.ttf; sourceTree = "<group>"; };
+		C48B1DDD25C9932500A51045 /* LittleLordFontleroyNF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LittleLordFontleroyNF.ttf; sourceTree = "<group>"; };
+		C48B1DDE25C9932500A51045 /* The Heart of Everything Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Heart of Everything Demo.ttf"; sourceTree = "<group>"; };
+		C48B1DDF25C9932500A51045 /* Playball-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Playball-Regular.ttf"; sourceTree = "<group>"; };
+		C48B1DE025C9932500A51045 /* Mf Gradient Goddess.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mf Gradient Goddess.ttf"; sourceTree = "<group>"; };
+		C48B1DE125C9932500A51045 /* Dohearts.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dohearts.otf; sourceTree = "<group>"; };
+		C48B1DE225C9932500A51045 /* PlumScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlumScript.ttf; sourceTree = "<group>"; };
+		C48B1DE325C9932500A51045 /* Variane Script.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Variane Script.ttf"; sourceTree = "<group>"; };
+		C48B1DE425C9932500A51045 /* Alleana Script.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alleana Script.otf"; sourceTree = "<group>"; };
+		C48B1DE525C9932500A51045 /* Arizonia-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arizonia-Regular.ttf"; sourceTree = "<group>"; };
+		C48B1DE625C9932500A51045 /* Enjoy Personal Use.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Enjoy Personal Use.otf"; sourceTree = "<group>"; };
+		C48B1DE725C9932500A51045 /* VTKS SummerLAnd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VTKS SummerLAnd.ttf"; sourceTree = "<group>"; };
+		C48B1DE825C9932500A51045 /* alsscrp.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alsscrp.ttf; sourceTree = "<group>"; };
+		C48B1DE925C9932500A51045 /* Montez-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montez-Regular.ttf"; sourceTree = "<group>"; };
+		C48B1DEA25C9932500A51045 /* Advertising Script Bold Trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Advertising Script Bold Trial.ttf"; sourceTree = "<group>"; };
+		C48B1DEB25C9932500A51045 /* Pretty Girls Script Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretty Girls Script Demo.ttf"; sourceTree = "<group>"; };
+		C48B1DEC25C9932500A51045 /* a Theme for murder.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "a Theme for murder.ttf"; sourceTree = "<group>"; };
+		C48B1DED25C9932500A51045 /* Miama.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Miama.ttf; sourceTree = "<group>"; };
+		C48B1DEF25C9932600A51045 /* SwiftyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyTimer.swift; sourceTree = "<group>"; };
+		C48B1DF025C9932600A51045 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		C48B1DF125C9932600A51045 /* PentagonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PentagonView.swift; sourceTree = "<group>"; };
+		C48B1DF225C9932600A51045 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		C48B1DF325C9932600A51045 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		C48B1DF525C9932700A51045 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		C48B1DF625C9932700A51045 /* MyAlbumVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAlbumVC.swift; sourceTree = "<group>"; };
+		C48B1DF725C9932700A51045 /* PresentTextVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentTextVC.swift; sourceTree = "<group>"; };
+		C48B1DF825C9932700A51045 /* StickersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickersVC.swift; sourceTree = "<group>"; };
+		C48B1DF925C9932700A51045 /* EditImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditImageVC.swift; sourceTree = "<group>"; };
+		C48B1DFA25C9932700A51045 /* ShareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareVC.swift; sourceTree = "<group>"; };
+		C48B1DFB25C9932700A51045 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C48B1DFC25C9932700A51045 /* PresentPhotoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentPhotoVC.swift; sourceTree = "<group>"; };
+		C48B1DFD25C9932700A51045 /* LoadShapesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadShapesVC.swift; sourceTree = "<group>"; };
 		C49D2C4D247D0B7A0007D174 /* tray_Cuppy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tray_Cuppy.png; sourceTree = "<group>"; };
 		C49D2C4F247D0C550007D174 /* placeholderBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderBlack.png; sourceTree = "<group>"; };
 		C49D2C50247D0C550007D174 /* placeholderMulticolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderMulticolor.png; sourceTree = "<group>"; };
@@ -199,6 +343,7 @@
 				8A22EE0C1F9A9F40003A7F21 /* LaunchScreen.storyboard */,
 				8A22EE0A1F9A9F40003A7F21 /* Assets.xcassets */,
 				C49D2C55247D164A0007D174 /* StoredImage.xcdatamodeld */,
+				C48B1DA925C9931100A51045 /* collage */,
 				C44C7082249C118200EC1E85 /* Purchase */,
 				C4351DFC249027F0009FBDEF /* PhotoEditor */,
 				8A22EE021F9A9F40003A7F21 /* WAStickersThirdParty */,
@@ -323,6 +468,167 @@
 			path = Purchase;
 			sourceTree = "<group>";
 		};
+		C48B1DA925C9931100A51045 /* collage */ = {
+			isa = PBXGroup;
+			children = (
+				C48B1DBF25C9932400A51045 /* Cells */,
+				C48B1DF425C9932700A51045 /* Controllers */,
+				C48B1DEE25C9932600A51045 /* Global */,
+				C48B1DAD25C9932300A51045 /* Library */,
+				C48B1DCC25C9932500A51045 /* Resources */,
+				C48B1DAA25C9932300A51045 /* TblCell */,
+			);
+			path = collage;
+			sourceTree = "<group>";
+		};
+		C48B1DAA25C9932300A51045 /* TblCell */ = {
+			isa = PBXGroup;
+			children = (
+				C48B1DAB25C9932300A51045 /* tblStyleCell.swift */,
+				C48B1DAC25C9932300A51045 /* tblStyleCell.xib */,
+			);
+			path = TblCell;
+			sourceTree = "<group>";
+		};
+		C48B1DAD25C9932300A51045 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C48B1DAE25C9932300A51045 /* StickerView */,
+				C48B1DB025C9932300A51045 /* JLImageView */,
+				C48B1DB625C9932300A51045 /* AnimatedButton */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		C48B1DAE25C9932300A51045 /* StickerView */ = {
+			isa = PBXGroup;
+			children = (
+				C48B1DAF25C9932300A51045 /* StickerView.swift */,
+			);
+			path = StickerView;
+			sourceTree = "<group>";
+		};
+		C48B1DB025C9932300A51045 /* JLImageView */ = {
+			isa = PBXGroup;
+			children = (
+				C48B1DB125C9932300A51045 /* JLStickerImageView.swift */,
+				C48B1DB225C9932300A51045 /* JLStickerLabelView.swift */,
+				C48B1DB325C9932300A51045 /* JLAttributedTextView.swift */,
+				C48B1DB425C9932300A51045 /* CalcuteFunctions.swift */,
+				C48B1DB525C9932300A51045 /* adjustToFitFontOrWidth.swift */,
+			);
+			path = JLImageView;
+			sourceTree = "<group>";
+		};
+		C48B1DB625C9932300A51045 /* AnimatedButton */ = {
+			isa = PBXGroup;
+			children = (
+				C48B1DB725C9932300A51045 /* PressButton.m */,
+				C48B1DB825C9932300A51045 /* SelectionButton.m */,
+				C48B1DB925C9932300A51045 /* FamButton.m */,
+				C48B1DBA25C9932300A51045 /* MagnificationButton.h */,
+				C48B1DBB25C9932300A51045 /* SelectionButton.h */,
+				C48B1DBC25C9932300A51045 /* PressButton.h */,
+				C48B1DBD25C9932300A51045 /* MagnificationButton.m */,
+				C48B1DBE25C9932300A51045 /* FamButton.h */,
+			);
+			path = AnimatedButton;
+			sourceTree = "<group>";
+		};
+		C48B1DBF25C9932400A51045 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C48B1DC025C9932400A51045 /* FilterCell.swift */,
+				C48B1DC125C9932400A51045 /* FramesCell.swift */,
+				C48B1DC225C9932400A51045 /* MainStickerCell.swift */,
+				C48B1DC325C9932400A51045 /* allFramesCell.swift */,
+				C48B1DC425C9932400A51045 /* SelectItemCell.swift */,
+				C48B1DC525C9932400A51045 /* StickerCell.swift */,
+				C48B1DC625C9932400A51045 /* StickerCell.xib */,
+				C48B1DC725C9932400A51045 /* FilterCell.xib */,
+				C48B1DC825C9932400A51045 /* FramesCell.xib */,
+				C48B1DC925C9932400A51045 /* MainStickerCell.xib */,
+				C48B1DCA25C9932400A51045 /* allFramesCell.xib */,
+				C48B1DCB25C9932400A51045 /* SelectItemCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C48B1DCC25C9932500A51045 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C48B1DCD25C9932500A51045 /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C48B1DCD25C9932500A51045 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C48B1DCE25C9932500A51045 /* Adine Kirnberg.ttf */,
+				C48B1DCF25C9932500A51045 /* champignonaltswash.ttf */,
+				C48B1DD025C9932500A51045 /* Advertising Script Monoline Trial.ttf */,
+				C48B1DD125C9932500A51045 /* AguafinaScript-Regular.ttf */,
+				C48B1DD225C9932500A51045 /* Allura-Regular.ttf */,
+				C48B1DD325C9932500A51045 /* Script Writing.ttf */,
+				C48B1DD425C9932500A51045 /* waltograph42.otf */,
+				C48B1DD525C9932500A51045 /* AlexBrush-Regular.ttf */,
+				C48B1DD625C9932500A51045 /* akaDora.otf */,
+				C48B1DD725C9932500A51045 /* Bucanera-font-FFP.ttf */,
+				C48B1DD825C9932500A51045 /* Serling Script Regular.otf */,
+				C48B1DD925C9932500A51045 /* QUIGLEYW.ttf */,
+				C48B1DDA25C9932500A51045 /* VTC-BadTattooHandOne.otf */,
+				C48B1DDB25C9932500A51045 /* Granada Blues Personal Use.ttf */,
+				C48B1DDC25C9932500A51045 /* Ginga.ttf */,
+				C48B1DDD25C9932500A51045 /* LittleLordFontleroyNF.ttf */,
+				C48B1DDE25C9932500A51045 /* The Heart of Everything Demo.ttf */,
+				C48B1DDF25C9932500A51045 /* Playball-Regular.ttf */,
+				C48B1DE025C9932500A51045 /* Mf Gradient Goddess.ttf */,
+				C48B1DE125C9932500A51045 /* Dohearts.otf */,
+				C48B1DE225C9932500A51045 /* PlumScript.ttf */,
+				C48B1DE325C9932500A51045 /* Variane Script.ttf */,
+				C48B1DE425C9932500A51045 /* Alleana Script.otf */,
+				C48B1DE525C9932500A51045 /* Arizonia-Regular.ttf */,
+				C48B1DE625C9932500A51045 /* Enjoy Personal Use.otf */,
+				C48B1DE725C9932500A51045 /* VTKS SummerLAnd.ttf */,
+				C48B1DE825C9932500A51045 /* alsscrp.ttf */,
+				C48B1DE925C9932500A51045 /* Montez-Regular.ttf */,
+				C48B1DEA25C9932500A51045 /* Advertising Script Bold Trial.ttf */,
+				C48B1DEB25C9932500A51045 /* Pretty Girls Script Demo.ttf */,
+				C48B1DEC25C9932500A51045 /* a Theme for murder.ttf */,
+				C48B1DED25C9932500A51045 /* Miama.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		C48B1DEE25C9932600A51045 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				C48B1DEF25C9932600A51045 /* SwiftyTimer.swift */,
+				C48B1DF025C9932600A51045 /* Global.swift */,
+				C48B1DF125C9932600A51045 /* PentagonView.swift */,
+				C48B1DF225C9932600A51045 /* Helpers.swift */,
+				C48B1DF325C9932600A51045 /* Filters.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		C48B1DF425C9932700A51045 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C48B1DF525C9932700A51045 /* ViewController2.swift */,
+				C48B1DF625C9932700A51045 /* MyAlbumVC.swift */,
+				C48B1DF725C9932700A51045 /* PresentTextVC.swift */,
+				C48B1DF825C9932700A51045 /* StickersVC.swift */,
+				C48B1DF925C9932700A51045 /* EditImageVC.swift */,
+				C48B1DFA25C9932700A51045 /* ShareVC.swift */,
+				C48B1DFB25C9932700A51045 /* HomeVC.swift */,
+				C48B1DFC25C9932700A51045 /* PresentPhotoVC.swift */,
+				C48B1DFD25C9932700A51045 /* LoadShapesVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -393,18 +699,57 @@
 			files = (
 				8A27F12F1FD9E733001B2BBD /* SecondaryTextTableViewCell.xib in Resources */,
 				8A27F11C1FD73DD0001B2BBD /* StickerPackTableViewCell.xib in Resources */,
+				C48B1E2225C9932700A51045 /* VTC-BadTattooHandOne.otf in Resources */,
+				C48B1E1725C9932700A51045 /* champignonaltswash.ttf in Resources */,
+				C48B1E2C25C9932700A51045 /* Alleana Script.otf in Resources */,
+				C48B1E1325C9932700A51045 /* MainStickerCell.xib in Resources */,
 				C49D2C4E247D0B7A0007D174 /* tray_Cuppy.png in Resources */,
+				C48B1E3325C9932700A51045 /* Pretty Girls Script Demo.ttf in Resources */,
+				C48B1E2325C9932700A51045 /* Granada Blues Personal Use.ttf in Resources */,
+				C48B1E1525C9932700A51045 /* SelectItemCell.xib in Resources */,
 				8A22EE0E1F9A9F40003A7F21 /* LaunchScreen.storyboard in Resources */,
+				C48B1E1425C9932700A51045 /* allFramesCell.xib in Resources */,
+				C48B1E1A25C9932700A51045 /* Allura-Regular.ttf in Resources */,
+				C48B1E1E25C9932700A51045 /* akaDora.otf in Resources */,
+				C48B1E2525C9932700A51045 /* LittleLordFontleroyNF.ttf in Resources */,
+				C48B1E1125C9932700A51045 /* FilterCell.xib in Resources */,
+				C48B1E3125C9932700A51045 /* Montez-Regular.ttf in Resources */,
+				C48B1E1C25C9932700A51045 /* waltograph42.otf in Resources */,
+				C48B1E2025C9932700A51045 /* Serling Script Regular.otf in Resources */,
+				C48B1E2725C9932700A51045 /* Playball-Regular.ttf in Resources */,
+				C48B1E1925C9932700A51045 /* AguafinaScript-Regular.ttf in Resources */,
+				C48B1E2125C9932700A51045 /* QUIGLEYW.ttf in Resources */,
+				C48B1E3525C9932700A51045 /* Miama.ttf in Resources */,
 				8A22EE0B1F9A9F40003A7F21 /* Assets.xcassets in Resources */,
+				C48B1E1025C9932700A51045 /* StickerCell.xib in Resources */,
+				C48B1E2825C9932700A51045 /* Mf Gradient Goddess.ttf in Resources */,
 				C48716E2247E4BAB002F025B /* oiaa.png in Resources */,
 				8A27F1311FD9E987001B2BBD /* LinkTableViewCell.xib in Resources */,
+				C48B1E1D25C9932700A51045 /* AlexBrush-Regular.ttf in Resources */,
+				C48B1E2A25C9932700A51045 /* PlumScript.ttf in Resources */,
+				C48B1DFF25C9932700A51045 /* tblStyleCell.xib in Resources */,
+				C48B1E2D25C9932700A51045 /* Arizonia-Regular.ttf in Resources */,
+				C48B1E2625C9932700A51045 /* The Heart of Everything Demo.ttf in Resources */,
+				C48B1E2B25C9932700A51045 /* Variane Script.ttf in Resources */,
+				C48B1E1F25C9932700A51045 /* Bucanera-font-FFP.ttf in Resources */,
 				8A22EE091F9A9F40003A7F21 /* Main.storyboard in Resources */,
 				C49D2C52247D0C550007D174 /* placeholderMulticolor.png in Resources */,
 				C49D2C51247D0C550007D174 /* placeholderBlack.png in Resources */,
+				C48B1E1225C9932700A51045 /* FramesCell.xib in Resources */,
+				C48B1E2F25C9932700A51045 /* VTKS SummerLAnd.ttf in Resources */,
 				C474A84824930DF70043D953 /* dog1.png in Resources */,
+				C48B1E3225C9932700A51045 /* Advertising Script Bold Trial.ttf in Resources */,
+				C48B1E1825C9932700A51045 /* Advertising Script Monoline Trial.ttf in Resources */,
 				C474A84624930DF70043D953 /* dog5.png in Resources */,
+				C48B1E2925C9932700A51045 /* Dohearts.otf in Resources */,
+				C48B1E3425C9932700A51045 /* a Theme for murder.ttf in Resources */,
+				C48B1E1B25C9932700A51045 /* Script Writing.ttf in Resources */,
 				C49D2C54247D0C890007D174 /* placeholderGreen.png in Resources */,
 				8A18E33D1FBA793F0082201D /* sticker_packs.wasticker in Resources */,
+				C48B1E1625C9932700A51045 /* Adine Kirnberg.ttf in Resources */,
+				C48B1E2425C9932700A51045 /* Ginga.ttf in Resources */,
+				C48B1E2E25C9932700A51045 /* Enjoy Personal Use.otf in Resources */,
+				C48B1E3025C9932700A51045 /* alsscrp.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,8 +768,15 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/CLImageEditor/CLImageEditor.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IGColorPicker/IGColorPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageScrollView/ImageScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
+				"${BUILT_PRODUCTS_DIR}/OpalImagePicker/OpalImagePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
+				"${BUILT_PRODUCTS_DIR}/ZoomImageView/ZoomImageView.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -434,8 +786,15 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLImageEditor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGColorPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpalImagePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZoomImageView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,8 +834,14 @@
 				8A27F11E1FD73DE2001B2BBD /* StickerPackTableViewCell.swift in Sources */,
 				8A27F1201FD7444B001B2BBD /* StickerPackViewController.swift in Sources */,
 				8A18E3351FBA5CA90082201D /* StickerPackManager.swift in Sources */,
+				C48B1E3D25C9932700A51045 /* PresentTextVC.swift in Sources */,
+				C48B1E0B25C9932700A51045 /* FramesCell.swift in Sources */,
 				8A27F1331FD9EA08001B2BBD /* LinkTableViewCell.swift in Sources */,
+				C48B1E4325C9932700A51045 /* LoadShapesVC.swift in Sources */,
 				8A18E2F01FB3B47D0082201D /* YYFrameImage.m in Sources */,
+				C48B1E0C25C9932700A51045 /* MainStickerCell.swift in Sources */,
+				C48B1E0925C9932700A51045 /* MagnificationButton.m in Sources */,
+				C48B1E4125C9932700A51045 /* HomeVC.swift in Sources */,
 				C44C708E249C12A500EC1E85 /* MasterViewController.swift in Sources */,
 				C4351E0324908D46009FBDEF /* ModelController.swift in Sources */,
 				8A18E33F1FBA7DC50082201D /* WebPManager.swift in Sources */,
@@ -484,29 +849,54 @@
 				C44C7092249C219100EC1E85 /* WelcomeViewController.swift in Sources */,
 				8ADA60761FD71F69006C9BBA /* AllStickerPacksViewController.swift in Sources */,
 				8ACB6A981FE9CB7700A564BB /* Limits.swift in Sources */,
+				C48B1E0125C9932700A51045 /* JLStickerImageView.swift in Sources */,
+				C48B1E0A25C9932700A51045 /* FilterCell.swift in Sources */,
 				8A40BE651FB122B3003AD704 /* StickerPack.swift in Sources */,
 				C4351DFF249086B2009FBDEF /* stickersDataSaved.swift in Sources */,
 				8A6001CC20298225001EC448 /* GradientView.swift in Sources */,
+				C48B1E0625C9932700A51045 /* PressButton.m in Sources */,
+				C48B1E0525C9932700A51045 /* adjustToFitFontOrWidth.swift in Sources */,
+				C48B1E0225C9932700A51045 /* JLStickerLabelView.swift in Sources */,
 				8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */,
+				C48B1E3625C9932700A51045 /* SwiftyTimer.swift in Sources */,
 				C474A7D92492FA810043D953 /* CreditsViewController.swift in Sources */,
+				C48B1E3825C9932700A51045 /* PentagonView.swift in Sources */,
+				C48B1E0E25C9932700A51045 /* SelectItemCell.swift in Sources */,
 				C49D2C57247D164A0007D174 /* StoredImage.xcdatamodeld in Sources */,
 				C4320F9324C804B800E798EA /* CollageViewController.swift in Sources */,
+				C48B1E3B25C9932700A51045 /* ViewController2.swift in Sources */,
 				C44C708B249C119600EC1E85 /* RazeFaceProducts.swift in Sources */,
+				C48B1E0025C9932700A51045 /* StickerView.swift in Sources */,
+				C48B1DFE25C9932700A51045 /* tblStyleCell.swift in Sources */,
 				8A18E2F11FB3B47D0082201D /* YYSpriteSheetImage.m in Sources */,
 				C44C7089249C119600EC1E85 /* IAPHelper.swift in Sources */,
 				8A18E2EF1FB3B47D0082201D /* YYAnimatedImageView.m in Sources */,
+				C48B1E0D25C9932700A51045 /* allFramesCell.swift in Sources */,
+				C48B1E3925C9932700A51045 /* Helpers.swift in Sources */,
 				8A27F1221FD76937001B2BBD /* AquaButton.swift in Sources */,
 				C4351DFB248FF976009FBDEF /* ViewController.swift in Sources */,
+				C48B1E4225C9932700A51045 /* PresentPhotoVC.swift in Sources */,
+				C48B1E3E25C9932700A51045 /* StickersVC.swift in Sources */,
+				C48B1E0F25C9932700A51045 /* StickerCell.swift in Sources */,
+				C48B1E3C25C9932700A51045 /* MyAlbumVC.swift in Sources */,
+				C48B1E0325C9932700A51045 /* JLAttributedTextView.swift in Sources */,
+				C48B1E3F25C9932700A51045 /* EditImageVC.swift in Sources */,
 				8A8D4A7A1FB291290078C4AF /* Interoperability.swift in Sources */,
+				C48B1E0425C9932700A51045 /* CalcuteFunctions.swift in Sources */,
 				8AB5951920C1FC130076625E /* Sticker.swift in Sources */,
 				8A27F12D1FD9E718001B2BBD /* SecondaryTextTableViewCell.swift in Sources */,
 				C4351DFA248FF976009FBDEF /* StyleClass.swift in Sources */,
 				C44C7088249C119600EC1E85 /* Calculator.swift in Sources */,
+				C48B1E0725C9932700A51045 /* SelectionButton.m in Sources */,
+				C48B1E4025C9932700A51045 /* ShareVC.swift in Sources */,
 				C4351E0124908D08009FBDEF /* BdCoreDataImg.swift in Sources */,
+				C48B1E3725C9932700A51045 /* Global.swift in Sources */,
 				8A22EE041F9A9F40003A7F21 /* AppDelegate.swift in Sources */,
 				C44C708C249C119600EC1E85 /* ProductCell.swift in Sources */,
 				8A18E2EE1FB3B47D0082201D /* YYImage.m in Sources */,
+				C48B1E0825C9932700A51045 /* FamButton.m in Sources */,
 				8A18E2F21FB3B47D0082201D /* YYImageCoder.m in Sources */,
+				C48B1E3A25C9932700A51045 /* Filters.swift in Sources */,
 				0E6359A4203E148200805DEB /* StickerCell.swift in Sources */,
 				8AB5951B20C1FC440076625E /* ImageData.swift in Sources */,
 			);

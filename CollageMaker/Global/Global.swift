@@ -77,10 +77,9 @@ extension UIButton {
     }
     
     func mk_addTapHandlerIO(action: @escaping (UIButton) -> Void) {
-//        (self as? UIButton)?.animate(onPress: true)
-//        self.addTarget(self, action: #selector(handleActionIO(_:)), for: .touchUpInside)
-//        tapActionIO = Action(action: action)
-        
+        (self as? PressButton)?.animate(onPress: true)
+        self.addTarget(self, action: #selector(handleActionIO(_:)), for: .touchUpInside)
+        tapActionIO = Action(action: action)
     }
 }
 

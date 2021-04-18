@@ -7,3 +7,8 @@
 //
 
 #import "YYImage.h"
+#ifndef Collage_h
+#define Collage_h
+
+#import "PressButton.h"
+#endif /* Collage_h */

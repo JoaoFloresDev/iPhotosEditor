@@ -28,7 +28,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     private var portraitConstraints: [NSLayoutConstraint] = []
     private var landscapeConstraints: [NSLayoutConstraint] = []
     
-    private var bottomGradientView: GradientView = GradientView(topColor: UIColor.white.withAlphaComponent(0.0), bottomColor: UIColor.white)
+    private var bottomGradientView: GradientViewWhats = GradientViewWhats(topColor: UIColor.white.withAlphaComponent(0.0), bottomColor: UIColor.white)
     private var topDivider: UIView = UIView()
     
     private var portraitOrientation: Bool {

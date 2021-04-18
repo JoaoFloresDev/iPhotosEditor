@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GradientView: UIView {
+class GradientViewWhats: UIView {
 
     override var layer: CAGradientLayer {
         return super.layer as! CAGradientLayer

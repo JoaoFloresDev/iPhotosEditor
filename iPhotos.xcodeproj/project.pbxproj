@@ -31,7 +31,7 @@
 		8A27F1311FD9E987001B2BBD /* LinkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A27F1301FD9E987001B2BBD /* LinkTableViewCell.xib */; };
 		8A27F1331FD9EA08001B2BBD /* LinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A27F1321FD9EA08001B2BBD /* LinkTableViewCell.swift */; };
 		8A40BE651FB122B3003AD704 /* StickerPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A40BE641FB122B3003AD704 /* StickerPack.swift */; };
-		8A6001CC20298225001EC448 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6001CB20298225001EC448 /* GradientView.swift */; };
+		8A6001CC20298225001EC448 /* GradientViewWhats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6001CB20298225001EC448 /* GradientViewWhats.swift */; };
 		8A8D4A7A1FB291290078C4AF /* Interoperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8D4A791FB291290078C4AF /* Interoperability.swift */; };
 		8AB5951920C1FC130076625E /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB5951820C1FC130076625E /* Sticker.swift */; };
 		8AB5951B20C1FC440076625E /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB5951A20C1FC440076625E /* ImageData.swift */; };
@@ -119,7 +119,7 @@
 		8A40BE491FB100C4003AD704 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8A40BE4A1FB100CB003AD704 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		8A40BE641FB122B3003AD704 /* StickerPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerPack.swift; sourceTree = "<group>"; };
-		8A6001CB20298225001EC448 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		8A6001CB20298225001EC448 /* GradientViewWhats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewWhats.swift; sourceTree = "<group>"; };
 		8A8D4A791FB291290078C4AF /* Interoperability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interoperability.swift; sourceTree = "<group>"; };
 		8AB5951820C1FC130076625E /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
 		8AB5951A20C1FC440076625E /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
@@ -143,6 +143,7 @@
 		C474A7D82492FA810043D953 /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		C474A84224930DF70043D953 /* dog5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog5.png; sourceTree = "<group>"; };
 		C474A84424930DF70043D953 /* dog1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog1.png; sourceTree = "<group>"; };
+		C484C2F6262CD510004E1180 /* Collage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collage.h; sourceTree = "<group>"; };
 		C48716E1247E4BAB002F025B /* oiaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oiaa.png; sourceTree = "<group>"; };
 		C49D2C4D247D0B7A0007D174 /* tray_Cuppy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tray_Cuppy.png; sourceTree = "<group>"; };
 		C49D2C4F247D0C550007D174 /* placeholderBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderBlack.png; sourceTree = "<group>"; };
@@ -199,6 +200,7 @@
 				8A22EE0C1F9A9F40003A7F21 /* LaunchScreen.storyboard */,
 				8A22EE0A1F9A9F40003A7F21 /* Assets.xcassets */,
 				C49D2C55247D164A0007D174 /* StoredImage.xcdatamodeld */,
+				C484C2F6262CD510004E1180 /* Collage.h */,
 				C44C7082249C118200EC1E85 /* Purchase */,
 				C4351DFC249027F0009FBDEF /* PhotoEditor */,
 				8A22EE021F9A9F40003A7F21 /* WAStickersThirdParty */,
@@ -282,7 +284,7 @@
 				8A27F1301FD9E987001B2BBD /* LinkTableViewCell.xib */,
 				8A27F1321FD9EA08001B2BBD /* LinkTableViewCell.swift */,
 				8A0A6DCC1FE9F1CE00110AF2 /* UIAlertController+Additions.swift */,
-				8A6001CB20298225001EC448 /* GradientView.swift */,
+				8A6001CB20298225001EC448 /* GradientViewWhats.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -500,7 +502,7 @@
 				8ACB6A981FE9CB7700A564BB /* Limits.swift in Sources */,
 				8A40BE651FB122B3003AD704 /* StickerPack.swift in Sources */,
 				C4351DFF249086B2009FBDEF /* stickersDataSaved.swift in Sources */,
-				8A6001CC20298225001EC448 /* GradientView.swift in Sources */,
+				8A6001CC20298225001EC448 /* GradientViewWhats.swift in Sources */,
 				8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */,
 				C474A7D92492FA810043D953 /* CreditsViewController.swift in Sources */,
 				C49D2C57247D164A0007D174 /* StoredImage.xcdatamodeld in Sources */,

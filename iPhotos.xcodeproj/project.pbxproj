@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E6359A4203E148200805DEB /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6359A3203E148200805DEB /* StickerCell.swift */; };
+		0E6359A4203E148200805DEB /* StickerCellWhats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6359A3203E148200805DEB /* StickerCellWhats.swift */; };
 		41E285342A9490C9093E5F56 /* Pods_iPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06147FEBFC542CA8D9B57C73 /* Pods_iPhotos.framework */; };
 		8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0A6DCC1FE9F1CE00110AF2 /* UIAlertController+Additions.swift */; };
 		8A18E2EE1FB3B47D0082201D /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A18E2E51FB3B47B0082201D /* YYImage.m */; };
@@ -40,7 +40,7 @@
 		8ADA60761FD71F69006C9BBA /* AllStickerPacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA60751FD71F69006C9BBA /* AllStickerPacksViewController.swift */; };
 		C4320F9324C804B800E798EA /* CollageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4320F9224C804B800E798EA /* CollageViewController.swift */; };
 		C4351DFA248FF976009FBDEF /* StyleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DF8248FF976009FBDEF /* StyleClass.swift */; };
-		C4351DFB248FF976009FBDEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DF9248FF976009FBDEF /* ViewController.swift */; };
+		C4351DFB248FF976009FBDEF /* InViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DF9248FF976009FBDEF /* InViewController.swift */; };
 		C4351DFF249086B2009FBDEF /* stickersDataSaved.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DFE249086B2009FBDEF /* stickersDataSaved.swift */; };
 		C4351E0124908D08009FBDEF /* BdCoreDataImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351E0024908D08009FBDEF /* BdCoreDataImg.swift */; };
 		C4351E0324908D46009FBDEF /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351E0224908D46009FBDEF /* ModelController.swift */; };
@@ -79,7 +79,7 @@
 /* Begin PBXFileReference section */
 		01238CEF6F5BD5772B53594A /* Pods-iPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhotos.release.xcconfig"; path = "Target Support Files/Pods-iPhotos/Pods-iPhotos.release.xcconfig"; sourceTree = "<group>"; };
 		06147FEBFC542CA8D9B57C73 /* Pods_iPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E6359A3203E148200805DEB /* StickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
+		0E6359A3203E148200805DEB /* StickerCellWhats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCellWhats.swift; sourceTree = "<group>"; };
 		3B095A342B686B5EB14CE0B3 /* Pods-iPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhotos.debug.xcconfig"; path = "Target Support Files/Pods-iPhotos/Pods-iPhotos.debug.xcconfig"; sourceTree = "<group>"; };
 		8A0A6DCC1FE9F1CE00110AF2 /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
 		8A18E2E31FB3B47A0082201D /* WAStickersThirdParty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WAStickersThirdParty-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		8ADA60751FD71F69006C9BBA /* AllStickerPacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStickerPacksViewController.swift; sourceTree = "<group>"; };
 		C4320F9224C804B800E798EA /* CollageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageViewController.swift; sourceTree = "<group>"; };
 		C4351DF8248FF976009FBDEF /* StyleClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleClass.swift; sourceTree = "<group>"; };
-		C4351DF9248FF976009FBDEF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4351DF9248FF976009FBDEF /* InViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InViewController.swift; sourceTree = "<group>"; };
 		C4351DFE249086B2009FBDEF /* stickersDataSaved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stickersDataSaved.swift; sourceTree = "<group>"; };
 		C4351E0024908D08009FBDEF /* BdCoreDataImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BdCoreDataImg.swift; sourceTree = "<group>"; };
 		C4351E0224908D46009FBDEF /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
@@ -274,7 +274,7 @@
 			children = (
 				8A27F1211FD76937001B2BBD /* AquaButton.swift */,
 				8ADA60751FD71F69006C9BBA /* AllStickerPacksViewController.swift */,
-				0E6359A3203E148200805DEB /* StickerCell.swift */,
+				0E6359A3203E148200805DEB /* StickerCellWhats.swift */,
 				8A27F11B1FD73DD0001B2BBD /* StickerPackTableViewCell.xib */,
 				8A27F11D1FD73DE2001B2BBD /* StickerPackTableViewCell.swift */,
 				8A27F12E1FD9E733001B2BBD /* SecondaryTextTableViewCell.xib */,
@@ -291,7 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				C4351DF8248FF976009FBDEF /* StyleClass.swift */,
-				C4351DF9248FF976009FBDEF /* ViewController.swift */,
+				C4351DF9248FF976009FBDEF /* InViewController.swift */,
 				C4320F9224C804B800E798EA /* CollageViewController.swift */,
 			);
 			path = PhotoEditor;
@@ -510,7 +510,7 @@
 				C44C7089249C119600EC1E85 /* IAPHelper.swift in Sources */,
 				8A18E2EF1FB3B47D0082201D /* YYAnimatedImageView.m in Sources */,
 				8A27F1221FD76937001B2BBD /* AquaButton.swift in Sources */,
-				C4351DFB248FF976009FBDEF /* ViewController.swift in Sources */,
+				C4351DFB248FF976009FBDEF /* InViewController.swift in Sources */,
 				8A8D4A7A1FB291290078C4AF /* Interoperability.swift in Sources */,
 				8AB5951920C1FC130076625E /* Sticker.swift in Sources */,
 				8A27F12D1FD9E718001B2BBD /* SecondaryTextTableViewCell.swift in Sources */,
@@ -521,7 +521,7 @@
 				C44C708C249C119600EC1E85 /* ProductCell.swift in Sources */,
 				8A18E2EE1FB3B47D0082201D /* YYImage.m in Sources */,
 				8A18E2F21FB3B47D0082201D /* YYImageCoder.m in Sources */,
-				0E6359A4203E148200805DEB /* StickerCell.swift in Sources */,
+				0E6359A4203E148200805DEB /* StickerCellWhats.swift in Sources */,
 				8AB5951B20C1FC440076625E /* ImageData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

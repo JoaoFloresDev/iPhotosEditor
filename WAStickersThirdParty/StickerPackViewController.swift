@@ -51,7 +51,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
             stickersCollectionView.isPrefetchingEnabled = false
         }
         
-        stickersCollectionView.register(StickerCell.self, forCellWithReuseIdentifier: "StickerCell")
+        stickersCollectionView.register(StickerCellWhats.self, forCellWithReuseIdentifier: "StickerCell")
         stickersCollectionView.scrollIndicatorInsets.bottom = 10
         
         itemsPerRow = portraitOrientation ? portraitItems : landscapeItems
@@ -185,7 +185,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StickerCell", for: indexPath) as! StickerCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StickerCell", for: indexPath) as! StickerCellWhats
         cell.sticker = stickerPack.stickers[indexPath.row]
         
         // Use tag to check index of cell

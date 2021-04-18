@@ -61,6 +61,75 @@
 		C49D2C52247D0C550007D174 /* placeholderMulticolor.png in Resources */ = {isa = PBXBuildFile; fileRef = C49D2C50247D0C550007D174 /* placeholderMulticolor.png */; };
 		C49D2C54247D0C890007D174 /* placeholderGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C49D2C53247D0C890007D174 /* placeholderGreen.png */; };
 		C49D2C57247D164A0007D174 /* StoredImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C49D2C55247D164A0007D174 /* StoredImage.xcdatamodeld */; };
+		C4BD2D01262CE0EA005DA9A0 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CA7262CE0E9005DA9A0 /* FilterCell.swift */; };
+		C4BD2D02262CE0EA005DA9A0 /* FramesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CA8262CE0E9005DA9A0 /* FramesCell.swift */; };
+		C4BD2D03262CE0EA005DA9A0 /* MainStickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CA9262CE0E9005DA9A0 /* MainStickerCell.swift */; };
+		C4BD2D04262CE0EA005DA9A0 /* allFramesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CAA262CE0E9005DA9A0 /* allFramesCell.swift */; };
+		C4BD2D05262CE0EA005DA9A0 /* SelectItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CAB262CE0E9005DA9A0 /* SelectItemCell.swift */; };
+		C4BD2D06262CE0EA005DA9A0 /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CAC262CE0E9005DA9A0 /* StickerCell.swift */; };
+		C4BD2D07262CE0EA005DA9A0 /* StickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CAD262CE0E9005DA9A0 /* StickerCell.xib */; };
+		C4BD2D08262CE0EA005DA9A0 /* FilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CAE262CE0E9005DA9A0 /* FilterCell.xib */; };
+		C4BD2D09262CE0EA005DA9A0 /* FramesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CAF262CE0E9005DA9A0 /* FramesCell.xib */; };
+		C4BD2D0A262CE0EA005DA9A0 /* MainStickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CB0262CE0E9005DA9A0 /* MainStickerCell.xib */; };
+		C4BD2D0B262CE0EA005DA9A0 /* allFramesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CB1262CE0E9005DA9A0 /* allFramesCell.xib */; };
+		C4BD2D0C262CE0EA005DA9A0 /* SelectItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CB2262CE0E9005DA9A0 /* SelectItemCell.xib */; };
+		C4BD2D0D262CE0EA005DA9A0 /* Adine Kirnberg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CB5262CE0E9005DA9A0 /* Adine Kirnberg.ttf */; };
+		C4BD2D0E262CE0EA005DA9A0 /* champignonaltswash.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CB6262CE0E9005DA9A0 /* champignonaltswash.ttf */; };
+		C4BD2D0F262CE0EA005DA9A0 /* Advertising Script Monoline Trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CB7262CE0E9005DA9A0 /* Advertising Script Monoline Trial.ttf */; };
+		C4BD2D10262CE0EA005DA9A0 /* AguafinaScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CB8262CE0E9005DA9A0 /* AguafinaScript-Regular.ttf */; };
+		C4BD2D11262CE0EA005DA9A0 /* Allura-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CB9262CE0E9005DA9A0 /* Allura-Regular.ttf */; };
+		C4BD2D12262CE0EA005DA9A0 /* Script Writing.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CBA262CE0E9005DA9A0 /* Script Writing.ttf */; };
+		C4BD2D13262CE0EA005DA9A0 /* waltograph42.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CBB262CE0E9005DA9A0 /* waltograph42.otf */; };
+		C4BD2D14262CE0EA005DA9A0 /* AlexBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CBC262CE0E9005DA9A0 /* AlexBrush-Regular.ttf */; };
+		C4BD2D15262CE0EA005DA9A0 /* akaDora.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CBD262CE0E9005DA9A0 /* akaDora.otf */; };
+		C4BD2D16262CE0EA005DA9A0 /* Bucanera-font-FFP.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CBE262CE0E9005DA9A0 /* Bucanera-font-FFP.ttf */; };
+		C4BD2D17262CE0EA005DA9A0 /* Serling Script Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CBF262CE0E9005DA9A0 /* Serling Script Regular.otf */; };
+		C4BD2D18262CE0EA005DA9A0 /* QUIGLEYW.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CC0262CE0E9005DA9A0 /* QUIGLEYW.ttf */; };
+		C4BD2D19262CE0EA005DA9A0 /* VTC-BadTattooHandOne.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CC1262CE0E9005DA9A0 /* VTC-BadTattooHandOne.otf */; };
+		C4BD2D1A262CE0EA005DA9A0 /* Granada Blues Personal Use.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CC2262CE0E9005DA9A0 /* Granada Blues Personal Use.ttf */; };
+		C4BD2D1B262CE0EA005DA9A0 /* Ginga.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CC3262CE0E9005DA9A0 /* Ginga.ttf */; };
+		C4BD2D1C262CE0EA005DA9A0 /* LittleLordFontleroyNF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CC4262CE0E9005DA9A0 /* LittleLordFontleroyNF.ttf */; };
+		C4BD2D1D262CE0EA005DA9A0 /* The Heart of Everything Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CC5262CE0E9005DA9A0 /* The Heart of Everything Demo.ttf */; };
+		C4BD2D1E262CE0EA005DA9A0 /* Playball-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CC6262CE0E9005DA9A0 /* Playball-Regular.ttf */; };
+		C4BD2D1F262CE0EA005DA9A0 /* Mf Gradient Goddess.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CC7262CE0E9005DA9A0 /* Mf Gradient Goddess.ttf */; };
+		C4BD2D20262CE0EA005DA9A0 /* Dohearts.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CC8262CE0E9005DA9A0 /* Dohearts.otf */; };
+		C4BD2D21262CE0EA005DA9A0 /* PlumScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CC9262CE0E9005DA9A0 /* PlumScript.ttf */; };
+		C4BD2D22262CE0EA005DA9A0 /* Variane Script.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CCA262CE0E9005DA9A0 /* Variane Script.ttf */; };
+		C4BD2D23262CE0EA005DA9A0 /* Alleana Script.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CCB262CE0E9005DA9A0 /* Alleana Script.otf */; };
+		C4BD2D24262CE0EA005DA9A0 /* Arizonia-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CCC262CE0E9005DA9A0 /* Arizonia-Regular.ttf */; };
+		C4BD2D25262CE0EA005DA9A0 /* Enjoy Personal Use.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CCD262CE0EA005DA9A0 /* Enjoy Personal Use.otf */; };
+		C4BD2D26262CE0EA005DA9A0 /* VTKS SummerLAnd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CCE262CE0EA005DA9A0 /* VTKS SummerLAnd.ttf */; };
+		C4BD2D27262CE0EA005DA9A0 /* alsscrp.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CCF262CE0EA005DA9A0 /* alsscrp.ttf */; };
+		C4BD2D28262CE0EA005DA9A0 /* Montez-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CD0262CE0EA005DA9A0 /* Montez-Regular.ttf */; };
+		C4BD2D29262CE0EA005DA9A0 /* Advertising Script Bold Trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CD1262CE0EA005DA9A0 /* Advertising Script Bold Trial.ttf */; };
+		C4BD2D2A262CE0EA005DA9A0 /* Pretty Girls Script Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CD2262CE0EA005DA9A0 /* Pretty Girls Script Demo.ttf */; };
+		C4BD2D2B262CE0EA005DA9A0 /* a Theme for murder.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CD3262CE0EA005DA9A0 /* a Theme for murder.ttf */; };
+		C4BD2D2C262CE0EA005DA9A0 /* Miama.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CD4262CE0EA005DA9A0 /* Miama.ttf */; };
+		C4BD2D2E262CE0EA005DA9A0 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CD8262CE0EA005DA9A0 /* StickerView.swift */; };
+		C4BD2D2F262CE0EA005DA9A0 /* JLStickerImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CDA262CE0EA005DA9A0 /* JLStickerImageView.swift */; };
+		C4BD2D30262CE0EA005DA9A0 /* JLStickerLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CDB262CE0EA005DA9A0 /* JLStickerLabelView.swift */; };
+		C4BD2D31262CE0EA005DA9A0 /* JLAttributedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CDC262CE0EA005DA9A0 /* JLAttributedTextView.swift */; };
+		C4BD2D32262CE0EA005DA9A0 /* CalcuteFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CDD262CE0EA005DA9A0 /* CalcuteFunctions.swift */; };
+		C4BD2D33262CE0EA005DA9A0 /* adjustToFitFontOrWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CDE262CE0EA005DA9A0 /* adjustToFitFontOrWidth.swift */; };
+		C4BD2D34262CE0EA005DA9A0 /* PressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CE0262CE0EA005DA9A0 /* PressButton.m */; };
+		C4BD2D35262CE0EA005DA9A0 /* SelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CE1262CE0EA005DA9A0 /* SelectionButton.m */; };
+		C4BD2D36262CE0EA005DA9A0 /* FamButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CE2262CE0EA005DA9A0 /* FamButton.m */; };
+		C4BD2D37262CE0EA005DA9A0 /* MagnificationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CE6262CE0EA005DA9A0 /* MagnificationButton.m */; };
+		C4BD2D3A262CE0EA005DA9A0 /* tblStyleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CED262CE0EA005DA9A0 /* tblStyleCell.swift */; };
+		C4BD2D3B262CE0EA005DA9A0 /* tblStyleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2CEE262CE0EA005DA9A0 /* tblStyleCell.xib */; };
+		C4BD2D3E262CE0EA005DA9A0 /* MyAlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CF2262CE0EA005DA9A0 /* MyAlbumVC.swift */; };
+		C4BD2D3F262CE0EA005DA9A0 /* PresentTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CF3262CE0EA005DA9A0 /* PresentTextVC.swift */; };
+		C4BD2D40262CE0EA005DA9A0 /* StickersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CF4262CE0EA005DA9A0 /* StickersVC.swift */; };
+		C4BD2D41262CE0EA005DA9A0 /* EditImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CF5262CE0EA005DA9A0 /* EditImageVC.swift */; };
+		C4BD2D42262CE0EA005DA9A0 /* ShareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CF6262CE0EA005DA9A0 /* ShareVC.swift */; };
+		C4BD2D43262CE0EA005DA9A0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CF7262CE0EA005DA9A0 /* HomeVC.swift */; };
+		C4BD2D44262CE0EA005DA9A0 /* PresentPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CF8262CE0EA005DA9A0 /* PresentPhotoVC.swift */; };
+		C4BD2D45262CE0EA005DA9A0 /* LoadShapesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CF9262CE0EA005DA9A0 /* LoadShapesVC.swift */; };
+		C4BD2D46262CE0EA005DA9A0 /* SwiftyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CFB262CE0EA005DA9A0 /* SwiftyTimer.swift */; };
+		C4BD2D47262CE0EA005DA9A0 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CFC262CE0EA005DA9A0 /* Global.swift */; };
+		C4BD2D48262CE0EA005DA9A0 /* PentagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CFD262CE0EA005DA9A0 /* PentagonView.swift */; };
+		C4BD2D49262CE0EA005DA9A0 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CFE262CE0EA005DA9A0 /* Helpers.swift */; };
+		C4BD2D4A262CE0EA005DA9A0 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CFF262CE0EA005DA9A0 /* Filters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -150,6 +219,79 @@
 		C49D2C50247D0C550007D174 /* placeholderMulticolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderMulticolor.png; sourceTree = "<group>"; };
 		C49D2C53247D0C890007D174 /* placeholderGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderGreen.png; sourceTree = "<group>"; };
 		C49D2C56247D164A0007D174 /* StoredImage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StoredImage.xcdatamodel; sourceTree = "<group>"; };
+		C4BD2CA7262CE0E9005DA9A0 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		C4BD2CA8262CE0E9005DA9A0 /* FramesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FramesCell.swift; sourceTree = "<group>"; };
+		C4BD2CA9262CE0E9005DA9A0 /* MainStickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStickerCell.swift; sourceTree = "<group>"; };
+		C4BD2CAA262CE0E9005DA9A0 /* allFramesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allFramesCell.swift; sourceTree = "<group>"; };
+		C4BD2CAB262CE0E9005DA9A0 /* SelectItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectItemCell.swift; sourceTree = "<group>"; };
+		C4BD2CAC262CE0E9005DA9A0 /* StickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
+		C4BD2CAD262CE0E9005DA9A0 /* StickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StickerCell.xib; sourceTree = "<group>"; };
+		C4BD2CAE262CE0E9005DA9A0 /* FilterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterCell.xib; sourceTree = "<group>"; };
+		C4BD2CAF262CE0E9005DA9A0 /* FramesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FramesCell.xib; sourceTree = "<group>"; };
+		C4BD2CB0262CE0E9005DA9A0 /* MainStickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainStickerCell.xib; sourceTree = "<group>"; };
+		C4BD2CB1262CE0E9005DA9A0 /* allFramesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = allFramesCell.xib; sourceTree = "<group>"; };
+		C4BD2CB2262CE0E9005DA9A0 /* SelectItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectItemCell.xib; sourceTree = "<group>"; };
+		C4BD2CB5262CE0E9005DA9A0 /* Adine Kirnberg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adine Kirnberg.ttf"; sourceTree = "<group>"; };
+		C4BD2CB6262CE0E9005DA9A0 /* champignonaltswash.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = champignonaltswash.ttf; sourceTree = "<group>"; };
+		C4BD2CB7262CE0E9005DA9A0 /* Advertising Script Monoline Trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Advertising Script Monoline Trial.ttf"; sourceTree = "<group>"; };
+		C4BD2CB8262CE0E9005DA9A0 /* AguafinaScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AguafinaScript-Regular.ttf"; sourceTree = "<group>"; };
+		C4BD2CB9262CE0E9005DA9A0 /* Allura-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Allura-Regular.ttf"; sourceTree = "<group>"; };
+		C4BD2CBA262CE0E9005DA9A0 /* Script Writing.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Script Writing.ttf"; sourceTree = "<group>"; };
+		C4BD2CBB262CE0E9005DA9A0 /* waltograph42.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = waltograph42.otf; sourceTree = "<group>"; };
+		C4BD2CBC262CE0E9005DA9A0 /* AlexBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlexBrush-Regular.ttf"; sourceTree = "<group>"; };
+		C4BD2CBD262CE0E9005DA9A0 /* akaDora.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = akaDora.otf; sourceTree = "<group>"; };
+		C4BD2CBE262CE0E9005DA9A0 /* Bucanera-font-FFP.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bucanera-font-FFP.ttf"; sourceTree = "<group>"; };
+		C4BD2CBF262CE0E9005DA9A0 /* Serling Script Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Serling Script Regular.otf"; sourceTree = "<group>"; };
+		C4BD2CC0262CE0E9005DA9A0 /* QUIGLEYW.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = QUIGLEYW.ttf; sourceTree = "<group>"; };
+		C4BD2CC1262CE0E9005DA9A0 /* VTC-BadTattooHandOne.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VTC-BadTattooHandOne.otf"; sourceTree = "<group>"; };
+		C4BD2CC2262CE0E9005DA9A0 /* Granada Blues Personal Use.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Granada Blues Personal Use.ttf"; sourceTree = "<group>"; };
+		C4BD2CC3262CE0E9005DA9A0 /* Ginga.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ginga.ttf; sourceTree = "<group>"; };
+		C4BD2CC4262CE0E9005DA9A0 /* LittleLordFontleroyNF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LittleLordFontleroyNF.ttf; sourceTree = "<group>"; };
+		C4BD2CC5262CE0E9005DA9A0 /* The Heart of Everything Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Heart of Everything Demo.ttf"; sourceTree = "<group>"; };
+		C4BD2CC6262CE0E9005DA9A0 /* Playball-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Playball-Regular.ttf"; sourceTree = "<group>"; };
+		C4BD2CC7262CE0E9005DA9A0 /* Mf Gradient Goddess.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mf Gradient Goddess.ttf"; sourceTree = "<group>"; };
+		C4BD2CC8262CE0E9005DA9A0 /* Dohearts.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dohearts.otf; sourceTree = "<group>"; };
+		C4BD2CC9262CE0E9005DA9A0 /* PlumScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlumScript.ttf; sourceTree = "<group>"; };
+		C4BD2CCA262CE0E9005DA9A0 /* Variane Script.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Variane Script.ttf"; sourceTree = "<group>"; };
+		C4BD2CCB262CE0E9005DA9A0 /* Alleana Script.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alleana Script.otf"; sourceTree = "<group>"; };
+		C4BD2CCC262CE0E9005DA9A0 /* Arizonia-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arizonia-Regular.ttf"; sourceTree = "<group>"; };
+		C4BD2CCD262CE0EA005DA9A0 /* Enjoy Personal Use.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Enjoy Personal Use.otf"; sourceTree = "<group>"; };
+		C4BD2CCE262CE0EA005DA9A0 /* VTKS SummerLAnd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VTKS SummerLAnd.ttf"; sourceTree = "<group>"; };
+		C4BD2CCF262CE0EA005DA9A0 /* alsscrp.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alsscrp.ttf; sourceTree = "<group>"; };
+		C4BD2CD0262CE0EA005DA9A0 /* Montez-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montez-Regular.ttf"; sourceTree = "<group>"; };
+		C4BD2CD1262CE0EA005DA9A0 /* Advertising Script Bold Trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Advertising Script Bold Trial.ttf"; sourceTree = "<group>"; };
+		C4BD2CD2262CE0EA005DA9A0 /* Pretty Girls Script Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretty Girls Script Demo.ttf"; sourceTree = "<group>"; };
+		C4BD2CD3262CE0EA005DA9A0 /* a Theme for murder.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "a Theme for murder.ttf"; sourceTree = "<group>"; };
+		C4BD2CD4262CE0EA005DA9A0 /* Miama.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Miama.ttf; sourceTree = "<group>"; };
+		C4BD2CD8262CE0EA005DA9A0 /* StickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		C4BD2CDA262CE0EA005DA9A0 /* JLStickerImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLStickerImageView.swift; sourceTree = "<group>"; };
+		C4BD2CDB262CE0EA005DA9A0 /* JLStickerLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLStickerLabelView.swift; sourceTree = "<group>"; };
+		C4BD2CDC262CE0EA005DA9A0 /* JLAttributedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLAttributedTextView.swift; sourceTree = "<group>"; };
+		C4BD2CDD262CE0EA005DA9A0 /* CalcuteFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcuteFunctions.swift; sourceTree = "<group>"; };
+		C4BD2CDE262CE0EA005DA9A0 /* adjustToFitFontOrWidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = adjustToFitFontOrWidth.swift; sourceTree = "<group>"; };
+		C4BD2CE0262CE0EA005DA9A0 /* PressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PressButton.m; sourceTree = "<group>"; };
+		C4BD2CE1262CE0EA005DA9A0 /* SelectionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionButton.m; sourceTree = "<group>"; };
+		C4BD2CE2262CE0EA005DA9A0 /* FamButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamButton.m; sourceTree = "<group>"; };
+		C4BD2CE3262CE0EA005DA9A0 /* MagnificationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnificationButton.h; sourceTree = "<group>"; };
+		C4BD2CE4262CE0EA005DA9A0 /* SelectionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionButton.h; sourceTree = "<group>"; };
+		C4BD2CE5262CE0EA005DA9A0 /* PressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PressButton.h; sourceTree = "<group>"; };
+		C4BD2CE6262CE0EA005DA9A0 /* MagnificationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagnificationButton.m; sourceTree = "<group>"; };
+		C4BD2CE7262CE0EA005DA9A0 /* FamButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamButton.h; sourceTree = "<group>"; };
+		C4BD2CED262CE0EA005DA9A0 /* tblStyleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tblStyleCell.swift; sourceTree = "<group>"; };
+		C4BD2CEE262CE0EA005DA9A0 /* tblStyleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tblStyleCell.xib; sourceTree = "<group>"; };
+		C4BD2CF2262CE0EA005DA9A0 /* MyAlbumVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAlbumVC.swift; sourceTree = "<group>"; };
+		C4BD2CF3262CE0EA005DA9A0 /* PresentTextVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentTextVC.swift; sourceTree = "<group>"; };
+		C4BD2CF4262CE0EA005DA9A0 /* StickersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickersVC.swift; sourceTree = "<group>"; };
+		C4BD2CF5262CE0EA005DA9A0 /* EditImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditImageVC.swift; sourceTree = "<group>"; };
+		C4BD2CF6262CE0EA005DA9A0 /* ShareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareVC.swift; sourceTree = "<group>"; };
+		C4BD2CF7262CE0EA005DA9A0 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C4BD2CF8262CE0EA005DA9A0 /* PresentPhotoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentPhotoVC.swift; sourceTree = "<group>"; };
+		C4BD2CF9262CE0EA005DA9A0 /* LoadShapesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadShapesVC.swift; sourceTree = "<group>"; };
+		C4BD2CFB262CE0EA005DA9A0 /* SwiftyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyTimer.swift; sourceTree = "<group>"; };
+		C4BD2CFC262CE0EA005DA9A0 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		C4BD2CFD262CE0EA005DA9A0 /* PentagonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PentagonView.swift; sourceTree = "<group>"; };
+		C4BD2CFE262CE0EA005DA9A0 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		C4BD2CFF262CE0EA005DA9A0 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +343,7 @@
 				8A22EE0A1F9A9F40003A7F21 /* Assets.xcassets */,
 				C49D2C55247D164A0007D174 /* StoredImage.xcdatamodeld */,
 				C484C2F6262CD510004E1180 /* Collage.h */,
+				C4BD2CA5262CE0E9005DA9A0 /* CollageMaker */,
 				C44C7082249C118200EC1E85 /* Purchase */,
 				C4351DFC249027F0009FBDEF /* PhotoEditor */,
 				8A22EE021F9A9F40003A7F21 /* WAStickersThirdParty */,
@@ -325,6 +468,166 @@
 			path = Purchase;
 			sourceTree = "<group>";
 		};
+		C4BD2CA5262CE0E9005DA9A0 /* CollageMaker */ = {
+			isa = PBXGroup;
+			children = (
+				C4BD2CA6262CE0E9005DA9A0 /* Cells */,
+				C4BD2CB3262CE0E9005DA9A0 /* Resources */,
+				C4BD2CD6262CE0EA005DA9A0 /* Library */,
+				C4BD2CEC262CE0EA005DA9A0 /* TblCell */,
+				C4BD2CF0262CE0EA005DA9A0 /* Controllers */,
+				C4BD2CFA262CE0EA005DA9A0 /* Global */,
+			);
+			path = CollageMaker;
+			sourceTree = "<group>";
+		};
+		C4BD2CA6262CE0E9005DA9A0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C4BD2CA7262CE0E9005DA9A0 /* FilterCell.swift */,
+				C4BD2CA8262CE0E9005DA9A0 /* FramesCell.swift */,
+				C4BD2CA9262CE0E9005DA9A0 /* MainStickerCell.swift */,
+				C4BD2CAA262CE0E9005DA9A0 /* allFramesCell.swift */,
+				C4BD2CAB262CE0E9005DA9A0 /* SelectItemCell.swift */,
+				C4BD2CAC262CE0E9005DA9A0 /* StickerCell.swift */,
+				C4BD2CAD262CE0E9005DA9A0 /* StickerCell.xib */,
+				C4BD2CAE262CE0E9005DA9A0 /* FilterCell.xib */,
+				C4BD2CAF262CE0E9005DA9A0 /* FramesCell.xib */,
+				C4BD2CB0262CE0E9005DA9A0 /* MainStickerCell.xib */,
+				C4BD2CB1262CE0E9005DA9A0 /* allFramesCell.xib */,
+				C4BD2CB2262CE0E9005DA9A0 /* SelectItemCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C4BD2CB3262CE0E9005DA9A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4BD2CB4262CE0E9005DA9A0 /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4BD2CB4262CE0E9005DA9A0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C4BD2CB5262CE0E9005DA9A0 /* Adine Kirnberg.ttf */,
+				C4BD2CB6262CE0E9005DA9A0 /* champignonaltswash.ttf */,
+				C4BD2CB7262CE0E9005DA9A0 /* Advertising Script Monoline Trial.ttf */,
+				C4BD2CB8262CE0E9005DA9A0 /* AguafinaScript-Regular.ttf */,
+				C4BD2CB9262CE0E9005DA9A0 /* Allura-Regular.ttf */,
+				C4BD2CBA262CE0E9005DA9A0 /* Script Writing.ttf */,
+				C4BD2CBB262CE0E9005DA9A0 /* waltograph42.otf */,
+				C4BD2CBC262CE0E9005DA9A0 /* AlexBrush-Regular.ttf */,
+				C4BD2CBD262CE0E9005DA9A0 /* akaDora.otf */,
+				C4BD2CBE262CE0E9005DA9A0 /* Bucanera-font-FFP.ttf */,
+				C4BD2CBF262CE0E9005DA9A0 /* Serling Script Regular.otf */,
+				C4BD2CC0262CE0E9005DA9A0 /* QUIGLEYW.ttf */,
+				C4BD2CC1262CE0E9005DA9A0 /* VTC-BadTattooHandOne.otf */,
+				C4BD2CC2262CE0E9005DA9A0 /* Granada Blues Personal Use.ttf */,
+				C4BD2CC3262CE0E9005DA9A0 /* Ginga.ttf */,
+				C4BD2CC4262CE0E9005DA9A0 /* LittleLordFontleroyNF.ttf */,
+				C4BD2CC5262CE0E9005DA9A0 /* The Heart of Everything Demo.ttf */,
+				C4BD2CC6262CE0E9005DA9A0 /* Playball-Regular.ttf */,
+				C4BD2CC7262CE0E9005DA9A0 /* Mf Gradient Goddess.ttf */,
+				C4BD2CC8262CE0E9005DA9A0 /* Dohearts.otf */,
+				C4BD2CC9262CE0E9005DA9A0 /* PlumScript.ttf */,
+				C4BD2CCA262CE0E9005DA9A0 /* Variane Script.ttf */,
+				C4BD2CCB262CE0E9005DA9A0 /* Alleana Script.otf */,
+				C4BD2CCC262CE0E9005DA9A0 /* Arizonia-Regular.ttf */,
+				C4BD2CCD262CE0EA005DA9A0 /* Enjoy Personal Use.otf */,
+				C4BD2CCE262CE0EA005DA9A0 /* VTKS SummerLAnd.ttf */,
+				C4BD2CCF262CE0EA005DA9A0 /* alsscrp.ttf */,
+				C4BD2CD0262CE0EA005DA9A0 /* Montez-Regular.ttf */,
+				C4BD2CD1262CE0EA005DA9A0 /* Advertising Script Bold Trial.ttf */,
+				C4BD2CD2262CE0EA005DA9A0 /* Pretty Girls Script Demo.ttf */,
+				C4BD2CD3262CE0EA005DA9A0 /* a Theme for murder.ttf */,
+				C4BD2CD4262CE0EA005DA9A0 /* Miama.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		C4BD2CD6262CE0EA005DA9A0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C4BD2CD7262CE0EA005DA9A0 /* StickerView */,
+				C4BD2CD9262CE0EA005DA9A0 /* JLImageView */,
+				C4BD2CDF262CE0EA005DA9A0 /* AnimatedButton */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		C4BD2CD7262CE0EA005DA9A0 /* StickerView */ = {
+			isa = PBXGroup;
+			children = (
+				C4BD2CD8262CE0EA005DA9A0 /* StickerView.swift */,
+			);
+			path = StickerView;
+			sourceTree = "<group>";
+		};
+		C4BD2CD9262CE0EA005DA9A0 /* JLImageView */ = {
+			isa = PBXGroup;
+			children = (
+				C4BD2CDA262CE0EA005DA9A0 /* JLStickerImageView.swift */,
+				C4BD2CDB262CE0EA005DA9A0 /* JLStickerLabelView.swift */,
+				C4BD2CDC262CE0EA005DA9A0 /* JLAttributedTextView.swift */,
+				C4BD2CDD262CE0EA005DA9A0 /* CalcuteFunctions.swift */,
+				C4BD2CDE262CE0EA005DA9A0 /* adjustToFitFontOrWidth.swift */,
+			);
+			path = JLImageView;
+			sourceTree = "<group>";
+		};
+		C4BD2CDF262CE0EA005DA9A0 /* AnimatedButton */ = {
+			isa = PBXGroup;
+			children = (
+				C4BD2CE0262CE0EA005DA9A0 /* PressButton.m */,
+				C4BD2CE1262CE0EA005DA9A0 /* SelectionButton.m */,
+				C4BD2CE2262CE0EA005DA9A0 /* FamButton.m */,
+				C4BD2CE3262CE0EA005DA9A0 /* MagnificationButton.h */,
+				C4BD2CE4262CE0EA005DA9A0 /* SelectionButton.h */,
+				C4BD2CE5262CE0EA005DA9A0 /* PressButton.h */,
+				C4BD2CE6262CE0EA005DA9A0 /* MagnificationButton.m */,
+				C4BD2CE7262CE0EA005DA9A0 /* FamButton.h */,
+			);
+			path = AnimatedButton;
+			sourceTree = "<group>";
+		};
+		C4BD2CEC262CE0EA005DA9A0 /* TblCell */ = {
+			isa = PBXGroup;
+			children = (
+				C4BD2CED262CE0EA005DA9A0 /* tblStyleCell.swift */,
+				C4BD2CEE262CE0EA005DA9A0 /* tblStyleCell.xib */,
+			);
+			path = TblCell;
+			sourceTree = "<group>";
+		};
+		C4BD2CF0262CE0EA005DA9A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4BD2CF2262CE0EA005DA9A0 /* MyAlbumVC.swift */,
+				C4BD2CF3262CE0EA005DA9A0 /* PresentTextVC.swift */,
+				C4BD2CF4262CE0EA005DA9A0 /* StickersVC.swift */,
+				C4BD2CF5262CE0EA005DA9A0 /* EditImageVC.swift */,
+				C4BD2CF6262CE0EA005DA9A0 /* ShareVC.swift */,
+				C4BD2CF7262CE0EA005DA9A0 /* HomeVC.swift */,
+				C4BD2CF8262CE0EA005DA9A0 /* PresentPhotoVC.swift */,
+				C4BD2CF9262CE0EA005DA9A0 /* LoadShapesVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C4BD2CFA262CE0EA005DA9A0 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				C4BD2CFB262CE0EA005DA9A0 /* SwiftyTimer.swift */,
+				C4BD2CFC262CE0EA005DA9A0 /* Global.swift */,
+				C4BD2CFD262CE0EA005DA9A0 /* PentagonView.swift */,
+				C4BD2CFE262CE0EA005DA9A0 /* Helpers.swift */,
+				C4BD2CFF262CE0EA005DA9A0 /* Filters.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -393,20 +696,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4BD2D1E262CE0EA005DA9A0 /* Playball-Regular.ttf in Resources */,
+				C4BD2D0B262CE0EA005DA9A0 /* allFramesCell.xib in Resources */,
+				C4BD2D27262CE0EA005DA9A0 /* alsscrp.ttf in Resources */,
+				C4BD2D0A262CE0EA005DA9A0 /* MainStickerCell.xib in Resources */,
+				C4BD2D3B262CE0EA005DA9A0 /* tblStyleCell.xib in Resources */,
 				8A27F12F1FD9E733001B2BBD /* SecondaryTextTableViewCell.xib in Resources */,
+				C4BD2D07262CE0EA005DA9A0 /* StickerCell.xib in Resources */,
+				C4BD2D22262CE0EA005DA9A0 /* Variane Script.ttf in Resources */,
 				8A27F11C1FD73DD0001B2BBD /* StickerPackTableViewCell.xib in Resources */,
+				C4BD2D2B262CE0EA005DA9A0 /* a Theme for murder.ttf in Resources */,
+				C4BD2D11262CE0EA005DA9A0 /* Allura-Regular.ttf in Resources */,
+				C4BD2D1C262CE0EA005DA9A0 /* LittleLordFontleroyNF.ttf in Resources */,
+				C4BD2D14262CE0EA005DA9A0 /* AlexBrush-Regular.ttf in Resources */,
 				C49D2C4E247D0B7A0007D174 /* tray_Cuppy.png in Resources */,
+				C4BD2D21262CE0EA005DA9A0 /* PlumScript.ttf in Resources */,
+				C4BD2D24262CE0EA005DA9A0 /* Arizonia-Regular.ttf in Resources */,
+				C4BD2D0C262CE0EA005DA9A0 /* SelectItemCell.xib in Resources */,
+				C4BD2D0E262CE0EA005DA9A0 /* champignonaltswash.ttf in Resources */,
 				8A22EE0E1F9A9F40003A7F21 /* LaunchScreen.storyboard in Resources */,
+				C4BD2D08262CE0EA005DA9A0 /* FilterCell.xib in Resources */,
+				C4BD2D1B262CE0EA005DA9A0 /* Ginga.ttf in Resources */,
+				C4BD2D29262CE0EA005DA9A0 /* Advertising Script Bold Trial.ttf in Resources */,
 				8A22EE0B1F9A9F40003A7F21 /* Assets.xcassets in Resources */,
 				C48716E2247E4BAB002F025B /* oiaa.png in Resources */,
 				8A27F1311FD9E987001B2BBD /* LinkTableViewCell.xib in Resources */,
+				C4BD2D09262CE0EA005DA9A0 /* FramesCell.xib in Resources */,
+				C4BD2D15262CE0EA005DA9A0 /* akaDora.otf in Resources */,
+				C4BD2D10262CE0EA005DA9A0 /* AguafinaScript-Regular.ttf in Resources */,
+				C4BD2D1A262CE0EA005DA9A0 /* Granada Blues Personal Use.ttf in Resources */,
+				C4BD2D28262CE0EA005DA9A0 /* Montez-Regular.ttf in Resources */,
+				C4BD2D0F262CE0EA005DA9A0 /* Advertising Script Monoline Trial.ttf in Resources */,
+				C4BD2D16262CE0EA005DA9A0 /* Bucanera-font-FFP.ttf in Resources */,
 				8A22EE091F9A9F40003A7F21 /* Main.storyboard in Resources */,
+				C4BD2D2A262CE0EA005DA9A0 /* Pretty Girls Script Demo.ttf in Resources */,
+				C4BD2D19262CE0EA005DA9A0 /* VTC-BadTattooHandOne.otf in Resources */,
+				C4BD2D1D262CE0EA005DA9A0 /* The Heart of Everything Demo.ttf in Resources */,
+				C4BD2D13262CE0EA005DA9A0 /* waltograph42.otf in Resources */,
 				C49D2C52247D0C550007D174 /* placeholderMulticolor.png in Resources */,
+				C4BD2D12262CE0EA005DA9A0 /* Script Writing.ttf in Resources */,
+				C4BD2D2C262CE0EA005DA9A0 /* Miama.ttf in Resources */,
+				C4BD2D0D262CE0EA005DA9A0 /* Adine Kirnberg.ttf in Resources */,
+				C4BD2D17262CE0EA005DA9A0 /* Serling Script Regular.otf in Resources */,
+				C4BD2D25262CE0EA005DA9A0 /* Enjoy Personal Use.otf in Resources */,
 				C49D2C51247D0C550007D174 /* placeholderBlack.png in Resources */,
 				C474A84824930DF70043D953 /* dog1.png in Resources */,
+				C4BD2D1F262CE0EA005DA9A0 /* Mf Gradient Goddess.ttf in Resources */,
+				C4BD2D23262CE0EA005DA9A0 /* Alleana Script.otf in Resources */,
 				C474A84624930DF70043D953 /* dog5.png in Resources */,
 				C49D2C54247D0C890007D174 /* placeholderGreen.png in Resources */,
+				C4BD2D20262CE0EA005DA9A0 /* Dohearts.otf in Resources */,
+				C4BD2D26262CE0EA005DA9A0 /* VTKS SummerLAnd.ttf in Resources */,
 				8A18E33D1FBA793F0082201D /* sticker_packs.wasticker in Resources */,
+				C4BD2D18262CE0EA005DA9A0 /* QUIGLEYW.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,43 +830,73 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4BD2D05262CE0EA005DA9A0 /* SelectItemCell.swift in Sources */,
 				8A27F11E1FD73DE2001B2BBD /* StickerPackTableViewCell.swift in Sources */,
 				8A27F1201FD7444B001B2BBD /* StickerPackViewController.swift in Sources */,
+				C4BD2D31262CE0EA005DA9A0 /* JLAttributedTextView.swift in Sources */,
 				8A18E3351FBA5CA90082201D /* StickerPackManager.swift in Sources */,
 				8A27F1331FD9EA08001B2BBD /* LinkTableViewCell.swift in Sources */,
 				8A18E2F01FB3B47D0082201D /* YYFrameImage.m in Sources */,
 				C44C708E249C12A500EC1E85 /* MasterViewController.swift in Sources */,
+				C4BD2D40262CE0EA005DA9A0 /* StickersVC.swift in Sources */,
 				C4351E0324908D46009FBDEF /* ModelController.swift in Sources */,
 				8A18E33F1FBA7DC50082201D /* WebPManager.swift in Sources */,
 				C44C708A249C119600EC1E85 /* DetailViewController.swift in Sources */,
+				C4BD2D32262CE0EA005DA9A0 /* CalcuteFunctions.swift in Sources */,
 				C44C7092249C219100EC1E85 /* WelcomeViewController.swift in Sources */,
 				8ADA60761FD71F69006C9BBA /* AllStickerPacksViewController.swift in Sources */,
+				C4BD2D43262CE0EA005DA9A0 /* HomeVC.swift in Sources */,
 				8ACB6A981FE9CB7700A564BB /* Limits.swift in Sources */,
 				8A40BE651FB122B3003AD704 /* StickerPack.swift in Sources */,
 				C4351DFF249086B2009FBDEF /* stickersDataSaved.swift in Sources */,
 				8A6001CC20298225001EC448 /* GradientViewWhats.swift in Sources */,
+				C4BD2D35262CE0EA005DA9A0 /* SelectionButton.m in Sources */,
+				C4BD2D2E262CE0EA005DA9A0 /* StickerView.swift in Sources */,
 				8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */,
 				C474A7D92492FA810043D953 /* CreditsViewController.swift in Sources */,
+				C4BD2D3A262CE0EA005DA9A0 /* tblStyleCell.swift in Sources */,
+				C4BD2D3E262CE0EA005DA9A0 /* MyAlbumVC.swift in Sources */,
+				C4BD2D36262CE0EA005DA9A0 /* FamButton.m in Sources */,
+				C4BD2D49262CE0EA005DA9A0 /* Helpers.swift in Sources */,
 				C49D2C57247D164A0007D174 /* StoredImage.xcdatamodeld in Sources */,
+				C4BD2D48262CE0EA005DA9A0 /* PentagonView.swift in Sources */,
 				C4320F9324C804B800E798EA /* CollageViewController.swift in Sources */,
+				C4BD2D01262CE0EA005DA9A0 /* FilterCell.swift in Sources */,
+				C4BD2D2F262CE0EA005DA9A0 /* JLStickerImageView.swift in Sources */,
+				C4BD2D4A262CE0EA005DA9A0 /* Filters.swift in Sources */,
 				C44C708B249C119600EC1E85 /* RazeFaceProducts.swift in Sources */,
 				8A18E2F11FB3B47D0082201D /* YYSpriteSheetImage.m in Sources */,
 				C44C7089249C119600EC1E85 /* IAPHelper.swift in Sources */,
 				8A18E2EF1FB3B47D0082201D /* YYAnimatedImageView.m in Sources */,
 				8A27F1221FD76937001B2BBD /* AquaButton.swift in Sources */,
 				C4351DFB248FF976009FBDEF /* InViewController.swift in Sources */,
+				C4BD2D02262CE0EA005DA9A0 /* FramesCell.swift in Sources */,
+				C4BD2D37262CE0EA005DA9A0 /* MagnificationButton.m in Sources */,
 				8A8D4A7A1FB291290078C4AF /* Interoperability.swift in Sources */,
 				8AB5951920C1FC130076625E /* Sticker.swift in Sources */,
+				C4BD2D45262CE0EA005DA9A0 /* LoadShapesVC.swift in Sources */,
 				8A27F12D1FD9E718001B2BBD /* SecondaryTextTableViewCell.swift in Sources */,
+				C4BD2D42262CE0EA005DA9A0 /* ShareVC.swift in Sources */,
+				C4BD2D3F262CE0EA005DA9A0 /* PresentTextVC.swift in Sources */,
 				C4351DFA248FF976009FBDEF /* StyleClass.swift in Sources */,
 				C44C7088249C119600EC1E85 /* Calculator.swift in Sources */,
+				C4BD2D30262CE0EA005DA9A0 /* JLStickerLabelView.swift in Sources */,
+				C4BD2D06262CE0EA005DA9A0 /* StickerCell.swift in Sources */,
+				C4BD2D47262CE0EA005DA9A0 /* Global.swift in Sources */,
 				C4351E0124908D08009FBDEF /* BdCoreDataImg.swift in Sources */,
 				8A22EE041F9A9F40003A7F21 /* AppDelegate.swift in Sources */,
+				C4BD2D41262CE0EA005DA9A0 /* EditImageVC.swift in Sources */,
+				C4BD2D34262CE0EA005DA9A0 /* PressButton.m in Sources */,
+				C4BD2D03262CE0EA005DA9A0 /* MainStickerCell.swift in Sources */,
 				C44C708C249C119600EC1E85 /* ProductCell.swift in Sources */,
+				C4BD2D44262CE0EA005DA9A0 /* PresentPhotoVC.swift in Sources */,
 				8A18E2EE1FB3B47D0082201D /* YYImage.m in Sources */,
 				8A18E2F21FB3B47D0082201D /* YYImageCoder.m in Sources */,
 				0E6359A4203E148200805DEB /* StickerCellWhats.swift in Sources */,
+				C4BD2D33262CE0EA005DA9A0 /* adjustToFitFontOrWidth.swift in Sources */,
+				C4BD2D04262CE0EA005DA9A0 /* allFramesCell.swift in Sources */,
 				8AB5951B20C1FC440076625E /* ImageData.swift in Sources */,
+				C4BD2D46262CE0EA005DA9A0 /* SwiftyTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

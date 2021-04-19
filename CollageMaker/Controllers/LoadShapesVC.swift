@@ -13,13 +13,15 @@ class LoadShapesVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
     var pickImg = UIImage()
     
     @IBOutlet weak var btnBack: UIButton!
-    @IBOutlet weak var ShapeCV: UICollectionView!
+//    @IBOutlet weak var ShapeCV2: UICollectionView!
+    @IBOutlet weak var ShapeCV2: UICollectionView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        ShapeCV.delegate = self
-        ShapeCV.dataSource = self
-        ShapeCV.register(UINib(nibName: "allFramesCell", bundle: nil), forCellWithReuseIdentifier: "allFramesCell")
-        ShapeCV.reloadData()
+//        ShapeCV2.delegate = self
+//        ShapeCV2.dataSource = self
+//        ShapeCV2.register(UINib(nibName: "allFramesCell", bundle: nil), forCellWithReuseIdentifier: "allFramesCell")
+//        ShapeCV2.reloadData()
     }
     
     //MARK:- Button Action Zone
@@ -36,25 +38,25 @@ class LoadShapesVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell : allFramesCell = collectionView.dequeueReusableCell(withReuseIdentifier: "allFramesCell", for: indexPath) as! allFramesCell
-        if cell.btnFrames == (cell.viewWithTag(40) as? UIButton) {
-            cell.imgFrame.image = UIImage(named: "\(indexPath.row+1)")
-            cell.btnFrames.mk_addTapHandlerIO { (btn) in
-                btn.isEnabled = true
-                let ind = indexPath.row
-                if indexPath.row == arrOfIndex[indexPath.row]{
-                    let obj = self.storyboard!.instantiateViewController(withIdentifier: "PresentPhotoVC") as! PresentPhotoVC
-                    obj.objSelectiontype = 1
-                    obj.objIndex = ind
-                    self.totalSelection(ind, obj)
-                    let navController = UINavigationController(rootViewController: obj)
-                    navController.navigationBar.isHidden = true
-                    navController.modalPresentationStyle = .overCurrentContext
-                    self.present(navController, animated:true, completion: nil)
-                }
-            }
-        }
-        return cell
+//        let cell : allFramesCell = collectionView.dequeueReusableCell(withReuseIdentifier: "allFramesCell", for: indexPath) as! allFramesCell
+//        if cell.btnFrames == (cell.viewWithTag(40) as? UIButton) {
+//            cell.imgFrame.image = UIImage(named: "\(indexPath.row+1)")
+//            cell.btnFrames.mk_addTapHandlerIO { (btn) in
+//                btn.isEnabled = true
+//                let ind = indexPath.row
+//                if indexPath.row == arrOfIndex[indexPath.row]{
+//                    let obj = self.storyboard!.instantiateViewController(withIdentifier: "PresentPhotoVC") as! PresentPhotoVC
+//                    obj.objSelectiontype = 1
+//                    obj.objIndex = ind
+//                    self.totalSelection(ind, obj)
+//                    let navController = UINavigationController(rootViewController: obj)
+//                    navController.navigationBar.isHidden = true
+//                    navController.modalPresentationStyle = .overCurrentContext
+//                    self.present(navController, animated:true, completion: nil)
+//                }
+//            }
+//        }
+        return UICollectionViewCell()//cell
     }
     func totalSelection(_ total : Int, _ obj : PresentPhotoVC){
         if total == 0{
@@ -181,7 +183,7 @@ class LoadShapesVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath:
         IndexPath) -> CGSize {
-        let width  = (ShapeCV.frame.width-30)/4
+        let width  = (ShapeCV2.frame.width-30)/4
         return CGSize(width: width, height: width)
     }
 }

@@ -12,8 +12,10 @@ class allFramesCell: UICollectionViewCell {
 
     //MARK:- Outlets
     
-    @IBOutlet weak var imgFrame: UIImageView!
-    @IBOutlet weak var btnFrames: UIButton!
+//    @IBOutlet weak var imgFrame: UIImageView!
+//    @IBOutlet weak var btnFrames: UIButton!
+
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

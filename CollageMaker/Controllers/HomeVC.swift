@@ -21,8 +21,11 @@ class HomeVC: UIViewController{
 
     //MARK:- Button Action Zone
     @IBAction func btnGridAction(_ sender: Any) {
-        let obj : LoadShapesVC = self.storyboard?.instantiateViewController(withIdentifier: "LoadShapesVC") as! LoadShapesVC
-        self.navigationController?.pushViewController(obj, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LoadShapesVC")
+        self.navigationController!.pushViewController(vc, animated: true)
+//        let obj : LoadShapesVC = self.storyboard?.instantiateViewController(withIdentifier: "LoadShapesVC") as! LoadShapesVC
+//        self.navigationController?.pushViewController(obj, animated: true)
     }
   
     @IBAction func btnEditAction(_ sender: Any) {

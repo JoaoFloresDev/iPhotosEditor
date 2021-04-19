@@ -10,9 +10,14 @@ import UIKit
 
 class FramesCell: UICollectionViewCell {
 
-    @IBOutlet weak var imgCommon: UIImageView!
+//    @IBOutlet weak var imgCommon: UIImageView!
+//    @IBOutlet weak var imgFrame: UIImageView!
     @IBOutlet weak var imgFrame: UIImageView!
+    @IBOutlet weak var imgCommon: UIImageView!
     @IBOutlet weak var btnFrame: UIButton!
+
+//    @IBOutlet weak var btnFrame: UIButton!
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }

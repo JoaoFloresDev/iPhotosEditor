@@ -91,9 +91,9 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
 //        addButton.isEnabled = Interoperability.canSend()
 //        view.addSubview(addButton)
 
-        let buttonSize: CGSize = CGSize(width: 280.0, height: 50.0)
-        let buttonLandscapeSize: CGSize = CGSize(width: 250.0, height: 50.0)
-        let buttonBottomMargin: CGFloat = 20.0
+//        let buttonSize: CGSize = CGSize(width: 280.0, height: 50.0)
+//        let buttonLandscapeSize: CGSize = CGSize(width: 250.0, height: 50.0)
+//        let buttonBottomMargin: CGFloat = 20.0
         
         guard let view = view else { return }
         
@@ -120,9 +120,9 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         
         // Collection view constraint
 //        var bottomCollectionViewConstraint = self.bottomCollectionViewConstraint!
-        view.removeConstraint(bottomCollectionViewConstraint)
+//        view.removeConstraint(bottomCollectionViewConstraint)
 //        bottomCollectionViewConstraint = NSLayoutConstraint(item: tapGuideLabel, attribute: .top, relatedBy: .equal, toItem: stickersCollectionView, attribute: .bottom, multiplier: 1.0, constant: 10.0)
-        view.addConstraint(bottomCollectionViewConstraint)
+//        view.addConstraint(bottomCollectionViewConstraint)
         
         // Gradient constraints
         view.addConstraint(NSLayoutConstraint(item: bottomGradientView, attribute: .bottom, relatedBy: .equal, toItem: stickersCollectionView, attribute: .bottom, multiplier: 1.0, constant: 0.0))
@@ -181,8 +181,8 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let length = (collectionView.bounds.size.width - marginInset * 2 - interimMargin * CGFloat(itemsPerRow - 1)) / CGFloat(itemsPerRow)
-        return CGSize(width: length, height: length)
+//        let length = (collectionView.bounds.size.width - marginInset * 2 - interimMargin * CGFloat(itemsPerRow - 1)) / CGFloat(itemsPerRow)
+        return CGSize(width: 80, height: 80)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

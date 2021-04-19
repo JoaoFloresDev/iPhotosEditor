@@ -1743,7 +1743,7 @@
         <scene sceneID="JTd-cp-nSd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="osg-7J-7Ww" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="collage" id="sRj-TA-Nxo"/>
+                    <tabBarItem key="tabBarItem" title="collage" image="square.stack.3d.down.right.fill" catalog="system" id="sRj-TA-Nxo"/>
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bc9-kg-nL8">
@@ -2883,6 +2883,7 @@
         <image name="save" width="96" height="96"/>
         <image name="save1" width="150" height="150"/>
         <image name="share1" width="150" height="150"/>
+        <image name="square.stack.3d.down.right.fill" catalog="system" width="124" height="128"/>
         <image name="tag" width="30" height="30"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

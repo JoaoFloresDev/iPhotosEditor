@@ -1669,7 +1669,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.16862745100000001" green="0.2156862745" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.48627450980392156" green="0.0" blue="0.48627450980392156" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="ONP-QX-TDd" firstAttribute="top" secondItem="TVE-vF-qpP" secondAttribute="bottom" constant="5" id="0Sr-lg-Vfm"/>
                                     <constraint firstItem="OG1-ul-pse" firstAttribute="width" secondItem="5Tj-K9-enH" secondAttribute="width" id="AIy-v4-iN0"/>
@@ -2169,9 +2169,9 @@
                                 </connections>
                             </button>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kun-eb-j4k">
-                                <rect key="frame" x="0.0" y="373" width="414" height="150"/>
+                                <rect key="frame" x="30" y="373" width="354" height="150"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eyP-6z-hTi">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="354" height="150"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <constraints>
@@ -2188,7 +2188,7 @@
                                 <rect key="frame" x="20" y="398" width="374" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DK-eK-8l8">
-                                        <rect key="frame" x="87" y="10" width="80" height="80"/>
+                                        <rect key="frame" x="87" y="0.0" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="Ju3-XK-CYC"/>
                                             <constraint firstAttribute="width" constant="80" id="jOV-Qt-YTx"/>
@@ -2199,21 +2199,37 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ek3-Qn-9Oe">
-                                        <rect key="frame" x="197" y="10" width="80" height="80"/>
+                                        <rect key="frame" x="227" y="0.0" width="80" height="80"/>
                                         <state key="normal" image="galleryMain"/>
                                         <connections>
                                             <action selector="btnGalleryAction:" destination="RaC-bM-l6N" eventType="touchUpInside" id="UxD-ca-Nfu"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wp-Rn-1nv">
+                                        <rect key="frame" x="99" y="83" width="56.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YJ-YE-Njs">
+                                        <rect key="frame" x="241" y="83" width="52.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="ek3-Qn-9Oe" firstAttribute="centerY" secondItem="7DK-eK-8l8" secondAttribute="centerY" id="7qO-DK-LDM"/>
-                                    <constraint firstItem="7DK-eK-8l8" firstAttribute="centerY" secondItem="u5r-79-z35" secondAttribute="centerY" id="8sW-m9-Aee"/>
+                                    <constraint firstItem="7DK-eK-8l8" firstAttribute="centerY" secondItem="u5r-79-z35" secondAttribute="centerY" multiplier="0.8" id="8sW-m9-Aee"/>
                                     <constraint firstItem="ek3-Qn-9Oe" firstAttribute="height" secondItem="7DK-eK-8l8" secondAttribute="height" id="APJ-eP-fyy"/>
-                                    <constraint firstItem="ek3-Qn-9Oe" firstAttribute="leading" secondItem="7DK-eK-8l8" secondAttribute="trailing" constant="30" id="RDB-sF-Z2M"/>
+                                    <constraint firstItem="8Wp-Rn-1nv" firstAttribute="centerX" secondItem="7DK-eK-8l8" secondAttribute="centerX" id="D3X-Y3-hTE"/>
+                                    <constraint firstItem="ek3-Qn-9Oe" firstAttribute="leading" secondItem="7DK-eK-8l8" secondAttribute="trailing" constant="60" id="RDB-sF-Z2M"/>
                                     <constraint firstItem="ek3-Qn-9Oe" firstAttribute="width" secondItem="7DK-eK-8l8" secondAttribute="width" id="dYY-zO-OrR"/>
                                     <constraint firstAttribute="height" constant="100" id="eRU-tx-QgJ"/>
+                                    <constraint firstItem="3YJ-YE-Njs" firstAttribute="centerX" secondItem="ek3-Qn-9Oe" secondAttribute="centerX" id="eUy-bU-Ajj"/>
+                                    <constraint firstItem="3YJ-YE-Njs" firstAttribute="top" secondItem="ek3-Qn-9Oe" secondAttribute="bottom" constant="3" id="edF-Jv-KW7"/>
                                     <constraint firstItem="7DK-eK-8l8" firstAttribute="centerX" secondItem="u5r-79-z35" secondAttribute="centerX" constant="-60" id="hVw-q4-FfJ"/>
+                                    <constraint firstItem="8Wp-Rn-1nv" firstAttribute="top" secondItem="7DK-eK-8l8" secondAttribute="bottom" constant="3" id="pdB-hN-gpd"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2249,8 +2265,8 @@
                             <constraint firstItem="kun-eb-j4k" firstAttribute="centerY" secondItem="BUx-77-xER" secondAttribute="centerY" id="ZqP-0V-Pyv"/>
                             <constraint firstItem="u5r-79-z35" firstAttribute="centerY" secondItem="BUx-77-xER" secondAttribute="centerY" id="ihf-2u-QwO"/>
                             <constraint firstItem="z4U-oZ-Lw8" firstAttribute="leading" secondItem="BUx-77-xER" secondAttribute="leading" id="oL6-DE-NUS"/>
-                            <constraint firstItem="kun-eb-j4k" firstAttribute="leading" secondItem="BUx-77-xER" secondAttribute="leading" id="qYW-GI-I4X"/>
-                            <constraint firstAttribute="trailing" secondItem="kun-eb-j4k" secondAttribute="trailing" id="sKe-o1-fyx"/>
+                            <constraint firstItem="kun-eb-j4k" firstAttribute="leading" secondItem="BUx-77-xER" secondAttribute="leading" constant="30" id="qYW-GI-I4X"/>
+                            <constraint firstAttribute="trailing" secondItem="kun-eb-j4k" secondAttribute="trailing" constant="30" id="sKe-o1-fyx"/>
                             <constraint firstItem="kun-eb-j4k" firstAttribute="centerX" secondItem="BUx-77-xER" secondAttribute="centerX" id="yMm-au-9Ev"/>
                         </constraints>
                     </view>
@@ -2860,7 +2876,7 @@
         <image name="Home1" width="150" height="150"/>
         <image name="back" width="96" height="96"/>
         <image name="bgCollage" width="5760" height="3840"/>
-        <image name="camera" width="400" height="400"/>
+        <image name="camera" width="512" height="512"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="crp_filp_v" width="80" height="80"/>
         <image name="crp_flip_h" width="80" height="80"/>
@@ -2868,7 +2884,7 @@
         <image name="down" width="80" height="80"/>
         <image name="editPencil" width="512" height="512"/>
         <image name="filter1" width="151" height="129"/>
-        <image name="galleryMain" width="400" height="400"/>
+        <image name="galleryMain" width="512" height="512"/>
         <image name="gallery_white" width="150" height="150"/>
         <image name="ic_add_text" width="80" height="80"/>
         <image name="ic_align_center" width="96" height="96"/>

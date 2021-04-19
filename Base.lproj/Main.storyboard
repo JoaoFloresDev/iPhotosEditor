@@ -241,12 +241,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7v-oj-nu5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2189.8550724637685" y="85.714285714285708"/>
+            <point key="canvasLocation" x="622" y="-263"/>
         </scene>
         <!--Load ShapesVC-->
         <scene sceneID="AkQ-mB-18m">
             <objects>
-                <viewController storyboardIdentifier="LoadShapesVC" id="fXO-tS-eY6" customClass="LoadShapesVC" customModule="CollageMaker" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoadShapesVC" id="fXO-tS-eY6" customClass="LoadShapesVC" customModule="iPhotos_Editor" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O2A-BP-VNJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -328,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Exu-XD-k1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2872" y="86"/>
+            <point key="canvasLocation" x="1303" y="-263"/>
         </scene>
         <!--Edit ImageVC-->
         <scene sceneID="dC3-RF-hh0">
@@ -1609,12 +1609,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sje-Hk-ErN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4272" y="83"/>
+            <point key="canvasLocation" x="2703" y="-266"/>
         </scene>
         <!--Present TextVC-->
         <scene sceneID="ajd-M4-vgj">
             <objects>
-                <viewController storyboardIdentifier="PresentTextVC" modalPresentationStyle="overCurrentContext" id="VmU-Vo-78Z" customClass="PresentTextVC" customModule="CollageMaker" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PresentTextVC" modalPresentationStyle="overCurrentContext" id="VmU-Vo-78Z" customClass="PresentTextVC" customModule="iPhotos_Editor" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iee-Hl-a9A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1730,7 +1730,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xtx-cJ-tRp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4971" y="83"/>
+            <point key="canvasLocation" x="3401" y="-266"/>
         </scene>
         <!--Item-->
         <scene sceneID="JTd-cp-nSd">
@@ -1749,12 +1749,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kv2-Mh-GK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1474" y="86"/>
+            <point key="canvasLocation" x="-94" y="-263"/>
         </scene>
         <!--StickersVC-->
         <scene sceneID="wwO-my-mcq">
             <objects>
-                <viewController storyboardIdentifier="StickersVC" id="q48-4N-REi" customClass="StickersVC" customModule="CollageMaker" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StickersVC" id="q48-4N-REi" customClass="StickersVC" customModule="iPhotos_Editor" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6ty-AJ-V0E"/>
                         <viewControllerLayoutGuide type="bottom" id="6Bg-3I-vwS"/>
@@ -1871,12 +1871,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brI-k7-zBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5686" y="83"/>
+            <point key="canvasLocation" x="4117" y="-266"/>
         </scene>
         <!--ShareVC-->
         <scene sceneID="2fG-O0-jPC">
             <objects>
-                <viewController storyboardIdentifier="ShareVC" id="5Bi-bb-H2a" customClass="ShareVC" customModule="CollageMaker" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShareVC" id="5Bi-bb-H2a" customClass="ShareVC" customModule="iPhotos_Editor" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rgh-Lk-6FW"/>
                         <viewControllerLayoutGuide type="bottom" id="bK3-Ky-qOb"/>
@@ -2029,12 +2029,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPb-Et-zS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6404" y="82"/>
+            <point key="canvasLocation" x="4835" y="-267"/>
         </scene>
         <!--My AlbumVC-->
         <scene sceneID="VZx-fW-bBS">
             <objects>
-                <viewController storyboardIdentifier="MyAlbumVC" id="QsO-vo-KZM" customClass="MyAlbumVC" customModule="CollageMaker" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyAlbumVC" id="QsO-vo-KZM" customClass="MyAlbumVC" customModule="iPhotos_Editor" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HjJ-Df-21G"/>
                         <viewControllerLayoutGuide type="bottom" id="PQN-0J-Hoe"/>
@@ -2135,12 +2135,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2I-oY-ewI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7191" y="82"/>
+            <point key="canvasLocation" x="5622" y="-267"/>
         </scene>
         <!--Present PhotoVC-->
         <scene sceneID="u5B-eQ-hBG">
             <objects>
-                <viewController storyboardIdentifier="PresentPhotoVC" modalPresentationStyle="overCurrentContext" id="RaC-bM-l6N" customClass="PresentPhotoVC" customModule="CollageMaker" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PresentPhotoVC" modalPresentationStyle="overCurrentContext" id="RaC-bM-l6N" customClass="PresentPhotoVC" customModule="iPhotos_Editor" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kb8-mM-iNt"/>
                         <viewControllerLayoutGuide type="bottom" id="BVW-Lg-u0Y"/>
@@ -2252,7 +2252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOV-al-9BT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3562" y="83"/>
+            <point key="canvasLocation" x="1993" y="-266"/>
         </scene>
         <!--Sticker Packs-->
         <scene sceneID="beN-hu-KIe">

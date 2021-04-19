@@ -51,7 +51,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
             stickersCollectionView.isPrefetchingEnabled = false
         }
         
-        stickersCollectionView.register(StickerCellWhats.self, forCellWithReuseIdentifier: "StickerCell")
+        stickersCollectionView.register(StickerCellWhats.self, forCellWithReuseIdentifier: "StickerCellWhats")
         stickersCollectionView.scrollIndicatorInsets.bottom = 10
         
         itemsPerRow = portraitOrientation ? portraitItems : landscapeItems
@@ -72,6 +72,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         
         let addButton: AquaButton = AquaButton(frame: .zero)
         addButton.setTitle("Add to WhatsApp", for: .normal)
+        addButton.setTitleColor(UIColor.white, for: .normal)
         addButton.addTarget(self, action: #selector(addButtonPressed(button:)), for: .touchUpInside)
         addButton.translatesAutoresizingMaskIntoConstraints = false
         addButton.isEnabled = Interoperability.canSend()
@@ -185,7 +186,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StickerCell", for: indexPath) as! StickerCellWhats
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StickerCellWhats", for: indexPath) as! StickerCellWhats
         cell.sticker = stickerPack.stickers[indexPath.row]
         
         // Use tag to check index of cell

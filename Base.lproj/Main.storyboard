@@ -2269,141 +2269,6 @@
             </objects>
             <point key="canvasLocation" x="1993" y="-266"/>
         </scene>
-        <!--Sticker Packs-->
-        <scene sceneID="beN-hu-KIe">
-            <objects>
-                <viewController title="Sticker Packs" id="veS-xp-FIa" customClass="AllStickerPacksViewController" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FnO-dd-9cf"/>
-                        <viewControllerLayoutGuide type="bottom" id="rV5-2w-BGl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpQ-Zq-JGe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ebm-FP-mpA">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="793"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="veS-xp-FIa" id="H1p-F9-vfn"/>
-                                    <outlet property="delegate" destination="veS-xp-FIa" id="KX3-zb-cFU"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Ebm-FP-mpA" firstAttribute="top" secondItem="TpQ-Zq-JGe" secondAttribute="top" id="3L6-uh-xsl"/>
-                            <constraint firstItem="Ebm-FP-mpA" firstAttribute="trailing" secondItem="TpQ-Zq-JGe" secondAttribute="trailing" id="GrD-if-8uY"/>
-                            <constraint firstItem="Ebm-FP-mpA" firstAttribute="bottom" secondItem="rV5-2w-BGl" secondAttribute="top" constant="-20" id="cPa-UB-pU3"/>
-                            <constraint firstItem="Ebm-FP-mpA" firstAttribute="leading" secondItem="TpQ-Zq-JGe" secondAttribute="leading" id="kXN-Ej-6uX"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Sticker Packs" largeTitleDisplayMode="never" id="W34-aS-Obc"/>
-                    <connections>
-                        <outlet property="stickerPacksTableView" destination="Ebm-FP-mpA" id="W1O-jo-hDs"/>
-                        <segue destination="eJc-0E-nSF" kind="show" identifier="stickerPackAnimated" id="4MQ-hT-6L9"/>
-                        <segue destination="eJc-0E-nSF" kind="show" identifier="stickerPackNotAnimated" animates="NO" id="ijO-fH-bIz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PYU-13-7dS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="655" y="-1003"/>
-        </scene>
-        <!--Sticker Pack View Controller-->
-        <scene sceneID="AIZ-oP-VNi">
-            <objects>
-                <viewController storyboardIdentifier="stickerPackVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eJc-0E-nSF" customClass="StickerPackViewController" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Oyx-3C-Qyy"/>
-                        <viewControllerLayoutGuide type="bottom" id="DI9-bc-jMK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ESW-mo-x7U">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdX-6A-nLM">
-                                <rect key="frame" x="20" y="8" width="374" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="tH7-hw-0Nn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gQ0-7r-8NJ">
-                                <rect key="frame" x="4" y="53" width="406" height="652"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iBu-M7-EXW">
-                                    <size key="itemSize" width="91" height="83"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                                <connections>
-                                    <outlet property="dataSource" destination="eJc-0E-nSF" id="mKK-p8-BnW"/>
-                                    <outlet property="delegate" destination="eJc-0E-nSF" id="ccU-IE-38W"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="WdX-6A-nLM" firstAttribute="top" secondItem="Oyx-3C-Qyy" secondAttribute="bottom" constant="8" id="0en-ae-rsG"/>
-                            <constraint firstItem="gQ0-7r-8NJ" firstAttribute="leading" secondItem="ESW-mo-x7U" secondAttribute="leadingMargin" constant="-16" id="7t7-Ys-7hO"/>
-                            <constraint firstItem="gQ0-7r-8NJ" firstAttribute="top" secondItem="WdX-6A-nLM" secondAttribute="bottom" constant="24" id="BEY-HQ-1F0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gQ0-7r-8NJ" secondAttribute="trailing" constant="-16" id="WoJ-kD-a5a"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WdX-6A-nLM" secondAttribute="trailing" id="ay0-E9-Cfw"/>
-                            <constraint firstItem="DI9-bc-jMK" firstAttribute="top" secondItem="gQ0-7r-8NJ" secondAttribute="bottom" constant="20" id="j3K-9j-jQA"/>
-                            <constraint firstItem="WdX-6A-nLM" firstAttribute="leading" secondItem="ESW-mo-x7U" secondAttribute="leadingMargin" id="q7A-6k-NcS"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Uux-lk-P7m"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <connections>
-                        <outlet property="bottomCollectionViewConstraint" destination="j3K-9j-jQA" id="s6W-C4-iBG"/>
-                        <outlet property="stickerPackPublisherLabel" destination="WdX-6A-nLM" id="Ul0-qX-HH5"/>
-                        <outlet property="stickersCollectionView" destination="gQ0-7r-8NJ" id="9C8-pU-J82"/>
-                        <segue destination="W7f-Y0-mpP" kind="presentation" identifier="info" id="0bW-J5-Lcc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zlZ-eJ-arU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1384" y="-1004"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="wQY-4T-BYw">
-            <objects>
-                <navigationController id="W7f-Y0-mpP" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e8b-ud-tba">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ijK-Sd-SSw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2259" y="-1003"/>
-        </scene>
-        <!--Stikers-->
-        <scene sceneID="p76-JV-4DK">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o6b-1i-Rxh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Stikers" image="tag" id="gU1-kr-rL5"/>
-                    <toolbarItems/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="71i-rg-3NB">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="veS-xp-FIa" kind="relationship" relationship="rootViewController" id="7FS-Gd-MDK"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3LK-GK-bk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-93" y="-1003"/>
-        </scene>
         <!--Editor-->
         <scene sceneID="Om1-ue-Zex">
             <objects>
@@ -2544,8 +2409,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="tIf-Yc-9Ex" kind="relationship" relationship="viewControllers" id="E1N-A7-rUg"/>
-                        <segue destination="o6b-1i-Rxh" kind="relationship" relationship="viewControllers" id="FiG-Ue-Sxf"/>
                         <segue destination="osg-7J-7Ww" kind="relationship" relationship="viewControllers" id="2iF-Pz-pLg"/>
+                        <segue destination="vyY-lI-xz4" kind="relationship" relationship="viewControllers" id="WSI-p7-LLr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Izh-oh-hsx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2824,10 +2689,145 @@
             </objects>
             <point key="canvasLocation" x="-1884" y="-1449"/>
         </scene>
+        <!--Sticker Packs-->
+        <scene sceneID="gd8-oj-f1A">
+            <objects>
+                <viewController title="Sticker Packs" id="m3v-ad-jBG" customClass="AllStickerPacksViewController" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TZw-Eq-d2d"/>
+                        <viewControllerLayoutGuide type="bottom" id="3nW-8w-7u5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ca1-Za-hCF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bKF-5j-iji">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="793"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="m3v-ad-jBG" id="0Un-1a-w53"/>
+                                    <outlet property="delegate" destination="m3v-ad-jBG" id="c6a-v2-bcR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bKF-5j-iji" firstAttribute="top" secondItem="ca1-Za-hCF" secondAttribute="top" id="V0q-qY-032"/>
+                            <constraint firstItem="bKF-5j-iji" firstAttribute="bottom" secondItem="3nW-8w-7u5" secondAttribute="top" constant="-20" id="mfu-cB-pNB"/>
+                            <constraint firstItem="bKF-5j-iji" firstAttribute="trailing" secondItem="ca1-Za-hCF" secondAttribute="trailing" id="paX-Dk-hhI"/>
+                            <constraint firstItem="bKF-5j-iji" firstAttribute="leading" secondItem="ca1-Za-hCF" secondAttribute="leading" id="sbm-7z-p9B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sticker Packs" largeTitleDisplayMode="never" id="z7E-nq-Qjm"/>
+                    <connections>
+                        <outlet property="stickerPacksTableView" destination="bKF-5j-iji" id="eY5-vd-8eg"/>
+                        <segue destination="n8J-P0-XdL" kind="show" identifier="stickerPackAnimated" id="1NQ-zp-c79"/>
+                        <segue destination="n8J-P0-XdL" kind="show" identifier="stickerPackNotAnimated" animates="NO" id="alp-GJ-cFJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jje-SO-Sdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1370" y="-978"/>
+        </scene>
+        <!--Sticker Pack View Controller-->
+        <scene sceneID="lUc-bl-8bL">
+            <objects>
+                <viewController storyboardIdentifier="stickerPackVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n8J-P0-XdL" customClass="StickerPackViewController" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sug-ao-2eS"/>
+                        <viewControllerLayoutGuide type="bottom" id="BRz-Ij-ZIH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nlv-ix-xHi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4HV-a2-624">
+                                <rect key="frame" x="20" y="8" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wAz-fp-pG2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="x3e-9K-44b">
+                                <rect key="frame" x="4" y="53" width="406" height="652"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wn3-2Y-Y1s">
+                                    <size key="itemSize" width="91" height="83"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="n8J-P0-XdL" id="MOf-zE-EzG"/>
+                                    <outlet property="delegate" destination="n8J-P0-XdL" id="e0W-FM-zrX"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4HV-a2-624" firstAttribute="top" secondItem="Sug-ao-2eS" secondAttribute="bottom" constant="8" id="2eW-78-e0b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x3e-9K-44b" secondAttribute="trailing" constant="-16" id="Pei-Lm-txF"/>
+                            <constraint firstItem="BRz-Ij-ZIH" firstAttribute="top" secondItem="x3e-9K-44b" secondAttribute="bottom" constant="20" id="TSV-VU-RJ1"/>
+                            <constraint firstItem="4HV-a2-624" firstAttribute="leading" secondItem="nlv-ix-xHi" secondAttribute="leadingMargin" id="X1i-Bf-8Er"/>
+                            <constraint firstItem="x3e-9K-44b" firstAttribute="top" secondItem="4HV-a2-624" secondAttribute="bottom" constant="24" id="ffT-8h-S2C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4HV-a2-624" secondAttribute="trailing" id="gMG-5e-buL"/>
+                            <constraint firstItem="x3e-9K-44b" firstAttribute="leading" secondItem="nlv-ix-xHi" secondAttribute="leadingMargin" constant="-16" id="oAi-Tp-sw5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RrG-ef-Thj"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="bottomCollectionViewConstraint" destination="TSV-VU-RJ1" id="FXY-ja-G2q"/>
+                        <outlet property="stickerPackPublisherLabel" destination="4HV-a2-624" id="CtJ-UH-cQG"/>
+                        <outlet property="stickersCollectionView" destination="x3e-9K-44b" id="xtT-x6-Cmb"/>
+                        <segue destination="GD0-Tr-OdU" kind="presentation" identifier="info" id="kgV-br-G23"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PfD-En-VdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2099" y="-978"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x7Z-Aq-Xvt">
+            <objects>
+                <navigationController id="GD0-Tr-OdU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HAU-C2-RfX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WJt-gM-vwJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2974" y="-978"/>
+        </scene>
+        <!--Stikers-->
+        <scene sceneID="Q7J-bX-yEK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vyY-lI-xz4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Stikers" image="tag" id="fPH-ZR-THj"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="vsp-o8-CMy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="m3v-ad-jBG" kind="relationship" relationship="rootViewController" id="mLW-N2-L8P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6R-j6-ZTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622" y="-978"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="alp-GJ-cFJ"/>
         <segue reference="fix-dX-8BI"/>
-        <segue reference="ijO-fH-bIz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Home1" width="150" height="150"/>

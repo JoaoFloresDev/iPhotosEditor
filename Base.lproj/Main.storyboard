@@ -2751,7 +2751,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="x3e-9K-44b">
-                                <rect key="frame" x="4" y="53" width="406" height="652"/>
+                                <rect key="frame" x="4" y="53" width="406" height="577.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wn3-2Y-Y1s">
                                     <size key="itemSize" width="91" height="83"/>
@@ -2765,22 +2765,47 @@
                                     <outlet property="delegate" destination="n8J-P0-XdL" id="e0W-FM-zrX"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8b-do-ZrK">
+                                <rect key="frame" x="44" y="667" width="326" height="48"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="HVr-vg-KQn"/>
+                                </constraints>
+                                <state key="normal" title="Add to WhatsApp">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendPackStickers:" destination="n8J-P0-XdL" eventType="touchUpInside" id="90l-oF-yMc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap itens to see more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MC7-rv-OxD">
+                                <rect key="frame" x="44" y="638.5" width="326" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="o8b-do-ZrK" firstAttribute="leading" secondItem="nlv-ix-xHi" secondAttribute="leadingMargin" constant="24" id="0pZ-Gy-gsd"/>
                             <constraint firstItem="4HV-a2-624" firstAttribute="top" secondItem="Sug-ao-2eS" secondAttribute="bottom" constant="8" id="2eW-78-e0b"/>
+                            <constraint firstItem="MC7-rv-OxD" firstAttribute="leading" secondItem="nlv-ix-xHi" secondAttribute="leadingMargin" constant="24" id="31c-zt-n5H"/>
+                            <constraint firstItem="BRz-Ij-ZIH" firstAttribute="top" secondItem="o8b-do-ZrK" secondAttribute="bottom" constant="10" id="CGy-7p-KVg"/>
+                            <constraint firstItem="o8b-do-ZrK" firstAttribute="top" secondItem="MC7-rv-OxD" secondAttribute="bottom" constant="8" id="GCO-90-Rx1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="x3e-9K-44b" secondAttribute="trailing" constant="-16" id="Pei-Lm-txF"/>
-                            <constraint firstItem="BRz-Ij-ZIH" firstAttribute="top" secondItem="x3e-9K-44b" secondAttribute="bottom" constant="20" id="TSV-VU-RJ1"/>
+                            <constraint firstItem="MC7-rv-OxD" firstAttribute="top" secondItem="x3e-9K-44b" secondAttribute="bottom" constant="8" id="SiY-u3-nNB"/>
                             <constraint firstItem="4HV-a2-624" firstAttribute="leading" secondItem="nlv-ix-xHi" secondAttribute="leadingMargin" id="X1i-Bf-8Er"/>
                             <constraint firstItem="x3e-9K-44b" firstAttribute="top" secondItem="4HV-a2-624" secondAttribute="bottom" constant="24" id="ffT-8h-S2C"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4HV-a2-624" secondAttribute="trailing" id="gMG-5e-buL"/>
                             <constraint firstItem="x3e-9K-44b" firstAttribute="leading" secondItem="nlv-ix-xHi" secondAttribute="leadingMargin" constant="-16" id="oAi-Tp-sw5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o8b-do-ZrK" secondAttribute="trailing" constant="24" id="p8M-eL-AtD"/>
+                            <constraint firstItem="o8b-do-ZrK" firstAttribute="centerX" secondItem="nlv-ix-xHi" secondAttribute="centerX" id="umn-E0-QdJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MC7-rv-OxD" secondAttribute="trailing" constant="24" id="wLa-7S-anb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RrG-ef-Thj"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
-                        <outlet property="bottomCollectionViewConstraint" destination="TSV-VU-RJ1" id="FXY-ja-G2q"/>
                         <outlet property="stickerPackPublisherLabel" destination="4HV-a2-624" id="CtJ-UH-cQG"/>
                         <outlet property="stickersCollectionView" destination="x3e-9K-44b" id="xtT-x6-Cmb"/>
                         <segue destination="GD0-Tr-OdU" kind="presentation" identifier="info" id="kgV-br-G23"/>
@@ -2870,6 +2895,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

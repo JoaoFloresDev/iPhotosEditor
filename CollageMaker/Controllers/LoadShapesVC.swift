@@ -14,6 +14,7 @@ class LoadShapesVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
     
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var ShapeCV: UICollectionView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         ShapeCV.delegate = self

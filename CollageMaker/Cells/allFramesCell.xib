@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="allFramesCell" customModule="CollageMaker">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="allFramesCell" id="gTV-IL-0wX" customClass="allFramesCell" customModule="iPhotos_Editor">
             <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -57,6 +57,10 @@
                 <constraint firstAttribute="bottom" secondItem="FRk-sR-ICf" secondAttribute="bottom" constant="5" id="X7w-UO-vWY"/>
                 <constraint firstAttribute="trailing" secondItem="FRk-sR-ICf" secondAttribute="trailing" constant="5" id="YFu-1m-flQ"/>
             </constraints>
+            <connections>
+                <outlet property="btnFrames" destination="84k-ig-Z92" id="82s-77-flM"/>
+                <outlet property="imgFrame" destination="X49-AC-Hgk" id="Pe8-oj-jks"/>
+            </connections>
             <point key="canvasLocation" x="-145" y="-23"/>
         </collectionViewCell>
     </objects>

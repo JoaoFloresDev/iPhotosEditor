@@ -19,7 +19,6 @@
 		8A18E33D1FBA793F0082201D /* sticker_packs.wasticker in Resources */ = {isa = PBXBuildFile; fileRef = 8A18E33C1FBA793F0082201D /* sticker_packs.wasticker */; };
 		8A18E33F1FBA7DC50082201D /* WebPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A18E33E1FBA7DC50082201D /* WebPManager.swift */; };
 		8A22EE041F9A9F40003A7F21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22EE031F9A9F40003A7F21 /* AppDelegate.swift */; };
-		8A22EE091F9A9F40003A7F21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A22EE071F9A9F40003A7F21 /* Main.storyboard */; };
 		8A22EE0B1F9A9F40003A7F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A22EE0A1F9A9F40003A7F21 /* Assets.xcassets */; };
 		8A22EE0E1F9A9F40003A7F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A22EE0C1F9A9F40003A7F21 /* LaunchScreen.storyboard */; };
 		8A27F11C1FD73DD0001B2BBD /* StickerPackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A27F11B1FD73DD0001B2BBD /* StickerPackTableViewCell.xib */; };
@@ -130,6 +129,7 @@
 		C4BD2D48262CE0EA005DA9A0 /* PentagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CFD262CE0EA005DA9A0 /* PentagonView.swift */; };
 		C4BD2D49262CE0EA005DA9A0 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CFE262CE0EA005DA9A0 /* Helpers.swift */; };
 		C4BD2D4A262CE0EA005DA9A0 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CFF262CE0EA005DA9A0 /* Filters.swift */; };
+		C4BD2E65262D1541005DA9A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4BD2E64262D1541005DA9A0 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -173,7 +173,6 @@
 		8A18E33E1FBA7DC50082201D /* WebPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPManager.swift; sourceTree = "<group>"; };
 		8A22EE001F9A9F40003A7F21 /* iPhotos Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPhotos Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A22EE031F9A9F40003A7F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A22EE081F9A9F40003A7F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A22EE0A1F9A9F40003A7F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A22EE0D1F9A9F40003A7F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A22EE0F1F9A9F40003A7F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -292,6 +291,7 @@
 		C4BD2CFD262CE0EA005DA9A0 /* PentagonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PentagonView.swift; sourceTree = "<group>"; };
 		C4BD2CFE262CE0EA005DA9A0 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		C4BD2CFF262CE0EA005DA9A0 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		C4BD2E64262D1541005DA9A0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,7 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				8A22EE031F9A9F40003A7F21 /* AppDelegate.swift */,
-				8A22EE071F9A9F40003A7F21 /* Main.storyboard */,
+				C4BD2E64262D1541005DA9A0 /* Main.storyboard */,
 				8A22EE0C1F9A9F40003A7F21 /* LaunchScreen.storyboard */,
 				8A22EE0A1F9A9F40003A7F21 /* Assets.xcassets */,
 				C49D2C55247D164A0007D174 /* StoredImage.xcdatamodeld */,
@@ -714,6 +714,7 @@
 				C4BD2D24262CE0EA005DA9A0 /* Arizonia-Regular.ttf in Resources */,
 				C4BD2D0C262CE0EA005DA9A0 /* SelectItemCell.xib in Resources */,
 				C4BD2D0E262CE0EA005DA9A0 /* champignonaltswash.ttf in Resources */,
+				C4BD2E65262D1541005DA9A0 /* Main.storyboard in Resources */,
 				8A22EE0E1F9A9F40003A7F21 /* LaunchScreen.storyboard in Resources */,
 				C4BD2D08262CE0EA005DA9A0 /* FilterCell.xib in Resources */,
 				C4BD2D1B262CE0EA005DA9A0 /* Ginga.ttf in Resources */,
@@ -728,7 +729,6 @@
 				C4BD2D28262CE0EA005DA9A0 /* Montez-Regular.ttf in Resources */,
 				C4BD2D0F262CE0EA005DA9A0 /* Advertising Script Monoline Trial.ttf in Resources */,
 				C4BD2D16262CE0EA005DA9A0 /* Bucanera-font-FFP.ttf in Resources */,
-				8A22EE091F9A9F40003A7F21 /* Main.storyboard in Resources */,
 				C4BD2D2A262CE0EA005DA9A0 /* Pretty Girls Script Demo.ttf in Resources */,
 				C4BD2D19262CE0EA005DA9A0 /* VTC-BadTattooHandOne.otf in Resources */,
 				C4BD2D1D262CE0EA005DA9A0 /* The Heart of Everything Demo.ttf in Resources */,
@@ -903,14 +903,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8A22EE071F9A9F40003A7F21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A22EE081F9A9F40003A7F21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8A22EE0C1F9A9F40003A7F21 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

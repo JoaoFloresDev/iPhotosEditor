@@ -20,7 +20,7 @@ class ModelController {static let shared = ModelController()
 
      init() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        managedContext = appDelegate.persistentContainer.viewContext
+//        managedContext = appDelegate.persistentContainer.viewContext
         
         fetchImageObjects()
     }

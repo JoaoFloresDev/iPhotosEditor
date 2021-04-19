@@ -29,7 +29,9 @@ class HomeVC: UIViewController{
     }
   
     @IBAction func btnEditAction(_ sender: Any) {
-        let obj = self.storyboard!.instantiateViewController(withIdentifier: "PresentPhotoVC") as! PresentPhotoVC
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let obj = storyboard.instantiateViewController(withIdentifier: "PresentPhotoVC") as! PresentPhotoVC
+//        let obj = self.storyboard!.instantiateViewController(withIdentifier: "PresentPhotoVC") as! PresentPhotoVC
         obj.objSelectiontype = 2
         let navController = UINavigationController(rootViewController: obj)
         navController.navigationBar.isHidden = true

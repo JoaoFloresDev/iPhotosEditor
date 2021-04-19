@@ -1980,7 +1980,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeQ-hc-IWr">
-                                                <rect key="frame" x="317" y="14" width="52" height="52"/>
+                                                <rect key="frame" x="316" y="14" width="52" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2094,7 +2094,7 @@
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zjU-md-gXI">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="703"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.48973543679999998" green="9.4870133619999998e-05" blue="0.47731344129999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="ohi-DT-zlG">
                                             <size key="itemSize" width="0.0" height="0.0"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -2123,7 +2123,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4D3-2H-ASm"/>
-                        <color key="backgroundColor" red="0.16862745100000001" green="0.2156862745" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.53725490200000003" green="0.0" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Z7G-gI-6mb" firstAttribute="leading" secondItem="4D3-2H-ASm" secondAttribute="leading" constant="50" id="37W-kH-l65"/>
                             <constraint firstItem="4D3-2H-ASm" firstAttribute="trailing" secondItem="Z7G-gI-6mb" secondAttribute="trailing" constant="50" id="5HQ-gN-Vvv"/>
@@ -2806,6 +2806,7 @@
                     <navigationItem key="navigationItem" id="RrG-ef-Thj"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="sendPackStickersButton" destination="o8b-do-ZrK" id="pfV-8A-w0Y"/>
                         <outlet property="stickerPackPublisherLabel" destination="4HV-a2-624" id="CtJ-UH-cQG"/>
                         <outlet property="stickersCollectionView" destination="x3e-9K-44b" id="xtT-x6-Cmb"/>
                         <segue destination="GD0-Tr-OdU" kind="presentation" identifier="info" id="kgV-br-G23"/>

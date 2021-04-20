@@ -963,7 +963,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkx-Uh-RVJ">
-                                        <rect key="frame" x="0.0" y="718" width="414" height="70"/>
+                                        <rect key="frame" x="0.0" y="743" width="414" height="70"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YtZ-nE-a3I">
                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="70"/>
@@ -1472,7 +1472,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Wkx-Uh-RVJ" secondAttribute="bottom" constant="25" id="7rG-9Q-aZr"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wkx-Uh-RVJ" secondAttribute="bottom" id="7rG-9Q-aZr"/>
                                     <constraint firstItem="pJU-HS-8xl" firstAttribute="leading" secondItem="tCE-hG-zn8" secondAttribute="leading" id="8fz-hc-I1W"/>
                                     <constraint firstAttribute="trailing" secondItem="pJU-HS-8xl" secondAttribute="trailing" id="Aqd-Ij-382"/>
                                     <constraint firstItem="VtY-ue-oFQ" firstAttribute="top" secondItem="2W1-Kc-7FY" secondAttribute="bottom" constant="40" id="Atf-GP-dlw"/>

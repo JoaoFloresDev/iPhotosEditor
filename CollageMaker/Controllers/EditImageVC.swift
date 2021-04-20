@@ -2694,7 +2694,7 @@ class EditImageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == self.mainItemsCV{
             if objType == 1{
-                return CGSize(width: 70, height: 70)
+                return CGSize(width: 50, height: 50)
             }else if objType == 2{
                 return CGSize(width: 70, height: 70)
             }

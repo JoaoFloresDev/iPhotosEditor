@@ -173,11 +173,10 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
     //    MARK: - OPTIONS
     /// edit current image
     func editImage() {
-        
         if (imageView.image != nil) {
             let editor = CLImageEditor(image: imageView.image, delegate: self)
+            editor!.modalPresentationStyle = .fullScreen
             self.present(editor!, animated: true, completion: nil)
-            
         } else {
             newImage()
         }

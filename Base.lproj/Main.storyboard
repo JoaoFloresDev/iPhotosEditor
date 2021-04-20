@@ -2188,7 +2188,7 @@
                                 <rect key="frame" x="20" y="398" width="374" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DK-eK-8l8">
-                                        <rect key="frame" x="87" y="0.0" width="80" height="80"/>
+                                        <rect key="frame" x="53.5" y="0.0" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="Ju3-XK-CYC"/>
                                             <constraint firstAttribute="width" constant="80" id="jOV-Qt-YTx"/>
@@ -2199,20 +2199,20 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ek3-Qn-9Oe">
-                                        <rect key="frame" x="227" y="0.0" width="80" height="80"/>
+                                        <rect key="frame" x="240.5" y="0.0" width="80" height="80"/>
                                         <state key="normal" image="galleryMain"/>
                                         <connections>
                                             <action selector="btnGalleryAction:" destination="RaC-bM-l6N" eventType="touchUpInside" id="UxD-ca-Nfu"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wp-Rn-1nv">
-                                        <rect key="frame" x="99" y="83" width="56.5" height="19.5"/>
+                                        <rect key="frame" x="65.5" y="88" width="56.5" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YJ-YE-Njs">
-                                        <rect key="frame" x="241" y="83" width="52.5" height="19.5"/>
+                                        <rect key="frame" x="254.5" y="88" width="52.5" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -2223,13 +2223,13 @@
                                     <constraint firstItem="7DK-eK-8l8" firstAttribute="centerY" secondItem="u5r-79-z35" secondAttribute="centerY" multiplier="0.8" id="8sW-m9-Aee"/>
                                     <constraint firstItem="ek3-Qn-9Oe" firstAttribute="height" secondItem="7DK-eK-8l8" secondAttribute="height" id="APJ-eP-fyy"/>
                                     <constraint firstItem="8Wp-Rn-1nv" firstAttribute="centerX" secondItem="7DK-eK-8l8" secondAttribute="centerX" id="D3X-Y3-hTE"/>
-                                    <constraint firstItem="ek3-Qn-9Oe" firstAttribute="leading" secondItem="7DK-eK-8l8" secondAttribute="trailing" constant="60" id="RDB-sF-Z2M"/>
+                                    <constraint firstItem="7DK-eK-8l8" firstAttribute="centerX" secondItem="u5r-79-z35" secondAttribute="centerX" multiplier="0.5" id="Rce-XP-Dhc"/>
                                     <constraint firstItem="ek3-Qn-9Oe" firstAttribute="width" secondItem="7DK-eK-8l8" secondAttribute="width" id="dYY-zO-OrR"/>
                                     <constraint firstAttribute="height" constant="100" id="eRU-tx-QgJ"/>
                                     <constraint firstItem="3YJ-YE-Njs" firstAttribute="centerX" secondItem="ek3-Qn-9Oe" secondAttribute="centerX" id="eUy-bU-Ajj"/>
-                                    <constraint firstItem="3YJ-YE-Njs" firstAttribute="top" secondItem="ek3-Qn-9Oe" secondAttribute="bottom" constant="3" id="edF-Jv-KW7"/>
-                                    <constraint firstItem="7DK-eK-8l8" firstAttribute="centerX" secondItem="u5r-79-z35" secondAttribute="centerX" constant="-60" id="hVw-q4-FfJ"/>
-                                    <constraint firstItem="8Wp-Rn-1nv" firstAttribute="top" secondItem="7DK-eK-8l8" secondAttribute="bottom" constant="3" id="pdB-hN-gpd"/>
+                                    <constraint firstItem="3YJ-YE-Njs" firstAttribute="top" secondItem="ek3-Qn-9Oe" secondAttribute="bottom" constant="8" id="edF-Jv-KW7"/>
+                                    <constraint firstItem="ek3-Qn-9Oe" firstAttribute="centerX" secondItem="u5r-79-z35" secondAttribute="centerX" multiplier="1.5" id="mUc-t4-daa"/>
+                                    <constraint firstItem="8Wp-Rn-1nv" firstAttribute="top" secondItem="7DK-eK-8l8" secondAttribute="bottom" constant="8" id="pdB-hN-gpd"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2287,7 +2287,7 @@
         <!--Editor-->
         <scene sceneID="Om1-ue-Zex">
             <objects>
-                <viewController id="tIf-Yc-9Ex" customClass="InViewController" customModule="iPhotos_Editor" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="tIf-Yc-9Ex" customClass="InViewController" customModule="iPhotos_Editor" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AUg-F7-a8V"/>
                         <viewControllerLayoutGuide type="bottom" id="SPu-ge-KRm"/>

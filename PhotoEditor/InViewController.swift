@@ -17,7 +17,6 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
     //    MARK: - IBOutlet
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cellOptions: UIView!
-    
     @IBOutlet weak var backgroundCellImage: UIImageView!
     @IBOutlet weak var cellImage: UIView!
     @IBOutlet weak var backgroundOptions: UIImageView!
@@ -83,10 +82,10 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         interstitial.load(request)
         
         var image = readImageFromStorage()
-        if image == nil {
-            image = UIImage(named: "placeholder")
+        if image != nil {
+            imageView.image = image
+            backgroundCellImage.image = nil
         }
-        imageView.image = image
         
         cellOptions.clipsToBounds = false
         cellOptions.layer.shadowColor = UIColor.black.cgColor
@@ -113,6 +112,7 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         
         imageView.image = image
+        backgroundCellImage.image = nil
         imageView.layer.cornerRadius = 10
         picker.dismiss(animated: true, completion: nil)
     }
@@ -121,6 +121,7 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
     func imageEditor(_ editor: CLImageEditor!, didFinishEditingWith image: UIImage!) {
         
         imageView.image = image
+        backgroundCellImage.image = nil
         editor.dismiss(animated: true, completion: nil)
         
         if #available(iOS 10.3, *) {

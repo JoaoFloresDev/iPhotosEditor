@@ -24,20 +24,25 @@ class ShareVC: UIViewController {
     @IBOutlet weak var imgDisplay: UIImageView!
     @IBOutlet weak var viewButtons: UIView!
 
+    @IBOutlet weak var viewSave: UIView!
+    @IBOutlet weak var viewDelete: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if objDisplay == 1{
             imgDisplay.image = getImage
             btnHome.frame = CGRect(x: 134, y: 14, width: 52, height: 52)
-            btnSave.isHidden = false
             btnHome.isHidden = false
-            btnShare.isHidden = true
-            btnDelete.isHidden = true
+            btnShare.isHidden = false
+            viewSave.isHidden = false
+            viewDelete.isHidden = true
         }else if objDisplay == 2{
             imgDisplay.image = getImage
             btnHome.frame = CGRect(x: 44, y: 14, width: 52, height: 52)
-            btnSave.isHidden = false
-            btnDelete.isHidden = false
+            btnHome.isHidden = false
+            btnShare.isHidden = false
+            viewSave.isHidden = true
+            viewDelete.isHidden = false
         }
     }
     
@@ -55,6 +60,9 @@ class ShareVC: UIViewController {
     
     @IBAction func btnSaveAction(_ sender: UIButton) {
         UIImageWriteToSavedPhotosAlbum(getImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+
+        UIImageWriteToSavedPhotosAlbum(getImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+
     }
     
     @IBAction func btnDeleteAction(_ sender: UIButton) {
@@ -102,7 +110,9 @@ class ShareVC: UIViewController {
         if let error = error {
             print(error.localizedDescription)
         } else {
-            print("Success")
+            let alert = UIAlertController(title: "Saved!", message: "Your image has been saved to your photos.", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
 }

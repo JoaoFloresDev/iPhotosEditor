@@ -25,6 +25,7 @@ class WelcomeViewController: UIViewController {
     
     //    MARK: - IBOutlets
     
+    @IBOutlet weak var titleLabel: UILabel!
     //        @IBOutlet weak var buyLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     //        @IBOutlet weak var titlePurchase: UILabel!
@@ -67,9 +68,6 @@ class WelcomeViewController: UIViewController {
     }
     
     func showController() {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let newViewController = storyBoard.instantiateViewController(withIdentifier: "newViewController") as! UITableViewController
-//        self.present(newViewController, animated: true, completion: nil)
         performSegue(withIdentifier: "showGame", sender: nil)
     }
     
@@ -77,13 +75,13 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewPro.layer.cornerRadius = 20
-        viewTest.layer.cornerRadius = 20
+        viewPro.layer.cornerRadius = 10
+        viewTest.layer.cornerRadius = 10
         
         NotificationCenter.default.addObserver(self, selector: #selector(MasterViewController.handlePurchaseNotification(_:)),
                                                name: .IAPHelperPurchaseNotification,
                                                object: nil)
-        
+        titleLabel.adjustsFontSizeToFitWidth = true
         confirmCheckmark()
     }
     

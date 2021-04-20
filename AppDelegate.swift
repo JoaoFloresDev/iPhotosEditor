@@ -21,13 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //        select root
         if (UserDefaults.standard.object(forKey: "FirtsUse") == nil) {
-            print("1")
             self.window = UIWindow(frame: UIScreen.main.bounds)
 
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            print("2")
             let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginSignupVC")
-            print("3")
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
         }

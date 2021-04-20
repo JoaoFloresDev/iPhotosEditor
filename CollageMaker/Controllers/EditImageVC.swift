@@ -160,13 +160,14 @@ class EditImageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
             }
             if let selectedStickerView = _selectedStickerView {
                 selectedStickerView.showEditing = true
-                selectedStickerView.superview?.bringSubviewToFront(selectedStickerView)
+                selectedStickerView.superview? .bringSubviewToFront(selectedStickerView)
             }
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         imagePicker.delegate = self
         imgFX.isHidden = true
         
@@ -224,10 +225,10 @@ class EditImageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         viewMain.objselection = self
         
         if objType == 1{
-            lblMainTitle.text = "GRID"
+            lblMainTitle.text = "Grid"
             setframe(objIndex)
         }else if objType == 2{
-            lblMainTitle.text = "EDIT"
+            lblMainTitle.text = "Edit"
             setSingleFrame()
         }
         

@@ -81,7 +81,7 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         let request = GADRequest()
         interstitial.load(request)
         
-        var image = readImageFromStorage()
+        let image = readImageFromStorage()
         if image != nil {
             imageView.image = image
             backgroundCellImage.image = nil

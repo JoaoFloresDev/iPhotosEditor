@@ -29,7 +29,9 @@ class ShareVC: UIViewController {
         if objDisplay == 1{
             imgDisplay.image = getImage
             btnHome.frame = CGRect(x: 134, y: 14, width: 52, height: 52)
-            btnSave.isHidden = true
+            btnSave.isHidden = false
+            btnHome.isHidden = false
+            btnShare.isHidden = true
             btnDelete.isHidden = true
         }else if objDisplay == 2{
             imgDisplay.image = getImage

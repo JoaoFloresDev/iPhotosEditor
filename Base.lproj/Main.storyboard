@@ -34,7 +34,7 @@
                                             <view clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiJ-gC-5ui" userLabel="viewgrid">
                                                 <rect key="frame" x="8" y="0.0" width="190" height="110"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="49" translatesAutoresizingMaskIntoConstraints="NO" id="nBO-OD-VL4">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="22" translatesAutoresizingMaskIntoConstraints="NO" id="nBO-OD-VL4">
                                                         <rect key="frame" x="70" y="10" width="50" height="50"/>
                                                         <color key="tintColor" red="0.16862745100000001" green="0.2156862745" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -1934,20 +1934,26 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0EK-KG-hqh">
                                         <rect key="frame" x="0.0" y="547" width="414" height="80"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9T-ho-RHo">
-                                                <rect key="frame" x="44" y="14" width="52" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9T-ho-RHo">
+                                                <rect key="frame" x="15" y="14" width="52" height="52"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="52" id="b0I-RM-Lik"/>
+                                                    <constraint firstAttribute="width" secondItem="o9T-ho-RHo" secondAttribute="height" multiplier="1:1" id="etT-gv-Uzb"/>
+                                                </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="Home1"/>
                                                 <connections>
                                                     <action selector="btnHomeAction:" destination="5Bi-bb-H2a" eventType="touchUpInside" id="SHG-CI-8us"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpB-PR-s7P">
-                                                <rect key="frame" x="133" y="14" width="52" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpB-PR-s7P">
+                                                <rect key="frame" x="77" y="14" width="52" height="52"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="52" id="Tf4-SE-nSM"/>
+                                                    <constraint firstAttribute="width" secondItem="hpB-PR-s7P" secondAttribute="height" multiplier="1:1" id="Wnu-jf-fSt"/>
+                                                </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="save1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1961,10 +1967,13 @@
                                                     <action selector="btnSaveAction:" destination="5Bi-bb-H2a" eventType="touchUpInside" id="hVT-Wi-JnP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEm-9t-AOd">
-                                                <rect key="frame" x="226" y="14" width="52" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEm-9t-AOd">
+                                                <rect key="frame" x="181" y="14" width="52" height="52"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="LEm-9t-AOd" secondAttribute="height" multiplier="1:1" id="Gbo-Pk-1ks"/>
+                                                    <constraint firstAttribute="width" constant="52" id="LAg-iQ-XHK"/>
+                                                </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="share1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1978,10 +1987,13 @@
                                                     <action selector="btnShareAction:" destination="5Bi-bb-H2a" eventType="touchUpInside" id="G4T-DA-XbY"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeQ-hc-IWr">
-                                                <rect key="frame" x="316" y="14" width="52" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeQ-hc-IWr">
+                                                <rect key="frame" x="243" y="14" width="52" height="52"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="GeQ-hc-IWr" secondAttribute="height" multiplier="1:1" id="b1e-Ie-tOH"/>
+                                                    <constraint firstAttribute="width" constant="52" id="iwj-i4-LdF"/>
+                                                </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="delete1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1998,6 +2010,14 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="LEm-9t-AOd" firstAttribute="centerY" secondItem="0EK-KG-hqh" secondAttribute="centerY" id="88c-WC-aMB"/>
+                                            <constraint firstItem="GeQ-hc-IWr" firstAttribute="centerY" secondItem="0EK-KG-hqh" secondAttribute="centerY" id="Ipi-Q9-ujt"/>
+                                            <constraint firstItem="hpB-PR-s7P" firstAttribute="centerY" secondItem="0EK-KG-hqh" secondAttribute="centerY" id="PmL-FI-hCP"/>
+                                            <constraint firstItem="hpB-PR-s7P" firstAttribute="centerX" secondItem="0EK-KG-hqh" secondAttribute="centerX" multiplier="0.5" id="agT-Os-dU9"/>
+                                            <constraint firstItem="GeQ-hc-IWr" firstAttribute="centerX" secondItem="0EK-KG-hqh" secondAttribute="centerX" multiplier="1.3" id="lnd-BL-wlb"/>
+                                            <constraint firstItem="o9T-ho-RHo" firstAttribute="centerY" secondItem="0EK-KG-hqh" secondAttribute="centerY" id="m0r-Rv-vx9"/>
+                                            <constraint firstItem="LEm-9t-AOd" firstAttribute="centerX" secondItem="0EK-KG-hqh" secondAttribute="centerX" id="uvZ-KP-y77"/>
+                                            <constraint firstItem="o9T-ho-RHo" firstAttribute="centerX" secondItem="0EK-KG-hqh" secondAttribute="centerX" multiplier="0.2" id="xF2-g0-6M3"/>
                                             <constraint firstAttribute="height" constant="80" id="zul-zl-6Eu"/>
                                         </constraints>
                                     </view>
@@ -2399,7 +2419,7 @@
                             <constraint firstItem="uup-zo-lUN" firstAttribute="top" secondItem="AUg-F7-a8V" secondAttribute="bottom" id="i2w-Ec-nlp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Editor" image="picture-1" id="CXY-3E-Fl1"/>
+                    <tabBarItem key="tabBarItem" title="Editor" image="photo.fill" catalog="system" id="CXY-3E-Fl1"/>
                     <connections>
                         <outlet property="backgroundCellImage" destination="Vcg-1U-R17" id="Z6a-KS-oYs"/>
                         <outlet property="backgroundOptions" destination="qGn-ao-WaF" id="aY3-N1-7Xo"/>
@@ -2858,7 +2878,7 @@
         <scene sceneID="Q7J-bX-yEK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vyY-lI-xz4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Stikers" image="tag" id="fPH-ZR-THj"/>
+                    <tabBarItem key="tabBarItem" title="Stikers" image="tag.fill" catalog="system" id="fPH-ZR-THj"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="vsp-o8-CMy">
@@ -2881,7 +2901,7 @@
         <segue reference="fix-dX-8BI"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="49" width="200" height="200"/>
+        <image name="22" width="200" height="200"/>
         <image name="Home1" width="150" height="150"/>
         <image name="back" width="96" height="96"/>
         <image name="bgCollage" width="5760" height="3840"/>
@@ -2904,13 +2924,13 @@
         <image name="ic_text_color" width="80" height="80"/>
         <image name="myphotos" width="512" height="512"/>
         <image name="opacity" width="64" height="64"/>
-        <image name="picture-1" width="30" height="30"/>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
         <image name="premiumIcon" width="1024" height="1024"/>
         <image name="save" width="96" height="96"/>
         <image name="save1" width="150" height="150"/>
         <image name="share1" width="150" height="150"/>
         <image name="square.stack.3d.down.right.fill" catalog="system" width="124" height="128"/>
-        <image name="tag" width="30" height="30"/>
+        <image name="tag.fill" catalog="system" width="128" height="119"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

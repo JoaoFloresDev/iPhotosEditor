@@ -963,7 +963,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkx-Uh-RVJ">
-                                        <rect key="frame" x="0.0" y="763" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="758" width="414" height="50"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YtZ-nE-a3I">
                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
@@ -1500,7 +1500,7 @@
                         <color key="backgroundColor" red="0.48627450980392156" green="0.0" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tCE-hG-zn8" firstAttribute="leading" secondItem="wLN-bs-NTp" secondAttribute="leading" id="E03-jd-ldm"/>
-                            <constraint firstItem="wLN-bs-NTp" firstAttribute="bottom" secondItem="Wkx-Uh-RVJ" secondAttribute="bottom" id="HU4-vX-ECN"/>
+                            <constraint firstItem="wLN-bs-NTp" firstAttribute="bottom" secondItem="Wkx-Uh-RVJ" secondAttribute="bottom" constant="5" id="HU4-vX-ECN"/>
                             <constraint firstItem="tCE-hG-zn8" firstAttribute="top" secondItem="udp-mN-nbQ" secondAttribute="top" id="S3t-f4-1ZS"/>
                             <constraint firstItem="tCE-hG-zn8" firstAttribute="trailing" secondItem="wLN-bs-NTp" secondAttribute="trailing" id="aJx-v3-lUr"/>
                             <constraint firstItem="wLN-bs-NTp" firstAttribute="top" secondItem="htz-eX-atP" secondAttribute="top" id="ina-VD-WzI"/>

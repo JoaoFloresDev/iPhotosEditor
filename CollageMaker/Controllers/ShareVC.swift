@@ -7,14 +7,16 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class ShareVC: UIViewController {
+class ShareVC: UIViewController, GADInterstitialDelegate {
 
     var getImage = UIImage()
     var arrAddImage = NSMutableArray()
     var objDisplay = 0
     var index = 0
     var objSetDelete = MyAlbumVC()
+    var interstitial: GADInterstitial!
     
     //MARK:- Outlets
     @IBOutlet weak var btnHome: UIButton!
@@ -27,8 +29,30 @@ class ShareVC: UIViewController {
     @IBOutlet weak var viewSave: UIView!
     @IBOutlet weak var viewDelete: UIView!
 
+    func createAndLoadInterstitial() -> GADInterstitial {
+        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-8858389345934911/6846096563")
+        interstitial.delegate = self
+        interstitial.load(GADRequest())
+        return interstitial
+    }
+
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        interstitial = createAndLoadInterstitial()
+        print("-------------")
+        print("interstitialDidDismissScreen")
+        self.saveImage()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        //        ADS
+        interstitial = createAndLoadInterstitial()
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8858389345934911/6846096563")
+        interstitial.delegate = self
+        let request = GADRequest()
+        interstitial.load(request)
+
         if objDisplay == 1{
             imgDisplay.image = getImage
             btnHome.frame = CGRect(x: 134, y: 14, width: 52, height: 52)
@@ -59,10 +83,15 @@ class ShareVC: UIViewController {
     }
     
     @IBAction func btnSaveAction(_ sender: UIButton) {
-        UIImageWriteToSavedPhotosAlbum(getImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
-
-        UIImageWriteToSavedPhotosAlbum(getImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
-
+        if(RazeFaceProducts.store.isProductPurchased("NoAds.iPhotos") || (UserDefaults.standard.object(forKey: "NoAds.iPhotos") != nil)) {
+            saveImage()
+        }
+        else if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+        }
+        else {
+            saveImage()
+        }
     }
     
     @IBAction func btnDeleteAction(_ sender: UIButton) {
@@ -114,5 +143,11 @@ class ShareVC: UIViewController {
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
+    }
+
+    func saveImage() {
+        UIImageWriteToSavedPhotosAlbum(getImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+
+        UIImageWriteToSavedPhotosAlbum(getImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }
 }

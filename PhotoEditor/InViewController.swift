@@ -54,7 +54,6 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
     
     //    MARK: - LIFE CYCLE
     /// load any stored image
-    
     func createAndLoadInterstitial() -> GADInterstitial {
         let interstitial = GADInterstitial(adUnitID: "ca-app-pub-8858389345934911/6846096563")
         interstitial.delegate = self
@@ -72,7 +71,7 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
     override func viewDidLoad() {
         super.viewDidLoad()
         
-                UserDefaults.standard.set(true, forKey:"FirtsUse")
+        UserDefaults.standard.set(true, forKey:"FirtsUse")
         
         //        ADS
         interstitial = createAndLoadInterstitial()

@@ -2696,7 +2696,7 @@ class EditImageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
             if objType == 1{
                 return CGSize(width: 50, height: 50)
             }else if objType == 2{
-                return CGSize(width: 70, height: 70)
+                return CGSize(width: 50, height: 50)
             }
         }else if collectionView == self.ShapeCV{
             return CGSize(width: 70, height: 70)

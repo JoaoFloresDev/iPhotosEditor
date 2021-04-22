@@ -963,10 +963,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wkx-Uh-RVJ">
-                                        <rect key="frame" x="0.0" y="743" width="414" height="70"/>
+                                        <rect key="frame" x="0.0" y="763" width="414" height="50"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YtZ-nE-a3I">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="20" id="vg8-tP-tbv">
                                                     <size key="itemSize" width="0.0" height="0.0"/>
@@ -977,10 +977,10 @@
                                                 <cells/>
                                             </collectionView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZa-df-vKh">
-                                                <rect key="frame" x="354" y="0.0" width="60" height="70"/>
+                                                <rect key="frame" x="354" y="0.0" width="60" height="50"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="save" translatesAutoresizingMaskIntoConstraints="NO" id="QYF-mP-hH6">
-                                                        <rect key="frame" x="12" y="17" width="36" height="36"/>
+                                                        <rect key="frame" x="12" y="7" width="36" height="36"/>
                                                         <color key="tintColor" red="0.92540198559999998" green="0.92555373910000005" blue="0.92536979909999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="36" id="Z73-Ek-hPH"/>
@@ -988,7 +988,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2F-Ye-72G">
-                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="70"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <connections>
                                                             <action selector="btnSaveAction:" destination="m0k-Uj-qXA" eventType="touchUpInside" id="loD-a7-71E"/>
@@ -1015,12 +1015,12 @@
                                             <constraint firstAttribute="bottom" secondItem="YtZ-nE-a3I" secondAttribute="bottom" id="KNo-Qz-AGk"/>
                                             <constraint firstItem="bZa-df-vKh" firstAttribute="leading" secondItem="YtZ-nE-a3I" secondAttribute="trailing" id="KQg-Fb-Xbe"/>
                                             <constraint firstItem="YtZ-nE-a3I" firstAttribute="top" secondItem="Wkx-Uh-RVJ" secondAttribute="top" id="gIP-wr-Ma5"/>
-                                            <constraint firstAttribute="height" constant="70" id="mPZ-3v-Sda"/>
+                                            <constraint firstAttribute="height" constant="50" id="mPZ-3v-Sda"/>
                                             <constraint firstItem="YtZ-nE-a3I" firstAttribute="leading" secondItem="Wkx-Uh-RVJ" secondAttribute="leading" id="y25-p0-Hl9"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtY-ue-oFQ">
-                                        <rect key="frame" x="10" y="646.5" width="394" height="60"/>
+                                        <rect key="frame" x="10" y="606.5" width="394" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zev-pI-zJ9">
                                                 <rect key="frame" x="20" y="13" width="35" height="35"/>
@@ -1360,7 +1360,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufK-oS-7GD" userLabel="viewShapes">
-                                        <rect key="frame" x="0.0" y="648" width="414" height="140"/>
+                                        <rect key="frame" x="0.0" y="673" width="414" height="140"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcb-qz-gK3">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
@@ -1472,17 +1472,16 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Wkx-Uh-RVJ" secondAttribute="bottom" id="7rG-9Q-aZr"/>
                                     <constraint firstItem="pJU-HS-8xl" firstAttribute="leading" secondItem="tCE-hG-zn8" secondAttribute="leading" id="8fz-hc-I1W"/>
                                     <constraint firstAttribute="trailing" secondItem="pJU-HS-8xl" secondAttribute="trailing" id="Aqd-Ij-382"/>
-                                    <constraint firstItem="VtY-ue-oFQ" firstAttribute="top" secondItem="2W1-Kc-7FY" secondAttribute="bottom" constant="40" id="Atf-GP-dlw"/>
+                                    <constraint firstItem="VtY-ue-oFQ" firstAttribute="top" secondItem="2W1-Kc-7FY" secondAttribute="bottom" id="Atf-GP-dlw"/>
                                     <constraint firstItem="2W1-Kc-7FY" firstAttribute="leading" secondItem="tCE-hG-zn8" secondAttribute="leading" id="JsY-np-sEr"/>
                                     <constraint firstAttribute="bottom" secondItem="pJU-HS-8xl" secondAttribute="bottom" constant="25" id="KW8-V1-wBO"/>
                                     <constraint firstItem="VtY-ue-oFQ" firstAttribute="leading" secondItem="tCE-hG-zn8" secondAttribute="leading" constant="10" id="M9k-tB-5Jx"/>
                                     <constraint firstItem="ufK-oS-7GD" firstAttribute="leading" secondItem="tCE-hG-zn8" secondAttribute="leading" id="PEI-c4-ljL"/>
                                     <constraint firstItem="Wkx-Uh-RVJ" firstAttribute="leading" secondItem="tCE-hG-zn8" secondAttribute="leading" id="RDg-lB-ZCF"/>
                                     <constraint firstAttribute="trailing" secondItem="Wkx-Uh-RVJ" secondAttribute="trailing" id="RhQ-PE-L1D"/>
-                                    <constraint firstAttribute="bottom" secondItem="ufK-oS-7GD" secondAttribute="bottom" constant="25" id="S9S-9z-eln"/>
+                                    <constraint firstAttribute="bottom" secondItem="ufK-oS-7GD" secondAttribute="bottom" id="S9S-9z-eln"/>
                                     <constraint firstAttribute="trailing" secondItem="htz-eX-atP" secondAttribute="trailing" id="WcB-I7-ECd"/>
                                     <constraint firstItem="htz-eX-atP" firstAttribute="leading" secondItem="tCE-hG-zn8" secondAttribute="leading" id="dg0-43-SKg"/>
                                     <constraint firstItem="2W1-Kc-7FY" firstAttribute="centerY" secondItem="tCE-hG-zn8" secondAttribute="centerY" id="kHa-ij-onE"/>
@@ -1497,6 +1496,7 @@
                         <color key="backgroundColor" red="0.48627450980392156" green="0.0" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tCE-hG-zn8" firstAttribute="leading" secondItem="wLN-bs-NTp" secondAttribute="leading" id="E03-jd-ldm"/>
+                            <constraint firstItem="wLN-bs-NTp" firstAttribute="bottom" secondItem="Wkx-Uh-RVJ" secondAttribute="bottom" id="HU4-vX-ECN"/>
                             <constraint firstItem="tCE-hG-zn8" firstAttribute="top" secondItem="udp-mN-nbQ" secondAttribute="top" id="S3t-f4-1ZS"/>
                             <constraint firstItem="tCE-hG-zn8" firstAttribute="trailing" secondItem="wLN-bs-NTp" secondAttribute="trailing" id="aJx-v3-lUr"/>
                             <constraint firstItem="wLN-bs-NTp" firstAttribute="top" secondItem="htz-eX-atP" secondAttribute="top" constant="5" id="ina-VD-WzI"/>

@@ -61,6 +61,7 @@
 		C49D2C52247D0C550007D174 /* placeholderMulticolor.png in Resources */ = {isa = PBXBuildFile; fileRef = C49D2C50247D0C550007D174 /* placeholderMulticolor.png */; };
 		C49D2C54247D0C890007D174 /* placeholderGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C49D2C53247D0C890007D174 /* placeholderGreen.png */; };
 		C49D2C57247D164A0007D174 /* StoredImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C49D2C55247D164A0007D174 /* StoredImage.xcdatamodeld */; };
+		C4ADBE4B26311A51008341ED /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ADBE4A26311A51008341ED /* InfoViewController.swift */; };
 		C4BD2D01262CE0EA005DA9A0 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CA7262CE0E9005DA9A0 /* FilterCell.swift */; };
 		C4BD2D02262CE0EA005DA9A0 /* FramesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CA8262CE0E9005DA9A0 /* FramesCell.swift */; };
 		C4BD2D03262CE0EA005DA9A0 /* MainStickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CA9262CE0E9005DA9A0 /* MainStickerCell.swift */; };
@@ -219,6 +220,7 @@
 		C49D2C50247D0C550007D174 /* placeholderMulticolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderMulticolor.png; sourceTree = "<group>"; };
 		C49D2C53247D0C890007D174 /* placeholderGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderGreen.png; sourceTree = "<group>"; };
 		C49D2C56247D164A0007D174 /* StoredImage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StoredImage.xcdatamodel; sourceTree = "<group>"; };
+		C4ADBE4A26311A51008341ED /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		C4BD2CA7262CE0E9005DA9A0 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		C4BD2CA8262CE0E9005DA9A0 /* FramesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FramesCell.swift; sourceTree = "<group>"; };
 		C4BD2CA9262CE0E9005DA9A0 /* MainStickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStickerCell.swift; sourceTree = "<group>"; };
@@ -432,6 +434,14 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
+		C42617AC2631189800FE16DB /* creditsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C4ADBE4A26311A51008341ED /* InfoViewController.swift */,
+			);
+			path = creditsScreen;
+			sourceTree = "<group>";
+		};
 		C4351DFC249027F0009FBDEF /* PhotoEditor */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +481,7 @@
 		C4BD2CA5262CE0E9005DA9A0 /* CollageMaker */ = {
 			isa = PBXGroup;
 			children = (
+				C42617AC2631189800FE16DB /* creditsScreen */,
 				C4BD2CA6262CE0E9005DA9A0 /* Cells */,
 				C4BD2CB3262CE0E9005DA9A0 /* Resources */,
 				C4BD2CD6262CE0EA005DA9A0 /* Library */,
@@ -852,6 +863,7 @@
 				8A6001CC20298225001EC448 /* GradientViewWhats.swift in Sources */,
 				C4BD2D35262CE0EA005DA9A0 /* SelectionButton.m in Sources */,
 				C4BD2D2E262CE0EA005DA9A0 /* StickerView.swift in Sources */,
+				C4ADBE4B26311A51008341ED /* InfoViewController.swift in Sources */,
 				8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */,
 				C474A7D92492FA810043D953 /* CreditsViewController.swift in Sources */,
 				C4BD2D3A262CE0EA005DA9A0 /* tblStyleCell.swift in Sources */,
@@ -1040,7 +1052,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1049,7 +1061,7 @@
 				INFOPLIST_FILE = WAStickersThirdParty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 7;
+				MARKETING_VERSION = 8;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
 				PRODUCT_NAME = "iPhotos Editor";
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";
@@ -1067,7 +1079,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1076,7 +1088,7 @@
 				INFOPLIST_FILE = WAStickersThirdParty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 7;
+				MARKETING_VERSION = 8;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
 				PRODUCT_NAME = "iPhotos Editor";
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";

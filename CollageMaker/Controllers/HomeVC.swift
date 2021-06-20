@@ -7,19 +7,30 @@
 //
 
 import UIKit
+import StoreKit
 
-class HomeVC: UIViewController{
+class HomeVC: UIViewController, SKStoreProductViewControllerDelegate{
 
     //MARK:- outlets
     @IBOutlet weak var btnMyAlbums: UIButton!
     @IBOutlet weak var btnGrid: UIButton!
     @IBOutlet weak var btnEdit: UIButton!
-    
+    @IBOutlet weak var marketingButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        marketingButton.layer.borderWidth = 2
+        marketingButton.layer.borderColor = UIColor.white.cgColor
+        marketingButton.layer.cornerRadius = 4
     }
 
     //MARK:- Button Action Zone
+    @IBAction func marketingButtonImage(_ sender: Any) {
+        if let url = URL(string: "itms-apps://itunes.apple.com/app/id1502280869") {
+            UIApplication.shared.open(url)
+        }
+    }
+
     @IBAction func btnGridAction(_ sender: Any) {
         let obj : LoadShapesVC = self.storyboard?.instantiateViewController(withIdentifier: "LoadShapesVC") as! LoadShapesVC
         self.navigationController?.pushViewController(obj, animated: true)

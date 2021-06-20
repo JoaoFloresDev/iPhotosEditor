@@ -2,11 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -33,6 +28,19 @@
 	<array>
 		<string>whatsapp</string>
 	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>The app needs camera access to select the photo to be edited</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>The sticker/s will be saved in your photo library.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>The app needs gallery access to select the photo to be edited</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Bucanera-font-FFP.ttf</string>
@@ -67,14 +75,6 @@
 		<string>alsscrp.ttf</string>
 		<string>Arizonia-Regular.ttf</string>
 	</array>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>The sticker/s will be saved in your photo library.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>The app needs gallery access to select the photo to be edited</string>
-	<key>NSCameraUsageDescription</key>
-	<string>The app needs camera access to select the photo to be edited</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

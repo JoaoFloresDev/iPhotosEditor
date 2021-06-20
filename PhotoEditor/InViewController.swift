@@ -23,7 +23,11 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
     
     //    MARK: - IBAction
     @IBAction func showImg(_ sender: Any) {
-        let agrume = Agrume(image: imageView.image!)
+        guard let image = imageView.image else {
+            editImage()
+            return
+        }
+        let agrume = Agrume(image: image)
         agrume.show(from: self)
     }
     

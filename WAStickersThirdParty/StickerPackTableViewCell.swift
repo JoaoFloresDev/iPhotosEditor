@@ -57,7 +57,7 @@ final class StickerPackTableViewCell: UITableViewCell, UICollectionViewDataSourc
         super.awakeFromNib()
         stickerPackCollectionView.dataSource = self
         stickerPackCollectionView.delegate = self
-        stickerPackCollectionView.register(StickerCell.self, forCellWithReuseIdentifier: "StickerCell")
+        stickerPackCollectionView.register(StickerCellWhats.self, forCellWithReuseIdentifier: "StickerCellWhats")
     }
 
     // MARK: Collectionview
@@ -77,7 +77,7 @@ final class StickerPackTableViewCell: UITableViewCell, UICollectionViewDataSourc
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StickerCell", for: indexPath) as! StickerCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StickerCellWhats", for: indexPath) as! StickerCellWhats
         if let sticker = stickerPack?.stickers[indexPath.row] {
             cell.sticker = sticker
         }

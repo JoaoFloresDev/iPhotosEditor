@@ -30,10 +30,51 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>The app needs camera access to select the photo to be edited</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>The sticker/s will be saved in your photo library.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>The app needs gallery access to select the photo to be edited</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Bucanera-font-FFP.ttf</string>
+		<string>champignonaltswash.ttf</string>
+		<string>Dohearts.otf</string>
+		<string>Enjoy Personal Use.otf</string>
+		<string>Ginga.ttf</string>
+		<string>Granada Blues Personal Use.ttf</string>
+		<string>LittleLordFontleroyNF.ttf</string>
+		<string>Mf Gradient Goddess.ttf</string>
+		<string>Miama.ttf</string>
+		<string>Montez-Regular.ttf</string>
+		<string>Playball-Regular.ttf</string>
+		<string>PlumScript.ttf</string>
+		<string>Pretty Girls Script Demo.ttf</string>
+		<string>QUIGLEYW.ttf</string>
+		<string>Script Writing.ttf</string>
+		<string>The Heart of Everything Demo.ttf</string>
+		<string>Variane Script.ttf</string>
+		<string>VTC-BadTattooHandOne.otf</string>
+		<string>VTKS SummerLAnd.ttf</string>
+		<string>waltograph42.otf</string>
+		<string>Allura-Regular.ttf</string>
+		<string>Alleana Script.otf</string>
+		<string>AguafinaScript-Regular.ttf</string>
+		<string>Advertising Script Monoline Trial.ttf</string>
+		<string>Advertising Script Bold Trial.ttf</string>
+		<string>Adine Kirnberg.ttf</string>
+		<string>a Theme for murder.ttf</string>
+		<string>AlexBrush-Regular.ttf</string>
+		<string>akaDora.otf</string>
+		<string>alsscrp.ttf</string>
+		<string>Arizonia-Regular.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -42,6 +83,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

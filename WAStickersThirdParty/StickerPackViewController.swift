@@ -16,8 +16,12 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     
     @IBOutlet private weak var stickerPackPublisherLabel: UILabel!
     @IBOutlet private weak var stickersCollectionView: UICollectionView!
-    @IBOutlet private weak var bottomCollectionViewConstraint: NSLayoutConstraint!
-    
+    @IBOutlet weak var sendPackStickersButton: UIButton!
+
+    @IBAction func sendPackStickers(_ sender: Any) {
+        addButtonPressed2()
+    }
+
     private let topMarginInset: CGFloat = 5.0
     private let marginInset: CGFloat = 22
     private let interimMargin: CGFloat = 16.0
@@ -28,7 +32,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     private var portraitConstraints: [NSLayoutConstraint] = []
     private var landscapeConstraints: [NSLayoutConstraint] = []
     
-    private var bottomGradientView: GradientView = GradientView(topColor: UIColor.white.withAlphaComponent(0.0), bottomColor: UIColor.white)
+    private var bottomGradientView: GradientViewWhats = GradientViewWhats(topColor: UIColor.white.withAlphaComponent(0.0), bottomColor: UIColor.white)
     private var topDivider: UIView = UIView()
     
     private var portraitOrientation: Bool {
@@ -40,9 +44,9 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupAds()
-        
+        sendPackStickersButton.layer.cornerRadius = 10
         if #available(iOS 11.0, *) {
             navigationItem.largeTitleDisplayMode = .always
         }
@@ -51,7 +55,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
             stickersCollectionView.isPrefetchingEnabled = false
         }
         
-        stickersCollectionView.register(StickerCell.self, forCellWithReuseIdentifier: "StickerCell")
+        stickersCollectionView.register(StickerCellWhats.self, forCellWithReuseIdentifier: "StickerCellWhats")
         stickersCollectionView.scrollIndicatorInsets.bottom = 10
         
         itemsPerRow = portraitOrientation ? portraitItems : landscapeItems
@@ -70,54 +74,9 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         topDivider.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(topDivider)
         
-        let addButton: AquaButton = AquaButton(frame: .zero)
-        addButton.setTitle("Add to WhatsApp", for: .normal)
-        addButton.addTarget(self, action: #selector(addButtonPressed(button:)), for: .touchUpInside)
-        addButton.translatesAutoresizingMaskIntoConstraints = false
-        addButton.isEnabled = Interoperability.canSend()
-        view.addSubview(addButton)
-        
         stickerPackPublisherLabel.text = "\(stickerPack.publisher) • \(stickerPack.formattedSize)"
         
-        let tapGuideLabel: UILabel = UILabel()
-        tapGuideLabel.text = "Tap itens to see more"
-        tapGuideLabel.font = UIFont.systemFont(ofSize: 15)
-        tapGuideLabel.textColor = UIColor(red: 0.6, green: 0.6, blue: 0.6, alpha: 1.0)
-        tapGuideLabel.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(tapGuideLabel)
-        
-        let buttonSize: CGSize = CGSize(width: 280.0, height: 50.0)
-        let buttonLandscapeSize: CGSize = CGSize(width: 250.0, height: 50.0)
-        let buttonBottomMargin: CGFloat = 20.0
-        
         guard let view = view else { return }
-        
-        view.addConstraint(NSLayoutConstraint(item: view, attribute: .bottomMargin, relatedBy: .equal, toItem: addButton, attribute: .bottom, multiplier: 1.0, constant: buttonBottomMargin))
-        let centerPortraitShareConstraint = NSLayoutConstraint(item: view, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: addButton, attribute: .centerXWithinMargins, multiplier: 1.0, constant: 0.0)
-        let centerLandscapeShareConstraint = NSLayoutConstraint(item: view, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: addButton, attribute: .centerXWithinMargins, multiplier: 1.0, constant: -buttonSize.width / 2.0 - 5.0)
-        portraitConstraints.append(centerPortraitShareConstraint)
-        landscapeConstraints.append(centerLandscapeShareConstraint)
-        view.addConstraint(centerPortraitShareConstraint)
-        view.addConstraint(centerLandscapeShareConstraint)
-        let widthPortraitShareConstraint = NSLayoutConstraint(item: addButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1.0, constant: buttonSize.width)
-        let widthLandscapeShareConstraint = NSLayoutConstraint(item: addButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1.0, constant: buttonLandscapeSize.width)
-        addButton.addConstraint(widthPortraitShareConstraint)
-        addButton.addConstraint(widthLandscapeShareConstraint)
-        portraitConstraints.append(widthPortraitShareConstraint)
-        landscapeConstraints.append(widthLandscapeShareConstraint)
-        addButton.addConstraint(NSLayoutConstraint(item: addButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: buttonSize.height))
-        
-        // Tap guide label constraints
-        view.addConstraint(NSLayoutConstraint(item: addButton, attribute: .top, relatedBy: .equal, toItem: tapGuideLabel, attribute: .bottom, multiplier: 1.0, constant: 14.0))
-        view.addConstraint(NSLayoutConstraint(item: tapGuideLabel, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: view, attribute: .centerXWithinMargins, multiplier: 1.0, constant: 0.0))
-        view.addConstraint(NSLayoutConstraint(item: tapGuideLabel, attribute: .leading, relatedBy: .greaterThanOrEqual, toItem: view, attribute: .leading, multiplier: 1.0, constant: 0.0))
-        view.addConstraint(NSLayoutConstraint(item: view, attribute: .trailing, relatedBy: .greaterThanOrEqual, toItem: tapGuideLabel, attribute: .trailing, multiplier: 1.0, constant: 0.0))
-        
-        // Collection view constraint
-        var bottomCollectionViewConstraint = self.bottomCollectionViewConstraint!
-        view.removeConstraint(bottomCollectionViewConstraint)
-        bottomCollectionViewConstraint = NSLayoutConstraint(item: tapGuideLabel, attribute: .top, relatedBy: .equal, toItem: stickersCollectionView, attribute: .bottom, multiplier: 1.0, constant: 10.0)
-        view.addConstraint(bottomCollectionViewConstraint)
         
         // Gradient constraints
         view.addConstraint(NSLayoutConstraint(item: bottomGradientView, attribute: .bottom, relatedBy: .equal, toItem: stickersCollectionView, attribute: .bottom, multiplier: 1.0, constant: 0.0))
@@ -176,8 +135,8 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let length = (collectionView.bounds.size.width - marginInset * 2 - interimMargin * CGFloat(itemsPerRow - 1)) / CGFloat(itemsPerRow)
-        return CGSize(width: length, height: length)
+//        let length = (collectionView.bounds.size.width - marginInset * 2 - interimMargin * CGFloat(itemsPerRow - 1)) / CGFloat(itemsPerRow)
+        return CGSize(width: 80, height: 80)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -185,7 +144,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StickerCell", for: indexPath) as! StickerCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StickerCellWhats", for: indexPath) as! StickerCellWhats
         cell.sticker = stickerPack.stickers[indexPath.row]
         
         // Use tag to check index of cell
@@ -331,7 +290,19 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
             loadingAlert.dismiss(animated: true)
         }
     }
-    
+
+    @objc func addButtonPressed2() {
+        if(RazeFaceProducts.store.isProductPurchased("NoAds.iPhotos") || (UserDefaults.standard.object(forKey: "NoAds.iPhotos") != nil)) {
+            shareWaths()
+        }
+        else if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+        }
+        else {
+            shareWaths()
+        }
+    }
+
     @objc func addButtonPressed(button: AquaButton) {
         if(RazeFaceProducts.store.isProductPurchased("NoAds.iPhotos") || (UserDefaults.standard.object(forKey: "NoAds.iPhotos") != nil)) {
             shareWaths()

@@ -1,2 +1,2 @@
 # iPhotos-Editor
-Editor of photos and stikers maker
+Editor of photos and maker stikers

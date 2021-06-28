@@ -24,11 +24,8 @@ class WelcomeViewController: UIViewController {
     }()
     
     //    MARK: - IBOutlets
-    
     @IBOutlet weak var titleLabel: UILabel!
-    //        @IBOutlet weak var buyLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    //        @IBOutlet weak var titlePurchase: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var loadingView: UIActivityIndicatorView!
     
@@ -36,13 +33,14 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var viewTest: UIView!
     
     //    MARK: - IBAction
-    
     @IBAction func buyPressed(_ sender: Any) {
-        RazeFaceProducts.store.buyProduct(self.products[0])
-        startLoading()
-        timerLoad = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(self.loadingPlaying), userInfo: nil, repeats: false)
-        
-        confirmCheckmark()
+        if !self.products.isEmpty {
+            RazeFaceProducts.store.buyProduct(self.products[0])
+            startLoading()
+            timerLoad = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(self.loadingPlaying), userInfo: nil, repeats: false)
+
+            confirmCheckmark()
+        }
     }
     
     @IBAction func restorePressed(_ sender: Any) {

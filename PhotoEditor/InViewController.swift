@@ -175,7 +175,9 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         imagePicker.allowsEditing = false
         
         imagePicker.sourceType = .photoLibrary
-        self.present(imagePicker, animated: true, completion: nil)
+        self.present(imagePicker, animated: true) {
+            self.editImage()
+        }
     }
     
     //    MARK: - OPTIONS

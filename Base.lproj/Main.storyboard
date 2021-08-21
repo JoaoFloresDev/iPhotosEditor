@@ -2415,25 +2415,36 @@
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6s6-kM-bIi">
-                                                <rect key="frame" x="0.0" y="4" width="131.5" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Edit"/>
+                                                <rect key="frame" x="0.0" y="3" width="131.5" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                                <state key="normal" title="Edit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="editeeeImgTest:" destination="tIf-Yc-9Ex" eventType="touchUpInside" id="qzF-Lo-dgy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFp-q6-rqW">
-                                                <rect key="frame" x="131.5" y="4" width="131" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="New"/>
+                                                <rect key="frame" x="131.5" y="3" width="131" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                                <state key="normal" title="New">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="editImgTest:" destination="tIf-Yc-9Ex" eventType="touchUpInside" id="7UN-RK-XkO"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67W-Yj-1IE">
-                                                <rect key="frame" x="262.5" y="4" width="131.5" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Save"/>
+                                                <rect key="frame" x="262.5" y="3" width="131.5" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                                <state key="normal" title="Save">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="saveImgTest:" destination="tIf-Yc-9Ex" eventType="touchUpInside" id="xjt-UT-dvy"/>
                                                 </connections>
@@ -2456,7 +2467,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uup-zo-lUN">
                                 <rect key="frame" x="10.5" y="0.0" width="393" height="695"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="young-woman-with-bright-makeup-black-hat" translatesAutoresizingMaskIntoConstraints="NO" id="Vcg-1U-R17">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="debonair-young-woman-making-selfie-balcony-portrait-smiling-dreamy-girl-posing-beside-orange-flowers 2" translatesAutoresizingMaskIntoConstraints="NO" id="Vcg-1U-R17">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="695"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
@@ -2475,7 +2486,7 @@
                                             <constraint firstAttribute="width" constant="40" id="7j4-Yt-9Gl"/>
                                             <constraint firstAttribute="height" constant="40" id="ovB-zf-xwy"/>
                                         </constraints>
-                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" backgroundImage="cart.fill" catalog="system"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
@@ -2525,7 +2536,9 @@
                             <constraint firstItem="uup-zo-lUN" firstAttribute="top" secondItem="AUg-F7-a8V" secondAttribute="bottom" id="i2w-Ec-nlp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Editor" image="photo.fill" catalog="system" id="CXY-3E-Fl1"/>
+                    <tabBarItem key="tabBarItem" title="Editor" image="photo.fill" catalog="system" id="CXY-3E-Fl1">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="backgroundCellImage" destination="Vcg-1U-R17" id="Z6a-KS-oYs"/>
                         <outlet property="backgroundOptions" destination="qGn-ao-WaF" id="aY3-N1-7Xo"/>
@@ -2546,8 +2559,10 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uFg-RJ-7xa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="tIf-Yc-9Ex" kind="relationship" relationship="viewControllers" id="E1N-A7-rUg"/>
@@ -3021,6 +3036,7 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="crp_filp_v" width="80" height="80"/>
         <image name="crp_flip_h" width="80" height="80"/>
+        <image name="debonair-young-woman-making-selfie-balcony-portrait-smiling-dreamy-girl-posing-beside-orange-flowers 2" width="6720" height="4480"/>
         <image name="delete1" width="512" height="512"/>
         <image name="down" width="80" height="80"/>
         <image name="filter1" width="512" height="512"/>
@@ -3044,7 +3060,6 @@
         <image name="square.stack.3d.down.right.fill" catalog="system" width="124" height="128"/>
         <image name="stickerImage" width="512" height="512"/>
         <image name="tag.fill" catalog="system" width="128" height="119"/>
-        <image name="young-woman-with-bright-makeup-black-hat" width="2415" height="3000"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

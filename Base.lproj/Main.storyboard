@@ -1044,72 +1044,83 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtY-ue-oFQ">
                                         <rect key="frame" x="10" y="611.5" width="394" height="50"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ald-Ig-jPC">
-                                                <rect key="frame" x="10" y="10" width="374" height="30"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zev-pI-zJ9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="67" height="30"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="crp_filp_v">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="btnFlipVAction:" destination="m0k-Uj-qXA" eventType="touchUpInside" id="e16-2N-pCl"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3q-fn-HL0">
-                                                        <rect key="frame" x="77" y="0.0" width="66.5" height="30"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="crp_flip_h">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="btnFlipHAction:" destination="m0k-Uj-qXA" eventType="touchUpInside" id="3UP-Ph-iwJ"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URG-e7-XBJ">
-                                                        <rect key="frame" x="153.5" y="0.0" width="67" height="30"/>
-                                                        <state key="normal" image="gallery_white">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="btnReplaceAction:" destination="m0k-Uj-qXA" eventType="touchUpInside" id="Hoh-O1-hgQ"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGX-ZI-swL">
-                                                        <rect key="frame" x="230.5" y="0.0" width="66.5" height="30"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="filter1">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="btnFilterAction:" destination="m0k-Uj-qXA" eventType="touchUpInside" id="FmD-N1-Wco"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7l-MS-xlZ">
-                                                        <rect key="frame" x="307" y="0.0" width="67" height="30"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <imageReference key="image" image="arrow.uturn.backward" catalog="system" symbolScale="large"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="btnDown3Action:" destination="m0k-Uj-qXA" eventType="touchUpInside" id="VfB-tk-gu2"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zev-pI-zJ9">
+                                                <rect key="frame" x="16" y="8" width="59.5" height="34"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="crp_filp_v">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnFlipVAction:" destination="m0k-Uj-qXA" eventType="touchUpInside" id="e16-2N-pCl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URG-e7-XBJ">
+                                                <rect key="frame" x="167" y="8" width="60" height="34"/>
+                                                <state key="normal" image="gallery_white">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnReplaceAction:" destination="m0k-Uj-qXA" eventType="touchUpInside" id="Hoh-O1-hgQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGX-ZI-swL">
+                                                <rect key="frame" x="243" y="8" width="59.5" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="filter1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnFilterAction:" destination="m0k-Uj-qXA" eventType="touchUpInside" id="FmD-N1-Wco"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7l-MS-xlZ">
+                                                <rect key="frame" x="326.5" y="8" width="59.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <imageReference key="image" image="arrow.uturn.backward" catalog="system" symbolScale="large"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnDown3Action:" destination="m0k-Uj-qXA" eventType="touchUpInside" id="VfB-tk-gu2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3q-fn-HL0">
+                                                <rect key="frame" x="91.5" y="8" width="59.5" height="34"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="crp_flip_h">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnFlipHAction:" destination="m0k-Uj-qXA" eventType="touchUpInside" id="3UP-Ph-iwJ"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="Ald-Ig-jPC" firstAttribute="top" secondItem="VtY-ue-oFQ" secondAttribute="top" constant="10" id="2s8-bb-58K"/>
-                                            <constraint firstItem="Ald-Ig-jPC" firstAttribute="leading" secondItem="VtY-ue-oFQ" secondAttribute="leading" constant="10" id="36b-DP-3FM"/>
+                                            <constraint firstAttribute="bottom" secondItem="zev-pI-zJ9" secondAttribute="bottom" constant="8" id="0GV-AH-aCb"/>
+                                            <constraint firstAttribute="bottom" secondItem="L3q-fn-HL0" secondAttribute="bottom" constant="8" id="0uC-sg-cLJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="X7l-MS-xlZ" secondAttribute="bottom" constant="8" id="1cu-15-UWZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="X7l-MS-xlZ" secondAttribute="trailing" constant="8" id="1fy-m5-uSH"/>
+                                            <constraint firstItem="zev-pI-zJ9" firstAttribute="leading" secondItem="VtY-ue-oFQ" secondAttribute="leading" constant="16" id="9gj-r5-7uY"/>
                                             <constraint firstAttribute="height" constant="50" id="CTX-1l-zGq"/>
-                                            <constraint firstAttribute="bottom" secondItem="Ald-Ig-jPC" secondAttribute="bottom" constant="10" id="Rby-ev-88D"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ald-Ig-jPC" secondAttribute="trailing" constant="10" id="j8e-Qi-rlU"/>
+                                            <constraint firstItem="X7l-MS-xlZ" firstAttribute="top" secondItem="VtY-ue-oFQ" secondAttribute="top" constant="8" id="GdU-8z-ne2"/>
+                                            <constraint firstAttribute="bottom" secondItem="FGX-ZI-swL" secondAttribute="bottom" constant="8" id="KWr-bO-unS"/>
+                                            <constraint firstItem="zev-pI-zJ9" firstAttribute="top" secondItem="VtY-ue-oFQ" secondAttribute="top" constant="8" id="LuJ-dZ-ysa"/>
+                                            <constraint firstItem="zev-pI-zJ9" firstAttribute="width" secondItem="FGX-ZI-swL" secondAttribute="width" id="QaI-rh-MYk"/>
+                                            <constraint firstItem="FGX-ZI-swL" firstAttribute="leading" secondItem="URG-e7-XBJ" secondAttribute="trailing" constant="16" id="RNQ-tE-pIt"/>
+                                            <constraint firstItem="L3q-fn-HL0" firstAttribute="leading" secondItem="zev-pI-zJ9" secondAttribute="trailing" constant="16" id="WlS-6m-3AC"/>
+                                            <constraint firstItem="X7l-MS-xlZ" firstAttribute="leading" secondItem="FGX-ZI-swL" secondAttribute="trailing" constant="24" id="WxQ-mQ-PQ2"/>
+                                            <constraint firstItem="URG-e7-XBJ" firstAttribute="top" secondItem="VtY-ue-oFQ" secondAttribute="top" constant="8" id="bFc-22-bin"/>
+                                            <constraint firstItem="URG-e7-XBJ" firstAttribute="leading" secondItem="L3q-fn-HL0" secondAttribute="trailing" constant="16" id="bVq-fY-FkC"/>
+                                            <constraint firstAttribute="bottom" secondItem="URG-e7-XBJ" secondAttribute="bottom" constant="8" id="dlf-xv-9i5"/>
+                                            <constraint firstItem="FGX-ZI-swL" firstAttribute="top" secondItem="VtY-ue-oFQ" secondAttribute="top" constant="8" id="hGw-FG-uWY"/>
+                                            <constraint firstItem="zev-pI-zJ9" firstAttribute="width" secondItem="X7l-MS-xlZ" secondAttribute="width" id="mDP-Rf-QJh"/>
+                                            <constraint firstItem="zev-pI-zJ9" firstAttribute="width" secondItem="L3q-fn-HL0" secondAttribute="width" id="mFX-o5-PgX"/>
+                                            <constraint firstItem="L3q-fn-HL0" firstAttribute="top" secondItem="VtY-ue-oFQ" secondAttribute="top" constant="8" id="oUH-BE-MxK"/>
+                                            <constraint firstItem="zev-pI-zJ9" firstAttribute="width" secondItem="URG-e7-XBJ" secondAttribute="width" id="rLL-2x-PU2"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

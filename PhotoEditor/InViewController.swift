@@ -99,8 +99,8 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         
         cellImage.clipsToBounds = false
         cellImage.layer.shadowColor = UIColor.gray.cgColor
-        cellImage.layer.shadowOpacity = 0.5
-        cellImage.layer.shadowRadius = 3
+        cellImage.layer.shadowOpacity = 0.7
+        cellImage.layer.shadowRadius = 5
         cellImage.layer.shadowOffset = CGSize(width: 0, height: 0)
         backgroundCellImage.layer.cornerRadius = 10
 
@@ -121,7 +121,9 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         imageView.image = image
         backgroundCellImage.image = nil
         imageView.layer.cornerRadius = 10
-        picker.dismiss(animated: true, completion: nil)
+        picker.dismiss(animated: true) {
+            self.editImage()
+        }
     }
     
     /// called when editor completes
@@ -175,9 +177,7 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         imagePicker.allowsEditing = false
         
         imagePicker.sourceType = .photoLibrary
-        self.present(imagePicker, animated: true) {
-            self.editImage()
-        }
+        self.present(imagePicker, animated: true, completion: nil)
     }
     
     //    MARK: - OPTIONS
@@ -185,7 +185,8 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
     func editImage() {
         if (imageView.image != nil) {
             let editor = CLImageEditor(image: imageView.image, delegate: self)
-            editor!.modalPresentationStyle = .fullScreen
+            editor?.view.backgroundColor = .black
+            editor?.modalPresentationStyle = .fullScreen
             self.present(editor!, animated: true, completion: nil)
         } else {
             newImage()

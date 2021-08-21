@@ -2456,7 +2456,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uup-zo-lUN">
                                 <rect key="frame" x="10.5" y="0.0" width="393" height="695"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-white-photo-beautiful-cute-blonde-woman-girl-sunglasses (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Vcg-1U-R17">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="young-woman-with-bright-makeup-black-hat" translatesAutoresizingMaskIntoConstraints="NO" id="Vcg-1U-R17">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="695"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
@@ -2854,14 +2854,14 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bKF-5j-iji">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="793"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="m3v-ad-jBG" id="0Un-1a-w53"/>
                                     <outlet property="delegate" destination="m3v-ad-jBG" id="c6a-v2-bcR"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bKF-5j-iji" firstAttribute="top" secondItem="ca1-Za-hCF" secondAttribute="top" id="V0q-qY-032"/>
                             <constraint firstItem="bKF-5j-iji" firstAttribute="bottom" secondItem="3nW-8w-7u5" secondAttribute="top" constant="-20" id="mfu-cB-pNB"/>
@@ -3017,7 +3017,6 @@
         <image name="arrow.uturn.backward" catalog="system" width="128" height="112"/>
         <image name="arrow.uturn.left" catalog="system" width="128" height="112"/>
         <image name="back" width="512" height="512"/>
-        <image name="black-white-photo-beautiful-cute-blonde-woman-girl-sunglasses (1)" width="2653" height="3222"/>
         <image name="camera" width="512" height="512"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="crp_filp_v" width="80" height="80"/>
@@ -3045,6 +3044,7 @@
         <image name="square.stack.3d.down.right.fill" catalog="system" width="124" height="128"/>
         <image name="stickerImage" width="512" height="512"/>
         <image name="tag.fill" catalog="system" width="128" height="119"/>
+        <image name="young-woman-with-bright-makeup-black-hat" width="2415" height="3000"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

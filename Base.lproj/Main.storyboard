@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgCollage" translatesAutoresizingMaskIntoConstraints="NO" id="cxi-lV-x4P">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portrait-beautiful-young-model-black-leather-jacket-posing-near-lamps" translatesAutoresizingMaskIntoConstraints="NO" id="cxi-lV-x4P">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="JeB-2i-hAa">
@@ -53,14 +53,14 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8M-Eg-Hlh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="100"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8M-Eg-Hlh">
+                                                        <rect key="frame" x="-1" y="0.0" width="190" height="100"/>
                                                         <connections>
                                                             <action selector="btnGridAction:" destination="PfV-c3-Luf" eventType="touchUpInside" id="90B-lJ-mE9"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.48627450980392156" green="0.0" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="Olb-V0-emV" firstAttribute="top" secondItem="fiJ-gC-5ui" secondAttribute="top" constant="10" id="01C-2Z-vwD"/>
                                                     <constraint firstItem="m8M-Eg-Hlh" firstAttribute="centerX" secondItem="fiJ-gC-5ui" secondAttribute="centerX" id="0Qo-oc-07Y"/>
@@ -116,7 +116,7 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.48627450980392156" green="0.0" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="3mM-86-lTS" firstAttribute="leading" secondItem="f26-si-PHY" secondAttribute="leading" id="98K-H9-W9b"/>
                                                     <constraint firstItem="Lc6-OT-QL5" firstAttribute="centerY" secondItem="f26-si-PHY" secondAttribute="centerY" id="Cki-lm-MZq"/>
@@ -169,7 +169,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.48627450980392156" green="0.0" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="QS8-YN-c4a" firstAttribute="height" secondItem="1j7-QM-wlL" secondAttribute="height" id="Ewx-q1-8OO"/>
                                                     <constraint firstItem="QS8-YN-c4a" firstAttribute="centerY" secondItem="1j7-QM-wlL" secondAttribute="centerY" id="IzC-vF-fYg"/>
@@ -216,7 +216,7 @@
                                     </view>
                                     <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktb-VK-Y98">
                                         <rect key="frame" x="8" y="745" width="398" height="60"/>
-                                        <color key="backgroundColor" red="0.48627450980392156" green="0.0" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="gwZ-M6-7ao"/>
                                         </constraints>
@@ -2456,7 +2456,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uup-zo-lUN">
                                 <rect key="frame" x="10.5" y="0.0" width="393" height="695"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgEditor" translatesAutoresizingMaskIntoConstraints="NO" id="Vcg-1U-R17">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-white-photo-beautiful-cute-blonde-woman-girl-sunglasses (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Vcg-1U-R17">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="695"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
@@ -2547,6 +2547,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="tIf-Yc-9Ex" kind="relationship" relationship="viewControllers" id="E1N-A7-rUg"/>
@@ -2897,12 +2898,12 @@
                                     <constraint firstAttribute="height" constant="21" id="wAz-fp-pG2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="x3e-9K-44b">
                                 <rect key="frame" x="4" y="53" width="406" height="577.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wn3-2Y-Y1s">
                                     <size key="itemSize" width="91" height="83"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -2936,7 +2937,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="o8b-do-ZrK" firstAttribute="leading" secondItem="nlv-ix-xHi" secondAttribute="leadingMargin" constant="24" id="0pZ-Gy-gsd"/>
                             <constraint firstItem="4HV-a2-624" firstAttribute="top" secondItem="Sug-ao-2eS" secondAttribute="bottom" constant="8" id="2eW-78-e0b"/>
@@ -2990,7 +2991,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="vsp-o8-CMy">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="linkColor"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -3012,8 +3017,7 @@
         <image name="arrow.uturn.backward" catalog="system" width="128" height="112"/>
         <image name="arrow.uturn.left" catalog="system" width="128" height="112"/>
         <image name="back" width="512" height="512"/>
-        <image name="bgCollage" width="3895" height="3000"/>
-        <image name="bgEditor" width="6000" height="4000"/>
+        <image name="black-white-photo-beautiful-cute-blonde-woman-girl-sunglasses (1)" width="2653" height="3222"/>
         <image name="camera" width="512" height="512"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="crp_filp_v" width="80" height="80"/>
@@ -3033,6 +3037,7 @@
         <image name="myphotos" width="512" height="512"/>
         <image name="opacity" width="64" height="64"/>
         <image name="photo.fill" catalog="system" width="128" height="93"/>
+        <image name="portrait-beautiful-young-model-black-leather-jacket-posing-near-lamps" width="4912" height="7360"/>
         <image name="premiumIcon" width="1024" height="1024"/>
         <image name="save" width="96" height="96"/>
         <image name="save1" width="512" height="512"/>

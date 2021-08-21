@@ -32,7 +32,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     private var portraitConstraints: [NSLayoutConstraint] = []
     private var landscapeConstraints: [NSLayoutConstraint] = []
     
-    private var bottomGradientView: GradientViewWhats = GradientViewWhats(topColor: UIColor.white.withAlphaComponent(0.0), bottomColor: UIColor.white)
+//    private var bottomGradientView: GradientViewWhats = GradientViewWhats(topColor: UIColor.black.withAlphaComponent(0.0), bottomColor: UIColor.black)
     private var topDivider: UIView = UIView()
     
     private var portraitOrientation: Bool {
@@ -64,9 +64,9 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         infoButton.addTarget(self, action: #selector(addPhotoPressed(button:)), for: .touchUpInside)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: infoButton)
         
-        bottomGradientView.isUserInteractionEnabled = false
-        bottomGradientView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(bottomGradientView)
+//        bottomGradientView.isUserInteractionEnabled = false
+//        bottomGradientView.translatesAutoresizingMaskIntoConstraints = false
+//        view.addSubview(bottomGradientView)
         
         topDivider.isUserInteractionEnabled = false
         topDivider.backgroundColor = UIColor(red: 164.0/255.0, green: 164.0/255.0, blue: 164.0/255.0, alpha: 1.0).withAlphaComponent(0.2)
@@ -79,10 +79,10 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         guard let view = view else { return }
         
         // Gradient constraints
-        view.addConstraint(NSLayoutConstraint(item: bottomGradientView, attribute: .bottom, relatedBy: .equal, toItem: stickersCollectionView, attribute: .bottom, multiplier: 1.0, constant: 0.0))
-        view.addConstraint(NSLayoutConstraint(item: bottomGradientView, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: view, attribute: .centerXWithinMargins, multiplier: 1.0, constant: 0.0))
-        view.addConstraint(NSLayoutConstraint(item: bottomGradientView, attribute: .width, relatedBy: .equal, toItem: stickersCollectionView, attribute: .width, multiplier: 1.0, constant: 0.0))
-        bottomGradientView.addConstraint(NSLayoutConstraint(item: bottomGradientView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: 50.0))
+//        view.addConstraint(NSLayoutConstraint(item: bottomGradientView, attribute: .bottom, relatedBy: .equal, toItem: stickersCollectionView, attribute: .bottom, multiplier: 1.0, constant: 0.0))
+//        view.addConstraint(NSLayoutConstraint(item: bottomGradientView, attribute: .centerXWithinMargins, relatedBy: .equal, toItem: view, attribute: .centerXWithinMargins, multiplier: 1.0, constant: 0.0))
+//        view.addConstraint(NSLayoutConstraint(item: bottomGradientView, attribute: .width, relatedBy: .equal, toItem: stickersCollectionView, attribute: .width, multiplier: 1.0, constant: 0.0))
+//        bottomGradientView.addConstraint(NSLayoutConstraint(item: bottomGradientView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: 50.0))
         
         // Top divider constraints
         view.addConstraint(NSLayoutConstraint(item: topDivider, attribute: .top, relatedBy: .equal, toItem: stickersCollectionView, attribute: .top, multiplier: 1.0, constant: 0.0))

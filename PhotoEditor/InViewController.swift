@@ -91,18 +91,22 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         }
         
         cellOptions.clipsToBounds = false
-        cellOptions.layer.shadowColor = UIColor.black.cgColor
+        cellOptions.layer.shadowColor = UIColor.gray.cgColor
         cellOptions.layer.shadowOpacity = 0.5
         cellOptions.layer.shadowRadius = 3
-        cellOptions.layer.shadowOffset = CGSize(width: 0, height: 2)
+        cellOptions.layer.shadowOffset = CGSize(width: 0, height: 0)
         backgroundOptions.layer.cornerRadius = 10
         
         cellImage.clipsToBounds = false
-        cellImage.layer.shadowColor = UIColor.black.cgColor
+        cellImage.layer.shadowColor = UIColor.gray.cgColor
         cellImage.layer.shadowOpacity = 0.5
         cellImage.layer.shadowRadius = 3
-        cellImage.layer.shadowOffset = CGSize(width: 0, height: 2)
+        cellImage.layer.shadowOffset = CGSize(width: 0, height: 0)
         backgroundCellImage.layer.cornerRadius = 10
+
+        view.backgroundColor = .black
+        backgroundCellImage.backgroundColor = .black
+        backgroundOptions.backgroundColor = .black
     }
     
     /// called when an image has been chosen

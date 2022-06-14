@@ -1,0 +1,25 @@
+{
+    "frame_0":[
+               {
+               "count":"4",
+               "frame_1_x":"140",
+               "frame_1_y":"10",
+               "frame_1_w":"152",
+               "frame_1_h":"225",
+               "frame_2_x":"300",
+               "frame_2_y":"130",
+               "frame_2_w":"152",
+               "frame_2_h":"190",
+               "frame_3_x":"28",
+               "frame_3_y":"235",
+               "frame_3_w":"187",
+               "frame_3_h":"130",
+               "frame_4_x":"360",
+               "frame_4_y":"320",
+               "frame_4_w":"230",
+               "frame_4_h":"145",
+               
+               }
+    
+    ]
+}

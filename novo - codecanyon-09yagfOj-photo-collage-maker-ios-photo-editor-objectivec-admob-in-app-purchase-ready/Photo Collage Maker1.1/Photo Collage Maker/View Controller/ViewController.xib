@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirLTStd-Heavy_0.otf">
+            <string>AvenirLTStd-Heavy</string>
+        </array>
+        <array key="AvenirLTStd-Medium.otf">
+            <string>AvenirLTStd-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="AdsView" destination="yzt-OC-cWP" id="2z1-FD-VJ7"/>
+                <outlet property="adsbtn" destination="iHk-Zk-NoA" id="nuP-hY-ByL"/>
+                <outlet property="adsclosebtn" destination="ARa-0M-AyA" id="ngp-Ce-eL8"/>
+                <outlet property="bgimgview" destination="BQa-PO-ocX" id="GJL-TE-KMG"/>
+                <outlet property="btmView" destination="Dd8-C4-yA5" id="QtH-Q1-mH9"/>
+                <outlet property="d3btn" destination="B6i-of-0lu" id="Cld-E9-9Ng"/>
+                <outlet property="mainAdView" destination="sU0-gA-PsE" id="Bdr-jl-r5s"/>
+                <outlet property="morebtn" destination="9yS-Wl-FZS" id="IJM-Li-70m"/>
+                <outlet property="photobtn" destination="jnH-Lo-c1l" id="V4G-1t-T0C"/>
+                <outlet property="pricelbl" destination="z9W-Fx-kT0" id="NOs-2g-Sgb"/>
+                <outlet property="purchasebtn" destination="uXy-Ur-Atq" id="obR-dc-zGh"/>
+                <outlet property="restorebtn" destination="NUp-qa-ad8" id="mTg-jp-lrc"/>
+                <outlet property="toplbl" destination="2vf-Rw-vJR" id="N8H-zF-qB4"/>
+                <outlet property="treebtn" destination="6bB-AP-x9Q" id="JpR-dY-Fkq"/>
+                <outlet property="view" destination="iN0-l3-epB" id="2Rn-X8-le8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vf-Rw-vJR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.89600338999999996" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="BQa-PO-ocX">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sU0-gA-PsE">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dd8-C4-yA5">
+                    <rect key="frame" x="0.0" y="290" width="320" height="278"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bB-AP-x9Q">
+                            <rect key="frame" x="165" y="10" width="130" height="93"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="treecollage_unpresed.png"/>
+                            <state key="highlighted" image="treecollage_presed.png"/>
+                            <connections>
+                                <action selector="treebtnpress:" destination="-1" eventType="touchUpInside" id="3Om-uu-8E2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6i-of-0lu">
+                            <rect key="frame" x="25" y="113" width="130" height="96"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="3dcollage_unpresed.png"/>
+                            <state key="highlighted" image="3dcollage_presed.png"/>
+                            <connections>
+                                <action selector="d3btnpress:" destination="-1" eventType="touchUpInside" id="6rL-i6-QJy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnH-Lo-c1l">
+                            <rect key="frame" x="25" y="10" width="130" height="93"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="photocollage_unpresed.png"/>
+                            <state key="highlighted" image="photocollage_presed.png"/>
+                            <connections>
+                                <action selector="photobtnpress:" destination="-1" eventType="touchUpInside" id="p4E-wb-Tcr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yS-Wl-FZS">
+                            <rect key="frame" x="165" y="113" width="130" height="96"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="more_unpresed.png"/>
+                            <state key="highlighted" image="more_presed.png"/>
+                            <connections>
+                                <action selector="morebtnpress:" destination="-1" eventType="touchUpInside" id="v2y-9B-naO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHk-Zk-NoA">
+                    <rect key="frame" x="270" y="520" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="add.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhS-Zd-mXf">
+                    <rect key="frame" x="270" y="520" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="adsbtnpress:" destination="-1" eventType="touchUpInside" id="dG8-3X-1nr"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzt-OC-cWP">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBE-pk-8zY">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="adsclosebtnpress:" destination="-1" eventType="touchUpInside" id="WfC-Tw-ooy"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IR8-8x-exV">
+                            <rect key="frame" x="25" y="194" width="270" height="150"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remove Ads" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHG-xH-G90">
+                                    <rect key="frame" x="10" y="5" width="250" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AvenirLTStd-Heavy" family="Avenir LT Std" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remove ads from whole application and enjoy app without disturbing.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9J-ux-JC7">
+                                    <rect key="frame" x="10" y="30" width="250" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AvenirLTStd-Medium" family="Avenir LT Std" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price : $1.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9W-Fx-kT0">
+                                    <rect key="frame" x="10" y="70" width="250" height="25"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AvenirLTStd-Medium" family="Avenir LT Std" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXy-Ur-Atq">
+                                    <rect key="frame" x="145" y="105" width="100" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="purchase.png"/>
+                                    <state key="highlighted" image="purchase_presed.png"/>
+                                    <connections>
+                                        <action selector="purchasebtnpress:" destination="-1" eventType="touchUpInside" id="egp-Yx-3PT"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUp-qa-ad8">
+                                    <rect key="frame" x="25" y="105" width="100" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="restore_unpresed.png"/>
+                                    <state key="highlighted" image="restore_upresed.png"/>
+                                    <connections>
+                                        <action selector="restorebtnpress:" destination="-1" eventType="touchUpInside" id="ATZ-5k-pIO"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARa-0M-AyA">
+                            <rect key="frame" x="280" y="180" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="closead.png"/>
+                            <connections>
+                                <action selector="adsclosebtnpress:" destination="-1" eventType="touchUpInside" id="9VQ-3a-YXC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="131.25" y="153.16901408450704"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="3dcollage_presed.png" width="501" height="371"/>
+        <image name="3dcollage_unpresed.png" width="501" height="371"/>
+        <image name="add.png" width="147" height="147"/>
+        <image name="bg.png" width="1242" height="2208"/>
+        <image name="closead.png" width="75" height="75"/>
+        <image name="more_presed.png" width="501" height="371"/>
+        <image name="more_unpresed.png" width="501" height="371"/>
+        <image name="photocollage_presed.png" width="501" height="371"/>
+        <image name="photocollage_unpresed.png" width="501" height="371"/>
+        <image name="purchase.png" width="334" height="105"/>
+        <image name="purchase_presed.png" width="334" height="105"/>
+        <image name="restore_unpresed.png" width="334" height="105"/>
+        <image name="restore_upresed.png" width="334" height="105"/>
+        <image name="treecollage_presed.png" width="501" height="371"/>
+        <image name="treecollage_unpresed.png" width="501" height="371"/>
+    </resources>
+</document>

@@ -1,0 +1,32 @@
+{
+    "frame_0":[
+               {
+               "count":"6",
+               "frame_1_x":"44",
+               "frame_1_y":"211",
+               "frame_1_w":"161",
+               "frame_1_h":"161",
+               "frame_2_x":"83",
+               "frame_2_y":"58",
+               "frame_2_w":"94",
+               "frame_2_h":"94",
+               "frame_3_x":"230",
+               "frame_3_y":"49",
+               "frame_3_w":"136",
+               "frame_3_h":"136",
+               "frame_4_x":"411",
+               "frame_4_y":"127",
+               "frame_4_w":"154",
+               "frame_4_h":"154",
+               "frame_5_x":"286",
+               "frame_5_y":"335",
+               "frame_5_w":"154",
+               "frame_5_h":"154",
+               "frame_6_x":"485",
+               "frame_6_y":"340",
+               "frame_6_w":"90",
+               "frame_6_h":"90",
+               }
+    
+    ]
+}

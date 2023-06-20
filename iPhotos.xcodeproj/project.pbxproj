@@ -1040,7 +1040,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1051,7 +1051,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 12;
+				MARKETING_VERSION = 13;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
 				PRODUCT_NAME = "iPhotos Editor";
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";
@@ -1069,7 +1069,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1080,7 +1080,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 12;
+				MARKETING_VERSION = 13;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
 				PRODUCT_NAME = "iPhotos Editor";
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";

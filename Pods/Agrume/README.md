@@ -43,13 +43,47 @@ For just a single image it's as easy as
 ```swift
 import Agrume
 
+private lazy var agrume = Agrume(image: UIImage(named: "…")!)
+
 @IBAction func openImage(_ sender: Any) {
-  let agrume = Agrume(image: UIImage(named: "…")!)
   agrume.show(from: self)
 }
 ```
 
 You can also pass in a `URL` and Agrume will take care of the download for you.
+
+### SwiftUI
+
+Currently the SwiftUI implementation doesn't surface configurations, so can only be used as a single image basic viewer - PRs welcome to extend its functionality.
+
+```swift
+import Agrume
+
+struct ExampleView: View {
+    
+  let images: [UIImage]
+
+  @State var showAgrume = false
+
+  var body: some View {
+    VStack {
+      // Hide the presenting button (or other view) whenever Agrume is shown
+      if !showAgrume {
+        Button("Launch Agrume from SwiftUI") {
+          withAnimation {
+            showAgrume = true
+          }
+        }
+      }
+
+      if showAgrume {
+        // You can pass a single or multiple images
+        AgrumeView(images: images, isPresenting: $showAgrume)
+      }
+    }
+  }
+}
+```
 
 ### Background Configuration
 
@@ -124,8 +158,9 @@ If you want to take control of downloading images (e.g. for caching), you can al
 import Agrume
 import MapleBacon
 
+private lazy var agrume = Agrume(url: URL(string: "https://dl.dropboxusercontent.com/u/512759/MapleBacon.png")!)
+
 @IBAction func openURL(_ sender: Any) {
-  let agrume = Agrume(url: URL(string: "https://dl.dropboxusercontent.com/u/512759/MapleBacon.png")!)
   agrume.download = { url, completion in
     Downloader.default.download(url) { image in
       completion(image)
@@ -206,6 +241,7 @@ You can customise the look and functionality of the image views. To do so, you n
 ### Lifecycle
 
 `Agrume` offers the following lifecycle closures that you can optionally set:
+
 - `willDismiss`
 - `didDismiss`
 - `didScroll`

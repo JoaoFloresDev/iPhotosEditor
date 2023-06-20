@@ -251,11 +251,10 @@ open class ImageScrollView: UIScrollView {
     // MARK: - Gesture
     
     @objc func doubleTapGestureRecognizer(_ gestureRecognizer: UIGestureRecognizer) {
-        // zoom out if it bigger than middle scale point. Else, zoom in
-        if zoomScale >= maximumZoomScale / 2.0 {
+        // zoom out if it bigger than the scale factor after double-tap scaling. Else, zoom in
+        if zoomScale >= minimumZoomScale * ImageScrollView.kZoomInFactorFromMinWhenDoubleTap - 0.01 {
             setZoomScale(minimumZoomScale, animated: true)
-        }
-        else {
+        } else {
             let center = gestureRecognizer.location(in: gestureRecognizer.view)
             let zoomRect = zoomRectForScale(ImageScrollView.kZoomInFactorFromMinWhenDoubleTap * minimumZoomScale, center: center)
             zoom(to: zoomRect, animated: true)

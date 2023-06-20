@@ -28,7 +28,7 @@ SOFTWARE.
 
 ## Alamofire
 
-Copyright (c) 2014-2020 Alamofire Software Foundation (http://alamofire.org/)
+Copyright (c) 2014-2022 Alamofire Software Foundation (http://alamofire.org/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -51,7 +51,7 @@ THE SOFTWARE.
 
 ## AlamofireImage
 
-Copyright (c) 2015 Alamofire Software Foundation (http://alamofire.org/)
+Copyright (c) 2015-2021 Alamofire Software Foundation (http://alamofire.org/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -101,6 +101,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 Copyright 2020 Google
 
 ## GoogleAppMeasurement
+
+Copyright 2021 Google
+
+## GoogleUserMessagingPlatform
 
 Copyright 2020 Google
 

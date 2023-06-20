@@ -2,6 +2,8 @@
 //  UIImageView+SwiftyGif.swift
 //
 
+#if !os(macOS)
+
 import ImageIO
 import UIKit
 
@@ -118,10 +120,10 @@ public extension UIImageView {
         
         let loader: UIView? = showLoader ? createLoader(from: customLoader) : nil
         
-        let task = session.dataTask(with: url) { data, _, error in
+        let task = session.dataTask(with: url) { [weak self] data, _, error in
             DispatchQueue.main.async {
                 loader?.removeFromSuperview()
-                self.parseDownloadedGif(url: url,
+                self?.parseDownloadedGif(url: url,
                                         data: data,
                                         error: error,
                                         manager: manager,
@@ -434,8 +436,8 @@ public extension UIImageView {
     }
     
     var delegate: SwiftyGifDelegate? {
-        get { return (objc_getAssociatedObject(self, _delegateKey!) as? SwiftyGifDelegate) }
-        set { objc_setAssociatedObject(self, _delegateKey!, newValue, .OBJC_ASSOCIATION_ASSIGN) }
+        get { return (objc_getAssociatedWeakObject(self, _delegateKey!) as? SwiftyGifDelegate) }
+        set { objc_setAssociatedWeakObject(self, _delegateKey!, newValue) }
     }
     
     private var haveCache: Bool {
@@ -457,8 +459,6 @@ public extension UIImageView {
             
             if newValue {
                 delegate?.gifDidStart?(sender: self)
-            } else {
-                delegate?.gifDidStop?(sender: self)
             }
         }
     }
@@ -482,3 +482,5 @@ public extension UIImageView {
         return (result as? T)
     }
 }
+
+#endif

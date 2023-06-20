@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E6359A4203E148200805DEB /* StickerCellWhats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6359A3203E148200805DEB /* StickerCellWhats.swift */; };
-		41E285342A9490C9093E5F56 /* Pods_iPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06147FEBFC542CA8D9B57C73 /* Pods_iPhotos.framework */; };
+		14B7874FE7A5630F389409E2 /* Pods_iPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C309CBD9B6357A9D51D7FE2 /* Pods_iPhotos.framework */; };
 		8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0A6DCC1FE9F1CE00110AF2 /* UIAlertController+Additions.swift */; };
 		8A18E2EE1FB3B47D0082201D /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A18E2E51FB3B47B0082201D /* YYImage.m */; };
 		8A18E2EF1FB3B47D0082201D /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A18E2E81FB3B47C0082201D /* YYAnimatedImageView.m */; };
@@ -146,10 +146,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		01238CEF6F5BD5772B53594A /* Pods-iPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhotos.release.xcconfig"; path = "Target Support Files/Pods-iPhotos/Pods-iPhotos.release.xcconfig"; sourceTree = "<group>"; };
-		06147FEBFC542CA8D9B57C73 /* Pods_iPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6359A3203E148200805DEB /* StickerCellWhats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCellWhats.swift; sourceTree = "<group>"; };
-		3B095A342B686B5EB14CE0B3 /* Pods-iPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhotos.debug.xcconfig"; path = "Target Support Files/Pods-iPhotos/Pods-iPhotos.debug.xcconfig"; sourceTree = "<group>"; };
+		32F6B7815EA09925558C4152 /* Pods-iPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhotos.release.xcconfig"; path = "Target Support Files/Pods-iPhotos/Pods-iPhotos.release.xcconfig"; sourceTree = "<group>"; };
 		8A0A6DCC1FE9F1CE00110AF2 /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
 		8A18E2E31FB3B47A0082201D /* WAStickersThirdParty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WAStickersThirdParty-Bridging-Header.h"; sourceTree = "<group>"; };
 		8A18E2E41FB3B47B0082201D /* YYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImage.h; sourceTree = "<group>"; };
@@ -195,6 +193,8 @@
 		8ABEBD8321029766005F348C /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		8ACB6A971FE9CB7700A564BB /* Limits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Limits.swift; sourceTree = "<group>"; };
 		8ADA60751FD71F69006C9BBA /* AllStickerPacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStickerPacksViewController.swift; sourceTree = "<group>"; };
+		8C309CBD9B6357A9D51D7FE2 /* Pods_iPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B053FE397E92915366B66742 /* Pods-iPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhotos.debug.xcconfig"; path = "Target Support Files/Pods-iPhotos/Pods-iPhotos.debug.xcconfig"; sourceTree = "<group>"; };
 		C4320F9224C804B800E798EA /* CollageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageViewController.swift; sourceTree = "<group>"; };
 		C4351DF8248FF976009FBDEF /* StyleClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleClass.swift; sourceTree = "<group>"; };
 		C4351DF9248FF976009FBDEF /* InViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InViewController.swift; sourceTree = "<group>"; };
@@ -301,7 +301,7 @@
 			files = (
 				C44C7090249C132F00EC1E85 /* StoreKit.framework in Frameworks */,
 				8ABEBD8421029767005F348C /* WebP.framework in Frameworks */,
-				41E285342A9490C9093E5F56 /* Pods_iPhotos.framework in Frameworks */,
+				14B7874FE7A5630F389409E2 /* Pods_iPhotos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,8 +311,8 @@
 		15F06C2D3D30D960CFE5E24E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B095A342B686B5EB14CE0B3 /* Pods-iPhotos.debug.xcconfig */,
-				01238CEF6F5BD5772B53594A /* Pods-iPhotos.release.xcconfig */,
+				B053FE397E92915366B66742 /* Pods-iPhotos.debug.xcconfig */,
+				32F6B7815EA09925558C4152 /* Pods-iPhotos.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -409,7 +409,7 @@
 				8A18E2F41FB3B5B80082201D /* QuartzCore.framework */,
 				8A40BE4A1FB100CB003AD704 /* CoreFoundation.framework */,
 				8A40BE491FB100C4003AD704 /* UIKit.framework */,
-				06147FEBFC542CA8D9B57C73 /* Pods_iPhotos.framework */,
+				8C309CBD9B6357A9D51D7FE2 /* Pods_iPhotos.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -635,12 +635,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A22EE121F9A9F40003A7F21 /* Build configuration list for PBXNativeTarget "iPhotos" */;
 			buildPhases = (
-				F3252A5212404E17216FA028 /* [CP] Check Pods Manifest.lock */,
+				4569ADD1874ED51CA7685806 /* [CP] Check Pods Manifest.lock */,
 				8A22EDFC1F9A9F40003A7F21 /* Sources */,
 				8A22EDFD1F9A9F40003A7F21 /* Frameworks */,
 				8A22EDFE1F9A9F40003A7F21 /* Resources */,
 				8A18E32F1FBA3CC80082201D /* Embed Frameworks */,
-				EEF186E07CF81D85330E99D1 /* [CP] Embed Pods Frameworks */,
+				8A69D66B0FD94FE229D9048F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -755,7 +755,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EEF186E07CF81D85330E99D1 /* [CP] Embed Pods Frameworks */ = {
+		4569ADD1874ED51CA7685806 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iPhotos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A69D66B0FD94FE229D9048F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -799,28 +821,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iPhotos/Pods-iPhotos-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F3252A5212404E17216FA028 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iPhotos-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1034,22 +1034,24 @@
 		};
 		8A22EE131F9A9F40003A7F21 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B095A342B686B5EB14CE0B3 /* Pods-iPhotos.debug.xcconfig */;
+			baseConfigurationReference = B053FE397E92915366B66742 /* Pods-iPhotos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WAStickersThirdParty/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INFOPLIST_KEY_CFBundleDisplayName = iPhotos;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 11;
+				MARKETING_VERSION = 12;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
 				PRODUCT_NAME = "iPhotos Editor";
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";
@@ -1061,22 +1063,24 @@
 		};
 		8A22EE141F9A9F40003A7F21 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01238CEF6F5BD5772B53594A /* Pods-iPhotos.release.xcconfig */;
+			baseConfigurationReference = 32F6B7815EA09925558C4152 /* Pods-iPhotos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WAStickersThirdParty/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INFOPLIST_KEY_CFBundleDisplayName = iPhotos;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 11;
+				MARKETING_VERSION = 12;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
 				PRODUCT_NAME = "iPhotos Editor";
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";

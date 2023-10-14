@@ -82,26 +82,17 @@ class PurchaseViewController: UIViewController {
     }
     
     @objc func closeTapped() {
-        
+        dismiss(animated: true)
     }
     
     @objc func restorePurchaseTapped() {
-        
+        RazeFaceProducts.store.restorePurchases()
+        confirmCheckmark()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         reloadAndCheckPurchaseStatus()
-    }
-    
-    // MARK: - IBActions
-    @IBAction func dismissView(_ sender: Any) {
-        dismiss(animated: true)
-    }
-    
-    @IBAction func restorePressed(_ sender: Any) {
-        RazeFaceProducts.store.restorePurchases()
-        confirmCheckmark()
     }
     
     // MARK: - Helper Methods

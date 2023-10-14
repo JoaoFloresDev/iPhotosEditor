@@ -52,7 +52,6 @@ class PurchaseViewController: UIViewController {
     func setupUI() {
         view.backgroundColor = .white
         
-        self.navigationItem.title = "Close"
         let close = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(closeTapped))
         self.navigationItem.leftBarButtonItem = close
         

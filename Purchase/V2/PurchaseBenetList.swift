@@ -33,14 +33,14 @@ class PurchaseBenetList: UIView {
         stackView.addArrangedSubview(createSpacer(height:  12))
         stackView.addArrangedSubview(
             PurchaseBenefitItem(
-                text: "Filtros e montagens ilimitadas",
+                text: "Filtros e montagens desbloqueados",
                 imageName: "unlimited")
         )
         stackView.addArrangedSubview(createSpacer(height:  12))
         stackView.addArrangedSubview(
             PurchaseBenefitItem(
                 text: "Stickers ilimitados",
-                imageName: "videosupport")
+                imageName: "unlimited")
         )
         stackView.addArrangedSubview(createSpacer(height:  12))
         

@@ -81,8 +81,6 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UserDefaults.standard.set(true, forKey:"FirtsUse")
-        
         //        ADS
         interstitial = createAndLoadInterstitial()
         interstitial = GADInterstitial(adUnitID: "ca-app-pub-8858389345934911/6846096563")
@@ -115,9 +113,28 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         backgroundOptions.backgroundColor = .black
     }
     
-    /// called when an image has been chosen
-    /// here we start the editor with the new image
+    override func viewDidAppear(_ animated: Bool) {
+        if check30DaysPassed() {
+            let controller = PurchaseViewController()
+            let navigation = UINavigationController(rootViewController: controller)
+            present(navigation, animated: true)
+        }
+    }
     
+    func saveTodayDate() {
+        let now = Date()
+        UserDefaults.standard.set(now, forKey: "LastSavedDate")
+    }
+
+    func check30DaysPassed() -> Bool {
+        if let lastSavedDate = UserDefaults.standard.object(forKey: "LastSavedDate") as? Date {
+            let dayDifference = Calendar.current.dateComponents([.day], from: lastSavedDate, to: Date()).day ?? 0
+            
+            return dayDifference >= 7
+        }
+        saveTodayDate()
+        return false
+    }
     
     //    MARK: - imagePicker
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

@@ -73,8 +73,6 @@ class CollageViewController: UIViewController, UIImagePickerControllerDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        UserDefaults.standard.set(true, forKey:"FirtsUse")
-
         //        ADS
         interstitial = createAndLoadInterstitial()
         interstitial = GADInterstitial(adUnitID: "ca-app-pub-8858389345934911/6846096563")

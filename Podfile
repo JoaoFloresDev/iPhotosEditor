@@ -6,7 +6,7 @@ target 'iPhotos' do
   use_frameworks!
 
   # Pods for iPhotos
-  pod 'CLImageEditor', '~> 0.2'
+  pod 'CLImageEditor'
   pod "Agrume" 
   pod 'Google-Mobile-Ads-SDK', '7.69.0'
   pod 'AlamofireImage', '~> 4.1'

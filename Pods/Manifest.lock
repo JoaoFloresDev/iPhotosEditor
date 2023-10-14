@@ -60,7 +60,7 @@ PODS:
 DEPENDENCIES:
   - Agrume
   - AlamofireImage (~> 4.1)
-  - CLImageEditor (~> 0.2)
+  - CLImageEditor
   - Google-Mobile-Ads-SDK (= 7.69.0)
   - IGColorPicker
   - ImageScrollView
@@ -110,6 +110,6 @@ SPEC CHECKSUMS:
   SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
   ZoomImageView: 2a88d0c10ad30b9a06c8f5660d51623fb32beed5
 
-PODFILE CHECKSUM: 010ac9264bb1269d0e2e6e3b7be1f1c4381facbd
+PODFILE CHECKSUM: 6188539626bd25366068bab576a7da79c2b655f6
 
 COCOAPODS: 1.13.0

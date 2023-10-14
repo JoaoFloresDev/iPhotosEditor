@@ -16,6 +16,7 @@ target 'iPhotos' do
   pod 'SVProgressHUD'
   pod 'OpalImagePicker'
   pod 'ZoomImageView'
+  pod 'SnapKit', '~> 5.0.0'
 end
 
 post_install do |installer|

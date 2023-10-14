@@ -31,6 +31,12 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         agrume.show(from: self)
     }
     
+    @IBAction func openPurchase(_ sender: Any) {
+        let controller = PurchaseViewController()
+        let navigation = UINavigationController(rootViewController: controller)
+        present(navigation, animated: true)
+    }
+    
     @IBAction func editImgTest(_ sender: Any) {
         newImage()
     }

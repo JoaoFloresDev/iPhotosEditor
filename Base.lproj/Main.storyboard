@@ -2514,7 +2514,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="g9N-z2-rmx" kind="show" id="I2i-mU-OrJ"/>
+                                            <action selector="openPurchase:" destination="tIf-Yc-9Ex" eventType="touchUpInside" id="NFV-aY-vtW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -2590,11 +2590,11 @@
             <objects>
                 <viewController id="g9N-z2-rmx" customClass="MasterViewController" customModule="iPhotos_Editor" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9sn-FE-ejc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlU-Z8-bgV">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Products" id="ik7-fP-gcm">
                                         <barButtonItem key="leftBarButtonItem" title="Close" id="wfX-XU-AQY">
@@ -2611,7 +2611,7 @@
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fX8-Fs-lxT">
-                                <rect key="frame" x="0.0" y="66" width="414" height="67"/>
+                                <rect key="frame" x="0.0" y="102" width="414" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCQ-DP-M3T">
                                         <rect key="frame" x="10" y="10" width="289" height="21"/>
@@ -2667,10 +2667,10 @@
                                 </constraints>
                             </view>
                             <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="rYz-az-F9S">
-                                <rect key="frame" x="197" y="153" width="20" height="20"/>
+                                <rect key="frame" x="197" y="189" width="20" height="20"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits: all images from Freepik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Baq-gi-8w1">
-                                <rect key="frame" x="10" y="859" width="394" height="17"/>
+                                <rect key="frame" x="10" y="835" width="394" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

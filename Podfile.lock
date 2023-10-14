@@ -53,6 +53,7 @@ PODS:
   - nanopb/encode (2.30908.0)
   - OpalImagePicker (2.1.2)
   - PromisesObjC (2.2.0)
+  - SnapKit (5.0.1)
   - SVProgressHUD (2.2.5)
   - SwiftyGif (5.4.4)
   - ZoomImageView (0.6.0)
@@ -66,6 +67,7 @@ DEPENDENCIES:
   - ImageScrollView
   - IQKeyboardManagerSwift
   - OpalImagePicker
+  - SnapKit (~> 5.0.0)
   - SVProgressHUD
   - ZoomImageView
 
@@ -86,6 +88,7 @@ SPEC REPOS:
     - nanopb
     - OpalImagePicker
     - PromisesObjC
+    - SnapKit
     - SVProgressHUD
     - SwiftyGif
     - ZoomImageView
@@ -106,10 +109,11 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   OpalImagePicker: 51cbf714f337a93c2631219f1a90389ba936077f
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
   ZoomImageView: 2a88d0c10ad30b9a06c8f5660d51623fb32beed5
 
-PODFILE CHECKSUM: 6188539626bd25366068bab576a7da79c2b655f6
+PODFILE CHECKSUM: 482d1adc5d7bdc3ea914aa56e4130e5ffab0a7bb
 
 COCOAPODS: 1.13.0

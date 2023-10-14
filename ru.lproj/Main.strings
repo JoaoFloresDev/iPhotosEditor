@@ -1,0 +1,147 @@
+
+/* Class = "UILabel"; text = "Gallery"; ObjectID = "3YJ-YE-Njs"; */
+"3YJ-YE-Njs.text" = "Gallery";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4HV-a2-624"; */
+"4HV-a2-624.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "CANCEL"; ObjectID = "5Tj-K9-enH"; */
+"5Tj-K9-enH.normalTitle" = "CANCEL";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "67W-Yj-1IE"; */
+"67W-Yj-1IE.normalTitle" = "Save";
+
+/* Class = "UILabel"; text = "Grid"; ObjectID = "6a0-cQ-sLp"; */
+"6a0-cQ-sLp.text" = "Grid";
+
+/* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "6s6-kM-bIi"; */
+"6s6-kM-bIi.normalTitle" = "Edit";
+
+/* Class = "UILabel"; text = "Camera"; ObjectID = "8Wp-Rn-1nv"; */
+"8Wp-Rn-1nv.text" = "Camera";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "A8q-df-uzz"; */
+"A8q-df-uzz.title" = "Item";
+
+/* Class = "UILabel"; text = "Save"; ObjectID = "Ac9-kL-3b5"; */
+"Ac9-kL-3b5.text" = "Save";
+
+/* Class = "UILabel"; text = "Credits: all images from Freepik"; ObjectID = "Baq-gi-8w1"; */
+"Baq-gi-8w1.text" = "Credits: all images from Freepik";
+
+/* Class = "UITabBarItem"; title = "Editor"; ObjectID = "CXY-3E-Fl1"; */
+"CXY-3E-Fl1.title" = "Editor";
+
+/* Class = "UILabel"; text = "Loading..."; ObjectID = "FGh-qP-o8Z"; */
+"FGh-qP-o8Z.text" = "Loading...";
+
+/* Class = "UILabel"; text = "Layout"; ObjectID = "IQb-xG-Wnn"; */
+"IQb-xG-Wnn.text" = "Layout";
+
+/* Class = "UIButton"; normalTitle = "Augmented Reality Photos"; ObjectID = "Ktb-VK-Y98"; */
+"Ktb-VK-Y98.normalTitle" = "Augmented Reality Photos";
+
+/* Class = "UILabel"; text = "Tap itens to see more"; ObjectID = "MC7-rv-OxD"; */
+"MC7-rv-OxD.text" = "Tap itens to see more";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "O1k-oe-cGC"; */
+"O1k-oe-cGC.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "OG1-ul-pse"; */
+"OG1-ul-pse.normalTitle" = "OK";
+
+/* Class = "UILabel"; text = "Delete"; ObjectID = "PI2-n1-Zo4"; */
+"PI2-n1-Zo4.text" = "Delete";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "SI2-Gh-HTc"; */
+"SI2-Gh-HTc.title" = "Item";
+
+/* Class = "UITextField"; text = "@iPhotos"; ObjectID = "TVE-vF-qpP"; */
+"TVE-vF-qpP.text" = "@iPhotos";
+
+/* Class = "UILabel"; text = "Stickers"; ObjectID = "UBZ-Q1-u0u"; */
+"UBZ-Q1-u0u.text" = "Stickers";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "UcC-o8-lft"; */
+"UcC-o8-lft.title" = "Item";
+
+/* Class = "UILabel"; text = "Save & Share"; ObjectID = "Usv-1w-KMd"; */
+"Usv-1w-KMd.text" = "Save & Share";
+
+/* Class = "UILabel"; text = "Loading..."; ObjectID = "Vgv-W2-ZoT"; */
+"Vgv-W2-ZoT.text" = "Loading...";
+
+/* Class = "UILabel"; text = "Collage"; ObjectID = "Yl2-EF-AqD"; */
+"Yl2-EF-AqD.text" = "Collage";
+
+/* Class = "UILabel"; text = "Buy"; ObjectID = "YlI-lT-TPg"; */
+"YlI-lT-TPg.text" = "Buy";
+
+/* Class = "UILabel"; text = "No Photos "; ObjectID = "Z7G-gI-6mb"; */
+"Z7G-gI-6mb.text" = "No Photos ";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "ZXS-gN-ccE"; */
+"ZXS-gN-ccE.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dy6-v5-pC9"; */
+"dy6-v5-pC9.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Stikers"; ObjectID = "fPH-ZR-THj"; */
+"fPH-ZR-THj.title" = "Stikers";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "fk7-OC-ZzL"; */
+"fk7-OC-ZzL.text" = "Home";
+
+/* Class = "UINavigationItem"; title = "Products"; ObjectID = "ik7-fP-gcm"; */
+"ik7-fP-gcm.title" = "Products";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jQM-NX-O7B"; */
+"jQM-NX-O7B.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Share"; ObjectID = "jS4-xg-WDv"; */
+"jS4-xg-WDv.text" = "Share";
+
+/* Class = "UIViewController"; title = "Sticker Packs"; ObjectID = "m3v-ad-jBG"; */
+"m3v-ad-jBG.title" = "Sticker Packs";
+
+/* Class = "UIButton"; normalTitle = "Add to WhatsApp"; ObjectID = "o8b-do-ZrK"; */
+"o8b-do-ZrK.normalTitle" = "Add to WhatsApp";
+
+/* Class = "UILabel"; text = "MY PHOTOS"; ObjectID = "qmr-dL-xqW"; */
+"qmr-dL-xqW.text" = "MY PHOTOS";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "qoG-L5-vXE"; */
+"qoG-L5-vXE.title" = "Item";
+
+/* Class = "UILabel"; text = "Loading..."; ObjectID = "sCQ-DP-M3T"; */
+"sCQ-DP-M3T.text" = "Loading...";
+
+/* Class = "UITabBarItem"; title = "collage"; ObjectID = "sRj-TA-Nxo"; */
+"sRj-TA-Nxo.title" = "collage";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "tY3-ai-755"; */
+"tY3-ai-755.title" = "Item";
+
+/* Class = "UILabel"; text = "My Photos"; ObjectID = "v9g-PB-Nrb"; */
+"v9g-PB-Nrb.text" = "My Photos";
+
+/* Class = "UIBarButtonItem"; title = "Restore"; ObjectID = "wYc-Pp-Svk"; */
+"wYc-Pp-Svk.title" = "Restore";
+
+/* Class = "UIBarButtonItem"; title = "Close"; ObjectID = "wfX-XU-AQY"; */
+"wfX-XU-AQY.title" = "Close";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "xYX-bj-aZB"; */
+"xYX-bj-aZB.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "New"; ObjectID = "yFp-q6-rqW"; */
+"yFp-q6-rqW.normalTitle" = "New";
+
+/* Class = "UINavigationItem"; title = "Sticker Packs"; ObjectID = "z7E-nq-Qjm"; */
+"z7E-nq-Qjm.title" = "Sticker Packs";
+
+/* Class = "UILabel"; text = "Layouts"; ObjectID = "zPb-dY-73Y"; */
+"zPb-dY-73Y.text" = "Layouts";
+
+/* Class = "UILabel"; text = "Grid"; ObjectID = "zrX-ws-o9O"; */
+"zrX-ws-o9O.text" = "Grid";

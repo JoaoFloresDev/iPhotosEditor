@@ -51,7 +51,6 @@
 		C44C708C249C119600EC1E85 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C7087249C119600EC1E85 /* ProductCell.swift */; };
 		C44C708E249C12A500EC1E85 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C708D249C12A500EC1E85 /* MasterViewController.swift */; };
 		C44C7090249C132F00EC1E85 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44C708F249C132F00EC1E85 /* StoreKit.framework */; };
-		C44C7092249C219100EC1E85 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C7091249C219100EC1E85 /* WelcomeViewController.swift */; };
 		C474A7D92492FA810043D953 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C474A7D82492FA810043D953 /* CreditsViewController.swift */; };
 		C474A84624930DF70043D953 /* dog5.png in Resources */ = {isa = PBXBuildFile; fileRef = C474A84224930DF70043D953 /* dog5.png */; };
 		C474A84824930DF70043D953 /* dog1.png in Resources */ = {isa = PBXBuildFile; fileRef = C474A84424930DF70043D953 /* dog1.png */; };
@@ -208,7 +207,6 @@
 		C44C7087249C119600EC1E85 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		C44C708D249C12A500EC1E85 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		C44C708F249C132F00EC1E85 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		C44C7091249C219100EC1E85 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		C474A7D82492FA810043D953 /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		C474A84224930DF70043D953 /* dog5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog5.png; sourceTree = "<group>"; };
 		C474A84424930DF70043D953 /* dog1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog1.png; sourceTree = "<group>"; };
@@ -457,7 +455,6 @@
 		C44C7082249C118200EC1E85 /* Purchase */ = {
 			isa = PBXGroup;
 			children = (
-				C44C7091249C219100EC1E85 /* WelcomeViewController.swift */,
 				C44C708D249C12A500EC1E85 /* MasterViewController.swift */,
 				C44C7083249C119500EC1E85 /* Calculator.swift */,
 				C44C7085249C119500EC1E85 /* DetailViewController.swift */,
@@ -843,7 +840,6 @@
 				8A18E33F1FBA7DC50082201D /* WebPManager.swift in Sources */,
 				C44C708A249C119600EC1E85 /* DetailViewController.swift in Sources */,
 				C4BD2D32262CE0EA005DA9A0 /* CalcuteFunctions.swift in Sources */,
-				C44C7092249C219100EC1E85 /* WelcomeViewController.swift in Sources */,
 				8ADA60761FD71F69006C9BBA /* AllStickerPacksViewController.swift in Sources */,
 				C4BD2D43262CE0EA005DA9A0 /* HomeVC.swift in Sources */,
 				8ACB6A981FE9CB7700A564BB /* Limits.swift in Sources */,

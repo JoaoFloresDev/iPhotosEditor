@@ -18,3 +18,14 @@ class FilterCell: UICollectionViewCell {
         // Initialization code
     }
 }
+
+enum Text: String {
+    case teste1 = "teste1"
+    case teste2 = "teste2"
+}
+
+extension String {
+    init(text: Text) {
+        self = text.rawValue
+    }
+}

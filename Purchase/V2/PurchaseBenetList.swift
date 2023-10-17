@@ -27,7 +27,7 @@ class PurchaseBenetList: UIView {
         stackView.addArrangedSubview(createSpacer(height:  12))
         stackView.addArrangedSubview(
             PurchaseBenefitItem(
-                text: "Sem anúncios",
+                text: .init(text: .teste1),
                 imageName: "noads")
         )
         stackView.addArrangedSubview(createSpacer(height:  12))

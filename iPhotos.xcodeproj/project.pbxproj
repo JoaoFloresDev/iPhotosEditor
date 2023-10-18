@@ -14,6 +14,7 @@
 		7395E0E42ADB1DBC00CE8F68 /* PurchaseBenetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0E02ADB1DAE00CE8F68 /* PurchaseBenetList.swift */; };
 		7395E0E52ADB1DBF00CE8F68 /* DiamondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0E12ADB1DAF00CE8F68 /* DiamondView.swift */; };
 		73D67E772ADB57E50097C323 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73D67E792ADB57E50097C323 /* Localizable.strings */; };
+		73E2EA7D2AE03319007B717F /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2EA7C2AE03319007B717F /* HomePageViewController.swift */; };
 		8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0A6DCC1FE9F1CE00110AF2 /* UIAlertController+Additions.swift */; };
 		8A18E2EE1FB3B47D0082201D /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A18E2E51FB3B47B0082201D /* YYImage.m */; };
 		8A18E2EF1FB3B47D0082201D /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A18E2E81FB3B47C0082201D /* YYAnimatedImageView.m */; };
@@ -197,6 +198,7 @@
 		73D67EA22ADB5A220097C323 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
 		73D67EA32ADB5A230097C323 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		73D67EA42ADB5A250097C323 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		73E2EA7C2AE03319007B717F /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		8A0A6DCC1FE9F1CE00110AF2 /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
 		8A18E2E31FB3B47A0082201D /* WAStickersThirdParty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WAStickersThirdParty-Bridging-Header.h"; sourceTree = "<group>"; };
 		8A18E2E41FB3B47B0082201D /* YYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImage.h; sourceTree = "<group>"; };
@@ -495,6 +497,7 @@
 				C4351DF8248FF976009FBDEF /* StyleClass.swift */,
 				C4351DF9248FF976009FBDEF /* InViewController.swift */,
 				C4320F9224C804B800E798EA /* CollageViewController.swift */,
+				73E2EA7C2AE03319007B717F /* HomePageViewController.swift */,
 			);
 			path = PhotoEditor;
 			sourceTree = "<group>";
@@ -923,6 +926,7 @@
 				C4BD2D35262CE0EA005DA9A0 /* SelectionButton.m in Sources */,
 				C4BD2D2E262CE0EA005DA9A0 /* StickerView.swift in Sources */,
 				8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */,
+				73E2EA7D2AE03319007B717F /* HomePageViewController.swift in Sources */,
 				C474A7D92492FA810043D953 /* CreditsViewController.swift in Sources */,
 				C4BD2D3A262CE0EA005DA9A0 /* tblStyleCell.swift in Sources */,
 				C4BD2D3E262CE0EA005DA9A0 /* MyAlbumVC.swift in Sources */,

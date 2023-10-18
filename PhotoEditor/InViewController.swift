@@ -114,6 +114,10 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        let controller = HomePageViewController()
+        controller.view.backgroundColor = .yellow
+        present(controller, animated: true)
+        
         if check30DaysPassed() {
             let controller = PurchaseViewController()
             let navigation = UINavigationController(rootViewController: controller)

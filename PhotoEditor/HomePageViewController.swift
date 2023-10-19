@@ -22,23 +22,30 @@ class HomePageViewController: UIViewController {
     lazy var containerStack: UIStackView = {
         let stackview = UIStackView()
         stackview.axis = .vertical
-        stackview.spacing = 16
-//        stackview.distribution = .fillEqually
+        stackview.spacing = 24
         return stackview
     }()
     
     lazy var editOptionsStack: UIStackView = {
         let stackview = UIStackView()
         stackview.axis = .horizontal
-        stackview.spacing = 16
+        stackview.spacing = 24
         return stackview
     }()
     
     lazy var collageOptionsStack: UIStackView = {
         let stackview = UIStackView()
         stackview.axis = .horizontal
-        stackview.spacing = 16
+        stackview.spacing = 24
         return stackview
+    }()
+    
+    lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "iPhotos"
+        label.font = .boldSystemFont(ofSize: 32)
+        label.textColor = .white
+        return label
     }()
     
     lazy var stickersButton = ImageButton(withImage: UIImage(named: "tag"), andText: "Stickers")
@@ -56,6 +63,7 @@ class HomePageViewController: UIViewController {
     
     func setupViews() {
         view.addSubview(backgroundImage)
+        view.addSubview(titleLabel)
         view.addSubview(containerStack)
         containerStack.addArrangedSubview(editOptionsStack)
         containerStack.addArrangedSubview(collageOptionsStack)
@@ -76,9 +84,14 @@ class HomePageViewController: UIViewController {
             make.edges.equalToSuperview()
         }
         
+        titleLabel.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(32)
+        }
+        
         containerStack.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(24)
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(80)
         }
         
         // Configurando os botões para terem o mesmo tamanho
@@ -98,11 +111,11 @@ class HomePageViewController: UIViewController {
         }
         
         editPhotoButton.snp.makeConstraints { make in
-            make.height.equalTo(60)
+            make.height.equalTo(80)
         }
         
         premiumVersionButton.snp.makeConstraints { make in
-            make.height.equalTo(60)
+            make.height.equalTo(80)
         }
     }
 }
@@ -129,7 +142,8 @@ class ImageButton: UIButton {
         super.init(frame: .zero)
         topImageView.image = image
         bottomLabel.text = text
-        backgroundColor = .green
+        bottomLabel.textColor = .white
+        bottomLabel.font = .boldSystemFont(ofSize: 18)
         setupViews()
         setupButtonAppearance()
     }
@@ -175,6 +189,16 @@ class ImageButton: UIButton {
         self.layer.shadowOpacity = 0.3
         self.layer.shadowRadius = 4
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.layer.sublayers?.removeAll { $0 is CAGradientLayer }
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.bounds
+        gradientLayer.colors = [UIColor(hex: "FF6079").cgColor, UIColor(hex: "D73852").cgColor]
+        gradientLayer.cornerRadius = 10
+        self.layer.insertSublayer(gradientLayer, at: 0)
+    }
 }
 
 class TextButton: UIButton {
@@ -187,10 +211,11 @@ class TextButton: UIButton {
     }()
     
     // MARK: - Initializers
-    init(text text: String) {
+    init(text: String) {
         super.init(frame: .zero)
         bottomLabel.text = text
-        backgroundColor = .green
+        bottomLabel.textColor = .white
+        bottomLabel.font = .boldSystemFont(ofSize: 18)
         setupViews()
         setupButtonAppearance()
     }
@@ -227,5 +252,15 @@ class TextButton: UIButton {
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
         self.layer.shadowOpacity = 0.3
         self.layer.shadowRadius = 4
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.layer.sublayers?.removeAll { $0 is CAGradientLayer }
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.bounds
+        gradientLayer.colors = [UIColor(hex: "FF6079").cgColor, UIColor(hex: "D73852").cgColor]
+        gradientLayer.cornerRadius = 10
+        self.layer.insertSublayer(gradientLayer, at: 0)
     }
 }

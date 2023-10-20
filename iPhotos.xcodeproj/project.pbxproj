@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0E6359A4203E148200805DEB /* StickerCellWhats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6359A3203E148200805DEB /* StickerCellWhats.swift */; };
 		14B7874FE7A5630F389409E2 /* Pods_iPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C309CBD9B6357A9D51D7FE2 /* Pods_iPhotos.framework */; };
+		734EE8262AE2D83B00A11E97 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734EE8242AE2D83A00A11E97 /* TextButton.swift */; };
+		734EE8272AE2D83B00A11E97 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734EE8252AE2D83B00A11E97 /* ImageButton.swift */; };
 		7395E0E22ADB1DB600CE8F68 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0DE2ADB1DAD00CE8F68 /* PurchaseViewController.swift */; };
 		7395E0E32ADB1DB900CE8F68 /* PurchaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0DF2ADB1DAD00CE8F68 /* PurchaseHeaderView.swift */; };
 		7395E0E42ADB1DBC00CE8F68 /* PurchaseBenetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0E02ADB1DAE00CE8F68 /* PurchaseBenetList.swift */; };
@@ -150,6 +152,8 @@
 /* Begin PBXFileReference section */
 		0E6359A3203E148200805DEB /* StickerCellWhats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCellWhats.swift; sourceTree = "<group>"; };
 		32F6B7815EA09925558C4152 /* Pods-iPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhotos.release.xcconfig"; path = "Target Support Files/Pods-iPhotos/Pods-iPhotos.release.xcconfig"; sourceTree = "<group>"; };
+		734EE8242AE2D83A00A11E97 /* TextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		734EE8252AE2D83B00A11E97 /* ImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
 		7395E0DE2ADB1DAD00CE8F68 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		7395E0DF2ADB1DAD00CE8F68 /* PurchaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHeaderView.swift; sourceTree = "<group>"; };
 		7395E0E02ADB1DAE00CE8F68 /* PurchaseBenetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseBenetList.swift; sourceTree = "<group>"; };
@@ -494,6 +498,8 @@
 		C4351DFC249027F0009FBDEF /* PhotoEditor */ = {
 			isa = PBXGroup;
 			children = (
+				734EE8252AE2D83B00A11E97 /* ImageButton.swift */,
+				734EE8242AE2D83A00A11E97 /* TextButton.swift */,
 				C4351DF8248FF976009FBDEF /* StyleClass.swift */,
 				C4351DF9248FF976009FBDEF /* InViewController.swift */,
 				C4320F9224C804B800E798EA /* CollageViewController.swift */,
@@ -942,6 +948,7 @@
 				8A18E2F11FB3B47D0082201D /* YYSpriteSheetImage.m in Sources */,
 				C44C7089249C119600EC1E85 /* IAPHelper.swift in Sources */,
 				8A18E2EF1FB3B47D0082201D /* YYAnimatedImageView.m in Sources */,
+				734EE8262AE2D83B00A11E97 /* TextButton.swift in Sources */,
 				8A27F1221FD76937001B2BBD /* AquaButton.swift in Sources */,
 				C4351DFB248FF976009FBDEF /* InViewController.swift in Sources */,
 				C4BD2D02262CE0EA005DA9A0 /* FramesCell.swift in Sources */,
@@ -972,6 +979,7 @@
 				C4BD2D33262CE0EA005DA9A0 /* adjustToFitFontOrWidth.swift in Sources */,
 				C4BD2D04262CE0EA005DA9A0 /* allFramesCell.swift in Sources */,
 				8AB5951B20C1FC440076625E /* ImageData.swift in Sources */,
+				734EE8272AE2D83B00A11E97 /* ImageButton.swift in Sources */,
 				7395E0E22ADB1DB600CE8F68 /* PurchaseViewController.swift in Sources */,
 				C4BD2D46262CE0EA005DA9A0 /* SwiftyTimer.swift in Sources */,
 			);

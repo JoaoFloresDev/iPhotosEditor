@@ -23,6 +23,10 @@ class LoadShapesVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
         ShapeCV.reloadData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     //MARK:- Button Action Zone
     @IBAction func btnBackAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)

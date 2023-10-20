@@ -29,7 +29,8 @@ class AllStickerPacksViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+        
         if let selectedIndex = selectedIndex {
             stickerPacksTableView.deselectRow(at: selectedIndex, animated: true)
         }
@@ -67,7 +68,6 @@ class AllStickerPacksViewController: UIViewController {
     }
 
     private func show(stickerPack: StickerPack, animated: Bool) {
-        // "stickerPackNotAnimated" still animates the push transition on iOS 8 and earlier.
         let identifier = animated ? "stickerPackAnimated" : "stickerPackNotAnimated"
         performSegue(withIdentifier: identifier, sender: stickerPack)
     }
@@ -77,7 +77,6 @@ class AllStickerPacksViewController: UIViewController {
             let stickerPack = sender as? StickerPack {
             vc.title = stickerPack.name
             vc.stickerPack = stickerPack
-            vc.navigationItem.hidesBackButton = stickerPacks.count <= 1
         }
     }
 

@@ -2406,7 +2406,7 @@
         <!--Editor-->
         <scene sceneID="Om1-ue-Zex">
             <objects>
-                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="tIf-Yc-9Ex" customClass="InViewController" customModule="iPhotos_Editor" sceneMemberID="viewController">
+                <viewController restorationIdentifier="InViewController" storyboardIdentifier="InViewController" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="tIf-Yc-9Ex" customClass="InViewController" customModule="iPhotos_Editor" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AUg-F7-a8V"/>
                         <viewControllerLayoutGuide type="bottom" id="SPu-ge-KRm"/>
@@ -2710,7 +2710,7 @@
         <!--Sticker Packs-->
         <scene sceneID="gd8-oj-f1A">
             <objects>
-                <viewController title="Sticker Packs" id="m3v-ad-jBG" customClass="AllStickerPacksViewController" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AllStickerPacksViewController" title="Sticker Packs" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m3v-ad-jBG" customClass="AllStickerPacksViewController" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TZw-Eq-d2d"/>
                         <viewControllerLayoutGuide type="bottom" id="3nW-8w-7u5"/>

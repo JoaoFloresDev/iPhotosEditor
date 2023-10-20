@@ -32,7 +32,6 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     private var portraitConstraints: [NSLayoutConstraint] = []
     private var landscapeConstraints: [NSLayoutConstraint] = []
     
-//    private var bottomGradientView: GradientViewWhats = GradientViewWhats(topColor: UIColor.black.withAlphaComponent(0.0), bottomColor: UIColor.black)
     private var topDivider: UIView = UIView()
     
     private var portraitOrientation: Bool {
@@ -96,6 +95,10 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         
         itemsPerRow = portraitOrientation ? portraitItems : landscapeItems
         changeConstraints()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.popToRootViewController(animated: true)
     }
     
     // MARK: - Scrollview

@@ -34,6 +34,10 @@ class PresentPhotoVC: UIViewController,OpalImagePickerControllerDelegate,UIImage
         btnDismiss.alpha = 0.5
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     //MARK:- Button Action Zone
     
     @IBAction func btnDismissAction(_ sender: Any) {

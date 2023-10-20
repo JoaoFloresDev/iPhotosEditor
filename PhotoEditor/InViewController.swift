@@ -121,6 +121,11 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     func saveTodayDate() {
         let now = Date()
         UserDefaults.standard.set(now, forKey: "LastSavedDate")

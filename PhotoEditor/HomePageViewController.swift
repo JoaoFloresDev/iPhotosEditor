@@ -48,27 +48,57 @@ class HomePageViewController: UIViewController {
         return label
     }()
     
-    lazy var stickersButton = ImageButton(withImage: UIImage(named: "tag"), andText: "Stickers")
-    lazy var augmentedReallityButton = ImageButton(withImage: UIImage(named: "filter1"), andText: "Augmented Reallity")
+    lazy var premiumVersionButton: UIButton = {
+       let button = UIButton()
+        button.setImage(UIImage(named: "be-premium"), for: .normal)
+        button.addTarget(self, action: #selector(purchaseAction), for: .touchUpInside)
+        return button
+    }()
     
-    lazy var collageButton = ImageButton(withImage: UIImage(named: "stickerImage"), andText: "Collage")
-    lazy var gridButton = ImageButton(withImage: UIImage(named: "22"), andText: "Grid")
-    
-    lazy var editPhotoButton = TextButton(text: "Edit Photo")
-    lazy var premiumVersionButton = TextButton(text: "Premium version")
+    lazy var stickersButton = ImageButton(withImage: UIImage(named: "tag"), andText: "Stickers", action: stickersButtonAction)
+    lazy var augmentedReallityButton = ImageButton(withImage: UIImage(named: "filter1"), andText: "AR", action: augmentedReallityButtonAction)
+    lazy var collageButton = ImageButton(withImage: UIImage(named: "stickerImage"), andText: "Collage", action: collageButtonAction)
+    lazy var gridButton = ImageButton(withImage: UIImage(named: "22"), andText: "Grid", action: gridButtonAction)
+    lazy var editPhotoButton = TextButton(text: "Edit Photo", action: editPhotoButtonAction)
     
     override func viewDidLoad() {
         setupViews()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if check30DaysPassed() {
+            purchaseAction()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    func saveTodayDate() {
+        let now = Date()
+        UserDefaults.standard.set(now, forKey: "LastSavedDate")
+    }
+
+    func check30DaysPassed() -> Bool {
+        if let lastSavedDate = UserDefaults.standard.object(forKey: "LastSavedDate") as? Date {
+            let dayDifference = Calendar.current.dateComponents([.day], from: lastSavedDate, to: Date()).day ?? 0
+            
+            return dayDifference >= 7
+        }
+        saveTodayDate()
+        return false
+    }
+    
     func setupViews() {
         view.addSubview(backgroundImage)
         view.addSubview(titleLabel)
+        view.addSubview(premiumVersionButton)
         view.addSubview(containerStack)
         containerStack.addArrangedSubview(editOptionsStack)
         containerStack.addArrangedSubview(collageOptionsStack)
         containerStack.addArrangedSubview(editPhotoButton)
-        containerStack.addArrangedSubview(premiumVersionButton)
         
         editOptionsStack.addArrangedSubview(stickersButton)
         editOptionsStack.addArrangedSubview(augmentedReallityButton)
@@ -84,183 +114,86 @@ class HomePageViewController: UIViewController {
             make.edges.equalToSuperview()
         }
         
+        premiumVersionButton.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().inset(32)
+            make.height.equalTo(48)
+            make.width.equalTo(48)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(20)
+        }
+        
         titleLabel.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
+            make.leading.equalToSuperview().inset(32)
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(32)
         }
         
         containerStack.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(24)
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(80)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(24)
         }
         
         // Configurando os botões para terem o mesmo tamanho
         stickersButton.snp.makeConstraints { make in
             make.width.equalTo(augmentedReallityButton)
-            make.height.equalTo(120)
+            make.height.equalTo(90)
         }
         
         augmentedReallityButton.snp.makeConstraints { make in
             make.width.equalTo(collageButton)
-            make.height.equalTo(120)
+            make.height.equalTo(90)
         }
 
         collageButton.snp.makeConstraints { make in
             make.width.equalTo(gridButton)
-            make.height.equalTo(120)
+            make.height.equalTo(90)
         }
         
         editPhotoButton.snp.makeConstraints { make in
-            make.height.equalTo(80)
-        }
-        
-        premiumVersionButton.snp.makeConstraints { make in
-            make.height.equalTo(80)
+            make.height.equalTo(54)
         }
     }
 }
 
-class ImageButton: UIButton {
-    
-    // MARK: - Properties
-    
-    private let topImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        return imageView
-    }()
-    
-    private let bottomLabel: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        return label
-    }()
-    
-    // MARK: - Initializers
-    init(withImage image: UIImage?, andText text: String) {
-        super.init(frame: .zero)
-        topImageView.image = image
-        bottomLabel.text = text
-        bottomLabel.textColor = .white
-        bottomLabel.font = .boldSystemFont(ofSize: 18)
-        setupViews()
-        setupButtonAppearance()
+extension HomePageViewController {
+    func stickersButtonAction() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "AllStickerPacksViewController")
+        navigationController?.pushViewController(controller, animated: true)
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-        setupButtonAppearance()
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setupViews()
-        setupButtonAppearance()
-    }
-    
-    // MARK: - Setup
-    
-    private func setupViews() {
-        addSubview(topImageView)
-        addSubview(bottomLabel)
-
-        topImageView.snp.makeConstraints { (make) in
-            make.left.right.equalToSuperview().inset(24)
-            make.top.equalToSuperview().inset(20)
+    func collageButtonAction() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let obj = storyboard.instantiateViewController(withIdentifier: "PresentPhotoVC") as? PresentPhotoVC else {
+            return
         }
+        obj.objSelectiontype = 2
+        let navController = UINavigationController(rootViewController: obj)
+        navController.navigationBar.isHidden = true
+        navController.modalPresentationStyle = .overCurrentContext
+        self.present(navController, animated:true, completion: nil)
+    }
+    
+    func augmentedReallityButtonAction() {
         
-        bottomLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(topImageView.snp.bottom).offset(8)
-            make.left.right.equalToSuperview().inset(16)
-            make.bottom.equalToSuperview().inset(8)
-            make.height.equalTo(50)
+    }
+    
+    func gridButtonAction() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let obj : LoadShapesVC = storyboard.instantiateViewController(withIdentifier: "LoadShapesVC") as? LoadShapesVC else {
+            return
         }
+        self.navigationController?.pushViewController(obj, animated: true)
     }
     
-    private func setupButtonAppearance() {
-        // Arredondando os cantos
-        self.layer.cornerRadius = 10
-        
-        // Adicionando sombra
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOffset = CGSize(width: 0, height: 2)
-        self.layer.shadowOpacity = 0.3
-        self.layer.shadowRadius = 4
+    func editPhotoButtonAction() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "InViewController")
+        navigationController?.pushViewController(controller, animated: true)
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        self.layer.sublayers?.removeAll { $0 is CAGradientLayer }
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = self.bounds
-        gradientLayer.colors = [UIColor(hex: "FF6079").cgColor, UIColor(hex: "D73852").cgColor]
-        gradientLayer.cornerRadius = 10
-        self.layer.insertSublayer(gradientLayer, at: 0)
-    }
-}
-
-class TextButton: UIButton {
-    // MARK: - Properties
-    private let bottomLabel: UILabel = {
-        let label = UILabel()
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        return label
-    }()
-    
-    // MARK: - Initializers
-    init(text: String) {
-        super.init(frame: .zero)
-        bottomLabel.text = text
-        bottomLabel.textColor = .white
-        bottomLabel.font = .boldSystemFont(ofSize: 18)
-        setupViews()
-        setupButtonAppearance()
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-        setupButtonAppearance()
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setupViews()
-        setupButtonAppearance()
-    }
-    
-    // MARK: - Setup
-    
-    private func setupViews() {
-        addSubview(bottomLabel)
-        
-        bottomLabel.snp.makeConstraints { (make) in
-            make.centerY.equalToSuperview()
-            make.left.right.equalToSuperview().inset(16)
-        }
-    }
-    
-    private func setupButtonAppearance() {
-        // Arredondando os cantos
-        self.layer.cornerRadius = 10
-        
-        // Adicionando sombra
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOffset = CGSize(width: 0, height: 2)
-        self.layer.shadowOpacity = 0.3
-        self.layer.shadowRadius = 4
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        self.layer.sublayers?.removeAll { $0 is CAGradientLayer }
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = self.bounds
-        gradientLayer.colors = [UIColor(hex: "FF6079").cgColor, UIColor(hex: "D73852").cgColor]
-        gradientLayer.cornerRadius = 10
-        self.layer.insertSublayer(gradientLayer, at: 0)
+    @objc
+    func purchaseAction() {
+        let controller = PurchaseViewController()
+        let navigation = UINavigationController(rootViewController: controller)
+        present(navigation, animated: true)
     }
 }

@@ -20,6 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Inicialize o Google Mobile Ads
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         
+        // Crie uma instância do HomePageViewController
+        let controller = HomePageViewController()
+        let navigation = UINavigationController(rootViewController: controller)
+        
+        // Crie uma UIWindow e defina o HomePageViewController como a raiz
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navigation
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

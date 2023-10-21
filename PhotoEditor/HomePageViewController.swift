@@ -162,9 +162,7 @@ extension HomePageViewController {
     
     func collageButtonAction() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let obj = storyboard.instantiateViewController(withIdentifier: "PresentPhotoVC") as? PresentPhotoVC else {
-            return
-        }
+        let obj = storyboard.instantiateViewController(withIdentifier: "PresentPhotoVC") as! PresentPhotoVC
         obj.objSelectiontype = 2
         let navController = UINavigationController(rootViewController: obj)
         navController.navigationBar.isHidden = true

@@ -24,7 +24,7 @@ class LoadShapesVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(false, animated: animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     //MARK:- Button Action Zone

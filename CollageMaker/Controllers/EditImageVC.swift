@@ -32,7 +32,6 @@ class EditImageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
 
     var objBtnSelectNo = 0
     //MARK:- Outlets
-    @IBOutlet weak var lblMainTitle: UILabel!
     @IBOutlet weak var viewMain: JLStickerImageView!
     @IBOutlet weak var viewSinglePhoto: UIView!
     @IBOutlet weak var imgSingleBackground: UIImageView!
@@ -225,10 +224,8 @@ class EditImageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         viewMain.objselection = self
         
         if objType == 1{
-            lblMainTitle.text = "Grid"
             setframe(objIndex)
         }else if objType == 2{
-            lblMainTitle.text = "Edit"
             setSingleFrame()
         }
         

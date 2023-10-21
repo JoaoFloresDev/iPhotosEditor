@@ -19,7 +19,6 @@ class ShareVC: UIViewController, GADInterstitialDelegate {
     var interstitial: GADInterstitial!
     
     //MARK:- Outlets
-    @IBOutlet weak var btnHome: UIButton!
     @IBOutlet weak var btnShare: UIButton!
     @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var btnDelete: UIButton!
@@ -55,15 +54,11 @@ class ShareVC: UIViewController, GADInterstitialDelegate {
 
         if objDisplay == 1{
             imgDisplay.image = getImage
-            btnHome.frame = CGRect(x: 134, y: 14, width: 52, height: 52)
-            btnHome.isHidden = false
             btnShare.isHidden = false
             viewSave.isHidden = false
             viewDelete.isHidden = true
         }else if objDisplay == 2{
             imgDisplay.image = getImage
-            btnHome.frame = CGRect(x: 44, y: 14, width: 52, height: 52)
-            btnHome.isHidden = false
             btnShare.isHidden = false
             viewSave.isHidden = true
             viewDelete.isHidden = false
@@ -71,7 +66,7 @@ class ShareVC: UIViewController, GADInterstitialDelegate {
     }
     
     @IBAction func btnBackAction(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func btnShareAction(_ sender: UIButton) {

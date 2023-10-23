@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMobileAds
+import SnapKit
 
 class StickerPackViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout,UINavigationControllerDelegate, UIImagePickerControllerDelegate, GADInterstitialDelegate {
     
@@ -43,7 +44,7 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.setNavigationBarHidden(false, animated: true)
         setupAds()
         sendPackStickersButton.layer.cornerRadius = 10
         if #available(iOS 11.0, *) {
@@ -83,6 +84,25 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         
         populateStickersInit()
         stickersCollectionView.reloadData()
+        
+        
+        if let backButtonImage = UIImage(named: "back")?.resize(targetSize: CGSize(width: 30, height: 30)) {
+                // Crie um botão personalizado com a imagem
+                let backButton = UIBarButtonItem(image: backButtonImage, style: .plain, target: self, action: #selector(botaoEsquerdoClicado))
+            backButton.tintColor =  .white
+                // Defina o botão personalizado como o botão de volta da barra de navegação
+                navigationItem.leftBarButtonItem = backButton
+            }
+        }
+
+        @objc func botaoEsquerdoClicado() {
+            navigationController?.popToRootViewController(animated: true)
+        }
+
+    @IBOutlet weak var backbuttonitem: UIBarButtonItem!
+    
+    @IBAction func backbutton(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
     }
     
     private func changeConstraints() {
@@ -454,5 +474,23 @@ extension UIImage {
         UIBezierPath(roundedRect: rect, cornerRadius: radius).addClip()
         draw(in: rect)
         return UIGraphicsGetImageFromCurrentImageContext()!
+    }
+}
+
+extension UIImage {
+    func resize(targetSize: CGSize) -> UIImage {
+        let widthRatio = targetSize.width / size.width
+        let heightRatio = targetSize.height / size.height
+        let newSize = widthRatio > heightRatio ?
+            CGSize(width: size.width * heightRatio, height: size.height * heightRatio) :
+            CGSize(width: size.width * widthRatio, height: size.height * widthRatio)
+        
+        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+        draw(in: rect)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage ?? self
     }
 }

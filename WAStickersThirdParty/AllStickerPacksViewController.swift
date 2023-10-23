@@ -29,7 +29,7 @@ class AllStickerPacksViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
         
         if let selectedIndex = selectedIndex {
             stickerPacksTableView.deselectRow(at: selectedIndex, animated: true)

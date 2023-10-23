@@ -2673,7 +2673,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4HV-a2-624">
-                                <rect key="frame" x="20" y="8" width="374" height="21"/>
+                                <rect key="frame" x="20" y="30" width="374" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="wAz-fp-pG2"/>
                                 </constraints>
@@ -2682,7 +2682,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="x3e-9K-44b">
-                                <rect key="frame" x="4" y="53" width="406" height="573.5"/>
+                                <rect key="frame" x="4" y="75" width="406" height="551.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wn3-2Y-Y1s">
                                     <size key="itemSize" width="91" height="83"/>
@@ -2720,7 +2720,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="o8b-do-ZrK" firstAttribute="leading" secondItem="nlv-ix-xHi" secondAttribute="leadingMargin" constant="24" id="0pZ-Gy-gsd"/>
-                            <constraint firstItem="4HV-a2-624" firstAttribute="top" secondItem="Sug-ao-2eS" secondAttribute="bottom" constant="8" id="2eW-78-e0b"/>
+                            <constraint firstItem="4HV-a2-624" firstAttribute="top" secondItem="Sug-ao-2eS" secondAttribute="bottom" constant="30" id="2eW-78-e0b"/>
                             <constraint firstItem="MC7-rv-OxD" firstAttribute="leading" secondItem="nlv-ix-xHi" secondAttribute="leadingMargin" constant="24" id="31c-zt-n5H"/>
                             <constraint firstItem="BRz-Ij-ZIH" firstAttribute="top" secondItem="o8b-do-ZrK" secondAttribute="bottom" constant="10" id="CGy-7p-KVg"/>
                             <constraint firstItem="o8b-do-ZrK" firstAttribute="top" secondItem="MC7-rv-OxD" secondAttribute="bottom" constant="8" id="GCO-90-Rx1"/>
@@ -2735,9 +2735,16 @@
                             <constraint firstAttribute="trailingMargin" secondItem="MC7-rv-OxD" secondAttribute="trailing" constant="24" id="wLa-7S-anb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="RrG-ef-Thj"/>
+                    <navigationItem key="navigationItem" id="RrG-ef-Thj">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="oIW-ml-9SQ">
+                            <connections>
+                                <action selector="backbutton:" destination="n8J-P0-XdL" id="cLX-nE-EFB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="backbuttonitem" destination="oIW-ml-9SQ" id="7Bo-3u-XdV"/>
                         <outlet property="sendPackStickersButton" destination="o8b-do-ZrK" id="pfV-8A-w0Y"/>
                         <outlet property="stickerPackPublisherLabel" destination="4HV-a2-624" id="CtJ-UH-cQG"/>
                         <outlet property="stickersCollectionView" destination="x3e-9K-44b" id="xtT-x6-Cmb"/>
@@ -2842,25 +2849,25 @@
         <image name="stickerImage" width="512" height="512"/>
         <image name="tag.fill" catalog="system" width="128" height="118"/>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

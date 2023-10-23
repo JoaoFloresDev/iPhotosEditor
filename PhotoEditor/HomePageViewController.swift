@@ -55,7 +55,7 @@ class HomePageViewController: UIViewController {
         return button
     }()
     
-    lazy var stickersButton = ImageButton(withImage: UIImage(named: "tag"), andText: "Stickers", action: stickersButtonAction)
+    lazy var stickersButton = ImageButton(withImage: UIImage(named: "novo-chat"), andText: "Stickers", action: stickersButtonAction)
     lazy var augmentedReallityButton = ImageButton(withImage: UIImage(named: "filter1"), andText: "AR", action: augmentedReallityButtonAction)
     lazy var collageButton = ImageButton(withImage: UIImage(named: "stickerImage"), andText: "Collage", action: collageButtonAction)
     lazy var gridButton = ImageButton(withImage: UIImage(named: "22"), andText: "Grid", action: gridButtonAction)
@@ -100,11 +100,11 @@ class HomePageViewController: UIViewController {
         containerStack.addArrangedSubview(collageOptionsStack)
         containerStack.addArrangedSubview(editPhotoButton)
         
-        editOptionsStack.addArrangedSubview(stickersButton)
+        editOptionsStack.addArrangedSubview(gridButton)
         editOptionsStack.addArrangedSubview(augmentedReallityButton)
         
         collageOptionsStack.addArrangedSubview(collageButton)
-        collageOptionsStack.addArrangedSubview(gridButton)
+        collageOptionsStack.addArrangedSubview(stickersButton)
         
         setupConstraints()
     }

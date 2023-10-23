@@ -31,12 +31,6 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         agrume.show(from: self)
     }
     
-    @IBAction func openPurchase(_ sender: Any) {
-        let controller = PurchaseViewController()
-        let navigation = UINavigationController(rootViewController: controller)
-        present(navigation, animated: true)
-    }
-    
     @IBAction func editImgTest(_ sender: Any) {
         newImage()
     }
@@ -111,21 +105,25 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         view.backgroundColor = .black
         backgroundCellImage.backgroundColor = .black
         backgroundOptions.backgroundColor = .black
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        if check30DaysPassed() {
-            let controller = PurchaseViewController()
-            let navigation = UINavigationController(rootViewController: controller)
-            present(navigation, animated: true)
-        }
+        newImage()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
+        if let backButtonImage = UIImage(named: "back")?.resize(targetSize: CGSize(width: 30, height: 30)) {
+            // Crie um botão personalizado com a imagem
+            let backButton = UIBarButtonItem(image: backButtonImage, style: .plain, target: self, action: #selector(botaoEsquerdoClicado))
+            backButton.tintColor =  .white
+            // Defina o botão personalizado como o botão de volta da barra de navegação
+            navigationItem.leftBarButtonItem = backButton
+        }
     }
     
+    @objc func botaoEsquerdoClicado() {
+        navigationController?.popToRootViewController(animated: true)
+    }
+
     func saveTodayDate() {
         let now = Date()
         UserDefaults.standard.set(now, forKey: "LastSavedDate")

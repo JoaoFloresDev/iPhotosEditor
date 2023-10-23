@@ -2389,61 +2389,33 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uup-zo-lUN">
-                                <rect key="frame" x="10.5" y="48" width="393" height="701"/>
+                                <rect key="frame" x="10.5" y="56" width="393" height="693"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="debonair-young-woman-making-selfie-balcony-portrait-smiling-dreamy-girl-posing-beside-orange-flowers 2" translatesAutoresizingMaskIntoConstraints="NO" id="Vcg-1U-R17">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="701"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vcg-1U-R17">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="693"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemGray6Color"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pr3-hV-vOj">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="701"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="693"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybD-oR-Vm6">
-                                        <rect key="frame" x="0.0" y="45" width="393" height="656"/>
+                                        <rect key="frame" x="0.0" y="663" width="393" height="30"/>
                                         <connections>
                                             <action selector="showImg:" destination="tIf-Yc-9Ex" eventType="touchUpInside" id="28T-3G-xXn"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBa-dW-c2h">
-                                        <rect key="frame" x="348" y="6.5" width="40" height="38.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="7j4-Yt-9Gl"/>
-                                            <constraint firstAttribute="height" constant="40" id="ovB-zf-xwy"/>
-                                        </constraints>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" backgroundImage="cart.fill" catalog="system"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                <size key="value" width="0.0" height="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="openPurchase:" destination="tIf-Yc-9Ex" eventType="touchUpInside" id="NFV-aY-vtW"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Vcg-1U-R17" secondAttribute="bottom" id="2qM-f6-whF"/>
-                                    <constraint firstItem="DBa-dW-c2h" firstAttribute="top" secondItem="uup-zo-lUN" secondAttribute="top" constant="5" id="6RI-O3-dhk"/>
                                     <constraint firstItem="Vcg-1U-R17" firstAttribute="top" secondItem="uup-zo-lUN" secondAttribute="top" id="IOL-eJ-5jJ"/>
                                     <constraint firstAttribute="trailing" secondItem="Vcg-1U-R17" secondAttribute="trailing" id="MWl-74-0rj"/>
                                     <constraint firstItem="pr3-hV-vOj" firstAttribute="leading" secondItem="uup-zo-lUN" secondAttribute="leading" id="akj-Km-pUh"/>
                                     <constraint firstAttribute="bottom" secondItem="pr3-hV-vOj" secondAttribute="bottom" id="cqj-us-af1"/>
                                     <constraint firstItem="Vcg-1U-R17" firstAttribute="leading" secondItem="uup-zo-lUN" secondAttribute="leading" id="ouJ-xO-KFR"/>
                                     <constraint firstItem="pr3-hV-vOj" firstAttribute="top" secondItem="uup-zo-lUN" secondAttribute="top" id="rTj-sG-GqR"/>
-                                    <constraint firstAttribute="trailing" secondItem="DBa-dW-c2h" secondAttribute="trailing" constant="5" id="tAg-ff-PlJ"/>
                                     <constraint firstItem="ybD-oR-Vm6" firstAttribute="leading" secondItem="uup-zo-lUN" secondAttribute="leading" id="uJC-r8-d6D"/>
                                     <constraint firstAttribute="trailing" secondItem="ybD-oR-Vm6" secondAttribute="trailing" id="uxI-NS-uRe"/>
-                                    <constraint firstItem="ybD-oR-Vm6" firstAttribute="top" secondItem="DBa-dW-c2h" secondAttribute="bottom" id="y1c-s6-84b"/>
                                     <constraint firstAttribute="bottom" secondItem="ybD-oR-Vm6" secondAttribute="bottom" id="zQH-j5-El2"/>
                                     <constraint firstAttribute="trailing" secondItem="pr3-hV-vOj" secondAttribute="trailing" id="zvt-ht-ycN"/>
                                 </constraints>
@@ -2457,7 +2429,7 @@
                             <constraint firstItem="cXu-YN-l3i" firstAttribute="leading" secondItem="tfe-Dv-ZmH" secondAttribute="leading" constant="10" id="N14-XR-b17"/>
                             <constraint firstItem="uup-zo-lUN" firstAttribute="width" secondItem="tfe-Dv-ZmH" secondAttribute="width" multiplier="0.95" id="e88-fs-U0N"/>
                             <constraint firstItem="SPu-ge-KRm" firstAttribute="top" secondItem="cXu-YN-l3i" secondAttribute="bottom" constant="10" id="f0D-zy-13m"/>
-                            <constraint firstItem="uup-zo-lUN" firstAttribute="top" secondItem="AUg-F7-a8V" secondAttribute="bottom" id="i2w-Ec-nlp"/>
+                            <constraint firstItem="uup-zo-lUN" firstAttribute="top" secondItem="AUg-F7-a8V" secondAttribute="bottom" constant="8" id="i2w-Ec-nlp"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Editor" image="photo.fill" catalog="system" id="CXY-3E-Fl1">
@@ -2822,10 +2794,8 @@
         <image name="arrow.uturn.left" catalog="system" width="128" height="113"/>
         <image name="back" width="512" height="512"/>
         <image name="camera" width="512" height="512"/>
-        <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="crp_filp_v" width="80" height="80"/>
         <image name="crp_flip_h" width="80" height="80"/>
-        <image name="debonair-young-woman-making-selfie-balcony-portrait-smiling-dreamy-girl-posing-beside-orange-flowers 2" width="6720" height="4480"/>
         <image name="delete1" width="512" height="512"/>
         <image name="down" width="80" height="80"/>
         <image name="filter1" width="512" height="512"/>
@@ -2862,6 +2832,9 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

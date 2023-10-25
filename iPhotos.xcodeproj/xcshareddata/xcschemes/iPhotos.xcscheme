@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8A22EDFF1F9A9F40003A7F21"
-               BuildableName = "iPhotos Editor.app"
+               BuildableName = "iPhotos.app"
                BlueprintName = "iPhotos"
                ReferencedContainer = "container:iPhotos.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8A22EDFF1F9A9F40003A7F21"
-            BuildableName = "iPhotos Editor.app"
+            BuildableName = "iPhotos.app"
             BlueprintName = "iPhotos"
             ReferencedContainer = "container:iPhotos.xcodeproj">
          </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8A22EDFF1F9A9F40003A7F21"
-            BuildableName = "iPhotos Editor.app"
+            BuildableName = "iPhotos.app"
             BlueprintName = "iPhotos"
             ReferencedContainer = "container:iPhotos.xcodeproj">
          </BuildableReference>

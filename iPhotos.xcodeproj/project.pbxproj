@@ -11,10 +11,21 @@
 		14B7874FE7A5630F389409E2 /* Pods_iPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C309CBD9B6357A9D51D7FE2 /* Pods_iPhotos.framework */; };
 		734EE8262AE2D83B00A11E97 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734EE8242AE2D83A00A11E97 /* TextButton.swift */; };
 		734EE8272AE2D83B00A11E97 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734EE8252AE2D83B00A11E97 /* ImageButton.swift */; };
+		738790382AE74CE9007A12ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790212AE74CE5007A12ED /* ViewController.swift */; };
+		738790392AE74CEF007A12ED /* float4x4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790252AE74CE5007A12ED /* float4x4+Extensions.swift */; };
+		7387903B2AE74D25007A12ED /* NodeRender.metal in Sources */ = {isa = PBXBuildFile; fileRef = 738790352AE74CE5007A12ED /* NodeRender.metal */; };
+		7387903C2AE74D28007A12ED /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790322AE74CE5007A12ED /* Gallery.swift */; };
+		7387903D2AE74D2D007A12ED /* VertBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790302AE74CE5007A12ED /* VertBrush.swift */; };
+		7387903F2AE74D35007A12ED /* NodeTechnique.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7387902F2AE74CE5007A12ED /* NodeTechnique.plist */; };
+		738790402AE74D38007A12ED /* SCNVector3Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387902D2AE74CE5007A12ED /* SCNVector3Extensions.swift */; };
+		738790412AE74D47007A12ED /* MetalVideoRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790282AE74CE5007A12ED /* MetalVideoRecorder.swift */; };
+		738790422AE74D49007A12ED /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 738790272AE74CE5007A12ED /* Shaders.metal */; };
+		7387904F2AE75CAE007A12ED /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7387904E2AE75CAE007A12ED /* art.scnassets */; };
 		7395E0E22ADB1DB600CE8F68 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0DE2ADB1DAD00CE8F68 /* PurchaseViewController.swift */; };
 		7395E0E32ADB1DB900CE8F68 /* PurchaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0DF2ADB1DAD00CE8F68 /* PurchaseHeaderView.swift */; };
 		7395E0E42ADB1DBC00CE8F68 /* PurchaseBenetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0E02ADB1DAE00CE8F68 /* PurchaseBenetList.swift */; };
 		7395E0E52ADB1DBF00CE8F68 /* DiamondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0E12ADB1DAF00CE8F68 /* DiamondView.swift */; };
+		73B963DE2AE61B4F00D8918B /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B963DD2AE61B4F00D8918B /* ARKit.framework */; };
 		73D67E772ADB57E50097C323 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73D67E792ADB57E50097C323 /* Localizable.strings */; };
 		73E2EA7D2AE03319007B717F /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2EA7C2AE03319007B717F /* HomePageViewController.swift */; };
 		8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0A6DCC1FE9F1CE00110AF2 /* UIAlertController+Additions.swift */; };
@@ -154,10 +165,25 @@
 		32F6B7815EA09925558C4152 /* Pods-iPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhotos.release.xcconfig"; path = "Target Support Files/Pods-iPhotos/Pods-iPhotos.release.xcconfig"; sourceTree = "<group>"; };
 		734EE8242AE2D83A00A11E97 /* TextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		734EE8252AE2D83B00A11E97 /* ImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		738790212AE74CE5007A12ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		738790232AE74CE5007A12ED /* plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus@2x.png"; sourceTree = "<group>"; };
+		738790242AE74CE5007A12ED /* stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@2x.png"; sourceTree = "<group>"; };
+		738790252AE74CE5007A12ED /* float4x4+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "float4x4+Extensions.swift"; sourceTree = "<group>"; };
+		738790272AE74CE5007A12ED /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		738790282AE74CE5007A12ED /* MetalVideoRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalVideoRecorder.swift; sourceTree = "<group>"; };
+		7387902D2AE74CE5007A12ED /* SCNVector3Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3Extensions.swift; sourceTree = "<group>"; };
+		7387902E2AE74CE5007A12ED /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		7387902F2AE74CE5007A12ED /* NodeTechnique.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NodeTechnique.plist; sourceTree = "<group>"; };
+		738790302AE74CE5007A12ED /* VertBrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertBrush.swift; sourceTree = "<group>"; };
+		738790322AE74CE5007A12ED /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
+		738790352AE74CE5007A12ED /* NodeRender.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = NodeRender.metal; sourceTree = "<group>"; };
+		7387904E2AE75CAE007A12ED /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = ../../../art.scnassets; sourceTree = "<group>"; };
+		7395690A2AE6146700A757B2 /* AirDraw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirDraw.h; sourceTree = "<group>"; };
 		7395E0DE2ADB1DAD00CE8F68 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		7395E0DF2ADB1DAD00CE8F68 /* PurchaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHeaderView.swift; sourceTree = "<group>"; };
 		7395E0E02ADB1DAE00CE8F68 /* PurchaseBenetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseBenetList.swift; sourceTree = "<group>"; };
 		7395E0E12ADB1DAF00CE8F68 /* DiamondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondView.swift; sourceTree = "<group>"; };
+		73B963DD2AE61B4F00D8918B /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		73D67E782ADB57E50097C323 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73D67E7A2ADB58230097C323 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73D67E7B2ADB59520097C323 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -224,7 +250,7 @@
 		8A18E3341FBA5CA90082201D /* StickerPackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerPackManager.swift; sourceTree = "<group>"; };
 		8A18E33C1FBA793F0082201D /* sticker_packs.wasticker */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sticker_packs.wasticker; sourceTree = "<group>"; };
 		8A18E33E1FBA7DC50082201D /* WebPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPManager.swift; sourceTree = "<group>"; };
-		8A22EE001F9A9F40003A7F21 /* iPhotos Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPhotos Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A22EE001F9A9F40003A7F21 /* iPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A22EE031F9A9F40003A7F21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A22EE081F9A9F40003A7F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A22EE0A1F9A9F40003A7F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -352,6 +378,7 @@
 			files = (
 				C44C7090249C132F00EC1E85 /* StoreKit.framework in Frameworks */,
 				8ABEBD8421029767005F348C /* WebP.framework in Frameworks */,
+				73B963DE2AE61B4F00D8918B /* ARKit.framework in Frameworks */,
 				14B7874FE7A5630F389409E2 /* Pods_iPhotos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +393,35 @@
 				32F6B7815EA09925558C4152 /* Pods-iPhotos.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		738790202AE74CE5007A12ED /* AirDraw */ = {
+			isa = PBXGroup;
+			children = (
+				738790212AE74CE5007A12ED /* ViewController.swift */,
+				738790222AE74CE5007A12ED /* images */,
+				738790252AE74CE5007A12ED /* float4x4+Extensions.swift */,
+				738790272AE74CE5007A12ED /* Shaders.metal */,
+				738790282AE74CE5007A12ED /* MetalVideoRecorder.swift */,
+				7387902D2AE74CE5007A12ED /* SCNVector3Extensions.swift */,
+				7387902E2AE74CE5007A12ED /* ShaderTypes.h */,
+				7387902F2AE74CE5007A12ED /* NodeTechnique.plist */,
+				738790302AE74CE5007A12ED /* VertBrush.swift */,
+				738790322AE74CE5007A12ED /* Gallery.swift */,
+				7387904E2AE75CAE007A12ED /* art.scnassets */,
+				738790352AE74CE5007A12ED /* NodeRender.metal */,
+			);
+			name = AirDraw;
+			path = ../AirDraw/AirDraw/AirDraw;
+			sourceTree = "<group>";
+		};
+		738790222AE74CE5007A12ED /* images */ = {
+			isa = PBXGroup;
+			children = (
+				738790232AE74CE5007A12ED /* plus@2x.png */,
+				738790242AE74CE5007A12ED /* stop@2x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		7395E0DD2ADB1D8F00CE8F68 /* V2 */ = {
@@ -406,6 +462,8 @@
 				8A22EE0A1F9A9F40003A7F21 /* Assets.xcassets */,
 				C49D2C55247D164A0007D174 /* StoredImage.xcdatamodeld */,
 				C484C2F6262CD510004E1180 /* Collage.h */,
+				7395690A2AE6146700A757B2 /* AirDraw.h */,
+				738790202AE74CE5007A12ED /* AirDraw */,
 				C4BD2CA5262CE0E9005DA9A0 /* CollageMaker */,
 				C44C7082249C118200EC1E85 /* Purchase */,
 				C4351DFC249027F0009FBDEF /* PhotoEditor */,
@@ -419,7 +477,7 @@
 		8A22EE011F9A9F40003A7F21 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A22EE001F9A9F40003A7F21 /* iPhotos Editor.app */,
+				8A22EE001F9A9F40003A7F21 /* iPhotos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -462,6 +520,7 @@
 		8A40BE481FB100C3003AD704 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				73B963DD2AE61B4F00D8918B /* ARKit.framework */,
 				C44C708F249C132F00EC1E85 /* StoreKit.framework */,
 				8A18E2F91FB3B5D00082201D /* libz.tbd */,
 				8ABEBD8321029766005F348C /* WebP.framework */,
@@ -711,7 +770,7 @@
 			);
 			name = iPhotos;
 			productName = WAStickersThirdParty;
-			productReference = 8A22EE001F9A9F40003A7F21 /* iPhotos Editor.app */;
+			productReference = 8A22EE001F9A9F40003A7F21 /* iPhotos.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -792,6 +851,7 @@
 				C4BD2D21262CE0EA005DA9A0 /* PlumScript.ttf in Resources */,
 				C4BD2D24262CE0EA005DA9A0 /* Arizonia-Regular.ttf in Resources */,
 				C4BD2D0C262CE0EA005DA9A0 /* SelectItemCell.xib in Resources */,
+				7387904F2AE75CAE007A12ED /* art.scnassets in Resources */,
 				C4BD2D0E262CE0EA005DA9A0 /* champignonaltswash.ttf in Resources */,
 				8A22EE0E1F9A9F40003A7F21 /* LaunchScreen.storyboard in Resources */,
 				C4BD2D08262CE0EA005DA9A0 /* FilterCell.xib in Resources */,
@@ -825,6 +885,7 @@
 				C4BD2D23262CE0EA005DA9A0 /* Alleana Script.otf in Resources */,
 				C474A84624930DF70043D953 /* dog5.png in Resources */,
 				C49D2C54247D0C890007D174 /* placeholderGreen.png in Resources */,
+				7387903F2AE74D35007A12ED /* NodeTechnique.plist in Resources */,
 				C4BD2D20262CE0EA005DA9A0 /* Dohearts.otf in Resources */,
 				C4BD2D26262CE0EA005DA9A0 /* VTKS SummerLAnd.ttf in Resources */,
 				8A18E33D1FBA793F0082201D /* sticker_packs.wasticker in Resources */,
@@ -923,6 +984,7 @@
 				C4351E0324908D46009FBDEF /* ModelController.swift in Sources */,
 				8A18E33F1FBA7DC50082201D /* WebPManager.swift in Sources */,
 				C4BD2D32262CE0EA005DA9A0 /* CalcuteFunctions.swift in Sources */,
+				7387903D2AE74D2D007A12ED /* VertBrush.swift in Sources */,
 				8ADA60761FD71F69006C9BBA /* AllStickerPacksViewController.swift in Sources */,
 				C4BD2D43262CE0EA005DA9A0 /* HomeVC.swift in Sources */,
 				8ACB6A981FE9CB7700A564BB /* Limits.swift in Sources */,
@@ -933,6 +995,8 @@
 				C4BD2D2E262CE0EA005DA9A0 /* StickerView.swift in Sources */,
 				8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */,
 				73E2EA7D2AE03319007B717F /* HomePageViewController.swift in Sources */,
+				7387903B2AE74D25007A12ED /* NodeRender.metal in Sources */,
+				738790422AE74D49007A12ED /* Shaders.metal in Sources */,
 				C474A7D92492FA810043D953 /* CreditsViewController.swift in Sources */,
 				C4BD2D3A262CE0EA005DA9A0 /* tblStyleCell.swift in Sources */,
 				C4BD2D3E262CE0EA005DA9A0 /* MyAlbumVC.swift in Sources */,
@@ -949,6 +1013,7 @@
 				C44C7089249C119600EC1E85 /* IAPHelper.swift in Sources */,
 				8A18E2EF1FB3B47D0082201D /* YYAnimatedImageView.m in Sources */,
 				734EE8262AE2D83B00A11E97 /* TextButton.swift in Sources */,
+				738790392AE74CEF007A12ED /* float4x4+Extensions.swift in Sources */,
 				8A27F1221FD76937001B2BBD /* AquaButton.swift in Sources */,
 				C4351DFB248FF976009FBDEF /* InViewController.swift in Sources */,
 				C4BD2D02262CE0EA005DA9A0 /* FramesCell.swift in Sources */,
@@ -958,6 +1023,7 @@
 				7395E0E42ADB1DBC00CE8F68 /* PurchaseBenetList.swift in Sources */,
 				8AB5951920C1FC130076625E /* Sticker.swift in Sources */,
 				C4BD2D45262CE0EA005DA9A0 /* LoadShapesVC.swift in Sources */,
+				738790402AE74D38007A12ED /* SCNVector3Extensions.swift in Sources */,
 				8A27F12D1FD9E718001B2BBD /* SecondaryTextTableViewCell.swift in Sources */,
 				C4BD2D42262CE0EA005DA9A0 /* ShareVC.swift in Sources */,
 				C4BD2D3F262CE0EA005DA9A0 /* PresentTextVC.swift in Sources */,
@@ -970,14 +1036,17 @@
 				C4BD2D41262CE0EA005DA9A0 /* EditImageVC.swift in Sources */,
 				C4BD2D34262CE0EA005DA9A0 /* PressButton.m in Sources */,
 				C4BD2D03262CE0EA005DA9A0 /* MainStickerCell.swift in Sources */,
+				7387903C2AE74D28007A12ED /* Gallery.swift in Sources */,
 				C44C708C249C119600EC1E85 /* ProductCell.swift in Sources */,
 				C4BD2D44262CE0EA005DA9A0 /* PresentPhotoVC.swift in Sources */,
 				8A18E2EE1FB3B47D0082201D /* YYImage.m in Sources */,
+				738790382AE74CE9007A12ED /* ViewController.swift in Sources */,
 				8A18E2F21FB3B47D0082201D /* YYImageCoder.m in Sources */,
 				0E6359A4203E148200805DEB /* StickerCellWhats.swift in Sources */,
 				7395E0E32ADB1DB900CE8F68 /* PurchaseHeaderView.swift in Sources */,
 				C4BD2D33262CE0EA005DA9A0 /* adjustToFitFontOrWidth.swift in Sources */,
 				C4BD2D04262CE0EA005DA9A0 /* allFramesCell.swift in Sources */,
+				738790412AE74D47007A12ED /* MetalVideoRecorder.swift in Sources */,
 				8AB5951B20C1FC440076625E /* ImageData.swift in Sources */,
 				734EE8272AE2D83B00A11E97 /* ImageButton.swift in Sources */,
 				7395E0E22ADB1DB600CE8F68 /* PurchaseViewController.swift in Sources */,
@@ -1191,7 +1260,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 13;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
-				PRODUCT_NAME = "iPhotos Editor";
+				PRODUCT_NAME = iPhotos;
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1220,7 +1289,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 13;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
-				PRODUCT_NAME = "iPhotos Editor";
+				PRODUCT_NAME = iPhotos;
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

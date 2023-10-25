@@ -18,7 +18,7 @@
         <!--Item-->
         <scene sceneID="Q5E-px-PZA">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="PfV-c3-Luf" customClass="HomeVC" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="PfV-c3-Luf" customClass="HomeVC" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OVW-cp-D3x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -347,7 +347,7 @@
         <!--Item-->
         <scene sceneID="dC3-RF-hh0">
             <objects>
-                <viewController storyboardIdentifier="EditImageVC" id="m0k-Uj-qXA" customClass="EditImageVC" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditImageVC" id="m0k-Uj-qXA" customClass="EditImageVC" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="udp-mN-nbQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -378,7 +378,7 @@
                                             <constraint firstItem="dy6-v5-pC9" firstAttribute="top" secondItem="htz-eX-atP" secondAttribute="top" constant="8" id="bEF-eD-XpC"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2W1-Kc-7FY" customClass="JLStickerImageView" customModule="iPhotos_Editor" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2W1-Kc-7FY" customClass="JLStickerImageView" customModule="iPhotos" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="206.5" width="414" height="400"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PfO-Jh-DiJ">
@@ -2595,7 +2595,7 @@
         <!--Sticker Packs-->
         <scene sceneID="gd8-oj-f1A">
             <objects>
-                <viewController storyboardIdentifier="AllStickerPacksViewController" title="Sticker Packs" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m3v-ad-jBG" customClass="AllStickerPacksViewController" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AllStickerPacksViewController" title="Sticker Packs" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m3v-ad-jBG" customClass="AllStickerPacksViewController" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TZw-Eq-d2d"/>
                         <viewControllerLayoutGuide type="bottom" id="3nW-8w-7u5"/>
@@ -2635,7 +2635,7 @@
         <!--Sticker Pack View Controller-->
         <scene sceneID="lUc-bl-8bL">
             <objects>
-                <viewController storyboardIdentifier="stickerPackVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n8J-P0-XdL" customClass="StickerPackViewController" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="stickerPackVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n8J-P0-XdL" customClass="StickerPackViewController" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sug-ao-2eS"/>
                         <viewControllerLayoutGuide type="bottom" id="BRz-Ij-ZIH"/>
@@ -2768,7 +2768,7 @@
         <!--Item-->
         <scene sceneID="7jF-hv-W7y">
             <objects>
-                <viewController id="0f3-wg-Ils" customClass="HomePageViewController" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0f3-wg-Ils" customClass="HomePageViewController" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8JH-wx-RTx"/>
                         <viewControllerLayoutGuide type="bottom" id="wGs-8N-NYa"/>
@@ -2784,16 +2784,135 @@
             </objects>
             <point key="canvasLocation" x="-94" y="-2399"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ExB-Qp-TGt">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yH9-1V-yQa" customClass="ViewController" customModule="Air_Draw" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="njH-hT-fb7"/>
+                        <viewControllerLayoutGuide type="bottom" id="83s-SH-o3b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="36O-Cs-wHb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wCn-Hu-F7Z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J74-I5-iQw">
+                                <rect key="frame" x="0.0" y="761.5" width="414" height="134.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZP-35-RNW">
+                                        <rect key="frame" x="160" y="20" width="94" height="94.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="uZP-35-RNW" secondAttribute="height" multiplier="1:1" id="xLO-FX-yt0"/>
+                                        </constraints>
+                                        <state key="normal" title="Gravar" image="gravar"/>
+                                        <connections>
+                                            <action selector="screenShot:" destination="yH9-1V-yQa" eventType="touchUpInside" id="6Cb-ZY-4jE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xR-xg-ICF">
+                                        <rect key="frame" x="319" y="34.5" width="66" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8xR-xg-ICF" secondAttribute="height" multiplier="1:1" id="tZW-jv-h3l"/>
+                                        </constraints>
+                                        <state key="normal" title="Imagem" image="addImage"/>
+                                        <connections>
+                                            <action selector="changeImage:" destination="yH9-1V-yQa" eventType="touchUpInside" id="BOQ-60-eu1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaP-EM-RW9">
+                                        <rect key="frame" x="29" y="34.5" width="66" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="RaP-EM-RW9" secondAttribute="height" multiplier="1:1" id="OcC-bt-e5m"/>
+                                        </constraints>
+                                        <state key="normal" image="color1"/>
+                                        <connections>
+                                            <action selector="changeColor:" destination="yH9-1V-yQa" eventType="touchUpInside" id="wCV-Zo-ViE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98066894829999995" green="1" blue="0.97859095289999998" alpha="0.49399344449999999" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="uZP-35-RNW" firstAttribute="top" secondItem="J74-I5-iQw" secondAttribute="top" constant="20" id="8uk-7H-OTR"/>
+                                    <constraint firstItem="8xR-xg-ICF" firstAttribute="centerX" secondItem="J74-I5-iQw" secondAttribute="centerX" multiplier="1.7" id="Aym-wK-Nvb"/>
+                                    <constraint firstItem="RaP-EM-RW9" firstAttribute="width" secondItem="uZP-35-RNW" secondAttribute="width" multiplier="0.7" id="NOi-N3-iJl"/>
+                                    <constraint firstItem="RaP-EM-RW9" firstAttribute="centerY" secondItem="J74-I5-iQw" secondAttribute="centerY" id="SBO-n9-gbN"/>
+                                    <constraint firstAttribute="bottom" secondItem="uZP-35-RNW" secondAttribute="bottom" constant="20" id="axX-MI-gXN"/>
+                                    <constraint firstItem="8xR-xg-ICF" firstAttribute="centerY" secondItem="J74-I5-iQw" secondAttribute="centerY" id="dKA-JW-440"/>
+                                    <constraint firstItem="RaP-EM-RW9" firstAttribute="centerX" secondItem="J74-I5-iQw" secondAttribute="centerX" multiplier="0.3" id="lNy-cX-IX2"/>
+                                    <constraint firstItem="8xR-xg-ICF" firstAttribute="width" secondItem="uZP-35-RNW" secondAttribute="width" multiplier="0.7" id="wVN-SY-GOs"/>
+                                    <constraint firstItem="uZP-35-RNW" firstAttribute="centerX" secondItem="J74-I5-iQw" secondAttribute="centerX" id="zqb-EZ-lxt"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" alpha="0.40000000596046448" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJH-rA-rfl">
+                                <rect key="frame" x="340" y="58" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ElI-EM-UmZ"/>
+                                    <constraint firstAttribute="width" secondItem="TJH-rA-rfl" secondAttribute="height" multiplier="1:1" id="ufZ-Dr-Cio"/>
+                                </constraints>
+                                <state key="normal" image="refresh (3)"/>
+                                <connections>
+                                    <action selector="clearAll:" destination="yH9-1V-yQa" eventType="touchUpInside" id="JUn-GL-58k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vx-xv-y3x">
+                                <rect key="frame" x="0.0" y="102" width="414" height="659.5"/>
+                                <state key="normal">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="tutorial:" destination="yH9-1V-yQa" eventType="touchUpInside" id="P4p-al-ToT"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twoTapImg1" translatesAutoresizingMaskIntoConstraints="NO" id="mHq-kP-9JY">
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Mrj-fP-dbl"/>
+                                    <constraint firstAttribute="width" secondItem="mHq-kP-9JY" secondAttribute="height" multiplier="1:1" id="UB6-bC-PJa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="J74-I5-iQw" firstAttribute="height" secondItem="36O-Cs-wHb" secondAttribute="height" multiplier="0.15" id="4Sl-a6-P7z"/>
+                            <constraint firstAttribute="trailing" secondItem="J74-I5-iQw" secondAttribute="trailing" id="7dl-fA-7Jl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TJH-rA-rfl" secondAttribute="trailing" constant="10" id="A72-2S-XIs"/>
+                            <constraint firstItem="TJH-rA-rfl" firstAttribute="top" secondItem="njH-hT-fb7" secondAttribute="bottom" constant="10" id="Apk-dq-7fb"/>
+                            <constraint firstAttribute="bottom" secondItem="J74-I5-iQw" secondAttribute="bottom" id="Ozi-dj-4PW"/>
+                            <constraint firstItem="8vx-xv-y3x" firstAttribute="top" secondItem="TJH-rA-rfl" secondAttribute="bottom" id="eef-PI-6fI"/>
+                            <constraint firstItem="8vx-xv-y3x" firstAttribute="leading" secondItem="36O-Cs-wHb" secondAttribute="leading" id="fUV-lw-OcF"/>
+                            <constraint firstItem="J74-I5-iQw" firstAttribute="leading" secondItem="36O-Cs-wHb" secondAttribute="leading" id="fpY-Qe-6C9"/>
+                            <constraint firstItem="mHq-kP-9JY" firstAttribute="centerY" secondItem="36O-Cs-wHb" secondAttribute="centerY" id="hHx-6r-znu"/>
+                            <constraint firstItem="mHq-kP-9JY" firstAttribute="centerX" secondItem="36O-Cs-wHb" secondAttribute="centerX" id="jtJ-9a-ofy"/>
+                            <constraint firstAttribute="trailing" secondItem="8vx-xv-y3x" secondAttribute="trailing" id="kMV-di-pHH"/>
+                            <constraint firstItem="J74-I5-iQw" firstAttribute="top" secondItem="8vx-xv-y3x" secondAttribute="bottom" id="s96-AC-N1V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="wCn-Hu-F7Z" id="qtQ-mw-Mfl"/>
+                        <outlet property="tutorialAsset" destination="8vx-xv-y3x" id="Rrw-po-2Ol"/>
+                        <outlet property="tutorialImage" destination="mHq-kP-9JY" id="wqH-0a-wN2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDs-44-9Pc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-449.27536231884062" y="641.51785714285711"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="alp-GJ-cFJ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="22" width="200" height="200"/>
+        <image name="addImage" width="512" height="512"/>
         <image name="arrow.uturn.backward" catalog="system" width="128" height="113"/>
         <image name="arrow.uturn.left" catalog="system" width="128" height="113"/>
         <image name="back" width="512" height="512"/>
         <image name="camera" width="512" height="512"/>
+        <image name="color1" width="374" height="372"/>
         <image name="crp_filp_v" width="80" height="80"/>
         <image name="crp_flip_h" width="80" height="80"/>
         <image name="delete1" width="512" height="512"/>
@@ -2801,6 +2920,7 @@
         <image name="filter1" width="512" height="512"/>
         <image name="galleryMain" width="512" height="512"/>
         <image name="gallery_white" width="150" height="150"/>
+        <image name="gravar" width="512" height="512"/>
         <image name="ic_add_text" width="80" height="80"/>
         <image name="ic_align_center" width="96" height="96"/>
         <image name="ic_align_left " width="96" height="96"/>
@@ -2812,35 +2932,37 @@
         <image name="opacity" width="64" height="64"/>
         <image name="photo.fill" catalog="system" width="128" height="93"/>
         <image name="portrait-beautiful-young-model-black-leather-jacket-posing-near-lamps" width="4001" height="7001"/>
+        <image name="refresh (3)" width="512" height="512"/>
         <image name="save" width="96" height="96"/>
         <image name="save1" width="512" height="512"/>
         <image name="share1" width="512" height="512"/>
         <image name="square.stack.3d.down.right.fill" catalog="system" width="105" height="128"/>
         <image name="stickerImage" width="512" height="512"/>
         <image name="tag.fill" catalog="system" width="128" height="118"/>
+        <image name="twoTapImg1" width="512" height="512"/>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

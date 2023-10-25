@@ -171,7 +171,9 @@ extension HomePageViewController {
     }
     
     func augmentedReallityButtonAction() {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "ViewController")
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     func gridButtonAction() {

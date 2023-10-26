@@ -147,9 +147,8 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         imageView.image = image
         backgroundCellImage.image = nil
         imageView.layer.cornerRadius = 10
-        picker.dismiss(animated: true) {
-            self.editImage()
-        }
+        picker.dismiss(animated: true)
+        self.editImage()
     }
     
     /// called when editor completes

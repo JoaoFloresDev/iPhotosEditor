@@ -270,7 +270,7 @@
         <!--Item-->
         <scene sceneID="AkQ-mB-18m">
             <objects>
-                <viewController storyboardIdentifier="LoadShapesVC" id="fXO-tS-eY6" customClass="LoadShapesVC" customModule="iPhotos_Editor" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoadShapesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fXO-tS-eY6" customClass="LoadShapesVC" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O2A-BP-VNJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1609,7 +1609,7 @@
         <!--Item-->
         <scene sceneID="ajd-M4-vgj">
             <objects>
-                <viewController storyboardIdentifier="PresentTextVC" modalPresentationStyle="overCurrentContext" id="VmU-Vo-78Z" customClass="PresentTextVC" customModule="iPhotos_Editor" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PresentTextVC" modalPresentationStyle="overCurrentContext" id="VmU-Vo-78Z" customClass="PresentTextVC" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iee-Hl-a9A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1751,7 +1751,7 @@
         <!--Item-->
         <scene sceneID="wwO-my-mcq">
             <objects>
-                <viewController storyboardIdentifier="StickersVC" id="q48-4N-REi" customClass="StickersVC" customModule="iPhotos_Editor" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StickersVC" id="q48-4N-REi" customClass="StickersVC" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6ty-AJ-V0E"/>
                         <viewControllerLayoutGuide type="bottom" id="6Bg-3I-vwS"/>
@@ -1865,7 +1865,7 @@
         <!--Item-->
         <scene sceneID="2fG-O0-jPC">
             <objects>
-                <viewController storyboardIdentifier="ShareVC" id="5Bi-bb-H2a" customClass="ShareVC" customModule="iPhotos_Editor" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShareVC" id="5Bi-bb-H2a" customClass="ShareVC" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rgh-Lk-6FW"/>
                         <viewControllerLayoutGuide type="bottom" id="bK3-Ky-qOb"/>
@@ -2088,7 +2088,7 @@
         <!--Item-->
         <scene sceneID="VZx-fW-bBS">
             <objects>
-                <viewController storyboardIdentifier="MyAlbumVC" id="QsO-vo-KZM" customClass="MyAlbumVC" customModule="iPhotos_Editor" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyAlbumVC" id="QsO-vo-KZM" customClass="MyAlbumVC" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HjJ-Df-21G"/>
                         <viewControllerLayoutGuide type="bottom" id="PQN-0J-Hoe"/>
@@ -2184,7 +2184,7 @@
         <!--Item-->
         <scene sceneID="u5B-eQ-hBG">
             <objects>
-                <viewController storyboardIdentifier="PresentPhotoVC" modalPresentationStyle="overCurrentContext" id="RaC-bM-l6N" customClass="PresentPhotoVC" customModule="iPhotos_Editor" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PresentPhotoVC" modalPresentationStyle="overCurrentContext" id="RaC-bM-l6N" customClass="PresentPhotoVC" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kb8-mM-iNt"/>
                         <viewControllerLayoutGuide type="bottom" id="BVW-Lg-u0Y"/>
@@ -2319,7 +2319,7 @@
         <!--Editor-->
         <scene sceneID="Om1-ue-Zex">
             <objects>
-                <viewController restorationIdentifier="InViewController" storyboardIdentifier="InViewController" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="tIf-Yc-9Ex" customClass="InViewController" customModule="iPhotos_Editor" sceneMemberID="viewController">
+                <viewController restorationIdentifier="InViewController" storyboardIdentifier="InViewController" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="tIf-Yc-9Ex" customClass="InViewController" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AUg-F7-a8V"/>
                         <viewControllerLayoutGuide type="bottom" id="SPu-ge-KRm"/>
@@ -2474,7 +2474,7 @@
         <!--Master View Controller-->
         <scene sceneID="3m6-UT-9dF">
             <objects>
-                <viewController id="g9N-z2-rmx" customClass="MasterViewController" customModule="iPhotos_Editor" sceneMemberID="viewController">
+                <viewController id="g9N-z2-rmx" customClass="MasterViewController" customModule="iPhotos" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9sn-FE-ejc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2787,7 +2787,7 @@
         <!--View Controller-->
         <scene sceneID="ExB-Qp-TGt">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yH9-1V-yQa" customClass="ViewController" customModule="Air_Draw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yH9-1V-yQa" customClass="ViewController" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="njH-hT-fb7"/>
                         <viewControllerLayoutGuide type="bottom" id="83s-SH-o3b"/>
@@ -2847,19 +2847,8 @@
                                     <constraint firstItem="uZP-35-RNW" firstAttribute="centerX" secondItem="J74-I5-iQw" secondAttribute="centerX" id="zqb-EZ-lxt"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" alpha="0.40000000596046448" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJH-rA-rfl">
-                                <rect key="frame" x="340" y="58" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="ElI-EM-UmZ"/>
-                                    <constraint firstAttribute="width" secondItem="TJH-rA-rfl" secondAttribute="height" multiplier="1:1" id="ufZ-Dr-Cio"/>
-                                </constraints>
-                                <state key="normal" image="refresh (3)"/>
-                                <connections>
-                                    <action selector="clearAll:" destination="yH9-1V-yQa" eventType="touchUpInside" id="JUn-GL-58k"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vx-xv-y3x">
-                                <rect key="frame" x="0.0" y="102" width="414" height="659.5"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="713.5"/>
                                 <state key="normal">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
@@ -2879,16 +2868,14 @@
                         <constraints>
                             <constraint firstItem="J74-I5-iQw" firstAttribute="height" secondItem="36O-Cs-wHb" secondAttribute="height" multiplier="0.15" id="4Sl-a6-P7z"/>
                             <constraint firstAttribute="trailing" secondItem="J74-I5-iQw" secondAttribute="trailing" id="7dl-fA-7Jl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TJH-rA-rfl" secondAttribute="trailing" constant="10" id="A72-2S-XIs"/>
-                            <constraint firstItem="TJH-rA-rfl" firstAttribute="top" secondItem="njH-hT-fb7" secondAttribute="bottom" constant="10" id="Apk-dq-7fb"/>
                             <constraint firstAttribute="bottom" secondItem="J74-I5-iQw" secondAttribute="bottom" id="Ozi-dj-4PW"/>
-                            <constraint firstItem="8vx-xv-y3x" firstAttribute="top" secondItem="TJH-rA-rfl" secondAttribute="bottom" id="eef-PI-6fI"/>
                             <constraint firstItem="8vx-xv-y3x" firstAttribute="leading" secondItem="36O-Cs-wHb" secondAttribute="leading" id="fUV-lw-OcF"/>
                             <constraint firstItem="J74-I5-iQw" firstAttribute="leading" secondItem="36O-Cs-wHb" secondAttribute="leading" id="fpY-Qe-6C9"/>
                             <constraint firstItem="mHq-kP-9JY" firstAttribute="centerY" secondItem="36O-Cs-wHb" secondAttribute="centerY" id="hHx-6r-znu"/>
                             <constraint firstItem="mHq-kP-9JY" firstAttribute="centerX" secondItem="36O-Cs-wHb" secondAttribute="centerX" id="jtJ-9a-ofy"/>
                             <constraint firstAttribute="trailing" secondItem="8vx-xv-y3x" secondAttribute="trailing" id="kMV-di-pHH"/>
                             <constraint firstItem="J74-I5-iQw" firstAttribute="top" secondItem="8vx-xv-y3x" secondAttribute="bottom" id="s96-AC-N1V"/>
+                            <constraint firstItem="8vx-xv-y3x" firstAttribute="top" secondItem="njH-hT-fb7" secondAttribute="bottom" id="sj0-bO-Olc"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2932,7 +2919,6 @@
         <image name="opacity" width="64" height="64"/>
         <image name="photo.fill" catalog="system" width="128" height="93"/>
         <image name="portrait-beautiful-young-model-black-leather-jacket-posing-near-lamps" width="4001" height="7001"/>
-        <image name="refresh (3)" width="512" height="512"/>
         <image name="save" width="96" height="96"/>
         <image name="save1" width="512" height="512"/>
         <image name="share1" width="512" height="512"/>
@@ -2941,28 +2927,28 @@
         <image name="tag.fill" catalog="system" width="128" height="118"/>
         <image name="twoTapImg1" width="512" height="512"/>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

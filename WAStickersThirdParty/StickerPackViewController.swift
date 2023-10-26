@@ -87,12 +87,12 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
         
         
         if let backButtonImage = UIImage(named: "back")?.resize(targetSize: CGSize(width: 30, height: 30)) {
-                // Crie um botão personalizado com a imagem
-                let backButton = UIBarButtonItem(image: backButtonImage, style: .plain, target: self, action: #selector(botaoEsquerdoClicado))
+            // Crie um botão personalizado com a imagem
+            let backButton = UIBarButtonItem(image: backButtonImage, style: .plain, target: self, action: #selector(botaoEsquerdoClicado))
             backButton.tintColor =  .white
-                // Defina o botão personalizado como o botão de volta da barra de navegação
-                navigationItem.leftBarButtonItem = backButton
-            }
+            // Defina o botão personalizado como o botão de volta da barra de navegação
+            navigationItem.leftBarButtonItem = backButton
+        }
         }
 
         @objc func botaoEsquerdoClicado() {

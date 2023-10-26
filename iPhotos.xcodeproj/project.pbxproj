@@ -14,7 +14,6 @@
 		738790382AE74CE9007A12ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790212AE74CE5007A12ED /* ViewController.swift */; };
 		738790392AE74CEF007A12ED /* float4x4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790252AE74CE5007A12ED /* float4x4+Extensions.swift */; };
 		7387903B2AE74D25007A12ED /* NodeRender.metal in Sources */ = {isa = PBXBuildFile; fileRef = 738790352AE74CE5007A12ED /* NodeRender.metal */; };
-		7387903C2AE74D28007A12ED /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790322AE74CE5007A12ED /* Gallery.swift */; };
 		7387903D2AE74D2D007A12ED /* VertBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790302AE74CE5007A12ED /* VertBrush.swift */; };
 		7387903F2AE74D35007A12ED /* NodeTechnique.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7387902F2AE74CE5007A12ED /* NodeTechnique.plist */; };
 		738790402AE74D38007A12ED /* SCNVector3Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387902D2AE74CE5007A12ED /* SCNVector3Extensions.swift */; };
@@ -175,7 +174,6 @@
 		7387902E2AE74CE5007A12ED /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 		7387902F2AE74CE5007A12ED /* NodeTechnique.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NodeTechnique.plist; sourceTree = "<group>"; };
 		738790302AE74CE5007A12ED /* VertBrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertBrush.swift; sourceTree = "<group>"; };
-		738790322AE74CE5007A12ED /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
 		738790352AE74CE5007A12ED /* NodeRender.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = NodeRender.metal; sourceTree = "<group>"; };
 		7387904E2AE75CAE007A12ED /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = ../../../art.scnassets; sourceTree = "<group>"; };
 		7395690A2AE6146700A757B2 /* AirDraw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirDraw.h; sourceTree = "<group>"; };
@@ -407,7 +405,6 @@
 				7387902E2AE74CE5007A12ED /* ShaderTypes.h */,
 				7387902F2AE74CE5007A12ED /* NodeTechnique.plist */,
 				738790302AE74CE5007A12ED /* VertBrush.swift */,
-				738790322AE74CE5007A12ED /* Gallery.swift */,
 				7387904E2AE75CAE007A12ED /* art.scnassets */,
 				738790352AE74CE5007A12ED /* NodeRender.metal */,
 			);
@@ -1036,7 +1033,6 @@
 				C4BD2D41262CE0EA005DA9A0 /* EditImageVC.swift in Sources */,
 				C4BD2D34262CE0EA005DA9A0 /* PressButton.m in Sources */,
 				C4BD2D03262CE0EA005DA9A0 /* MainStickerCell.swift in Sources */,
-				7387903C2AE74D28007A12ED /* Gallery.swift in Sources */,
 				C44C708C249C119600EC1E85 /* ProductCell.swift in Sources */,
 				C4BD2D44262CE0EA005DA9A0 /* PresentPhotoVC.swift in Sources */,
 				8A18E2EE1FB3B47D0082201D /* YYImage.m in Sources */,

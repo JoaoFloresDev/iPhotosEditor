@@ -27,19 +27,19 @@ class PurchaseBenetList: UIView {
         stackView.addArrangedSubview(createSpacer(height:  12))
         stackView.addArrangedSubview(
             PurchaseBenefitItem(
-                text: .init(text: .teste1),
+                text: "Remove ads",
                 imageName: "noads")
         )
         stackView.addArrangedSubview(createSpacer(height:  12))
         stackView.addArrangedSubview(
             PurchaseBenefitItem(
-                text: "Filtros e montagens desbloqueados",
+                text: "Filters and montages unlocked",
                 imageName: "unlimited")
         )
         stackView.addArrangedSubview(createSpacer(height:  12))
         stackView.addArrangedSubview(
             PurchaseBenefitItem(
-                text: "Stickers ilimitados",
+                text: "Unlimited stickers",
                 imageName: "unlimited")
         )
         stackView.addArrangedSubview(createSpacer(height:  12))

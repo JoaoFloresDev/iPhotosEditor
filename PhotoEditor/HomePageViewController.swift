@@ -84,8 +84,12 @@ class HomePageViewController: UIViewController {
     func check30DaysPassed() -> Bool {
         if let lastSavedDate = UserDefaults.standard.object(forKey: "LastSavedDate") as? Date {
             let dayDifference = Calendar.current.dateComponents([.day], from: lastSavedDate, to: Date()).day ?? 0
-            
-            return dayDifference >= 7
+            if dayDifference >= 17 {
+                saveTodayDate()
+                return true
+            } else {
+                return false
+            }
         }
         saveTodayDate()
         return false

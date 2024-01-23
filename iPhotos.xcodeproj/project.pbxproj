@@ -19,7 +19,7 @@
 		738790402AE74D38007A12ED /* SCNVector3Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387902D2AE74CE5007A12ED /* SCNVector3Extensions.swift */; };
 		738790412AE74D47007A12ED /* MetalVideoRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790282AE74CE5007A12ED /* MetalVideoRecorder.swift */; };
 		738790422AE74D49007A12ED /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 738790272AE74CE5007A12ED /* Shaders.metal */; };
-		7387904F2AE75CAE007A12ED /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7387904E2AE75CAE007A12ED /* art.scnassets */; };
+		7387F8E42B5F748300337DB0 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7387F8E32B5F748300337DB0 /* art.scnassets */; };
 		7395E0E22ADB1DB600CE8F68 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0DE2ADB1DAD00CE8F68 /* PurchaseViewController.swift */; };
 		7395E0E32ADB1DB900CE8F68 /* PurchaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0DF2ADB1DAD00CE8F68 /* PurchaseHeaderView.swift */; };
 		7395E0E42ADB1DBC00CE8F68 /* PurchaseBenetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0E02ADB1DAE00CE8F68 /* PurchaseBenetList.swift */; };
@@ -175,7 +175,7 @@
 		7387902F2AE74CE5007A12ED /* NodeTechnique.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NodeTechnique.plist; sourceTree = "<group>"; };
 		738790302AE74CE5007A12ED /* VertBrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertBrush.swift; sourceTree = "<group>"; };
 		738790352AE74CE5007A12ED /* NodeRender.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = NodeRender.metal; sourceTree = "<group>"; };
-		7387904E2AE75CAE007A12ED /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = ../../../art.scnassets; sourceTree = "<group>"; };
+		7387F8E32B5F748300337DB0 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		7395690A2AE6146700A757B2 /* AirDraw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirDraw.h; sourceTree = "<group>"; };
 		7395E0DE2ADB1DAD00CE8F68 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		7395E0DF2ADB1DAD00CE8F68 /* PurchaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHeaderView.swift; sourceTree = "<group>"; };
@@ -400,12 +400,12 @@
 				738790222AE74CE5007A12ED /* images */,
 				738790252AE74CE5007A12ED /* float4x4+Extensions.swift */,
 				738790272AE74CE5007A12ED /* Shaders.metal */,
+				7387F8E32B5F748300337DB0 /* art.scnassets */,
 				738790282AE74CE5007A12ED /* MetalVideoRecorder.swift */,
 				7387902D2AE74CE5007A12ED /* SCNVector3Extensions.swift */,
 				7387902E2AE74CE5007A12ED /* ShaderTypes.h */,
 				7387902F2AE74CE5007A12ED /* NodeTechnique.plist */,
 				738790302AE74CE5007A12ED /* VertBrush.swift */,
-				7387904E2AE75CAE007A12ED /* art.scnassets */,
 				738790352AE74CE5007A12ED /* NodeRender.metal */,
 			);
 			name = AirDraw;
@@ -848,7 +848,7 @@
 				C4BD2D21262CE0EA005DA9A0 /* PlumScript.ttf in Resources */,
 				C4BD2D24262CE0EA005DA9A0 /* Arizonia-Regular.ttf in Resources */,
 				C4BD2D0C262CE0EA005DA9A0 /* SelectItemCell.xib in Resources */,
-				7387904F2AE75CAE007A12ED /* art.scnassets in Resources */,
+				7387F8E42B5F748300337DB0 /* art.scnassets in Resources */,
 				C4BD2D0E262CE0EA005DA9A0 /* champignonaltswash.ttf in Resources */,
 				8A22EE0E1F9A9F40003A7F21 /* LaunchScreen.storyboard in Resources */,
 				C4BD2D08262CE0EA005DA9A0 /* FilterCell.xib in Resources */,

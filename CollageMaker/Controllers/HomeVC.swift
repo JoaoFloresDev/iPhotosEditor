@@ -44,6 +44,7 @@ class HomeVC: UIViewController, SKStoreProductViewControllerDelegate{
         navController.modalPresentationStyle = .overCurrentContext
         self.present(navController, animated:true, completion: nil)
     }
+    
     @IBAction func btnMyAlbumsAction(_ sender: Any) {
         let obj : MyAlbumVC = self.storyboard?.instantiateViewController(withIdentifier: "MyAlbumVC") as! MyAlbumVC
         self.navigationController?.pushViewController(obj, animated: true)

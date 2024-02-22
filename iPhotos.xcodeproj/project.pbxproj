@@ -1240,10 +1240,11 @@
 			baseConfigurationReference = B053FE397E92915366B66742 /* Pods-iPhotos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13.1;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1254,7 +1255,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 13.1;
+				MARKETING_VERSION = 14;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
 				PRODUCT_NAME = iPhotos;
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";
@@ -1269,10 +1270,11 @@
 			baseConfigurationReference = 32F6B7815EA09925558C4152 /* Pods-iPhotos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13.1;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1283,7 +1285,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 13.1;
+				MARKETING_VERSION = 14;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
 				PRODUCT_NAME = iPhotos;
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";

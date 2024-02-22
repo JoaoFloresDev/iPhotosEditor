@@ -66,8 +66,10 @@ class HomePageViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if check30DaysPassed() {
-            purchaseAction()
+        if !(RazeFaceProducts.store.isProductPurchased("NoAds.iPhotos") || (UserDefaults.standard.object(forKey: "NoAds.iPhotos") != nil)) {
+            if check30DaysPassed() {
+                purchaseAction()
+            }
         }
     }
     

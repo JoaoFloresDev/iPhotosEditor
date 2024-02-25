@@ -15,12 +15,25 @@ class LoadShapesVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var ShapeCV: UICollectionView!
 
+    lazy var backgroundImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.image = UIImage(named: "portrait-beautiful-young-model-black-leather-jacket-posing-near-lamps")
+        return imageView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(backgroundImage)
+        backgroundImage.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        backgroundImage.layer.zPosition = CGFloat(-2)
         ShapeCV.delegate = self
         ShapeCV.dataSource = self
         ShapeCV.register(UINib(nibName: "allFramesCell", bundle: nil), forCellWithReuseIdentifier: "allFramesCell")
         ShapeCV.reloadData()
+        ShapeCV.backgroundColor = .clear
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,21 +50,34 @@ class LoadShapesVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       return 59
+       return 58
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell : allFramesCell = collectionView.dequeueReusableCell(withReuseIdentifier: "allFramesCell", for: indexPath) as! allFramesCell
         if cell.btnFrames == (cell.viewWithTag(40) as? UIButton) {
-            cell.imgFrame.image = UIImage(named: "\(indexPath.row+1)")
+            let image = UIImage(named: "\(58 - indexPath.row + 1)")
+            cell.imgFrame.image = image
+            cell.imgFrame.tintColor = .white
+            let gradientLayer = CAGradientLayer()
+            gradientLayer.frame = cell.bounds
+            gradientLayer.colors = [UIColor(hex: "FF6079").cgColor, UIColor(hex: "D73852").cgColor]
+            gradientLayer.cornerRadius = 10
+            cell.layer.insertSublayer(gradientLayer, at: 0)
+            
+            // Remove gradient layers anteriores para evitar sobreposições
+            cell.layer.sublayers?.filter { $0 is CAGradientLayer }.forEach { $0.removeFromSuperlayer() }
+            
+            // Insere o gradient layer na view
+            cell.layer.insertSublayer(gradientLayer, at: 0)
             cell.btnFrames.mk_addTapHandlerIO { (btn) in
                 btn.isEnabled = true
-                let ind = indexPath.row
-                if indexPath.row == arrOfIndex[indexPath.row]{
+                let ind = 58 - indexPath.row
+                if 58 - indexPath.row == arrOfIndex[58 - indexPath.row]{
                     let obj = self.storyboard!.instantiateViewController(withIdentifier: "PresentPhotoVC") as! PresentPhotoVC
                     obj.objSelectiontype = 1
                     obj.objIndex = ind
-                    self.totalSelection(ind, obj)
+                    self.totalSelection(ind + 1, obj)
                     let navController = UINavigationController(rootViewController: obj)
                     navController.navigationBar.isHidden = true
                     navController.modalPresentationStyle = .overCurrentContext
@@ -188,5 +214,26 @@ class LoadShapesVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
         IndexPath) -> CGSize {
         let width  = (ShapeCV.frame.width-30)/4
         return CGSize(width: width, height: width)
+    }
+}
+
+extension UIImageView {
+    func applyGradient(colors: [UIColor], locations: [NSNumber]? = nil) {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = bounds
+        gradientLayer.colors = colors.map { $0.cgColor }
+        gradientLayer.locations = locations
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+
+        UIGraphicsBeginImageContextWithOptions(gradientLayer.bounds.size, false, 0.0)
+        guard let context = UIGraphicsGetCurrentContext() else { return }
+        gradientLayer.render(in: context)
+        let gradientImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        self.image = gradientImage
+        self.contentMode = .scaleAspectFill
+        self.clipsToBounds = true
     }
 }

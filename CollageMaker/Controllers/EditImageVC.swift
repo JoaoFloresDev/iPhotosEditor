@@ -1227,6 +1227,13 @@ class EditImageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         }else if collectionView == ShapeCV{
             let cell : StickerCell = collectionView.dequeueReusableCell(withReuseIdentifier: "StickerCell", for: indexPath) as! StickerCell
             cell.imgSelection.image = UIImage(named: "\(indexPath.row+1)")
+            cell.imgSelection.tintColor = .white
+            let gradientLayer = CAGradientLayer()
+            gradientLayer.frame = cell.bounds
+            gradientLayer.colors = [UIColor(hex: "FF6079").cgColor, UIColor(hex: "D73852").cgColor]
+            gradientLayer.cornerRadius = 10
+            cell.layer.insertSublayer(gradientLayer, at: 0)
+            
             if cell.btnImage == (cell.viewWithTag(5) as? UIButton){
                 cell.btnImage.mk_addTapHandlerIO { (btn) in
                     btn.isEnabled = true
@@ -1264,6 +1271,8 @@ class EditImageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
             
             if cell.btnFrame == (cell.viewWithTag(15) as? UIButton) {
                 cell.imgFrame.image = UIImage(named: "\(indexPath.row+1)_BG")
+                cell.imgFrame.layer.cornerRadius = 10
+                cell.imgFrame.clipsToBounds = true
                 cell.btnFrame.mk_addTapHandlerIO { (btn) in
                     btn.isEnabled = true
                     self.imgFX.isHidden = false
@@ -1279,6 +1288,8 @@ class EditImageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
             return cell
         }else if collectionView == self.FxCV{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FramesCell", for: indexPath) as! FramesCell
+            cell.layer.cornerRadius = 10
+            cell.clipsToBounds = true
             if cell.btnFrame == (cell.viewWithTag(15) as? UIButton) {
                 cell.imgFrame.image = UIImage(named: arrOfFx[indexPath.row])
                 cell.imgCommon.image = UIImage(named: "sample")
@@ -1296,7 +1307,9 @@ class EditImageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
             return cell
         }else if collectionView == self.FilterCV{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCell", for: indexPath) as! FilterCell
-
+            cell.layer.cornerRadius = 10
+            cell.clipsToBounds = true
+            cell.backgroundColor = .blue
             if cell.btnFilters == (cell.viewWithTag(20) as? UIButton) {
                 
                 cell.imgCommon.image = UIImage(named: "sample")

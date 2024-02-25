@@ -80,7 +80,9 @@ class LoadShapesVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
                     let navController = UINavigationController(rootViewController: obj)
                     navController.navigationBar.isHidden = true
                     navController.modalPresentationStyle = .overCurrentContext
-                    self.present(navController, animated:true, completion: nil)
+                    DispatchQueue.main.async {
+                        self.present(navController, animated:true, completion: nil)
+                    }
                 }
             }
         }

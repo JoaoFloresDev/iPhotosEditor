@@ -1309,7 +1309,6 @@ class EditImageVC: UIViewController,UICollectionViewDelegate,UICollectionViewDat
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCell", for: indexPath) as! FilterCell
             cell.layer.cornerRadius = 10
             cell.clipsToBounds = true
-            cell.backgroundColor = .blue
             if cell.btnFilters == (cell.viewWithTag(20) as? UIButton) {
                 
                 cell.imgCommon.image = UIImage(named: "sample")

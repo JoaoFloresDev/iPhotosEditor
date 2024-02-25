@@ -92,11 +92,11 @@ class PresentPhotoVC: UIViewController,OpalImagePickerControllerDelegate,UIImage
 
                 self.picker.dismiss(animated: true, completion: nil)
                 for images in asset{
-                    if (images.mediaType == PHAssetMediaType.image){
+//                    if (images.mediaType == PHAssetMediaType.image){
                         PHImageManager.default().requestImage(for: images , targetSize: PHImageManagerMaximumSize, contentMode: PHImageContentMode.default, options: requestOptions, resultHandler: { (pickedImage, info) in
                             thumbnail.append(pickedImage!)
                         })
-                    }
+//                    }
                 }
                 let obj = self.storyboard!.instantiateViewController(withIdentifier: "EditImageVC") as! EditImageVC
                 obj.objIndex = self.objIndex

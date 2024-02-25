@@ -50,14 +50,13 @@ class LoadShapesVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       return 58
+       return 59
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell : allFramesCell = collectionView.dequeueReusableCell(withReuseIdentifier: "allFramesCell", for: indexPath) as! allFramesCell
         if cell.btnFrames == (cell.viewWithTag(40) as? UIButton) {
-            let image = UIImage(named: "\(58 - indexPath.row + 1)")
-            cell.imgFrame.image = image
+            cell.imgFrame.image = UIImage(named: "\(indexPath.row+1)")
             cell.imgFrame.tintColor = .white
             let gradientLayer = CAGradientLayer()
             gradientLayer.frame = cell.bounds
@@ -72,12 +71,12 @@ class LoadShapesVC: UIViewController,UICollectionViewDelegate,UICollectionViewDa
             cell.layer.insertSublayer(gradientLayer, at: 0)
             cell.btnFrames.mk_addTapHandlerIO { (btn) in
                 btn.isEnabled = true
-                let ind = 58 - indexPath.row
-                if 58 - indexPath.row == arrOfIndex[58 - indexPath.row]{
+                let ind = indexPath.row
+                if indexPath.row == arrOfIndex[indexPath.row]{
                     let obj = self.storyboard!.instantiateViewController(withIdentifier: "PresentPhotoVC") as! PresentPhotoVC
                     obj.objSelectiontype = 1
                     obj.objIndex = ind
-                    self.totalSelection(ind + 1, obj)
+                    self.totalSelection(ind, obj)
                     let navController = UINavigationController(rootViewController: obj)
                     navController.navigationBar.isHidden = true
                     navController.modalPresentationStyle = .overCurrentContext

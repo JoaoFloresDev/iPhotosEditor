@@ -18,11 +18,7 @@
         <!--Edit ImageVC-->
         <scene sceneID="dC3-RF-hh0">
             <objects>
-<<<<<<< Updated upstream
-                <viewController storyboardIdentifier="EditImageVC2" id="m0k-Uj-qXA" customClass="EditImageVC" customModule="iPhotos" customModuleProvider="target" sceneMemberID="viewController">
-=======
                 <viewController storyboardIdentifier="EditImageVC" id="m0k-Uj-qXA" customClass="EditImageVC" customModule="iPhotos_Editor" customModuleProvider="target" sceneMemberID="viewController">
->>>>>>> Stashed changes
                     <view key="view" contentMode="scaleToFill" id="udp-mN-nbQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

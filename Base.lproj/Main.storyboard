@@ -2520,20 +2520,6 @@
                                     <action selector="clearAll:" destination="UEv-UE-f3H" eventType="touchUpInside" id="r1Y-5S-2yH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsv-zK-kRl">
-                                <rect key="frame" x="25" y="62" width="80" height="36"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="bXo-6O-KMc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Pro">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="openPro:" destination="UEv-UE-f3H" eventType="touchUpInside" id="zBu-Wp-vBV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.40000000596046448" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHj-s4-Dmt">
                                 <rect key="frame" x="269" y="54" width="50" height="50"/>
                                 <constraints>
@@ -2545,25 +2531,35 @@
                                     <action selector="undo:" destination="UEv-UE-f3H" eventType="touchUpInside" id="296-f2-z42"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.40000000596046448" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xw3-wL-5CG">
+                                <rect key="frame" x="10" y="58" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3mN-81-82q"/>
+                                    <constraint firstAttribute="height" constant="50" id="NFc-5T-W6q"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="goBack:" destination="UEv-UE-f3H" eventType="touchUpInside" id="ces-mv-cTa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="bFa-9f-B8F" firstAttribute="top" secondItem="ELg-el-cVX" secondAttribute="bottom" constant="10" id="Bv0-zl-IfN"/>
                             <constraint firstItem="zHj-s4-Dmt" firstAttribute="top" secondItem="ELg-el-cVX" secondAttribute="bottom" constant="6" id="OOL-xz-790"/>
-                            <constraint firstItem="zsv-zK-kRl" firstAttribute="centerY" secondItem="bFa-9f-B8F" secondAttribute="centerY" id="Oed-HW-YH4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bFa-9f-B8F" secondAttribute="trailing" constant="5" id="SXp-IV-N7r"/>
+                            <constraint firstItem="Xw3-wL-5CG" firstAttribute="top" secondItem="ELg-el-cVX" secondAttribute="bottom" constant="10" id="YMU-BA-Nl1"/>
+                            <constraint firstItem="Xw3-wL-5CG" firstAttribute="leading" secondItem="FWT-w6-XNa" secondAttribute="leadingMargin" constant="-10" id="Z1B-8a-MQL"/>
                             <constraint firstItem="bFa-9f-B8F" firstAttribute="leading" secondItem="zHj-s4-Dmt" secondAttribute="trailing" constant="26" id="iLp-S8-OMT"/>
-                            <constraint firstItem="zsv-zK-kRl" firstAttribute="leading" secondItem="FWT-w6-XNa" secondAttribute="leadingMargin" constant="5" id="xJT-2F-taJ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buyProButton" destination="zsv-zK-kRl" id="rpU-YD-xH8"/>
                         <outlet property="sceneView" destination="Pqh-fQ-sgd" id="9Bu-T1-GDV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MEL-B1-nAM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="529"/>
+            <point key="canvasLocation" x="621.73913043478262" y="527.67857142857144"/>
         </scene>
         <!--Memoirs-->
         <scene sceneID="hJ0-nA-9C1">
@@ -3433,9 +3429,6 @@
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

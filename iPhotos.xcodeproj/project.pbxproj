@@ -11,20 +11,19 @@
 		14B7874FE7A5630F389409E2 /* Pods_iPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C309CBD9B6357A9D51D7FE2 /* Pods_iPhotos.framework */; };
 		734EE8262AE2D83B00A11E97 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734EE8242AE2D83A00A11E97 /* TextButton.swift */; };
 		734EE8272AE2D83B00A11E97 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734EE8252AE2D83B00A11E97 /* ImageButton.swift */; };
-		738790382AE74CE9007A12ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790212AE74CE5007A12ED /* ViewController.swift */; };
-		738790392AE74CEF007A12ED /* float4x4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790252AE74CE5007A12ED /* float4x4+Extensions.swift */; };
-		7387903B2AE74D25007A12ED /* NodeRender.metal in Sources */ = {isa = PBXBuildFile; fileRef = 738790352AE74CE5007A12ED /* NodeRender.metal */; };
-		7387903D2AE74D2D007A12ED /* VertBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790302AE74CE5007A12ED /* VertBrush.swift */; };
-		7387903F2AE74D35007A12ED /* NodeTechnique.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7387902F2AE74CE5007A12ED /* NodeTechnique.plist */; };
-		738790402AE74D38007A12ED /* SCNVector3Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387902D2AE74CE5007A12ED /* SCNVector3Extensions.swift */; };
-		738790412AE74D47007A12ED /* MetalVideoRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738790282AE74CE5007A12ED /* MetalVideoRecorder.swift */; };
-		738790422AE74D49007A12ED /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 738790272AE74CE5007A12ED /* Shaders.metal */; };
-		7387F8E42B5F748300337DB0 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7387F8E32B5F748300337DB0 /* art.scnassets */; };
+		7362FC1D2CAC4B4D00038319 /* SCNVector3Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7362FC1C2CAC4B4D00038319 /* SCNVector3Extensions.swift */; };
+		7362FC212CAC4B6800038319 /* VertBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7362FC202CAC4B6800038319 /* VertBrush.swift */; };
+		7362FC232CAC4B7200038319 /* NodeRender.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7362FC222CAC4B7100038319 /* NodeRender.metal */; };
+		7362FC242CAC4BC000038319 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 7362FC182CAC4AAB00038319 /* art.scnassets */; };
+		7362FC252CAC4BC600038319 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7362FC172CAC4AA600038319 /* Shaders.metal */; };
+		7362FC262CAC4BCE00038319 /* NodeTechnique.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7362FC1F2CAC4B6300038319 /* NodeTechnique.plist */; };
+		7362FC272CAC4BD100038319 /* MetalVideoRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7362FC192CAC4AB800038319 /* MetalVideoRecorder.swift */; };
+		7362FC282CAC4BD300038319 /* float4x4+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7362FC162CAC4A9E00038319 /* float4x4+Extensions.swift */; };
+		7362FC292CAC4BD700038319 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7362FC152CAC4A8300038319 /* ViewController.swift */; };
 		7395E0E22ADB1DB600CE8F68 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0DE2ADB1DAD00CE8F68 /* PurchaseViewController.swift */; };
 		7395E0E32ADB1DB900CE8F68 /* PurchaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0DF2ADB1DAD00CE8F68 /* PurchaseHeaderView.swift */; };
 		7395E0E42ADB1DBC00CE8F68 /* PurchaseBenetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0E02ADB1DAE00CE8F68 /* PurchaseBenetList.swift */; };
 		7395E0E52ADB1DBF00CE8F68 /* DiamondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7395E0E12ADB1DAF00CE8F68 /* DiamondView.swift */; };
-		739D76612CA75B0900B76892 /* PermissionScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739D76602CA75B0900B76892 /* PermissionScope.swift */; };
 		739D76632CA75B3900B76892 /* ExpandableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739D76622CA75B3900B76892 /* ExpandableView.swift */; };
 		73B21CBF2CAAEF0B00959526 /* HKTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B21C662CAAEF0B00959526 /* HKTools.swift */; };
 		73B21CC02CAAEF0B00959526 /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B21C6B2CAAEF0B00959526 /* TZImageCropManager.m */; };
@@ -221,12 +220,21 @@
 		32F6B7815EA09925558C4152 /* Pods-iPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhotos.release.xcconfig"; path = "Target Support Files/Pods-iPhotos/Pods-iPhotos.release.xcconfig"; sourceTree = "<group>"; };
 		734EE8242AE2D83A00A11E97 /* TextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		734EE8252AE2D83B00A11E97 /* ImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		7362FC152CAC4A8300038319 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7362FC162CAC4A9E00038319 /* float4x4+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "float4x4+Extensions.swift"; sourceTree = "<group>"; };
+		7362FC172CAC4AA600038319 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		7362FC182CAC4AAB00038319 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		7362FC192CAC4AB800038319 /* MetalVideoRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalVideoRecorder.swift; sourceTree = "<group>"; };
+		7362FC1C2CAC4B4D00038319 /* SCNVector3Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3Extensions.swift; sourceTree = "<group>"; };
+		7362FC1E2CAC4B5E00038319 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		7362FC1F2CAC4B6300038319 /* NodeTechnique.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NodeTechnique.plist; sourceTree = "<group>"; };
+		7362FC202CAC4B6800038319 /* VertBrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertBrush.swift; sourceTree = "<group>"; };
+		7362FC222CAC4B7100038319 /* NodeRender.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = NodeRender.metal; sourceTree = "<group>"; };
 		738790212AE74CE5007A12ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		738790232AE74CE5007A12ED /* plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus@2x.png"; sourceTree = "<group>"; };
 		738790242AE74CE5007A12ED /* stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@2x.png"; sourceTree = "<group>"; };
 		738790252AE74CE5007A12ED /* float4x4+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "float4x4+Extensions.swift"; sourceTree = "<group>"; };
 		738790272AE74CE5007A12ED /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
-		738790282AE74CE5007A12ED /* MetalVideoRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalVideoRecorder.swift; sourceTree = "<group>"; };
 		7387902D2AE74CE5007A12ED /* SCNVector3Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3Extensions.swift; sourceTree = "<group>"; };
 		7387902E2AE74CE5007A12ED /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 		7387902F2AE74CE5007A12ED /* NodeTechnique.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NodeTechnique.plist; sourceTree = "<group>"; };
@@ -528,6 +536,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7362FC142CAC4A7600038319 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				7362FC152CAC4A8300038319 /* ViewController.swift */,
+				7362FC162CAC4A9E00038319 /* float4x4+Extensions.swift */,
+				7362FC192CAC4AB800038319 /* MetalVideoRecorder.swift */,
+				7362FC1F2CAC4B6300038319 /* NodeTechnique.plist */,
+				7362FC1C2CAC4B4D00038319 /* SCNVector3Extensions.swift */,
+				7362FC222CAC4B7100038319 /* NodeRender.metal */,
+				7362FC202CAC4B6800038319 /* VertBrush.swift */,
+				7362FC1E2CAC4B5E00038319 /* ShaderTypes.h */,
+				7362FC172CAC4AA600038319 /* Shaders.metal */,
+				7362FC182CAC4AAB00038319 /* art.scnassets */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
 		738790202AE74CE5007A12ED /* AirDraw */ = {
 			isa = PBXGroup;
 			children = (
@@ -537,7 +562,6 @@
 				738790252AE74CE5007A12ED /* float4x4+Extensions.swift */,
 				738790272AE74CE5007A12ED /* Shaders.metal */,
 				7387F8E32B5F748300337DB0 /* art.scnassets */,
-				738790282AE74CE5007A12ED /* MetalVideoRecorder.swift */,
 				7387902D2AE74CE5007A12ED /* SCNVector3Extensions.swift */,
 				7387902E2AE74CE5007A12ED /* ShaderTypes.h */,
 				7387902F2AE74CE5007A12ED /* NodeTechnique.plist */,
@@ -760,6 +784,7 @@
 				C49D2C55247D164A0007D174 /* StoredImage.xcdatamodeld */,
 				C484C2F6262CD510004E1180 /* Collage.h */,
 				7395690A2AE6146700A757B2 /* AirDraw.h */,
+				7362FC142CAC4A7600038319 /* AR */,
 				73B21C642CAAEF0B00959526 /* HeavenMemoirs */,
 				738790202AE74CE5007A12ED /* AirDraw */,
 				C4BD2CA5262CE0E9005DA9A0 /* CollageMaker */,
@@ -1133,6 +1158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73B21CE42CAAEF0B00959526 /* Beautiful In White.aac in Resources */,
+				7362FC242CAC4BC000038319 /* art.scnassets in Resources */,
 				73B21CE82CAAEF0B00959526 /* 么么.aac in Resources */,
 				73B21CE22CAAEF0B00959526 /* 红昭愿.aac in Resources */,
 				C4BD2D1E262CE0EA005DA9A0 /* Playball-Regular.ttf in Resources */,
@@ -1152,11 +1178,11 @@
 				C4BD2D1C262CE0EA005DA9A0 /* LittleLordFontleroyNF.ttf in Resources */,
 				C4BD2D14262CE0EA005DA9A0 /* AlexBrush-Regular.ttf in Resources */,
 				C49D2C4E247D0B7A0007D174 /* tray_Cuppy.png in Resources */,
+				7362FC262CAC4BCE00038319 /* NodeTechnique.plist in Resources */,
 				73B21CD62CAAEF0B00959526 /* ITTPromptView.xib in Resources */,
 				C4BD2D21262CE0EA005DA9A0 /* PlumScript.ttf in Resources */,
 				C4BD2D24262CE0EA005DA9A0 /* Arizonia-Regular.ttf in Resources */,
 				C4BD2D0C262CE0EA005DA9A0 /* SelectItemCell.xib in Resources */,
-				7387F8E42B5F748300337DB0 /* art.scnassets in Resources */,
 				C4BD2D0E262CE0EA005DA9A0 /* champignonaltswash.ttf in Resources */,
 				8A22EE0E1F9A9F40003A7F21 /* LaunchScreen.storyboard in Resources */,
 				C4BD2D08262CE0EA005DA9A0 /* FilterCell.xib in Resources */,
@@ -1198,7 +1224,6 @@
 				73B21CDD2CAAEF0B00959526 /* confetti.png in Resources */,
 				73B21CDF2CAAEF0B00959526 /* I Remember.aac in Resources */,
 				73B21CC72CAAEF0B00959526 /* TZImagePickerController.bundle in Resources */,
-				7387903F2AE74D35007A12ED /* NodeTechnique.plist in Resources */,
 				73B21CE62CAAEF0B00959526 /* 陪你过冬天.aac in Resources */,
 				C4BD2D20262CE0EA005DA9A0 /* Dohearts.otf in Resources */,
 				C4BD2D26262CE0EA005DA9A0 /* VTKS SummerLAnd.ttf in Resources */,
@@ -1288,6 +1313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7362FC252CAC4BC600038319 /* Shaders.metal in Sources */,
 				73B21CF62CAAEF0B00959526 /* HKImageTableViewCell.swift in Sources */,
 				73B21CEF2CAAEF0B00959526 /* ViewController3.swift in Sources */,
 				C4BD2D05262CE0EA005DA9A0 /* SelectItemCell.swift in Sources */,
@@ -1295,21 +1321,25 @@
 				8A27F1201FD7444B001B2BBD /* StickerPackViewController.swift in Sources */,
 				C4BD2D31262CE0EA005DA9A0 /* JLAttributedTextView.swift in Sources */,
 				8A18E3351FBA5CA90082201D /* StickerPackManager.swift in Sources */,
+				7362FC282CAC4BD300038319 /* float4x4+Extensions.swift in Sources */,
 				8A27F1331FD9EA08001B2BBD /* LinkTableViewCell.swift in Sources */,
 				8A18E2F01FB3B47D0082201D /* YYFrameImage.m in Sources */,
 				C4BD2D40262CE0EA005DA9A0 /* StickersVC.swift in Sources */,
 				C4351E0324908D46009FBDEF /* ModelController.swift in Sources */,
 				8A18E33F1FBA7DC50082201D /* WebPManager.swift in Sources */,
 				C4BD2D32262CE0EA005DA9A0 /* CalcuteFunctions.swift in Sources */,
-				7387903D2AE74D2D007A12ED /* VertBrush.swift in Sources */,
 				73B21CD82CAAEF0B00959526 /* AMTumblrHud.m in Sources */,
 				8ADA60761FD71F69006C9BBA /* AllStickerPacksViewController.swift in Sources */,
 				C4BD2D43262CE0EA005DA9A0 /* HomeVC.swift in Sources */,
 				8ACB6A981FE9CB7700A564BB /* Limits.swift in Sources */,
 				73B21CC22CAAEF0B00959526 /* TZVideoPlayerController.m in Sources */,
+				7362FC292CAC4BD700038319 /* ViewController.swift in Sources */,
 				8A40BE651FB122B3003AD704 /* StickerPack.swift in Sources */,
 				73B21CD92CAAEF0B00959526 /* PoppingBaseView.m in Sources */,
 				C4351DFF249086B2009FBDEF /* stickersDataSaved.swift in Sources */,
+				7362FC232CAC4B7200038319 /* NodeRender.metal in Sources */,
+				7362FC212CAC4B6800038319 /* VertBrush.swift in Sources */,
+				7362FC272CAC4BD100038319 /* MetalVideoRecorder.swift in Sources */,
 				8A6001CC20298225001EC448 /* GradientViewWhats.swift in Sources */,
 				C4BD2D35262CE0EA005DA9A0 /* SelectionButton.m in Sources */,
 				73B21CCF2CAAEF0B00959526 /* Constants.swift in Sources */,
@@ -1317,10 +1347,8 @@
 				8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */,
 				73E2EA7D2AE03319007B717F /* HomePageViewController.swift in Sources */,
 				73B21CF72CAAEF0B00959526 /* HKImageCollectionViewCell.swift in Sources */,
-				7387903B2AE74D25007A12ED /* NodeRender.metal in Sources */,
 				73B21CC42CAAEF0B00959526 /* NSBundle+TZImagePicker.m in Sources */,
 				73B21CC32CAAEF0B00959526 /* TZAssetModel.m in Sources */,
-				738790422AE74D49007A12ED /* Shaders.metal in Sources */,
 				C474A7D92492FA810043D953 /* CreditsViewController.swift in Sources */,
 				C4BD2D3A262CE0EA005DA9A0 /* tblStyleCell.swift in Sources */,
 				73B21CEB2CAAEF0B00959526 /* RescouceConfiguration.swift in Sources */,
@@ -1347,13 +1375,13 @@
 				73B21CF32CAAEF0B00959526 /* HKExplainViewController.swift in Sources */,
 				8A18E2EF1FB3B47D0082201D /* YYAnimatedImageView.m in Sources */,
 				734EE8262AE2D83B00A11E97 /* TextButton.swift in Sources */,
-				738790392AE74CEF007A12ED /* float4x4+Extensions.swift in Sources */,
 				8A27F1221FD76937001B2BBD /* AquaButton.swift in Sources */,
 				C4351DFB248FF976009FBDEF /* InViewController.swift in Sources */,
 				73B21CC52CAAEF0B00959526 /* UIView+Layout.m in Sources */,
 				C4BD2D02262CE0EA005DA9A0 /* FramesCell.swift in Sources */,
 				73B21CC12CAAEF0B00959526 /* TZAssetCell.m in Sources */,
 				73B21CC92CAAEF0B00959526 /* TZImageManager.m in Sources */,
+				7362FC1D2CAC4B4D00038319 /* SCNVector3Extensions.swift in Sources */,
 				73B21CBF2CAAEF0B00959526 /* HKTools.swift in Sources */,
 				C4BD2D37262CE0EA005DA9A0 /* MagnificationButton.m in Sources */,
 				7395E0E52ADB1DBF00CE8F68 /* DiamondView.swift in Sources */,
@@ -1363,7 +1391,6 @@
 				7395E0E42ADB1DBC00CE8F68 /* PurchaseBenetList.swift in Sources */,
 				8AB5951920C1FC130076625E /* Sticker.swift in Sources */,
 				C4BD2D45262CE0EA005DA9A0 /* LoadShapesVC.swift in Sources */,
-				738790402AE74D38007A12ED /* SCNVector3Extensions.swift in Sources */,
 				8A27F12D1FD9E718001B2BBD /* SecondaryTextTableViewCell.swift in Sources */,
 				C4BD2D42262CE0EA005DA9A0 /* ShareVC.swift in Sources */,
 				C4BD2D3F262CE0EA005DA9A0 /* PresentTextVC.swift in Sources */,
@@ -1379,7 +1406,6 @@
 				C4BD2D41262CE0EA005DA9A0 /* EditImageVC.swift in Sources */,
 				C4BD2D34262CE0EA005DA9A0 /* PressButton.m in Sources */,
 				C4BD2D03262CE0EA005DA9A0 /* MainStickerCell.swift in Sources */,
-				739D76612CA75B0900B76892 /* PermissionScope.swift in Sources */,
 				739D76632CA75B3900B76892 /* ExpandableView.swift in Sources */,
 				C44C708C249C119600EC1E85 /* ProductCell.swift in Sources */,
 				C4BD2D44262CE0EA005DA9A0 /* PresentPhotoVC.swift in Sources */,
@@ -1390,14 +1416,12 @@
 				73B21CF42CAAEF0B00959526 /* HKARSCNView.swift in Sources */,
 				73B21CC02CAAEF0B00959526 /* TZImageCropManager.m in Sources */,
 				73B21CCC2CAAEF0B00959526 /* TZImagePickerController.m in Sources */,
-				738790382AE74CE9007A12ED /* ViewController.swift in Sources */,
 				8A18E2F21FB3B47D0082201D /* YYImageCoder.m in Sources */,
 				0E6359A4203E148200805DEB /* StickerCellWhats.swift in Sources */,
 				7395E0E32ADB1DB900CE8F68 /* PurchaseHeaderView.swift in Sources */,
 				C4BD2D33262CE0EA005DA9A0 /* adjustToFitFontOrWidth.swift in Sources */,
 				73B21CC82CAAEF0B00959526 /* TZProgressView.m in Sources */,
 				C4BD2D04262CE0EA005DA9A0 /* allFramesCell.swift in Sources */,
-				738790412AE74D47007A12ED /* MetalVideoRecorder.swift in Sources */,
 				8AB5951B20C1FC440076625E /* ImageData.swift in Sources */,
 				734EE8272AE2D83B00A11E97 /* ImageButton.swift in Sources */,
 				7395E0E22ADB1DB600CE8F68 /* PurchaseViewController.swift in Sources */,

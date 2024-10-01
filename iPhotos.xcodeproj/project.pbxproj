@@ -1602,7 +1602,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1622,7 +1622,7 @@
 					"$(PROJECT_DIR)/HeavenMemoirs-master/Pods/UMengUShare/UShareSDK/SocialLibraries/QQ",
 					"$(PROJECT_DIR)/HeavenMemoirs-master/Pods/UMengUShare/UShareSDK/UMSocialSDKPlugin",
 				);
-				MARKETING_VERSION = 15;
+				MARKETING_VERSION = 19;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
 				PRODUCT_NAME = iPhotos;
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";
@@ -1641,7 +1641,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1661,7 +1661,7 @@
 					"$(PROJECT_DIR)/HeavenMemoirs-master/Pods/UMengUShare/UShareSDK/SocialLibraries/QQ",
 					"$(PROJECT_DIR)/HeavenMemoirs-master/Pods/UMengUShare/UShareSDK/UMSocialSDKPlugin",
 				);
-				MARKETING_VERSION = 15;
+				MARKETING_VERSION = 19;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoflores.IPhotosEditor;
 				PRODUCT_NAME = iPhotos;
 				SWIFT_OBJC_BRIDGING_HEADER = "WAStickersThirdParty/WAStickersThirdParty-Bridging-Header.h";

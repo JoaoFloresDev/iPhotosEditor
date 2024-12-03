@@ -7,6 +7,7 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
     private var currentImage: UIImage! // A imagem que será editada
     private var ciContext = CIContext() // Contexto do Core Image
     private var brushRadius: CGFloat = 10.0 // Raio do pincel para retoque
+    private var blurIntensity: CGFloat = 10.0 // Intensidade do blur
     private var overlayLayer: CAShapeLayer! // Para desenhar o círculo de visualização
 
     override func viewDidLoad() {
@@ -44,30 +45,35 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
         panGesture.minimumNumberOfTouches = 1
         panGesture.maximumNumberOfTouches = 1
+        scrollView.panGestureRecognizer.require(toFail: panGesture)
         imageView.addGestureRecognizer(panGesture)
-
-        // Adiciona UIPanGestureRecognizer para mover a imagem com dois dedos
-        let twoFingerPanGesture = UIPanGestureRecognizer(target: self, action: #selector(handleTwoFingerPanGesture(_:)))
-        twoFingerPanGesture.minimumNumberOfTouches = 2
-        imageView.addGestureRecognizer(twoFingerPanGesture)
 
         // Adiciona UITapGestureRecognizer para retoque ao clicar
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
         imageView.addGestureRecognizer(tapGesture)
 
-        // Adiciona slider para ajustar o tamanho do pincel
-        let slider = UISlider(frame: CGRect(x: 20, y: view.bounds.height - 60, width: view.bounds.width - 40, height: 40))
-        slider.minimumValue = 5 // Valor mínimo reduzido
-        slider.maximumValue = 100
-        slider.value = Float(brushRadius)
-        slider.addTarget(self, action: #selector(brushSizeChanged(_:)), for: .valueChanged)
-        view.addSubview(slider)
+        // Slider para ajustar o tamanho do pincel
+        let brushSlider = UISlider(frame: CGRect(x: 20, y: view.bounds.height - 100, width: view.bounds.width - 40, height: 40))
+        brushSlider.minimumValue = 5 // Valor mínimo
+        brushSlider.maximumValue = 100
+        brushSlider.value = Float(brushRadius)
+        brushSlider.addTarget(self, action: #selector(brushSizeChanged(_:)), for: .valueChanged)
+        view.addSubview(brushSlider)
+
+        // Slider para ajustar a intensidade do blur
+        let intensitySlider = UISlider(frame: CGRect(x: 20, y: view.bounds.height - 60, width: view.bounds.width - 40, height: 40))
+        intensitySlider.minimumValue = 1 // Valor mínimo
+        intensitySlider.maximumValue = 30
+        intensitySlider.value = Float(blurIntensity)
+        intensitySlider.addTarget(self, action: #selector(blurIntensityChanged(_:)), for: .valueChanged)
+        view.addSubview(intensitySlider)
 
         // Configuração da camada para o círculo de visualização
         overlayLayer = CAShapeLayer()
-        overlayLayer.strokeColor = UIColor.red.cgColor
+        overlayLayer.strokeColor = UIColor.white.withAlphaComponent(0.5).cgColor
         overlayLayer.fillColor = UIColor.clear.cgColor
         overlayLayer.lineWidth = 2
+        overlayLayer.isHidden = true // Começa oculto
         imageView.layer.addSublayer(overlayLayer)
     }
 
@@ -103,27 +109,34 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
     }
 
     @objc private func handlePanGesture(_ gesture: UIPanGestureRecognizer) {
-        guard gesture.state == .changed || gesture.state == .ended else { return }
-
         let location = gesture.location(in: imageView)
-        performRetouch(at: location)
-    }
 
-    @objc private func handleTwoFingerPanGesture(_ gesture: UIPanGestureRecognizer) {
-        // Permite mover a imagem com dois dedos
-        let translation = gesture.translation(in: scrollView)
-        scrollView.contentOffset.x -= translation.x
-        scrollView.contentOffset.y -= translation.y
-        gesture.setTranslation(.zero, in: scrollView)
+        switch gesture.state {
+        case .began, .changed:
+            overlayLayer.isHidden = false // Exibe o círculo
+            updateOverlay(at: location)
+            performRetouch(at: location)
+        case .ended, .cancelled:
+            overlayLayer.isHidden = true // Oculta o círculo
+        default:
+            break
+        }
     }
 
     @objc private func handleTapGesture(_ gesture: UITapGestureRecognizer) {
         let location = gesture.location(in: imageView)
+        overlayLayer.isHidden = false // Exibe o círculo temporariamente
+        updateOverlay(at: location)
         performRetouch(at: location)
+        overlayLayer.isHidden = true // Oculta o círculo após o clique
     }
 
     @objc private func brushSizeChanged(_ sender: UISlider) {
         brushRadius = CGFloat(sender.value)
+    }
+
+    @objc private func blurIntensityChanged(_ sender: UISlider) {
+        blurIntensity = CGFloat(sender.value)
     }
 
     private func performRetouch(at location: CGPoint) {
@@ -131,9 +144,6 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
 
         // Converte a posição do toque para as coordenadas da imagem
         let imageCoordinates = convertToImageCoordinates(location: location, in: imageView, image: tappedImage)
-
-        // Atualiza o círculo de visualização
-        updateOverlay(at: location)
 
         // Aplica retoque na área selecionada
         if let updatedImage = applyBlur(at: imageCoordinates, to: tappedImage) {
@@ -185,7 +195,7 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
         // Aplica o blur na imagem original
         guard let blurFilter = CIFilter(name: "CIGaussianBlur") else { return nil }
         blurFilter.setValue(ciImage, forKey: kCIInputImageKey)
-        blurFilter.setValue(10.0, forKey: kCIInputRadiusKey)
+        blurFilter.setValue(blurIntensity, forKey: kCIInputRadiusKey)
 
         guard let blurredImage = blurFilter.outputImage else { return nil }
 

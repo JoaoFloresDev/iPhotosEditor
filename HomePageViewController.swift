@@ -59,6 +59,7 @@ class HomePageViewController: UIViewController {
     lazy var augmentedReallityButton = ImageButton(withImage: UIImage(named: "filter1"), andText: "AR", action: augmentedReallityButtonAction)
     lazy var collageButton = ImageButton(withImage: UIImage(named: "stickerImage"), andText: "Collage", action: collageButtonAction)
     lazy var gridButton = ImageButton(withImage: UIImage(named: "22"), andText: "Grid", action: gridButtonAction)
+    lazy var retouchButton = ImageButton(withImage: UIImage(named: "22"), andText: "Retouch", action: retouchButtonAction)
     lazy var editPhotoButton = TextButton(text: "Edit Photo", action: editPhotoButtonAction)
     
     override func viewDidLoad() {
@@ -105,6 +106,7 @@ class HomePageViewController: UIViewController {
         containerStack.addArrangedSubview(editOptionsStack)
         containerStack.addArrangedSubview(collageOptionsStack)
         containerStack.addArrangedSubview(editPhotoButton)
+        containerStack.addArrangedSubview(retouchButton)
         
         editOptionsStack.addArrangedSubview(gridButton)
         editOptionsStack.addArrangedSubview(augmentedReallityButton)
@@ -153,6 +155,10 @@ class HomePageViewController: UIViewController {
             make.height.equalTo(90)
         }
         
+        retouchButton.snp.makeConstraints { make in
+            make.height.equalTo(54)
+        }
+        
         editPhotoButton.snp.makeConstraints { make in
             make.height.equalTo(54)
         }
@@ -188,6 +194,15 @@ extension HomePageViewController {
             return
         }
         self.navigationController?.pushViewController(obj, animated: true)
+    }
+    
+    func retouchButtonAction() {
+        let controller = ImageEditorViewController()
+        controller.setImage(UIImage(named: "filter1")!)
+        controller.view.backgroundColor = .red
+        let navigation = UINavigationController(rootViewController: controller)
+        navigation.modalPresentationStyle = .fullScreen
+        present(navigation, animated: true)
     }
     
     func editPhotoButtonAction() {

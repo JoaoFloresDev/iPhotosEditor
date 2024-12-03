@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -81,7 +81,6 @@
 		73B21CF62CAAEF0B00959526 /* HKImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B21CBD2CAAEF0B00959526 /* HKImageTableViewCell.swift */; };
 		73B21CF72CAAEF0B00959526 /* HKImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B21CBE2CAAEF0B00959526 /* HKImageCollectionViewCell.swift */; };
 		73B963DE2AE61B4F00D8918B /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B963DD2AE61B4F00D8918B /* ARKit.framework */; };
-		73D67E772ADB57E50097C323 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73D67E792ADB57E50097C323 /* Localizable.strings */; };
 		73E2EA7D2AE03319007B717F /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2EA7C2AE03319007B717F /* HomePageViewController.swift */; };
 		8A0A6DCD1FE9F1CE00110AF2 /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0A6DCC1FE9F1CE00110AF2 /* UIAlertController+Additions.swift */; };
 		8A18E2EE1FB3B47D0082201D /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A18E2E51FB3B47B0082201D /* YYImage.m */; };
@@ -200,6 +199,10 @@
 		C4BD2D48262CE0EA005DA9A0 /* PentagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CFD262CE0EA005DA9A0 /* PentagonView.swift */; };
 		C4BD2D49262CE0EA005DA9A0 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CFE262CE0EA005DA9A0 /* Helpers.swift */; };
 		C4BD2D4A262CE0EA005DA9A0 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD2CFF262CE0EA005DA9A0 /* Filters.swift */; };
+		C4BEF1872CB6FF6A0068A0E0 /* FacebookAEM in Frameworks */ = {isa = PBXBuildFile; productRef = C4BEF1862CB6FF6A0068A0E0 /* FacebookAEM */; };
+		C4BEF1892CB6FF6A0068A0E0 /* FacebookBasics in Frameworks */ = {isa = PBXBuildFile; productRef = C4BEF1882CB6FF6A0068A0E0 /* FacebookBasics */; };
+		C4BEF18B2CB6FF6A0068A0E0 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = C4BEF18A2CB6FF6A0068A0E0 /* FacebookCore */; };
+		C4D261282CFE43D500E98E35 /* RetouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D261272CFE43D500E98E35 /* RetouchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -230,23 +233,11 @@
 		7362FC1F2CAC4B6300038319 /* NodeTechnique.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NodeTechnique.plist; sourceTree = "<group>"; };
 		7362FC202CAC4B6800038319 /* VertBrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertBrush.swift; sourceTree = "<group>"; };
 		7362FC222CAC4B7100038319 /* NodeRender.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = NodeRender.metal; sourceTree = "<group>"; };
-		738790212AE74CE5007A12ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		738790232AE74CE5007A12ED /* plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus@2x.png"; sourceTree = "<group>"; };
-		738790242AE74CE5007A12ED /* stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@2x.png"; sourceTree = "<group>"; };
-		738790252AE74CE5007A12ED /* float4x4+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "float4x4+Extensions.swift"; sourceTree = "<group>"; };
-		738790272AE74CE5007A12ED /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
-		7387902D2AE74CE5007A12ED /* SCNVector3Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3Extensions.swift; sourceTree = "<group>"; };
-		7387902E2AE74CE5007A12ED /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
-		7387902F2AE74CE5007A12ED /* NodeTechnique.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NodeTechnique.plist; sourceTree = "<group>"; };
-		738790302AE74CE5007A12ED /* VertBrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VertBrush.swift; sourceTree = "<group>"; };
-		738790352AE74CE5007A12ED /* NodeRender.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = NodeRender.metal; sourceTree = "<group>"; };
-		7387F8E32B5F748300337DB0 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		7395690A2AE6146700A757B2 /* AirDraw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirDraw.h; sourceTree = "<group>"; };
 		7395E0DE2ADB1DAD00CE8F68 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		7395E0DF2ADB1DAD00CE8F68 /* PurchaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHeaderView.swift; sourceTree = "<group>"; };
 		7395E0E02ADB1DAE00CE8F68 /* PurchaseBenetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseBenetList.swift; sourceTree = "<group>"; };
 		7395E0E12ADB1DAF00CE8F68 /* DiamondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondView.swift; sourceTree = "<group>"; };
-		739D76602CA75B0900B76892 /* PermissionScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionScope.swift; sourceTree = "<group>"; };
 		739D76622CA75B3900B76892 /* ExpandableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableView.swift; sourceTree = "<group>"; };
 		73B21C662CAAEF0B00959526 /* HKTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKTools.swift; sourceTree = "<group>"; };
 		73B21C692CAAEF0B00959526 /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
@@ -325,50 +316,33 @@
 		73B21CBD2CAAEF0B00959526 /* HKImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKImageTableViewCell.swift; sourceTree = "<group>"; };
 		73B21CBE2CAAEF0B00959526 /* HKImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		73B963DD2AE61B4F00D8918B /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
-		73D67E782ADB57E50097C323 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		73D67E7A2ADB58230097C323 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73D67E7B2ADB59520097C323 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		73D67E7C2ADB59530097C323 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		73D67E7D2ADB59640097C323 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73D67E7E2ADB596D0097C323 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
 		73D67E7F2ADB596E0097C323 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		73D67E802ADB596F0097C323 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		73D67E812ADB59800097C323 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		73D67E822ADB59800097C323 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		73D67E832ADB59800097C323 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73D67E842ADB59880097C323 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		73D67E852ADB59890097C323 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		73D67E862ADB59890097C323 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73D67E872ADB59900097C323 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		73D67E882ADB59910097C323 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		73D67E892ADB59910097C323 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73D67E8A2ADB59990097C323 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		73D67E8B2ADB59990097C323 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		73D67E8C2ADB599A0097C323 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73D67E8D2ADB599F0097C323 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Main.strings; sourceTree = "<group>"; };
 		73D67E8E2ADB59A00097C323 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		73D67E8F2ADB59A00097C323 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73D67E902ADB59A40097C323 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Main.strings; sourceTree = "<group>"; };
 		73D67E912ADB59A50097C323 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		73D67E922ADB59A50097C323 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73D67E932ADB59B20097C323 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Main.strings"; sourceTree = "<group>"; };
 		73D67E942ADB59B30097C323 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		73D67E952ADB59B40097C323 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		73D67E962ADB59F40097C323 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		73D67E972ADB59F40097C323 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		73D67E982ADB59F50097C323 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73D67E992ADB5A010097C323 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		73D67E9A2ADB5A020097C323 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		73D67E9B2ADB5A030097C323 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		73D67E9C2ADB5A090097C323 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		73D67E9D2ADB5A090097C323 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		73D67E9E2ADB5A0A0097C323 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		73D67E9F2ADB5A110097C323 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		73D67EA02ADB5A120097C323 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		73D67EA12ADB5A120097C323 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73D67EA22ADB5A220097C323 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
 		73D67EA32ADB5A230097C323 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		73D67EA42ADB5A250097C323 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		73E2EA7C2AE03319007B717F /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		8A0A6DCC1FE9F1CE00110AF2 /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
 		8A18E2E31FB3B47A0082201D /* WAStickersThirdParty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WAStickersThirdParty-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -510,6 +484,8 @@
 		C4BD2CFD262CE0EA005DA9A0 /* PentagonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PentagonView.swift; sourceTree = "<group>"; };
 		C4BD2CFE262CE0EA005DA9A0 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		C4BD2CFF262CE0EA005DA9A0 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		C4BEF18C2CB700400068A0E0 /* iPhotos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iPhotos.entitlements; sourceTree = "<group>"; };
+		C4D261272CFE43D500E98E35 /* RetouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetouchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -518,7 +494,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C44C7090249C132F00EC1E85 /* StoreKit.framework in Frameworks */,
+				C4BEF1872CB6FF6A0068A0E0 /* FacebookAEM in Frameworks */,
+				C4BEF18B2CB6FF6A0068A0E0 /* FacebookCore in Frameworks */,
 				8ABEBD8421029767005F348C /* WebP.framework in Frameworks */,
+				C4BEF1892CB6FF6A0068A0E0 /* FacebookBasics in Frameworks */,
 				73B963DE2AE61B4F00D8918B /* ARKit.framework in Frameworks */,
 				14B7874FE7A5630F389409E2 /* Pods_iPhotos.framework in Frameworks */,
 			);
@@ -551,34 +530,6 @@
 				7362FC182CAC4AAB00038319 /* art.scnassets */,
 			);
 			path = AR;
-			sourceTree = "<group>";
-		};
-		738790202AE74CE5007A12ED /* AirDraw */ = {
-			isa = PBXGroup;
-			children = (
-				738790212AE74CE5007A12ED /* ViewController.swift */,
-				739D76602CA75B0900B76892 /* PermissionScope.swift */,
-				738790222AE74CE5007A12ED /* images */,
-				738790252AE74CE5007A12ED /* float4x4+Extensions.swift */,
-				738790272AE74CE5007A12ED /* Shaders.metal */,
-				7387F8E32B5F748300337DB0 /* art.scnassets */,
-				7387902D2AE74CE5007A12ED /* SCNVector3Extensions.swift */,
-				7387902E2AE74CE5007A12ED /* ShaderTypes.h */,
-				7387902F2AE74CE5007A12ED /* NodeTechnique.plist */,
-				738790302AE74CE5007A12ED /* VertBrush.swift */,
-				738790352AE74CE5007A12ED /* NodeRender.metal */,
-			);
-			name = AirDraw;
-			path = ../AirDraw/AirDraw/AirDraw;
-			sourceTree = "<group>";
-		};
-		738790222AE74CE5007A12ED /* images */ = {
-			isa = PBXGroup;
-			children = (
-				738790232AE74CE5007A12ED /* plus@2x.png */,
-				738790242AE74CE5007A12ED /* stop@2x.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 		7395E0DD2ADB1D8F00CE8F68 /* V2 */ = {
@@ -775,18 +726,19 @@
 		8A22EDF71F9A9F40003A7F21 = {
 			isa = PBXGroup;
 			children = (
+				C4BEF18C2CB700400068A0E0 /* iPhotos.entitlements */,
 				739D76622CA75B3900B76892 /* ExpandableView.swift */,
 				8A22EE031F9A9F40003A7F21 /* AppDelegate.swift */,
-				73D67E792ADB57E50097C323 /* Localizable.strings */,
 				8A22EE071F9A9F40003A7F21 /* Main.storyboard */,
 				8A22EE0C1F9A9F40003A7F21 /* LaunchScreen.storyboard */,
 				8A22EE0A1F9A9F40003A7F21 /* Assets.xcassets */,
 				C49D2C55247D164A0007D174 /* StoredImage.xcdatamodeld */,
 				C484C2F6262CD510004E1180 /* Collage.h */,
 				7395690A2AE6146700A757B2 /* AirDraw.h */,
+				73E2EA7C2AE03319007B717F /* HomePageViewController.swift */,
+				C4D261262CFE43A100E98E35 /* Retouch */,
 				7362FC142CAC4A7600038319 /* AR */,
 				73B21C642CAAEF0B00959526 /* HeavenMemoirs */,
-				738790202AE74CE5007A12ED /* AirDraw */,
 				C4BD2CA5262CE0E9005DA9A0 /* CollageMaker */,
 				C44C7082249C118200EC1E85 /* Purchase */,
 				C4351DFC249027F0009FBDEF /* PhotoEditor */,
@@ -885,7 +837,6 @@
 				C4351DF8248FF976009FBDEF /* StyleClass.swift */,
 				C4351DF9248FF976009FBDEF /* InViewController.swift */,
 				C4320F9224C804B800E798EA /* CollageViewController.swift */,
-				73E2EA7C2AE03319007B717F /* HomePageViewController.swift */,
 			);
 			path = PhotoEditor;
 			sourceTree = "<group>";
@@ -1073,6 +1024,14 @@
 			path = Global;
 			sourceTree = "<group>";
 		};
+		C4D261262CFE43A100E98E35 /* Retouch */ = {
+			isa = PBXGroup;
+			children = (
+				C4D261272CFE43D500E98E35 /* RetouchViewController.swift */,
+			);
+			path = Retouch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1092,6 +1051,11 @@
 			dependencies = (
 			);
 			name = iPhotos;
+			packageProductDependencies = (
+				C4BEF1862CB6FF6A0068A0E0 /* FacebookAEM */,
+				C4BEF1882CB6FF6A0068A0E0 /* FacebookBasics */,
+				C4BEF18A2CB6FF6A0068A0E0 /* FacebookCore */,
+			);
 			productName = WAStickersThirdParty;
 			productReference = 8A22EE001F9A9F40003A7F21 /* iPhotos.app */;
 			productType = "com.apple.product-type.application";
@@ -1143,6 +1107,9 @@
 				it,
 			);
 			mainGroup = 8A22EDF71F9A9F40003A7F21;
+			packageReferences = (
+				C4BEF1852CB6FF6A0068A0E0 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			productRefGroup = 8A22EE011F9A9F40003A7F21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1197,7 +1164,6 @@
 				C4BD2D1A262CE0EA005DA9A0 /* Granada Blues Personal Use.ttf in Resources */,
 				C4BD2D28262CE0EA005DA9A0 /* Montez-Regular.ttf in Resources */,
 				C4BD2D0F262CE0EA005DA9A0 /* Advertising Script Monoline Trial.ttf in Resources */,
-				73D67E772ADB57E50097C323 /* Localizable.strings in Resources */,
 				C4BD2D16262CE0EA005DA9A0 /* Bucanera-font-FFP.ttf in Resources */,
 				8A22EE091F9A9F40003A7F21 /* Main.storyboard in Resources */,
 				C4BD2D2A262CE0EA005DA9A0 /* Pretty Girls Script Demo.ttf in Resources */,
@@ -1322,6 +1288,7 @@
 				C4BD2D31262CE0EA005DA9A0 /* JLAttributedTextView.swift in Sources */,
 				8A18E3351FBA5CA90082201D /* StickerPackManager.swift in Sources */,
 				7362FC282CAC4BD300038319 /* float4x4+Extensions.swift in Sources */,
+				C4D261282CFE43D500E98E35 /* RetouchViewController.swift in Sources */,
 				8A27F1331FD9EA08001B2BBD /* LinkTableViewCell.swift in Sources */,
 				8A18E2F01FB3B47D0082201D /* YYFrameImage.m in Sources */,
 				C4BD2D40262CE0EA005DA9A0 /* StickersVC.swift in Sources */,
@@ -1435,30 +1402,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		73D67E792ADB57E50097C323 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				73D67E782ADB57E50097C323 /* en */,
-				73D67E7A2ADB58230097C323 /* de */,
-				73D67E7C2ADB59530097C323 /* pt-BR */,
-				73D67E7D2ADB59640097C323 /* es */,
-				73D67E802ADB596F0097C323 /* es-419 */,
-				73D67E832ADB59800097C323 /* tr */,
-				73D67E862ADB59890097C323 /* ru */,
-				73D67E892ADB59910097C323 /* ko */,
-				73D67E8C2ADB599A0097C323 /* ja */,
-				73D67E8F2ADB59A00097C323 /* id */,
-				73D67E922ADB59A50097C323 /* hi */,
-				73D67E952ADB59B40097C323 /* fr-CA */,
-				73D67E982ADB59F50097C323 /* fr */,
-				73D67E9B2ADB5A030097C323 /* zh-Hans */,
-				73D67E9E2ADB5A0A0097C323 /* zh-Hant */,
-				73D67EA12ADB5A120097C323 /* ar */,
-				73D67EA42ADB5A250097C323 /* it */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
 		8A22EE071F9A9F40003A7F21 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1612,7 +1555,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1625,6 +1569,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CODE_SIGN_ENTITLEMENTS = iPhotos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
@@ -1639,7 +1584,10 @@
 				INFOPLIST_KEY_CFBundleDisplayName = iPhotos;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HeavenMemoirs-master/Pods/UMengUShare/UShareSDK/SocialLibraries/WeChat",
@@ -1664,6 +1612,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CODE_SIGN_ENTITLEMENTS = iPhotos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
@@ -1678,7 +1627,10 @@
 				INFOPLIST_KEY_CFBundleDisplayName = iPhotos;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HeavenMemoirs-master/Pods/UMengUShare/UShareSDK/SocialLibraries/WeChat",
@@ -1716,6 +1668,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4BEF1852CB6FF6A0068A0E0 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4BEF1862CB6FF6A0068A0E0 /* FacebookAEM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4BEF1852CB6FF6A0068A0E0 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookAEM;
+		};
+		C4BEF1882CB6FF6A0068A0E0 /* FacebookBasics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4BEF1852CB6FF6A0068A0E0 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookBasics;
+		};
+		C4BEF18A2CB6FF6A0068A0E0 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4BEF1852CB6FF6A0068A0E0 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C49D2C55247D164A0007D174 /* StoredImage.xcdatamodeld */ = {

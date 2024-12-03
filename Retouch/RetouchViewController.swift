@@ -7,7 +7,7 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
     private var currentImage: UIImage! // A imagem que será editada
     private var ciContext = CIContext() // Contexto do Core Image
     private var brushRadius: CGFloat = 10.0 // Raio do pincel para retoque
-    private var blurIntensity: CGFloat = 10.0 // Intensidade do blur
+    private var blurIntensity: CGFloat = 3.0 // Intensidade inicial do blur
     private var overlayLayer: CAShapeLayer! // Para desenhar o círculo de visualização
 
     override func viewDidLoad() {
@@ -69,8 +69,8 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
 
         // Adiciona slider para ajustar a intensidade do blur
         let intensitySlider = UISlider(frame: CGRect(x: 20, y: view.bounds.height - 60, width: view.bounds.width - 40, height: 40))
-        intensitySlider.minimumValue = 1 // Valor mínimo
-        intensitySlider.maximumValue = 30
+        intensitySlider.minimumValue = 1 // Valor mínimo ajustado para menor intensidade
+        intensitySlider.maximumValue = 10 // Intensidade máxima ajustada
         intensitySlider.value = Float(blurIntensity)
         intensitySlider.addTarget(self, action: #selector(blurIntensityChanged(_:)), for: .valueChanged)
         view.addSubview(intensitySlider)
@@ -127,7 +127,11 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
         overlayLayer.isHidden = false // Exibe o círculo temporariamente
         updateOverlay(at: location)
         performRetouch(at: location)
-        overlayLayer.isHidden = true // Oculta o círculo após o clique
+
+        // Oculta o círculo após um intervalo
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.overlayLayer.isHidden = true
+        }
     }
 
     @objc private func brushSizeChanged(_ sender: UISlider) {

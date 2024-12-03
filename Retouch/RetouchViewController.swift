@@ -31,7 +31,7 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
         scrollView.backgroundColor = .white
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
-        scrollView.isScrollEnabled = true
+        scrollView.bouncesZoom = true
         view.addSubview(scrollView)
 
         // Configuração do UIImageView
@@ -41,32 +41,15 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
         imageView.image = currentImage
         scrollView.addSubview(imageView)
 
-        // Adiciona UIPanGestureRecognizer para retoque com um dedo
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
-        panGesture.minimumNumberOfTouches = 1
-        panGesture.maximumNumberOfTouches = 1
-        scrollView.panGestureRecognizer.require(toFail: panGesture)
-        imageView.addGestureRecognizer(panGesture)
-
         // Adiciona UITapGestureRecognizer para retoque ao clicar
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
         imageView.addGestureRecognizer(tapGesture)
 
-        // Slider para ajustar o tamanho do pincel
-        let brushSlider = UISlider(frame: CGRect(x: 20, y: view.bounds.height - 100, width: view.bounds.width - 40, height: 40))
-        brushSlider.minimumValue = 5 // Valor mínimo
-        brushSlider.maximumValue = 100
-        brushSlider.value = Float(brushRadius)
-        brushSlider.addTarget(self, action: #selector(brushSizeChanged(_:)), for: .valueChanged)
-        view.addSubview(brushSlider)
-
-        // Slider para ajustar a intensidade do blur
-        let intensitySlider = UISlider(frame: CGRect(x: 20, y: view.bounds.height - 60, width: view.bounds.width - 40, height: 40))
-        intensitySlider.minimumValue = 1 // Valor mínimo
-        intensitySlider.maximumValue = 30
-        intensitySlider.value = Float(blurIntensity)
-        intensitySlider.addTarget(self, action: #selector(blurIntensityChanged(_:)), for: .valueChanged)
-        view.addSubview(intensitySlider)
+        // Adiciona UIPanGestureRecognizer para retoque com um dedo
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
+        panGesture.minimumNumberOfTouches = 1
+        panGesture.maximumNumberOfTouches = 1
+        imageView.addGestureRecognizer(panGesture)
 
         // Configuração da camada para o círculo de visualização
         overlayLayer = CAShapeLayer()
@@ -75,6 +58,22 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
         overlayLayer.lineWidth = 2
         overlayLayer.isHidden = true // Começa oculto
         imageView.layer.addSublayer(overlayLayer)
+
+        // Adiciona slider para ajustar o tamanho do pincel
+        let brushSlider = UISlider(frame: CGRect(x: 20, y: view.bounds.height - 100, width: view.bounds.width - 40, height: 40))
+        brushSlider.minimumValue = 5 // Valor mínimo
+        brushSlider.maximumValue = 100
+        brushSlider.value = Float(brushRadius)
+        brushSlider.addTarget(self, action: #selector(brushSizeChanged(_:)), for: .valueChanged)
+        view.addSubview(brushSlider)
+
+        // Adiciona slider para ajustar a intensidade do blur
+        let intensitySlider = UISlider(frame: CGRect(x: 20, y: view.bounds.height - 60, width: view.bounds.width - 40, height: 40))
+        intensitySlider.minimumValue = 1 // Valor mínimo
+        intensitySlider.maximumValue = 30
+        intensitySlider.value = Float(blurIntensity)
+        intensitySlider.addTarget(self, action: #selector(blurIntensityChanged(_:)), for: .valueChanged)
+        view.addSubview(intensitySlider)
     }
 
     private func setupNavigationBar() {

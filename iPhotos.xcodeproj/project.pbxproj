@@ -59,7 +59,7 @@
 		73B21CE02CAAEF0B00959526 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 73B21CA32CAAEF0B00959526 /* spark.png */; };
 		73B21CE12CAAEF0B00959526 /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 73B21CA42CAAEF0B00959526 /* bokeh.png */; };
 		73B21CE22CAAEF0B00959526 /* 红昭愿.aac in Resources */ = {isa = PBXBuildFile; fileRef = 73B21CA52CAAEF0B00959526 /* 红昭愿.aac */; };
-		73B21CE32CAAEF0B00959526 /* 花 が とぶ 飛ぶ.aac in Resources */ = {isa = PBXBuildFile; fileRef = 73B21CA62CAAEF0B00959526 /* 花 が とぶ 飛ぶ.aac */; };
+		73B21CE32CAAEF0B00959526 /* 花 が とぶ 飛ぶ.aac in Resources */ = {isa = PBXBuildFile; fileRef = 73B21CA62CAAEF0B00959526 /* 花 が とぶ 飛ぶ.aac */; };
 		73B21CE42CAAEF0B00959526 /* Beautiful In White.aac in Resources */ = {isa = PBXBuildFile; fileRef = 73B21CA72CAAEF0B00959526 /* Beautiful In White.aac */; };
 		73B21CE52CAAEF0B00959526 /* 至此流年各天涯.aac in Resources */ = {isa = PBXBuildFile; fileRef = 73B21CA82CAAEF0B00959526 /* 至此流年各天涯.aac */; };
 		73B21CE62CAAEF0B00959526 /* 陪你过冬天.aac in Resources */ = {isa = PBXBuildFile; fileRef = 73B21CA92CAAEF0B00959526 /* 陪你过冬天.aac */; };
@@ -111,6 +111,7 @@
 		8ABEBD8421029767005F348C /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABEBD8321029766005F348C /* WebP.framework */; };
 		8ACB6A981FE9CB7700A564BB /* Limits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB6A971FE9CB7700A564BB /* Limits.swift */; };
 		8ADA60761FD71F69006C9BBA /* AllStickerPacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADA60751FD71F69006C9BBA /* AllStickerPacksViewController.swift */; };
+		C4066F4D2CFF9DCD0081BDF3 /* BeautificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4066F4C2CFF9DCD0081BDF3 /* BeautificationViewController.swift */; };
 		C4320F9324C804B800E798EA /* CollageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4320F9224C804B800E798EA /* CollageViewController.swift */; };
 		C4351DFA248FF976009FBDEF /* StyleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DF8248FF976009FBDEF /* StyleClass.swift */; };
 		C4351DFB248FF976009FBDEF /* InViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4351DF9248FF976009FBDEF /* InViewController.swift */; };
@@ -293,7 +294,7 @@
 		73B21CA32CAAEF0B00959526 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		73B21CA42CAAEF0B00959526 /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
 		73B21CA52CAAEF0B00959526 /* 红昭愿.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "红昭愿.aac"; sourceTree = "<group>"; };
-		73B21CA62CAAEF0B00959526 /* 花 が とぶ 飛ぶ.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "花 が とぶ 飛ぶ.aac"; sourceTree = "<group>"; };
+		73B21CA62CAAEF0B00959526 /* 花 が とぶ 飛ぶ.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "花 が とぶ 飛ぶ.aac"; sourceTree = "<group>"; };
 		73B21CA72CAAEF0B00959526 /* Beautiful In White.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Beautiful In White.aac"; sourceTree = "<group>"; };
 		73B21CA82CAAEF0B00959526 /* 至此流年各天涯.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "至此流年各天涯.aac"; sourceTree = "<group>"; };
 		73B21CA92CAAEF0B00959526 /* 陪你过冬天.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "陪你过冬天.aac"; sourceTree = "<group>"; };
@@ -391,6 +392,7 @@
 		8ADA60751FD71F69006C9BBA /* AllStickerPacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStickerPacksViewController.swift; sourceTree = "<group>"; };
 		8C309CBD9B6357A9D51D7FE2 /* Pods_iPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B053FE397E92915366B66742 /* Pods-iPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPhotos.debug.xcconfig"; path = "Target Support Files/Pods-iPhotos/Pods-iPhotos.debug.xcconfig"; sourceTree = "<group>"; };
+		C4066F4C2CFF9DCD0081BDF3 /* BeautificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautificationViewController.swift; sourceTree = "<group>"; };
 		C4320F9224C804B800E798EA /* CollageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageViewController.swift; sourceTree = "<group>"; };
 		C4351DF8248FF976009FBDEF /* StyleClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleClass.swift; sourceTree = "<group>"; };
 		C4351DF9248FF976009FBDEF /* InViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InViewController.swift; sourceTree = "<group>"; };
@@ -660,7 +662,7 @@
 				73B21CA32CAAEF0B00959526 /* spark.png */,
 				73B21CA42CAAEF0B00959526 /* bokeh.png */,
 				73B21CA52CAAEF0B00959526 /* 红昭愿.aac */,
-				73B21CA62CAAEF0B00959526 /* 花 が とぶ 飛ぶ.aac */,
+				73B21CA62CAAEF0B00959526 /* 花 が とぶ 飛ぶ.aac */,
 				73B21CA72CAAEF0B00959526 /* Beautiful In White.aac */,
 				73B21CA82CAAEF0B00959526 /* 至此流年各天涯.aac */,
 				73B21CA92CAAEF0B00959526 /* 陪你过冬天.aac */,
@@ -736,6 +738,7 @@
 				C484C2F6262CD510004E1180 /* Collage.h */,
 				7395690A2AE6146700A757B2 /* AirDraw.h */,
 				73E2EA7C2AE03319007B717F /* HomePageViewController.swift */,
+				C4066F4B2CFF9DBA0081BDF3 /* Beautification */,
 				C4D261262CFE43A100E98E35 /* Retouch */,
 				7362FC142CAC4A7600038319 /* AR */,
 				73B21C642CAAEF0B00959526 /* HeavenMemoirs */,
@@ -827,6 +830,14 @@
 				8A6001CB20298225001EC448 /* GradientViewWhats.swift */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		C4066F4B2CFF9DBA0081BDF3 /* Beautification */ = {
+			isa = PBXGroup;
+			children = (
+				C4066F4C2CFF9DCD0081BDF3 /* BeautificationViewController.swift */,
+			);
+			path = Beautification;
 			sourceTree = "<group>";
 		};
 		C4351DFC249027F0009FBDEF /* PhotoEditor */ = {
@@ -1172,7 +1183,7 @@
 				C4BD2D1D262CE0EA005DA9A0 /* The Heart of Everything Demo.ttf in Resources */,
 				73B21CDC2CAAEF0B00959526 /* 岁月神偷.aac in Resources */,
 				C4BD2D13262CE0EA005DA9A0 /* waltograph42.otf in Resources */,
-				73B21CE32CAAEF0B00959526 /* 花 が とぶ 飛ぶ.aac in Resources */,
+				73B21CE32CAAEF0B00959526 /* 花 が とぶ 飛ぶ.aac in Resources */,
 				C49D2C52247D0C550007D174 /* placeholderMulticolor.png in Resources */,
 				C4BD2D12262CE0EA005DA9A0 /* Script Writing.ttf in Resources */,
 				C4BD2D2C262CE0EA005DA9A0 /* Miama.ttf in Resources */,
@@ -1245,6 +1256,8 @@
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
+				"${BUILT_PRODUCTS_DIR}/Vivid/Vivid.framework",
+				"${BUILT_PRODUCTS_DIR}/YUCIHighPassSkinSmoothing/YUCIHighPassSkinSmoothing.framework",
 				"${BUILT_PRODUCTS_DIR}/ZoomImageView/ZoomImageView.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -1264,6 +1277,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Vivid.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YUCIHighPassSkinSmoothing.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZoomImageView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -1348,6 +1363,7 @@
 				C4BD2D02262CE0EA005DA9A0 /* FramesCell.swift in Sources */,
 				73B21CC12CAAEF0B00959526 /* TZAssetCell.m in Sources */,
 				73B21CC92CAAEF0B00959526 /* TZImageManager.m in Sources */,
+				C4066F4D2CFF9DCD0081BDF3 /* BeautificationViewController.swift in Sources */,
 				7362FC1D2CAC4B4D00038319 /* SCNVector3Extensions.swift in Sources */,
 				73B21CBF2CAAEF0B00959526 /* HKTools.swift in Sources */,
 				C4BD2D37262CE0EA005DA9A0 /* MagnificationButton.m in Sources */,

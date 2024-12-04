@@ -6,6 +6,7 @@ target 'iPhotos' do
   use_frameworks!
 
   # Pods for iPhotos
+  pod 'YUCIHighPassSkinSmoothing'
   pod 'CLImageEditor'
   pod "Agrume" 
   pod 'Google-Mobile-Ads-SDK', '7.69.0'
@@ -17,7 +18,6 @@ target 'iPhotos' do
   pod 'OpalImagePicker'
   pod 'ZoomImageView'
   pod 'SnapKit', '~> 5.0.0'
-
 end
 
 post_install do |installer|

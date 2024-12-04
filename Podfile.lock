@@ -66,6 +66,9 @@ PODS:
     - SVProgressHUD/Core (= 2.3.1)
   - SVProgressHUD/Core (2.3.1)
   - SwiftyGif (5.4.5)
+  - Vivid (0.9)
+  - YUCIHighPassSkinSmoothing (1.4):
+    - Vivid
   - ZoomImageView (0.6.0)
 
 DEPENDENCIES:
@@ -79,6 +82,7 @@ DEPENDENCIES:
   - OpalImagePicker
   - SnapKit (~> 5.0.0)
   - SVProgressHUD
+  - YUCIHighPassSkinSmoothing
   - ZoomImageView
 
 SPEC REPOS:
@@ -101,6 +105,8 @@ SPEC REPOS:
     - SnapKit
     - SVProgressHUD
     - SwiftyGif
+    - Vivid
+    - YUCIHighPassSkinSmoothing
     - ZoomImageView
 
 SPEC CHECKSUMS:
@@ -122,8 +128,10 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
   SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4
+  Vivid: 0fde7409beac71224deb151dd78f98a5bb860497
+  YUCIHighPassSkinSmoothing: 8418fd1bf605ec22b647c57745b863b352f72097
   ZoomImageView: 2a88d0c10ad30b9a06c8f5660d51623fb32beed5
 
-PODFILE CHECKSUM: a8eebfcf295d6e27c27088a984f8352ec4a4c91b
+PODFILE CHECKSUM: 103ce0287d79a614a5d90d871f79ce1ffc8ff764
 
 COCOAPODS: 1.15.2

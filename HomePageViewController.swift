@@ -56,10 +56,14 @@ class HomePageViewController: UIViewController {
     }()
     
     lazy var stickersButton = ImageButton(withImage: UIImage(named: "novo-chat"), andText: "Stickers", action: stickersButtonAction)
-    lazy var augmentedReallityButton = ImageButton(withImage: UIImage(named: "filter1"), andText: "AR", action: augmentedReallityButtonAction)
+    lazy var augmentedReallityButton = ImageButton(withImage: UIImage(named: "virtual-reality"), andText: "AR", action: augmentedReallityButtonAction)
     lazy var collageButton = ImageButton(withImage: UIImage(named: "stickerImage"), andText: "Collage", action: collageButtonAction)
     lazy var gridButton = ImageButton(withImage: UIImage(named: "22"), andText: "Grid", action: gridButtonAction)
-    lazy var retouchButton = ImageButton(withImage: UIImage(named: "22"), andText: "Retouch", action: retouchButtonAction)
+    
+    lazy var retouchButton = TextButton(text: "Retouch", action: retouchButtonAction)
+    
+    lazy var beutifyButton = TextButton(text: "Beautification", action: beutifyButtonAction)
+    
     lazy var editPhotoButton = TextButton(text: "Edit Photo", action: editPhotoButtonAction)
     
     override func viewDidLoad() {
@@ -107,6 +111,7 @@ class HomePageViewController: UIViewController {
         containerStack.addArrangedSubview(collageOptionsStack)
         containerStack.addArrangedSubview(editPhotoButton)
         containerStack.addArrangedSubview(retouchButton)
+        containerStack.addArrangedSubview(beutifyButton)
         
         editOptionsStack.addArrangedSubview(gridButton)
         editOptionsStack.addArrangedSubview(augmentedReallityButton)
@@ -159,6 +164,10 @@ class HomePageViewController: UIViewController {
             make.height.equalTo(54)
         }
         
+        beutifyButton.snp.makeConstraints { make in
+            make.height.equalTo(54)
+        }
+        
         editPhotoButton.snp.makeConstraints { make in
             make.height.equalTo(54)
         }
@@ -196,10 +205,15 @@ extension HomePageViewController {
         self.navigationController?.pushViewController(obj, animated: true)
     }
     
+    func beutifyButtonAction() {
+        let controller = DefaultRenderContextViewController()
+        let navigation = UINavigationController(rootViewController: controller)
+        navigation.modalPresentationStyle = .fullScreen
+        present(navigation, animated: true)
+    }
+    
     func retouchButtonAction() {
         let controller = ImageEditorViewController()
-        controller.setImage(UIImage(named: "filter1")!)
-        controller.view.backgroundColor = .red
         let navigation = UINavigationController(rootViewController: controller)
         navigation.modalPresentationStyle = .fullScreen
         present(navigation, animated: true)

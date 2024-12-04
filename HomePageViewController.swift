@@ -206,12 +206,11 @@ extension HomePageViewController {
     }
     
     func beutifyButtonAction() {
-        let contentView = ContentView()
-            .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
+        let photoEditView = PhotoEditView(image: UIImage(named: "sample")) // Substitua por uma imagem padrão válida
             .environmentObject(PECtl.shared)
             .environmentObject(Data123.shared)
         
-        let hostingController = UIHostingController(rootView: contentView)
+        let hostingController = UIHostingController(rootView: photoEditView)
         hostingController.modalPresentationStyle = .fullScreen
         present(hostingController, animated: true)
     }

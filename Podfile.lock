@@ -61,6 +61,7 @@ PODS:
   - nanopb/encode (2.30908.0)
   - OpalImagePicker (3.0.0)
   - PromisesObjC (2.4.0)
+  - QCropper (0.1.7)
   - SnapKit (5.0.1)
   - SVProgressHUD (2.3.1):
     - SVProgressHUD/Core (= 2.3.1)
@@ -80,6 +81,7 @@ DEPENDENCIES:
   - ImageScrollView
   - IQKeyboardManagerSwift
   - OpalImagePicker
+  - QCropper
   - SnapKit (~> 5.0.0)
   - SVProgressHUD
   - YUCIHighPassSkinSmoothing
@@ -102,6 +104,7 @@ SPEC REPOS:
     - nanopb
     - OpalImagePicker
     - PromisesObjC
+    - QCropper
     - SnapKit
     - SVProgressHUD
     - SwiftyGif
@@ -125,6 +128,7 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   OpalImagePicker: 38e772dd93a54431fc516b33e1f337c50f745834
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
+  QCropper: aef6bad1e683e62b501fb8258359ccd10c68b4f2
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
   SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4
@@ -132,6 +136,6 @@ SPEC CHECKSUMS:
   YUCIHighPassSkinSmoothing: 8418fd1bf605ec22b647c57745b863b352f72097
   ZoomImageView: 2a88d0c10ad30b9a06c8f5660d51623fb32beed5
 
-PODFILE CHECKSUM: 103ce0287d79a614a5d90d871f79ce1ffc8ff764
+PODFILE CHECKSUM: 1d821a636590a601e969704f49668d85b4be17e3
 
 COCOAPODS: 1.15.2

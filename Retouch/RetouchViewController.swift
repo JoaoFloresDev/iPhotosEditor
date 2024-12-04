@@ -60,7 +60,7 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
         let imageViewHeight = min(imageHeight, availableHeight * 0.75) // Mantém 75% da altura disponível
 
         // Configuração do UIImageView
-        imageView = UIImageView(frame: CGRect(x: 0, y: navigationBarHeight, width: view.bounds.width, height: imageViewHeight))
+        imageView = UIImageView(frame: CGRect(x: 0, y: navigationBarHeight - 20, width: view.bounds.width, height: imageViewHeight))
         imageView.contentMode = .scaleAspectFit
         imageView.isUserInteractionEnabled = true
         imageView.image = currentImage
@@ -86,7 +86,7 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
 
         // Adiciona slider para ajustar o tamanho do pincel
         let brushSlider = createSlider(
-            frame: CGRect(x: 20, y: view.bounds.height - 100, width: view.bounds.width - 40, height: 40),
+            frame: CGRect(x: 20, y: view.bounds.height - 140, width: view.bounds.width - 40, height: 40),
             minValue: 5,
             maxValue: 100,
             initialValue: Float(brushRadius),
@@ -97,7 +97,7 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
         
         // Adiciona slider para ajustar a intensidade do blur
         let intensitySlider = createSlider(
-            frame: CGRect(x: 20, y: view.bounds.height - 60, width: view.bounds.width - 40, height: 40),
+            frame: CGRect(x: 20, y: view.bounds.height - 100, width: view.bounds.width - 40, height: 40),
             minValue: 1,
             maxValue: 10,
             initialValue: Float(blurIntensity),
@@ -108,11 +108,15 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
         
         amountSlider.minimumValue = 0
         amountSlider.maximumValue = 1
-        amountSlider.value = 0.75 // Valor inicial padrão
+        amountSlider.value = 0 // Valor inicial padrão
         amountSlider.addTarget(self, action: #selector(sliderValueChanged), for: .valueChanged)
+        
+        let thumbImage = createThumbWithIcon(iconName: "face.dashed.fill", size: CGSize(width: 30, height: 30))
+        amountSlider.setThumbImage(thumbImage, for: .normal)
+        
         view.addSubview(amountSlider)
         amountSlider.snp.makeConstraints { make in
-            make.top.equalTo(brushSlider.snp.bottom).offset(20)
+            make.top.equalTo(brushSlider.snp.bottom).offset(40)
             make.leading.trailing.equalToSuperview().inset(16)
         }
     }

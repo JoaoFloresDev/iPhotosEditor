@@ -10,6 +10,16 @@ import Foundation
 import UIKit
 
 enum Constants {
+    static var supportFilters:[FilterModel] = [
+        FilterModel("Brightness", edit: EditMenu.exposure),
+        FilterModel("Contrast", edit: EditMenu.contrast),
+        FilterModel("Saturation", edit: EditMenu.saturation),
+        FilterModel("White Blance",image:"temperature", edit: EditMenu.white_balance),
+        FilterModel("Tone",image: "tone", edit: EditMenu.tone),
+        FilterModel("HSL",image: "hls", edit: EditMenu.hls),
+        FilterModel("Fade", edit: EditMenu.fade),
+    ]
+    
     struct UI {
         static let contentWidth: CGFloat                 = 280.0
         static let dialogHeightSinglePermission: CGFloat = 260.0

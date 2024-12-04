@@ -216,8 +216,8 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     //    Functions Add Stickers
     // --------------------------------------------------------------------------------
     
-    var modelData = ModelController().fetchImageObjectsInit()
-    var modelController = ModelController()
+//    var modelData = ModelController().fetchImageObjectsInit()
+//    var modelController = ModelController()
     
     //    MARK: - Gallery Manage
     @objc func addPhotoPressed(button: UIButton) {
@@ -251,47 +251,47 @@ class StickerPackViewController: UIViewController, UICollectionViewDataSource, U
     
     // MARK: - Collection Update
     func populateStickersInit() {
-        let images = modelData
-        for image in images {
-            do {
-                let sticker: Sticker = try Sticker(contentsOfFile: "placeholderGreen.png", emojis: nil)
-                
-                let aux = image.resizeToApprox(sizeInMB: 1)
-                let imageData = ImageData(data: aux, type: ImageDataExtension.png)
-                sticker.imageData = imageData
-                
-                stickerPack!.stickers.append(sticker)
-            } catch {
-                print(error)
-            }
-        }
+//        let images = modelData
+//        for image in images {
+//            do {
+//                let sticker: Sticker = try Sticker(contentsOfFile: "placeholderGreen.png", emojis: nil)
+//                
+//                let aux = image.resizeToApprox(sizeInMB: 1)
+//                let imageData = ImageData(data: aux, type: ImageDataExtension.png)
+//                sticker.imageData = imageData
+//                
+//                stickerPack!.stickers.append(sticker)
+//            } catch {
+//                print(error)
+//            }
+//        }
     }
     
     func insertNewSticker(image: UIImage) {
-        modelController.saveImageObject(image: image)
-        
-        do {
-            let sticker: Sticker = try Sticker(contentsOfFile: "placeholderGreen.png", emojis: nil)
-            let aux = image.resizeToApprox(sizeInMB: 1)
-            let imageData = ImageData(data: aux, type: ImageDataExtension.png)
-            sticker.imageData = imageData
-            
-            stickerPack!.stickers.append(sticker)
-            
-        } catch {
-            print(error)
-        }
-        
-        stickersCollectionView.reloadData()
+//        modelController.saveImageObject(image: image)
+//        
+//        do {
+//            let sticker: Sticker = try Sticker(contentsOfFile: "placeholderGreen.png", emojis: nil)
+//            let aux = image.resizeToApprox(sizeInMB: 1)
+//            let imageData = ImageData(data: aux, type: ImageDataExtension.png)
+//            sticker.imageData = imageData
+//            
+//            stickerPack!.stickers.append(sticker)
+//            
+//        } catch {
+//            print(error)
+//        }
+//        
+//        stickersCollectionView.reloadData()
     }
     
     func removeSticker(index: Int) {
-        if(index >= 0) {
-            print("--- index:", index)
-            self.modelController.deleteImageObject(imageIndex: index)
-            stickerPack.stickers.remove(at: index + 3)
-            stickersCollectionView.reloadData()
-        }
+//        if(index >= 0) {
+//            print("--- index:", index)
+//            self.modelController.deleteImageObject(imageIndex: index)
+//            stickerPack.stickers.remove(at: index + 3)
+//            stickersCollectionView.reloadData()
+//        }
     }
     
     // MARK: - Share Button

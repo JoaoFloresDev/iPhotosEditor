@@ -18,6 +18,7 @@ target 'iPhotos' do
   pod 'OpalImagePicker'
   pod 'ZoomImageView'
   pod 'SnapKit', '~> 5.0.0'
+pod 'QCropper'
 end
 
 post_install do |installer|

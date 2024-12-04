@@ -5,7 +5,7 @@
 //  Created by Joao Victor Flores da Costa on 18/10/23.
 //  Copyright © 2023 WhatsApp. All rights reserved.
 //
-
+import SwiftUI
 import Foundation
 import UIKit
 import SnapKit
@@ -62,7 +62,7 @@ class HomePageViewController: UIViewController {
     
     lazy var retouchButton = TextButton(text: "Retouch", action: retouchButtonAction)
     
-    lazy var beutifyButton = TextButton(text: "Beautification", action: beutifyButtonAction)
+    lazy var beutifyButton = TextButton(text: "Filters", action: beutifyButtonAction)
     
     lazy var editPhotoButton = TextButton(text: "Edit Photo", action: editPhotoButtonAction)
     
@@ -206,10 +206,14 @@ extension HomePageViewController {
     }
     
     func beutifyButtonAction() {
-        let controller = DefaultRenderContextViewController()
-        let navigation = UINavigationController(rootViewController: controller)
-        navigation.modalPresentationStyle = .fullScreen
-        present(navigation, animated: true)
+        let contentView = ContentView()
+            .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
+            .environmentObject(PECtl.shared)
+            .environmentObject(Data123.shared)
+        
+        let hostingController = UIHostingController(rootView: contentView)
+        hostingController.modalPresentationStyle = .fullScreen
+        present(hostingController, animated: true)
     }
     
     func retouchButtonAction() {

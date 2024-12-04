@@ -1,5 +1,5 @@
 {
-  "originHash" : "ca3cf5f8f83d297b47d2cb0edff3e06f294951e2e06fa55cfc82831103499b2a",
+  "originHash" : "2f9be7ffdf5f7f504649a6bda60056f96e873c1abba533dbd317d7de04a84d72",
   "pins" : [
     {
       "identity" : "facebook-ios-sdk",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "c19607d535864533523d1f437c84035e5fb101cf",
         "version" : "14.1.0"
+      }
+    },
+    {
+      "identity" : "pixelenginepackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/khanhuitse05/PixelEnginePackage",
+      "state" : {
+        "revision" : "d3eaf69accc4396f807fe8497efe03f4f33c5763",
+        "version" : "1.0.0"
       }
     }
   ],

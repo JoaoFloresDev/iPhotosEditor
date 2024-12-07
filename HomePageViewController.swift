@@ -40,6 +40,13 @@ class HomePageViewController: UIViewController {
         return stackview
     }()
     
+    lazy var beautyOptionsStack: UIStackView = {
+        let stackview = UIStackView()
+        stackview.axis = .horizontal
+        stackview.spacing = 24
+        return stackview
+    }()
+    
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "iPhotos"
@@ -60,9 +67,8 @@ class HomePageViewController: UIViewController {
     lazy var collageButton = ImageButton(withImage: UIImage(named: "stickerImage"), andText: "Collage", action: collageButtonAction)
     lazy var gridButton = ImageButton(withImage: UIImage(named: "22"), andText: "Grid", action: gridButtonAction)
     
-    lazy var retouchButton = TextButton(text: "Retouch", action: retouchButtonAction)
-    
-    lazy var beutifyButton = TextButton(text: "Filters", action: beutifyButtonAction)
+    lazy var retouchButton = ImageButton(withImage: UIImage(systemName: "sparkles"), andText: "Retouch", action: retouchButtonAction)
+    lazy var beutifyButton = ImageButton(withImage: UIImage(systemName: "camera"), andText: "Filters", action: beutifyButtonAction)
     
     lazy var editPhotoButton = TextButton(text: "Edit Photo", action: editPhotoButtonAction)
     
@@ -108,16 +114,18 @@ class HomePageViewController: UIViewController {
         view.addSubview(premiumVersionButton)
         view.addSubview(containerStack)
         containerStack.addArrangedSubview(editOptionsStack)
+        containerStack.addArrangedSubview(beautyOptionsStack)
         containerStack.addArrangedSubview(collageOptionsStack)
         containerStack.addArrangedSubview(editPhotoButton)
-        containerStack.addArrangedSubview(retouchButton)
-        containerStack.addArrangedSubview(beutifyButton)
         
         editOptionsStack.addArrangedSubview(gridButton)
         editOptionsStack.addArrangedSubview(augmentedReallityButton)
         
         collageOptionsStack.addArrangedSubview(collageButton)
         collageOptionsStack.addArrangedSubview(stickersButton)
+        
+        beautyOptionsStack.addArrangedSubview(retouchButton)
+        beautyOptionsStack.addArrangedSubview(beutifyButton)
         
         setupConstraints()
     }
@@ -161,11 +169,13 @@ class HomePageViewController: UIViewController {
         }
         
         retouchButton.snp.makeConstraints { make in
-            make.height.equalTo(54)
+            make.width.equalTo(gridButton)
+            make.height.equalTo(90)
         }
         
         beutifyButton.snp.makeConstraints { make in
-            make.height.equalTo(54)
+            make.width.equalTo(gridButton)
+            make.height.equalTo(90)
         }
         
         editPhotoButton.snp.makeConstraints { make in
@@ -206,7 +216,7 @@ extension HomePageViewController {
     }
     
     func beutifyButtonAction() {
-        let photoEditView = PhotoEditView(image: UIImage(named: "sample")) // Substitua por uma imagem padrão válida
+        let photoEditView = PhotoEditView(image: UIImage(named: "sample"))
             .environmentObject(PECtl.shared)
             .environmentObject(Data123.shared)
         

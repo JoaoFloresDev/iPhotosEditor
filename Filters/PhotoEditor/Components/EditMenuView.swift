@@ -41,11 +41,11 @@ struct EditMenuView: View {
                         }){
                             IconButton(self.currentView == .filter ? "edit-color-highlight" : "edit-color")
                         }
-                        Button(action:{
-                            self.currentView = .recipe
-                        }){
-                            IconButton(self.currentView == .recipe ? "edit-recipe-highlight" : "edit-recipe")
-                        }
+//                        Button(action:{
+//                            self.currentView = .recipe
+//                        }){
+//                            IconButton(self.currentView == .recipe ? "edit-recipe-highlight" : "edit-recipe")
+//                        }
                         Button(action:{
                             self.shared.didReceive(action: PECtlAction.undo)
                         }){
@@ -63,9 +63,9 @@ struct EditMenuView: View {
                     if(self.currentView == .lut){
                         LutMenuUI()
                     }
-                    if(self.currentView == .recipe){
-                        RecipeMenuUI()
-                    }
+//                    if(self.currentView == .recipe){
+//                        RecipeMenuUI()
+//                    }
                 }
                 Spacer()
             }
@@ -79,5 +79,5 @@ struct EditMenuView: View {
 public enum EditView{
     case lut
     case filter
-    case recipe
+//    case recipe
 }

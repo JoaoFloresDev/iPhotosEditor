@@ -87,7 +87,14 @@ struct LutMenuUILoading: View{
     var body: some View{
         HStack(spacing: 12){
             Spacer().frame(width: 0)
-            LutLoadingButton(name: "Original", on: true)
+            VStack(spacing: 16) {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                    .scaleEffect(2)
+                    SwiftUI.Text("Loading...")
+                    .font(.footnote)
+                    .foregroundColor(.white)
+            }
             Rectangle()
                 .fill(Color.myDivider)
                 .frame(width: 1, height: 92)

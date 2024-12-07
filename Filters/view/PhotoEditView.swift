@@ -2,7 +2,6 @@ import SwiftUI
 
 struct PhotoEditView: View {
     init(image initImage: UIImage?) {
-        print("Photo edit: init")
         guard let image = initImage else {
             return
         }
@@ -12,7 +11,7 @@ struct PhotoEditView: View {
         }
     }
     
-    @State private var showImagePicker = true // Inicializado como true para abrir ao carregar a tela
+    @State private var showImagePicker = true
     @State private var pickImage: UIImage?
     @EnvironmentObject var shared: PECtl
     @Environment(\.presentationMode) var presentationMode

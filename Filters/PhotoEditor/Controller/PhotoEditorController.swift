@@ -63,11 +63,6 @@ class PECtl : ObservableObject{
     }
     
     func setImage(image:UIImage) {
-        
-        /// resetUI
-        if(lutsCtrl.loadingLut == true){
-            return
-        }
         currentFilter = FilterModel.noneFilterModel
         self.originUI = image
         

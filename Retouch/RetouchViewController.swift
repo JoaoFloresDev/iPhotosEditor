@@ -195,9 +195,31 @@ class ImageEditorViewController: UIViewController, UIScrollViewDelegate {
 
     @objc private func shareImage() {
         guard let image = currentImage else { return }
+        
         let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        
+        // Detectar se a atividade foi concluída
+        activityVC.completionWithItemsHandler = { (activityType, completed, returnedItems, error) in
+            if completed {
+                self.showShareSuccessAlert()
+            }
+        }
+        
         present(activityVC, animated: true)
     }
+
+    private func showShareSuccessAlert() {
+        let alertController = UIAlertController(
+            title: "Success!",
+            message: "Your image has been successfully shared!",
+            preferredStyle: .alert
+        )
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        present(alertController, animated: true)
+    }
+
 
     private func presentImagePicker() {
         let imagePicker = UIImagePickerController()

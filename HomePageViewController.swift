@@ -5,6 +5,7 @@
 //  Created by Joao Victor Flores da Costa on 18/10/23.
 //  Copyright © 2023 WhatsApp. All rights reserved.
 //
+import StoreKit
 import SwiftUI
 import Foundation
 import UIKit
@@ -75,14 +76,62 @@ class HomePageViewController: UIViewController {
     override func viewDidLoad() {
         setupViews()
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
-        if !(RazeFaceProducts.store.isProductPurchased("NoAds.iPhotos") || (UserDefaults.standard.object(forKey: "NoAds.iPhotos") != nil)) {
-            if check30DaysPassed() {
+        super.viewDidAppear(animated)
+        requestReviewIfNeeded()
+    }
+
+    func requestReviewIfNeeded() {
+        let launchCountKey = "launchCount_iPhotos"
+        var launchCount = UserDefaults.standard.integer(forKey: launchCountKey)
+        
+        launchCount += 1
+        UserDefaults.standard.set(launchCount, forKey: launchCountKey)
+        
+        if launchCount % 8 == 0 {
+            requestReview()
+        } else if launchCount == 16 {
+            showImprovementSuggestionAlert(on: self)
+        } else if launchCount > 26 {
+            if !(RazeFaceProducts.store.isProductPurchased("NoAds.iPhotos") || (UserDefaults.standard.object(forKey: "NoAds.iPhotos") != nil)) {
                 purchaseAction()
             }
         }
     }
+
+    func requestReview() {
+        if #available(iOS 14.0, *) {
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                SKStoreReviewController.requestReview(in: windowScene)
+            }
+        } else if #available(iOS 10.3, *) {
+            SKStoreReviewController.requestReview()
+        }
+    }
+    func showImprovementSuggestionAlert(on viewController: UIViewController) {
+        let alertController = UIAlertController(
+            title: "Suggestions for improvement?",
+            message: "Your feedback is very important! Help us get even better.",
+            preferredStyle: .alert
+        )
+        
+        let rateAction = UIAlertAction(title: "Rate now", style: .default) { _ in
+            let appID = "1517929511"
+            if let url = URL(string: "itms-apps://itunes.apple.com/app/id\(appID)?action=write-review"),
+               UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+        
+        let laterAction = UIAlertAction(title: "Not now", style: .cancel, handler: nil)
+        
+        alertController.addAction(rateAction)
+        alertController.addAction(laterAction)
+        
+        viewController.present(alertController, animated: true, completion: nil)
+    }
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -92,20 +141,6 @@ class HomePageViewController: UIViewController {
     func saveTodayDate() {
         let now = Date()
         UserDefaults.standard.set(now, forKey: "LastSavedDate")
-    }
-
-    func check30DaysPassed() -> Bool {
-        if let lastSavedDate = UserDefaults.standard.object(forKey: "LastSavedDate") as? Date {
-            let dayDifference = Calendar.current.dateComponents([.day], from: lastSavedDate, to: Date()).day ?? 0
-            if dayDifference >= 17 {
-                saveTodayDate()
-                return true
-            } else {
-                return false
-            }
-        }
-        saveTodayDate()
-        return false
     }
     
     func setupViews() {
@@ -179,8 +214,10 @@ class HomePageViewController: UIViewController {
         }
         
         editPhotoButton.snp.makeConstraints { make in
-            make.height.equalTo(54)
+            let height: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 90 : 64
+            make.height.equalTo(height)
         }
+
     }
 }
 

@@ -149,8 +149,8 @@ class PurchaseViewController: UIViewController {
     
     private func updateUI(with product: SKProduct?) {
         guard let product = product else { return }
-        headerView.title.text  = product.localizedTitle
-        headerView.subtitle.text = product.localizedDescription
+//        headerView.title.text  = product.localizedTitle
+//        headerView.subtitle.text = product.localizedDescription
         priceFormatter.locale = product.priceLocale
         headerView.price.text = priceFormatter.string(from: product.price)
     }

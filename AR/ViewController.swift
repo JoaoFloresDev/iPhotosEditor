@@ -281,11 +281,11 @@ class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDe
         }
     }
     
-    func rateApp() {
-        if #available(iOS 10.3, *) {
-            SKStoreReviewController.requestReview()
-        }
-    }
+//    func rateApp() {
+//        if #available(iOS 10.3, *) {
+//            SKStoreReviewController.requestReview()
+//        }
+//    }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if let orientation = recordingOrientation {

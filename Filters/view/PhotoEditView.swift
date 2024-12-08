@@ -33,15 +33,6 @@ struct PhotoEditView: View {
                                 .padding(.top, 8)
                         }
                         Spacer()
-                        Button(action: {
-                            self.showImagePicker = true
-                        }) {
-                            Image(systemName: "plus")
-                                .foregroundColor(.white)
-                                .imageScale(.large)
-                                .padding(.horizontal)
-                                .padding(.top, 8)
-                        }
                         if shared.previewImage != nil {
                             NavigationLink(destination: ExportView()) {
                                 Image(systemName: "square.and.arrow.up")
@@ -50,6 +41,15 @@ struct PhotoEditView: View {
                                     .padding(.horizontal)
                                     .padding(.top, 8)
                             }
+                        }
+                        Button(action: {
+                            self.showImagePicker = true
+                        }) {
+                            Image(systemName: "plus")
+                                .foregroundColor(.white)
+                                .imageScale(.large)
+                                .padding(.horizontal)
+                                .padding(.top, 8)
                         }
                     }
                     .zIndex(1)

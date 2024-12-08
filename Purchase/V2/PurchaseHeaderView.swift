@@ -48,22 +48,23 @@ class PurchaseHeaderView: UIView {
         
         // Configuração do Title
         title.textAlignment = .center
-        title.text = "Loading..."
+        title.text = "Lifetime Premium"
         title.font = UIFont.systemFont(ofSize: 25, weight: .semibold)
         
         // Configuração do Subtitle
         subtitle.textAlignment = .center
-        subtitle.text = "Loading..."
-        subtitle.font = UIFont.systemFont(ofSize: 14, weight: .regular)
-
+        subtitle.text = "Take your photos to a professional level"
+        subtitle.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        subtitle.numberOfLines = 0
+        
         price.textAlignment = .center
         price.text = "Loading..."
-        price.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        price.font = UIFont.systemFont(ofSize: 22, weight: .regular)
         
         // Adicionar elementos ao StackView
-        stackView.addArrangedSubview(createSpacer(height:  14))
+        stackView.addArrangedSubview(createSpacer(height:  8))
         stackView.addArrangedSubview(marketIcon)
-        stackView.addArrangedSubview(createSpacer(height:  20))
+        stackView.addArrangedSubview(createSpacer(height:  12))
         stackView.addArrangedSubview(title)
         stackView.addArrangedSubview(createSpacer(height:  12))
         stackView.addArrangedSubview(subtitle)
@@ -73,7 +74,8 @@ class PurchaseHeaderView: UIView {
         
         // Constraints do StackView
         stackView.snp.makeConstraints { make in
-            make.top.bottom.leading.trailing.equalToSuperview()
+            make.top.bottom.equalToSuperview()
+            make.leading.trailing.equalToSuperview().inset(24)
         }
         
         // Constraints do DiamondView

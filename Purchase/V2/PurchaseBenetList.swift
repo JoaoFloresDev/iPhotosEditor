@@ -28,19 +28,19 @@ class PurchaseBenetList: UIView {
         stackView.addArrangedSubview(
             PurchaseBenefitItem(
                 text: "Remove ads",
-                imageName: "noads")
+                image: UIImage(named: "noads") ?? UIImage())
         )
         stackView.addArrangedSubview(createSpacer(height:  12))
         stackView.addArrangedSubview(
             PurchaseBenefitItem(
                 text: "Filters and montages unlocked",
-                imageName: "unlimited")
+                image: UIImage(systemName: "sparkles") ?? UIImage())
         )
         stackView.addArrangedSubview(createSpacer(height:  12))
         stackView.addArrangedSubview(
             PurchaseBenefitItem(
                 text: "Unlimited stickers",
-                imageName: "unlimited")
+                image: UIImage(named: "unlimited") ?? UIImage())
         )
         stackView.addArrangedSubview(createSpacer(height:  12))
         
@@ -65,60 +65,60 @@ class PurchaseBenetList: UIView {
 }
 
 class PurchaseBenefitItem: UIView {
-        // Elementos da UI
-        private let imageView = UIImageView()
-        private let label = UILabel()
+    
+    // Elementos da UI
+    private let imageView = UIImageView()
+    private let label = UILabel()
 
-        // Inicializador personalizado
-        init(text: String, imageName: String) {
-            super.init(frame: .zero)
-            setupView()
-            label.text = text
-            let image = UIImage(named: imageName) ?? UIImage()
-            imageView.image = image
-            imageView.tintColor = UIColor(red: 0/255.0, green: 175/255.0, blue: 232/255.0, alpha: 1.0)
-        }
-        
-        required init?(coder: NSCoder) {
-            super.init(coder: coder)
-            setupView()
-        }
+    // Inicializador personalizado
+    init(text: String, image: UIImage) {
+        super.init(frame: .zero)
+        setupView()
+        label.text = text
+        imageView.image = image
+        imageView.tintColor = UIColor(red: 0/255.0, green: 175/255.0, blue: 232/255.0, alpha: 1.0)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setupView()
+    }
 
-        private func setupView() {
-            // Configuração da UIImageView
-            imageView.contentMode = .scaleAspectFit
-            addSubview(imageView)
-            
-            // Configuração da UILabel
-            label.textAlignment = .left
-            label.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
-            label.numberOfLines = 0
-            addSubview(label)
-            
-            // Configuração das constraints com SnapKit
-            imageView.snp.makeConstraints { make in
-                make.left.equalToSuperview().offset(16)
-                make.centerY.equalToSuperview()
-                make.width.height.equalTo(40)
-            }
-            
-            label.snp.makeConstraints { make in
-                make.left.equalTo(imageView.snp.right).offset(16)
-                make.right.equalToSuperview().offset(-16)
-                make.centerY.equalToSuperview()
-            }
-            
-            self.snp.makeConstraints { make in
-                make.height.equalTo(60)
-            }
+    private func setupView() {
+        // Configuração da UIImageView
+        imageView.contentMode = .scaleAspectFit
+        addSubview(imageView)
+        
+        // Configuração da UILabel
+        label.textAlignment = .left
+        label.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        label.numberOfLines = 0
+        addSubview(label)
+        
+        // Configuração das constraints com SnapKit
+        imageView.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(16)
+            make.centerY.equalToSuperview()
+            make.width.height.equalTo(40)
         }
         
-        // Métodos para configurar imagem e texto
-        func setImage(_ image: UIImage) {
-            imageView.image = image
+        label.snp.makeConstraints { make in
+            make.left.equalTo(imageView.snp.right).offset(16)
+            make.right.equalToSuperview().offset(-16)
+            make.centerY.equalToSuperview()
         }
         
-        func setText(_ text: String) {
-            label.text = text
+        self.snp.makeConstraints { make in
+            make.height.equalTo(60)
         }
     }
+    
+    // Métodos para configurar imagem e texto
+    func setImage(_ image: UIImage) {
+        imageView.image = image
+    }
+    
+    func setText(_ text: String) {
+        label.text = text
+    }
+}

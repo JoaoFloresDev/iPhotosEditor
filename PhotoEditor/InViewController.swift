@@ -157,10 +157,6 @@ class InViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         imageView.image = image
         backgroundCellImage.image = nil
         editor.dismiss(animated: true, completion: nil)
-        
-        if #available(iOS 10.3, *) {
-            SKStoreReviewController.requestReview()
-        }
     }
     
     //    MARK: - tabBar
